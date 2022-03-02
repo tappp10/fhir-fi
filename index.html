@@ -14,9 +14,16 @@
     body {
       font-size: 16pt;
     }
-    article {
-      max-width: 24.7em;
-      margin: auto;
+    @media screen {
+      body {
+        font-family: sans-serif;
+      }
+    }
+    @media screen and (min-width: 800px) {
+      article {
+        max-width: 27em;
+        margin: auto;
+      }
     }
     h1 {
       font-size: 36pt;
@@ -60,51 +67,60 @@
 <body>
   <article id="main">
     <h1>FHIR-integraatioprojekti</h1>
-    <p class="ingress">HL7 Finland järjestää keväällä 2022 FHIR-sovellusten integraatioprojektin.
-      Tavoitteena on toteuttaa suuri määrä integraatioita sovellusten, asiakas- ja
-      potilastietojärjestelmien sekä muiden alustojen välille.</p>
+    <p class="ingress">HL7 Finland järjestää keväällä 2022 FHIR-sovellusten
+      integraatio&shy;projektin. Hankkeessa toteutetaan suuri määrä integraatioita sovellusten,
+      asiakas- ja potilas&shy;tieto&shy;järjestelmien sekä muiden alustojen välille.</p>
+    <p class="ingress">Tavoitteena on edistää ennen kaikkea tietojen
+      liikkumista tieto&shy;järjestelmien välillä sekä asiakas- ja
+      potilas&shy;tieto&shy;järjestelmien toiminnallisuutta laajentavien SMART-sovellusten
+      käyttöön&shy;ottoa.</p>
     <section id="why">
       <h2>Miksi</h2>
       <p>Sana integraatio herättää usein huolta. Integraatiot vaativat tyypillisesti paljon aikaa
         ja resursseja, eikä lopputuloksesta ole edes varmuutta. Tämän vuoksi monet varsin
         hyödyllisetkin integraatiot jäävät toteuttamatta.</p>
       <p>FHIR-integraatioprojektin tavoitteena on poistaa tämä epävarmuus toteuttamalla ja
-        testaamalla integraatiot jo etukäteen. Tämän toivotaan helpottavan myös ratkaisujen
+        testaamalla integraatiot jo etukäteen. Tämän toivotaan helpottavan myös sovellusten
         hankintaa ja käyttöönottoa.</p>
     </section>
     <section id="what">
       <h2>Mitä</h2>
-      <p>Hankkeessa pyritään toteuttamaan monenlaisia integraatioita, mutta pääpaino on HL7 SMART
-        Launch -sovellus&shy;käynnistyksellä. Sen avulla ulkopuoliset sovellukset voidaan
-        käynnistää asiakas- tai potilas&shy;tieto&shy;järjestelmästä napin painalluksella. Lisäksi
+      <p>Hankkeessa pyritään toteuttamaan monenlaisia integraatioita, mutta pääpaino on <a
+        href="http://www.hl7.org/fhir/smart-app-launch/">HL7 SMART App Launch</a>
+        -sovellus&shy;käynnistyksellä. Sen avulla ulkopuoliset sovellukset voidaan käynnistää
+        asiakas- tai potilas&shy;tieto&shy;järjestelmästä napin painalluksella. Lisäksi
         käynnistymisen yhteydessä käynnistettävälle sovellukselle välitetään tieto siitä, kuka
         ammattilainen tahtoo katsoa kenen asiakkaan tai potilaan tietoja. Ja kaikki tämä ehdottoman
         tietoturvallisesti.</p>
       <p>Ammattilaiselle SMART-käynnistys tarkoittaa sitä, että hänen ei tarvitse kirjautua
         erikseen johonkin toiseen järjestelmään tai etsiä sieltä henkilöä erillisestä listasta.
         Kaikki tapahtuu nimenomaan napin painalluksella varsinaisesta pääjärjestelmästä.</p>
-      <p>Myös muut ja monimutkaisemmat integraatiot ovat tämän integraatiohankkeen piirissä ja
+      <p>Myös muut ja monimutkaisemmat integraatiot ovat tämän integraa&shy;tiohankkeen piirissä ja
         ehdottomasti kiinnostavia. Mutta tietojen lukeminen ja kirjoittaminen edellyttävät yleensä
-        jossakin määrin enemmän sopimista ja ovat myös tapauskohtaisempia. Tästä syystä pääpaino
-        on sovellusten käynnistyksessä, jonka pitäisi jo itsessään tuoda reilusti lisäarvoa.</p>
+        jossakin määrin enemmän sopimista ja ovat myös tapaus&shy;kohtaisempia. Tästä syystä
+        pääpaino on sovellusten käynnistyksessä, jonka pitäisi jo itsessään tuoda reilusti
+        lisäarvoa.</p>
+      <p>Sovellustoimittajille SMART-käynnistyksen toteuttaminen sovelluksiin tarjoaa myös hyvät
+        mahdollisuudet kansain&shy;väliseen liiketoimintaan suurten järjestelmä&shy;toimittajien
+        kanssa.</p>
     </section>
     <section id="how">
       <h2>Miten</h2>
-      <p>Integraatiot toteutetaan yhdessä suuressa hankkeessa. Tällöin esimerkiksi alustatoimittaja
-        voi konfiguroida järjestelmään useamman sovelluksen kerralla ja myös opastaa useaa
-        sovellustoimittajaa kerralla, siis saada aikaan monta integraatiota yhden integraation
-        kustannuksella.</p>
-      <p>Tavoite on myös, että sovellustoimittajat tukevat toisiaan integraatioiden
-        toteuttamisessa, jakaen kokemuksia, parhaita käytäntöjä ja lähdekoodiakin.</p>
+      <p>Integraatiot toteutetaan yhdessä suuressa hankkeessa. Tällöin esimerkiksi
+        alusta&shy;toimittaja voi konfiguroida järjestelmään useamman sovelluksen kerralla ja myös
+        opastaa useaa sovellus&shy;toimittajaa kerralla, siis saada aikaan monta integraatiota
+        yhden integraation kustannuksella.</p>
+      <p>Tavoite on myös, että sovellus&shy;toimittajat tukevat toisiaan integraatioiden
+        toteuttamisessa, jakaen kokemuksia, parhaita käytäntöjä ja lähde&shy;koodiakin.</p>
       <p>Ajatus on, että projektissa ei tarvitse liikuttaa rahaa, vaan kaikki osapuolet vastaavat
         omista kustannuksistaan. Myös sopimukset pyritään pitämään minimissä, mutta joitain
         sopimuksia saatetaan tarvita esimerkiksi yhteyksien avaamiseen tai jotta sovelluksille
-        voidaan sallia pääsy kehitysympäristöihin.</p>
-      <p>Integraatiot pyritään ensisijaisesti rakentamaan kunkin alustan osalta demoympäristöön,
-        jossa niiden esittely on mahdollista ulkopuolisillekin. Mikäli tällaista ympäristöä ei ole
-        saatavilla, voidaan myös toteuttaa integraatio suljetumpaan ympäristöön ja tallentaa sieltä
-        video, joka esittelee integraation toteutumisen ja sovelluksen liittymisen ammattilaisen
-        työnkulkuun.</p>
+        voidaan sallia pääsy kehitys&shy;ympäristöihin.</p>
+      <p>Integraatiot pyritään ensisijaisesti rakentamaan kunkin alustan osalta
+        demo&shy;ympäristöön, jossa niiden esittely on mahdollista ulkopuolisillekin. Mikäli
+        tällaista ympäristöä ei ole saatavilla, voidaan myös toteuttaa integraatio suljetumpaan
+        ympäristöön ja tallentaa sieltä video, joka esittelee integraation toteutumisen ja
+        sovelluksen liittymisen ammattilaisen työnkulkuun.</p>
     </section>
     <section id="demos">
       <h2>Demot</h2>
@@ -114,13 +130,13 @@
         <a href="https://www.himss.org/event-himss-europe">HIMSS Europe</a> -tapahtumassa
         Helsingissä kesäkuussa (14.-16.6.2022).</p>
       <p>Ainakin ATK-päivillä on myös tarkoitus järjestää tilaisuus, jossa hankkeen osapuolet
-        esittelevät aikaansaannoksia ja kertovat kokemuksistaan.</p>
+        esittelevät aikaan&shy;saannoksia ja kertovat kokemuksistaan.</p>
       <p>Tapahtumiin on myös tarkoitus tuottaa yhteisesitteet ja yhteistä FHIR-henkistä
         rekvisiittaa.</p>
     </section>
     <section id="who">
       <h2>Osallistujat</h2>
-      <p>Mukaan on jo ilmoittautunut lukuisa joukko asiakas- ja potilastietojärjestelmien
+      <p>Mukaan on jo ilmoittautunut lukuisa joukko asiakas- ja potilas&shy;tieto&shy;järjestelmien
         edustajia, sovellustoimittajia ja muita toimijoita.</p>
       <h3>Alustat</h3>
       <ul>
@@ -193,7 +209,8 @@
       <ul class="numbered">
         <li>3.4 Kansallinen ja kansainvälinen yhteen&shy;toimivuus&shy;tapahtuma</li>
         <li>3.6 FHIR-käytön edistäminen Suomessa (FHIR Accelerator Finland)</li>
-        <li>4.4 FHIR-rajapinnat asiakas- ja potilas&shy;tieto&shy;järjestelmä&shy;integraatiota varten (viimeistely)</li>
+        <li>4.4 FHIR-rajapinnat asiakas- ja potilas&shy;tieto&shy;järjestelmä&shy;integraatiota
+          varten (viimeistely)</li>
         <li>5.2 FHIR-hyödyntäminen IHE-profiileissa</li>
       </ul>
       <p>Mikäli herättää kiinnostusta, kannattaa tarjota osaamista ja tekemistä myös näihin!</p>
