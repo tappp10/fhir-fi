@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#da532c">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FHIR-integraatioprojekti: Sensotrend</title>
+  <style>
+    @media screen {
+      body {
+        font-family: sans-serif;
+      }
+    }
+    article {
+      box-sizing: border-box;
+      margin: 1em;
+    }
+
+    @media only screen and (min-width: 29em) {
+      article {
+        max-width: 27rem;
+        margin: auto;
+      }
+    }
+
+    h1 {
+      font-size: x-large;
+      font-size: xx-large;
+    }
+    h2 {
+      font-size: x-large;
+      margin-top: 2.6ex;
+      margin-bottom: 0.4ex;
+    }
+    h3 {
+      font-size: large;
+      font-weight: bolder;
+      margin-bottom: 0;
+    }
+    h3 + ul {
+      margin-top: 0;
+    }
+    h2 + p {
+      margin-top: 0;
+    }
+    p.ingress {
+      font-style: italic;
+      font-size: larger;
+    }
+    ul.numbered {
+      list-style-type: none;
+      padding-left: 1.5em;
+    }
+    ul.numbered li {
+      text-indent: -1.7em;
+    }
+    footer {
+      margin-top: 2em;
+      margin-bottom: 1em;
+      border-top: 1px solid black;
+      font-size: smaller;
+    }
+  </style>
+</head>
+
+<body>
+  <article id="main">
+    <h1>Sensotrend</h1>
+    <p class="ingress">Sensotrend esittelee FHIR-teknologialla Omatieto&shy;varantoon liitettyjä
+      Sensotrend Connect - ja Nightscout Connect -palveluita ja sovelluksia. Nämä palvelut ovat jo
+      pitkään olleet tuotanto&shy;käytössä.</p>
+    <ul id="products">
+      <li>Sensotrend Uploader vie Omatieto&shy;varantoon tietoja lukuisista
+        verensokeri&shy;mittareista, glukoosi&shy;sensoreista ja insuliini&shy;pumpuista.</li>
+      <li>Dashboard visualisoi dataa Omatieto&shy;varannosta ja yhdistää siihen tietoja
+        hyvinvointi&shy;laitteista ja -sovelluksista.</li>
+      <li>Nightscout Connect -palvelu auttaa liittämään Omatieto&shy;varantoon laajan joukon
+        avoimen lähdekoodin kehittäjä&shy;yhteisön tuottamia diabeteksen
+        etäseuranta&shy;palveluita.</li>
+    </ul>
+    <p>Sensotrend havainnollistaa SMART-määrittelyn toimivuutta esittelemällä, kuinka Sensotrend
+      Dashboard voidaan käynnistää Cerner Millennium -potilastieto&shy;järjestelmästä, Epicin ja
+      InterSystemsin potilastieto&shy;järjestelmien kehitysympäristöistä, Terveyskylän hoitopolulta
+      ja SMART Healthin sovellus&shy;luettelosta. Kaikki tämä toimiii yhden toteutuksen avulla.</p>
+    <p>Sensotrend havainnollistaa myös FHIR-määrittelyn mahdollistamaa yhteen&shy;toimivuutta
+      laajemmin, osoittamalla kuinka sekä Sensotrend Uploader että Sensotrend Dashboard voidaan
+      liittää Omatietovarannon lisäksi InterSystemsin ja KotiDigin FHIR-palvelimiin ja
+      FHIR-referenssi&shy;toteutuksiin (ainakin HAPI FHIR). Ehkä rakennamme demot myös muihin
+      palvelimiin kuten Azure FHIR server, Google Health API?</p>
+    <p>Harkitsemme myös Omatietovarannon Hyvinvointitiedot -osion buustaamista. Voisimme
+      mahdollistaa omalla ständillämme verensokerin mittauksen ja tuloksen tallennuksen
+      Omatietovarantoon.</p>
+    <p>Sensotrendiä kiinnostaa myös “connetathon-hengessä” perehtyä reseptitietoihin, jos Kela saa
+      niitä käytettäviksi jollekin FHIR-palvelimelle.</p>
+    <p>Sensotrend toteuttaa demot ja osallistuu sekä ATK-päiville että HIMSS Europe
+      -tapahtumaan.</p>
+    <footer>
+      <p>Sensotrendin ratkaisuihin pääsee tutustumaan ATK-päivien Startup-alueella ja HIMSS Europen
+        Startup Arealla.</p>
+    </footer>
+  </article>
+</body>
+
+</html>
