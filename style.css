@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Play:wght@700&display=swap');
 
 @media screen {
-  /*
   body {
     font-size: 125%;
   }
-  */
 }
 
 :root {
@@ -34,8 +32,19 @@ body {
   font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 
-h1, h2 {
+h1, h2, footer address strong {
   font-family: 'Play', sans-serif;
+}
+
+h2 {
+  margin-top: 1.5em;
+  margin-bottom: 0em;
+}
+
+h3 {
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 0;
 }
 
 header {
@@ -74,7 +83,6 @@ section#intro, footer {
 header h1, section#intro, footer {
   color: var(--main-gray-color);
 }
-
 
 section#intro, footer {
   height: 100vh;
@@ -154,9 +162,6 @@ nav ul {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 2.1vh;
-  /*
-  overflow: hidden;
-  */
   width: 25vh;
   width: fit-content;
 }
@@ -166,27 +171,30 @@ nav ul {
     display: none;
   }  
 }
+
 @media (min-width: 1600px) {
   main section {
     margin: auto;
     max-width: 35rem;
     min-height: 100vh;
   }
+  main section div.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   main section#who div {
-    max-width: 35rem;
+    max-width: 33rem;
+  }
+  main section#who table {
+    margin: 5em 0 3em -12%;
   }
 }
-
-
-
 
 .side-nav li {
   list-style: none;
   box-sizing: border-box;
-  /*
-  margin-top: var(--link-button-size);
-  margin-bottom: var(--link-button-size);
-  */
   margin-bottom: calc(var(--link-button-size) * 0.25);
   width: var(--link-button-size);
   height: var(--link-button-size);
@@ -256,9 +264,6 @@ nav#first-part li a {
 
 nav#second-part {
   float: right;
-  /*
-  right: calc(var(--link-button-size) / 2);
-  */
   right: calc((var(--link-button-size) / 2) - 10vh);
   width: calc(var(--link-button-size) + 10vh);
   overflow-x: hidden;
@@ -267,7 +272,6 @@ nav#second-part {
 nav#second-part li a {
   border-color: var(--main-violet-color);
 }
-
 
 table {
   padding: 0;
@@ -309,62 +313,54 @@ tbody th {
 tbody th a {
   color: var(--main-orange-color);
 }
+
+#who ul {
+  margin-top: 0;
+}
+
 ul.numbered {
   list-style-type: none;
   padding-left: 1.5em;
 }
+
 ul.numbered li {
   text-indent: -1.7em;
 }
 
 footer h2 {
   color: var(--main-orange-color);
+  margin-bottom: 1em;
 }
 
+footer address {
+  font-style: normal;
+  display: inline-block;
+  width: 20em;
+  font-weight: 200;
+  margin-bottom: 4em;
+}
 
-/*
-@media only screen and (min-width: 29em) {
-  article {
-    max-width: 27rem;
-    margin: auto;
+footer address strong {
+  font-size: 1.45em;
+  text-transform: uppercase;
+}
+
+footer address p {
+  min-height: 6em;
+  max-width: 15em;
+}
+
+footer a {
+  color: var(--main-gray-color);
+  font-weight: 400;
+}
+
+@media (min-width: 1600px) {
+  footer {
+    background-image: url('./footer.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 40vw 100vh;
+    padding-left: 42vw;
   }
 }
-
-h1 {
-  font-size: x-large;
-  font-size: xx-large;
-}
-h2 {
-  font-size: x-large;
-  margin-top: 2.6ex;
-  margin-bottom: 0.4ex;
-}
-h3 {
-  font-size: large;
-  font-weight: bolder;
-  margin-bottom: 0;
-}
-h3 + ul {
-  margin-top: 0;
-}
-h2 + p {
-  margin-top: 0;
-}
-p.ingress {
-  font-style: italic;
-  font-size: larger;
-}
-ul.numbered {
-  list-style-type: none;
-  padding-left: 1.5em;
-}
-ul.numbered li {
-  text-indent: -1.7em;
-}
-footer {
-  margin-top: 2em;
-  margin-bottom: 1em;
-  border-top: 1px solid black;
-  font-size: smaller;
-}
-*/

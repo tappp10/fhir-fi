@@ -59,18 +59,19 @@
         </ul>
       </nav>
       <section id="why">
-        <div>
-          <h2>Miksi</h2>
-          <p>Sana integraatio herättää usein huolta. Integraatiot vaativat tyypillisesti paljon
-            aikaa ja resursseja, eikä lopputuloksesta ole edes varmuutta. Tämän vuoksi monet varsin
-            hyödyllisetkin integraatiot jäävät toteuttamatta.</p>
-          <p>FHIR-integraatioprojektin tavoitteena on poistaa tämä epävarmuus toteuttamalla ja
-            testaamalla integraatiot jo etukäteen. Tämän toivotaan helpottavan myös sovellusten
-            hankintaa ja käyttöönottoa.</p>
+        <div class="container">
+        <h2>Miksi</h2>
+        <p>Sana integraatio herättää usein huolta. Integraatiot vaativat tyypillisesti paljon
+          aikaa ja resursseja, eikä lopputuloksesta ole edes varmuutta. Tämän vuoksi monet varsin
+          hyödyllisetkin integraatiot jäävät toteuttamatta.</p>
+        <p>FHIR-integraatioprojektin tavoitteena on poistaa tämä epävarmuus toteuttamalla ja
+          testaamalla integraatiot jo etukäteen. Tämän toivotaan helpottavan myös sovellusten
+          hankintaa ja käyttöönottoa.</p>
         </div>
       </section>
       <section id="what">
-        <h2>Mitä</h2>
+        <div class="container">
+          <h2>Mitä</h2>
         <p>Hankkeessa pyritään toteuttamaan monenlaisia integraatioita, mutta pääpaino on <a
             href="http://www.hl7.org/fhir/smart-app-launch/">HL7 SMART App Launch</a>
           -sovellus&shy;käynnistyksellä. Sen avulla ulkopuoliset sovellukset voidaan käynnistää
@@ -89,9 +90,11 @@
         <p>Sovellustoimittajille SMART-käynnistyksen toteuttaminen sovelluksiin tarjoaa myös hyvät
           mahdollisuudet kansain&shy;väliseen liiketoimintaan suurten järjestelmä&shy;toimittajien
           kanssa.</p>
+          </div>
       </section>
       <section id="how">
-        <h2>Miten</h2>
+        <div class="container">
+          <h2>Miten</h2>
         <p>Integraatiot toteutetaan yhdessä suuressa hankkeessa. Tällöin esimerkiksi
           alusta&shy;toimittaja voi konfiguroida järjestelmään useamman sovelluksen kerralla ja
           myös opastaa useaa sovellus&shy;toimittajaa kerralla, siis saada aikaan monta
@@ -107,9 +110,11 @@
           tällaista ympäristöä ei ole saatavilla, voidaan myös toteuttaa integraatio suljetumpaan
           ympäristöön ja tallentaa sieltä video, joka esittelee integraation toteutumisen ja
           sovelluksen liittymisen ammattilaisen työnkulkuun.</p>
+          </div>
       </section>
       <section id="demos">
-        <h2>Demot</h2>
+        <div class="container">
+          <h2>Demot</h2>
         <p>Integraatioista kerätään koordinoidut demot, joita esitellään sekä <a
           href="https://koulutus.fcg.fi/koulutustapahtumat/sosiaali-ja-terveydenhuollon-atk-paivat-2022-12259">Sosiaali-
           ja terveydenhuollon ATK-päivillä</a> Jyväskylässä toukokuussa (9.-11.5.2022) että <a
@@ -120,6 +125,7 @@
           esittelevät aikaan&shy;saannoksia ja kertovat kokemuksistaan.</p>
         <p>Tapahtumiin on myös tarkoitus tuottaa yhteisesitteet ja yhteistä FHIR-henkistä
           rekvisiittaa.</p>
+          </div>
       </section>
       <section id="who">
         <div>
@@ -132,8 +138,7 @@
           <thead>
             <tr>
               <td></td>
-              <th colspan="9">Alustat</th>
-
+              <th colspan="12">Alustat</th>
             </tr>
             <tr id="platforms">
               <th>Sovellukset</th>
@@ -269,7 +274,8 @@
       </div> 
       </section>
       <section id="misc">
-        <h2>Muistiot</h2>
+        <div class="container">
+          <h2>Muistiot</h2>
         <p>Lue <a
             href="https://docs.google.com/document/d/1jER6QeXjLlH802_NklMl9VxPqd8a2aNVXatkzLcERD4/edit?usp=sharing">muistiot</a>
           demovalmisteluista.</p>
@@ -291,24 +297,33 @@
           <li>5.2 FHIR-hyödyntäminen IHE-profiileissa</li>
         </ul>
         <p>Mikäli herättää kiinnostusta, kannattaa tarjota osaamista ja tekemistä myös näihin!</p>
+        </div>
       </section>
 
     </main>
     <footer>
       <section id="contacts">
         <h2>Yhteystiedot</h2>
-        <p>Hanketta koordinoi HL7 Finlandin puolesta Sensotrend Oy:n Sonja Punnala.</p>
-        <address><a href="mailto:sonja@sensotrend.com">sonja@sensotrend.com</a></address>
-        <p>Mukana on myös HL7 Finlandin FHIR-lähettiläs Mikael Rinnetmäki.</p>
-        <address><a href="mailto:mikael@sensotrend.com">mikael@sensotrend.com</a></address>
-        <p>Keskustelua käydään viikottaisissa tapaamisissa sekä hankkeen <a
-            href="https://fhirfinland.slack.com/">Slack-työtilassa</a>.</p>
+        <address>
+          <strong>Sonja Punnala</strong>
+          <p>Hanketta koordinoi HL7 Finlandin puolesta Sensotrend Oy:n Sonja Punnala.</p>
+          <a href="mailto:sonja@sensotrend.com">sonja@sensotrend.com</a>
+        </address>
+        <address>
+          <strong>Mikael Rinnetmäki</strong>
+          <p>Mukana on myös HL7 Finlandin FHIR-lähettiläs Mikael Rinnetmäki.</p>
+          <a href="mailto:mikael@sensotrend.com">mikael@sensotrend.com</a>
+        </address>
+        <address>
+          <strong>Slack</strong>
+          <p>Keskustelua käydään viikottaisissa tapaamisissa sekä hankkeen Slack-työtilassa.</p>
+          <a href="https://fhirfinland.slack.com/">fhirfinland.slack.com</a>
+        </address>
       </section>
       <section id="source">
-        <p>Lisättävää tai korjattavaa? Sivun <a href="http://github.com/fhir-fi/fhir-fi.github.io">lähdekoodi</a> löytyy
-          GitHubista!
+        <p>Lisättävää tai korjattavaa sisällön suhteen? Sivun <a
+          href="http://github.com/fhir-fi/fhir-fi.github.io">lähdekoodi</a> löytyy GitHubista!</p>
       </section>
-      </p>
     </footer>
   </article>
   <script>
