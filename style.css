@@ -14,7 +14,8 @@
 }
 
 nav {
-  --link-button-size: 20vh;
+  --link-button-size: min(15vw, 20vh);
+  --link-button-position: min(10vw, 10vh);
 }
 
 html, body, article {
@@ -158,21 +159,23 @@ nav ul {
   position: sticky;
   top: 10vh;
   font-size: 3vh;
+  /*
   max-width: 30vw;
+  */
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 2.1vh;
-  width: 25vh;
+  font-size: min(1.6vw, 2.1vh);
+  width: calc((var(--link-button-size)) + (var(--link-button-position)));
   width: fit-content;
 }
 
-@media (max-width: 1599px) {
+@media (max-width: 1419px) {
   .side-nav {
     display: none;
   }  
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1420px) {
   main section {
     margin: auto;
     max-width: 35rem;
@@ -188,7 +191,7 @@ nav ul {
     max-width: 33rem;
   }
   main section#who table {
-    margin: 5em 0 3em -12%;
+    margin: 5em 0 3em -7vw;
   }
 }
 
@@ -198,6 +201,10 @@ nav ul {
   margin-bottom: calc(var(--link-button-size) * 0.25);
   width: var(--link-button-size);
   height: var(--link-button-size);
+  /*
+  max-width: 15vw;
+  max-height: 15vw;
+  */
   line-height: var(--link-button-size);
 }
 
@@ -244,14 +251,14 @@ nav#first-part {
 
 nav#first-part li:before, nav#second-part li:after {
   position: absolute;
-  top: calc((var(--link-button-size) * 1.5) + calc(var(--link-button-size) * 0.375) + 0px);
+  top: calc((var(--link-button-size) * 1.5) + calc(var(--link-button-size) * 0.375) - 5px);
   content: '';
-  width: calc(10vh + 5px);
+  width: calc(var(--link-button-position) + 2.5px);
   height: 10px;
 }
 
 nav#first-part li:before {
-  left: -10vh;
+  left: calc(0px - var(--link-button-position));
   background-color: var(--main-orange-color);
 }
 
@@ -261,11 +268,11 @@ nav#second-part li:after {
 }
 
 nav#first-part li:first-of-type:before, nav#second-part li:first-of-type:after {
-  top: calc((var(--link-button-size) / 2) + calc(var(--link-button-size) * 0.125) + 0px);
+  top: calc((var(--link-button-size) / 2) + calc(var(--link-button-size) * 0.125) - 5px);
 }
 
 nav#first-part li:last-of-type:before, nav#second-part li:last-of-type:after {
-  top: calc((var(--link-button-size) * 2.5) + calc(var(--link-button-size) * 0.625) + 0px);
+  top: calc((var(--link-button-size) * 2.5) + calc(var(--link-button-size) * 0.625) - 5px);
 }
 
 nav#first-part li a {
@@ -274,8 +281,8 @@ nav#first-part li a {
 
 nav#second-part {
   float: right;
-  right: calc((var(--link-button-size) / 2) - 10vh);
-  width: calc(var(--link-button-size) + 10vh);
+  right: calc((var(--link-button-size) / 2) - var(--link-button-position));
+  width: calc(var(--link-button-size) + var(--link-button-position));
   overflow-x: hidden;
 }
 
@@ -370,7 +377,7 @@ footer a {
   font-weight: 400;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1420px) {
   footer {
     background-image: url('./footer.svg');
     background-repeat: no-repeat;

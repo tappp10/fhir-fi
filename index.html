@@ -436,7 +436,7 @@
         navLinks[s.target.id].classList[s.isIntersecting ? 'add' : 'remove']('active');
       });
       busy = false;
-    }, { threshold: 0.5 });
+    }, { threshold: 0.3 });
     document.querySelectorAll('main section').forEach((section) => {
       observer.observe(section);
     });
