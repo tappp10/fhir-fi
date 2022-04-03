@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Play:wght@700&display=swap');
 
-@media screen {
+/*
+@media screen and (min-width: 900px) {
   body {
     font-size: 125%;
   }
 }
+*/
 
 :root {
   --main-orange-color: #F86624;
@@ -52,16 +54,62 @@ header {
   background-color: var(--main-orange-color);
   text-align: right;
   padding: 0;
+  background-image: url('./header.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 80vw 120vh;
 }
 
 header nav {
   padding: 3vh;
-  line-height: 10vh;
+  height: 12vh;
+}
+
+header h1 {
+  /*
+  margin: min(31vw, 38vh) 1.3em 0;
+  */
+  margin: min(22vw, 38vh) 1.3em 0;
+  height: 44vh;
+}
+
+@media (max-width: 1419px) {
+  header h1 {
+    margin: 36vh 1.3em 0;
+    height: 46vh;
+  }
+}
+
+@media (orientation: portrait) {
+  header h1 {
+    margin: 68vh 1.3em 0;
+    height: 13vh;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 900px) {
+  header nav {
+    padding: 50vh 0 3vh;
+    height: 12vh;
+  }
+  header h1 {
+    margin: 8vh 1.3em 0;
+    height: 23vh;
+  }
 }
 
 header nav li {
   list-style: none;
   display: inline-block;
+  margin-right: min(3vw, 3em);
+}
+
+header nav li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: var(--main-orange-color);
+  color: var(--main-violet-color);
+  font-weight: bold;
 }
 
 header h1, #intro h2, footer h2 {
@@ -73,7 +121,12 @@ header h1, #intro h2, footer h2 {
     font-size: x-large;
   }
   header h1, #intro h2, footer h2 {
-    font-size: 4vw;
+    font-size: 4.8vw;
+    line-height: 5vh;
+  }
+  #intro h2 {
+    white-space: nowrap;
+    margin-bottom: 0.7em;
   }
 }
 
@@ -86,13 +139,7 @@ header h1, section#intro, footer {
 }
 
 section#intro, footer {
-  height: 100vh;
-  min-height: 6em;
-}
-
-header h1 {
-  margin: 40vh 1.1em 0;
-  height: 40vh;
+  min-height: 100vh;
 }
 
 section#intro, footer {
@@ -110,8 +157,13 @@ header {
 }
 
 section#intro {
-  font-size: xx-large;
   text-align: center;
+}
+
+@media (min-width: 290px) {
+  section#intro {
+    font-size: xx-large;
+  }
 }
 
 section#intro div {
@@ -132,7 +184,6 @@ section#intro img {
   display: inline-block;
   vertical-align: bottom;
   margin-left: calc((80vw - 20em) / 4);
-  padding-bottom: 25vh;
   width: 20vw;
   max-width: 30vh;
 }
@@ -186,6 +237,9 @@ nav ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  section#intro img {
+    padding-bottom: 25vh;
   }
   main section#who div {
     max-width: 33rem;
@@ -243,7 +297,6 @@ nav#second-part li a:not(.active):hover {
   color: var(--main-violet-color);
 }
 
-
 nav#first-part {
   float: left;
   left: calc(var(--link-button-size) / 2);
@@ -294,6 +347,7 @@ table {
   padding: 0;
   border-spacing: 0;
   border-collapse: collapse;
+  background-color: var(--main-gray-color);
 }
 
 table a {
