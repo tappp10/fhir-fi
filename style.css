@@ -110,6 +110,8 @@ header nav li a {
   background-color: var(--main-orange-color);
   color: var(--main-violet-color);
   font-weight: bold;
+  padding: 0.2em 0.7em;
+  border-radius: 10px;
 }
 
 header h1, #intro h2, footer h2 {
@@ -363,7 +365,6 @@ thead th a {
 }
 
 thead th {
-  border: 1px solid black;
   text-align: center;
   vertical-align: bottom;
   width: 2em;
@@ -388,6 +389,27 @@ tbody th {
 
 tbody th a {
   color: var(--main-orange-color);
+}
+
+td span.in-progress, td span.integrated {
+  height: 1em;
+  padding-bottom: 0.1em;
+  vertical-align: bottom;
+}
+
+td span.in-progress {
+  color: var(--main-violet-color);
+  content: url('fhir.svg') / 'Työn alla...';
+  filter: saturate(0);  
+}
+
+td span.integrated {
+  color: var(--main-orange-color);
+  content: url('fhir.svg') / 'Integroitu!';
+}
+
+td {
+  font-weight: 900;
 }
 
 #who ul {
@@ -436,7 +458,7 @@ footer a {
     background-image: url('./footer.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
-    background-size: 40vw 100vh;
+    background-size: 40vw 100%;
     padding-left: 42vw;
   }
 }
