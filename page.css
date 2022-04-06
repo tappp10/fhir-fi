@@ -1,0 +1,54 @@
+@media screen {
+  body {
+    font-family: sans-serif;
+  }
+}
+article {
+  box-sizing: border-box;
+  margin: 1em;
+}
+
+@media only screen and (min-width: 29em) {
+  article {
+    max-width: 27rem;
+    margin: auto;
+  }
+}
+
+h1 {
+  font-size: x-large;
+  font-size: xx-large;
+}
+h2 {
+  font-size: x-large;
+  margin-top: 2.6ex;
+  margin-bottom: 0.4ex;
+}
+h3 {
+  font-size: large;
+  font-weight: bolder;
+  margin-bottom: 0;
+}
+h3 + ul {
+  margin-top: 0;
+}
+h2 + p {
+  margin-top: 0;
+}
+p.ingress {
+  font-style: italic;
+  font-size: larger;
+}
+ul.numbered {
+  list-style-type: none;
+  padding-left: 1.5em;
+}
+ul.numbered li {
+  text-indent: -1.7em;
+}
+footer {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  border-top: 1px solid black;
+  font-size: smaller;
+}
