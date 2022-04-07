@@ -243,11 +243,11 @@ nav ul {
   section#intro img {
     padding-bottom: 25vh;
   }
-  main section#who div {
+  main section#who div, #who dl {
     max-width: 33rem;
   }
   main section#who table {
-    margin: 5em 0 3em -7vw;
+    margin: 5em 0 0 -5vw;
   }
 }
 
@@ -391,25 +391,43 @@ tbody th a {
   color: var(--main-orange-color);
 }
 
-td span.in-progress, td span.integrated {
+span.in-progress, span.integrated {
   height: 1em;
-  padding-bottom: 0.1em;
-  vertical-align: bottom;
 }
 
-td span.in-progress {
+span.in-progress {
   color: var(--main-violet-color);
   content: url('fhir.svg') / 'Työn alla...';
   filter: saturate(0);  
 }
 
-td span.integrated {
+span.integrated {
   color: var(--main-orange-color);
   content: url('fhir.svg') / 'Integroitu!';
 }
 
-td {
+#who table span.in-progress, span.integrated {
+  padding-bottom: 0.1em;
+  vertical-align: bottom;
+}
+ 
+
+#who td {
   font-weight: 900;
+}
+
+#who dl {
+  margin: 1em auto 3em;
+}
+
+#who dt, #who dd {
+  display: inline-block;
+}
+
+#who dd {
+  box-sizing: border-box;
+  margin-left: 1em;
+  min-width: calc(100% - 2em);
 }
 
 #who ul {
