@@ -393,6 +393,7 @@ tbody th a {
 
 span.in-progress, span.integrated {
   height: 1em;
+  content: url('fhir.svg');
 }
 
 span.in-progress {
