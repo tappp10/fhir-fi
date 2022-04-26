@@ -411,7 +411,6 @@ span.integrated {
   padding-bottom: 0.1em;
   vertical-align: bottom;
 }
- 
 
 #who td {
   font-weight: 900;
@@ -443,6 +442,13 @@ ul.numbered {
 ul.numbered li {
   text-indent: -1.7em;
 }
+
+#who li a {
+  border-color: var(--main-violet-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
 
 footer h2 {
   color: var(--main-orange-color);
