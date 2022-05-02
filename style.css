@@ -394,7 +394,7 @@ tbody th a {
 caption {
   caption-side: bottom;
   font-size: smaller;
-  margin-left: 4em;
+  margin: 0.5em 0 1em 4em;
 }
 
 span.in-progress, span.integrated {
