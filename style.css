@@ -391,6 +391,12 @@ tbody th a {
   color: var(--main-orange-color);
 }
 
+caption {
+  caption-side: bottom;
+  font-size: smaller;
+  margin-left: 4em;
+}
+
 span.in-progress, span.integrated {
   height: 1em;
   content: url('fhir.svg');
