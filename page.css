@@ -18,6 +18,12 @@ article {
 h1 {
   font-size: x-large;
   font-size: xx-large;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+header h1 {
+  text-align: center;
+  border-bottom: 1px solid black;
 }
 h2 {
   font-size: x-large;
@@ -34,6 +40,11 @@ h3 + ul {
 }
 h2 + p {
   margin-top: 0;
+}
+main > img {
+  max-height: 25vh;
+  display: block;
+  margin: 4em auto;  
 }
 p.ingress {
   font-style: italic;
