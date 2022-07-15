@@ -23,6 +23,7 @@ h1 {
 }
 header h1 {
   text-align: center;
+  padding-bottom: 5px;
   border-bottom: 1px solid black;
 }
 h2 {
