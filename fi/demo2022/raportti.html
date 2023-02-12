@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#da532c">
+  <link rel="stylesheet" href="../page.css" />
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FHIR DEMO 2022</title>
+</head>
+
+<body>
+  <article>
+    <header>
+      <h1>FHIR DEMO 2022 -loppuraportti</h1>
+    </header>
+    <main>
+      <section id="tiivistelma">
+        <h2>Tiivistelmä</h2>
+        <p class="ingress">HL7 Finland järjesti keväällä 2022 projektin, jossa vapaaehtoisvoimin
+          liitettiin useita sovelluksia eri asiakas- ja potilastietojärjestelmiin. Tulokset
+          osoittavat, että sovellusten liittäminen onnistuu FHIR-standardia käyttämällä nopeasti ja
+          vaivattomasti. Tällaisen sovellusten käyttöönoton osalta ei kuuluisikaan puhua
+          integraatiosta, vaan pikemminkin vain asennuksesta.</p>
+        <p class="ingress">Seuraava askel sovellusten laajamittaisen käyttöönoton 
+          mahdollistamisessa olisi hankintamenettelyiden helpottaminen.</p>
+      </section>
+      <section id="lahtokohta">
+        <h2>Lähtökohta</h2>
+        <p>Sosiaali- ja terveydenhuollon toiminnan helpottamiseksi ja tehostamiseksi on saatavilla
+          lukuisia sovelluksia. Niitä on kuitenkin otettu käyttöön varsin vähäisessä määrin.</p>
+        <h3 id="tyonkulku">Sovellukset eivät ole osa työnkulkua</h3>
+        <p>Yksi este palveluiden käyttöönotolle on se, että niitä ei ole integroitu kliiniseen
+          työnkulkuun.</p>
+        <p>SMART App Launch -määrittely mahdollistaa erillisten sovellusten liittämisen potilastietojärjestelmiin niin, että sovelluksen saa käyntiin yhdellä napinpainalluksella. Käynnistyksen mukana käynnistettävä sovellus saa tiedon sovelluksen käyttäjästä sekä potilaasta, jonka tietoja tahdotaan tarkastella. Täten mitään erillistä kirjautumista tai potilaan tietojen etsimistä ei tarvita. Tämä mahdollistaa palvelun sujuvan liittämisen kliinisen työnkulun osaksi.</p>
+        <p>Käyttötapauksen osalta SMART App Launch on vastaava kuin vanhempi CCOW-määrittelystä profiloitu minimikontekstinhallinnan määrittely (tunnetaan myös nimellä työpöytäintegraatio). Erona on kuitenkin se, että SMART perustuu kokonaan yleisesti käytettyihin web-teknologioihin, joten sille on helpompi löytää toteuttaja. Toisin kuin CCOW, joka ei koskaan yleistynyt kunnolla kansainvälisesti, SMART on maailmalla hyvin yleisesti käytetty ja niin ohjelmistokirjastoja kuin esimerkkitoteutuksiakin on runsaasti saatavilla. Samoin on saatavilla valmiita sovelluksia potilastietojärjestelmään liitettäväksi.</p>
+        <h3 id="integraatio">Integraatio on jo sanana pelottava</h3>
+        <p>Toinen havaittu este on integraatioprojektien tyypillisesti aiheuttama epävarmuus. Jo sana integraatio tuo mieleen projektin, joka maksaa satoja tuhansia ellei miljoonia euroja, kestää kuukausi- tai vuositolkulla, eikä lopputuloksesta edes ole varmuutta.</p>
+        <p>Yksi tämän hankkeen tavoitteista oli osoittaa, että sovellusten käynnistäminen potilastietojärjestelmästä on erilainen integraatio. Itse asiassa, ei pitäisi puhua lainkaan integraatiosta, vaan pikemminkin sovellusten asennuksesta, konfiguroinnista, tai vain käyttöönotosta.</p>
+        <p>Terveydenhuollon palveluntuottajien tietohallinnoilla on ollut jopa käytäntöjä, joiden mukaan mitään integraatioita ei toteuteta, ennen kuin integroitavan palvelun kliininen käyttö ja sitä käyttävien ammattilaisten tyytyväisyys on validoitu (jopa vuoden mittaisen) koekäytön aikana. Toisaalta terveydenhuollon ammattilaiset tuovat jatkuvasti esiin haluttomuuttaan käyttää mitään palvelua, johon täytyy erikseen kirjautua. Tämä johtaa ikävään pattitilanteeseen, jossa palveluita ei saada käyttöön.. Olisikin varsin hyödyllistä suhtautua minimikontekstinhallinnan ja SMART App Launch -toiminnallisuuden kaltaisiin integraatioihin täysin eri tavalla. Ottaen huomioon, että niiden osalta myöskään määriteltävää tietoa ei juurikaan ole, tällaisille sovellusten käyttöönotoille olisi perusteltua muodostaa omat kevyemmät prosessinsa.</p>
+        <h3 id="hankintamallit">Sovellusten hankkimisen mallit puuttuvat</h3>
+        <p>Kolmas este perusjärjestelmien toimintoja laajentavien sovellusten käyttöönotolle liittyy hankintoihin ja rahoitukseen.</p>
+        <p>Tässä projektissa liiketoimintamalleihin ja rahoitukseen liittyvät kysymykset oli tarkoituksella rajattu pois. Näitä asioita on tarkoitus edistää erikseen.</p>
+        <p>Toiveena on, että projektin esiin nostamat viestit sovellusten saatavuudesta ja niiden käyttöönoton helppoudesta ainakin poistavat aiheeseen liittyviä epävarmuuksia ja näin ollen auttavat myös hankintoja.</p>
+      </section>
+      <section id="kulku">
+        <h2>Hankkeen kulku</h2>
+        <h3 id="tyotavat">Työtavat</h3>
+        <p>Projektin kantavana periaatteena oli, että se toteutetaan toimijoiden vapaaehtoisvoimin. Integraatioiden toteutuksesta tai niiden toteuttamisessa vaadituista toimenpiteistä ei laskutettu eikä maksettu mitään. Myös sopimukset ylipäänsä pyrittiin pitämään minimissä. Joitakin sopimuksia kuitenkin tarvittiin, esimerkiksi kun sovelluskehittäjälle avattiin pääsy järjestelmätoimittajan kehitysympäristöön.</p>
+        <p>Projektilla oli viikoittainen Teams-tilannekatsaus ja etenemisestä ylläpidettiin muistiota. Käytössä oli myös projektille omistettu Slack-työtila. Projektia koordinoi HL7 Finlandin toimeksiannosta Sensotrend Oy. Koordinaattorina toimi Sonja Punnala ja Mikael Rinnetmäki toimi tarvittaessa teknisenä tukena ja yhteyksien rakentajana.</p>
+        <h3 id="osallistujat">Osallistujat</h3>
+        <p>Kaiken kaikkiaan hankkeeseen osallistui jollakin panoksella nelisenkymmentä toimijaa:</p>
+        <ul>
+          <li>Apotti</li>
+          <li>Axel Health</li>
+          <li>BCB Medical</li>
+          <li>Buddy Healthcare</li>
+          <li>CGI</li>
+          <li>Digifinland</li>
+          <li>Duodecim</li>
+          <li>Esko Systems</li>
+          <li>Fujitsu</li>
+          <li>HealthZilla</li>
+          <li>HUS</li>
+          <li>Innofactor</li>
+          <li>Innokas Medical</li>
+          <li>InterSystems</li>
+          <li>Kamu Health</li>
+          <li>Kela</li>
+          <li>Keski-Suomen sairaanhoitopiiri</li>
+          <li>LivingSkills</li>
+          <li>MealLogger</li>
+          <li>Mediconsult</li>
+          <li>Nursie Health</li>
+          <li>Orla DTX</li>
+          <li>PatientSky</li>
+          <li>PerkinElmer</li>
+          <li>Physiotools</li>
+          <li>Physitrack</li>
+          <li>ProWellness</li>
+          <li>QMS Nordic</li>
+          <li>SeeHowYouEat</li>
+          <li>Sensotrend</li>
+          <li>Soenia</li>
+          <li>Solita</li>
+          <li>Spes</li>
+          <li>Terveyskylä</li>
+          <li>THL</li>
+          <li>TietoEVRY</li>
+          <li>Tietotarha</li>
+          <li>Una</li>
+          <li>Unitary Healthcare</li>
+          <li>Wellness Warehouse Engine (W2E)</li>
+        </ul>
+        <p>Kaikki osallistujista eivät edes pyrkineet itse toteuttamaan esiteltäviä integraatioita,
+          vaan olivat pikemminkin mukana oppimassa tai perehtymässä FHIR-teknologiaan ja sen
+          mahdollisuuksiin.</p>
+        <h3 id="toteutetut">Toteutetut integraatiot</h3>
+        <p>Projektissa toteutettiin ja esiteltiin yhteensä 24 integraatiota. Lisäksi ainakin viittä
+          integraatiota edistettiin, mutta toteutus ei valmistunut HIMSS Europe -tapahtumaan
+          mennessä.</p>
+        <p>Katso <a href="https://fhir.fi/fi/demo2022/index.html#who">lista toteutuneista
+          integraatioista</a>.</p>
+        <p>Alustoista suosituin oli Epic. Tähän vaikutti Epic-integraation tarjoamat mahdollisuudet
+          niin kotimaassa Apotin kanssa kuin kansainvälisestikin, ja toisaalta avoin
+          kehitysympäristö, jossa toteutusta pääsee helposti testaamaan.</p>
+        <p>Huomattavina poimintoina mainittakoon:</p>
+        <ul>
+          <li>InterSystemsin toteuttama adapteri, jonka avulla vanhojen järjestelmien
+            minimikontekstinhallinnan toteutus saadaan käynnistämään SMART-sovelluksia.</li>
+          <li>CGI:n OMNI360, joka toteuttaa useita FHIR-rajapintoja natiivisti.</li>
+          <li>Omaolo, jonka toteutus on täysin FHIR-pohjainen ja jonka rajapintatoteutuksista voisi
+            olla suurta hyötyä sovelluskehittäjille. Omaoloa piti alunperin kehittää avoimena
+            lähdekoodina, mutta ODA-hankkeen siirtyessä SoteDigi Oy:n haltuun (nykyinen
+            DigiFinland) suurin osa toteutuksesta siirrettiin suljetuksi.</li>
+          <li>BCB Medicalin toteutus, joka sovelluksen käynnistyksen lisäksi myös siirtää
+            monipuolisesti dataa FHIR-rajapintojen kautta.</li>
+        </ul>
+        <p>Lisäksi merkittävä on HUS:n “FHIR FIRST” -linjaus, jonka pohjalta HUS käyttää ja
+          edellyttää myös yhteistyökumppaneiltaan ensisijaisesti FHIR-standardin mukaisia
+          standardirajapintoja tietojärjestelmien yhteentoimivuuden (integraatioiden)
+          toteuttamisessa.</p>
+      </section>
+      <section id="demot">
+        <h2>Demot</h2>
+        <h3 id="atkpaivat">ATK-päivät</h3>
+        <p>Projektin tuotoksia esiteltiin Jyväskylässä 9.-11.5.2022 järjestetyillä Sosiaali- ja
+          terveydenhuollon ATK-päivillä.</p>
+        <p>Pääviestinä tapahtumassa oli se, että FHIR-standardi on kypsä käyttöönotettavaksi
+          useampaankin käyttötarkoitukseen. Etenkin sovellusten käynnisty
+          potilastietojärjestelmästä SMART App Launch -määrittelyn avulla on nopea ja vaivaton
+          toteuttaa. SMART-määrittelyn mukaista sovelluksen liittämistä potilastietojärjestelmää
+          ei pitäisikään ajatella integraatioprojektina vaan pikemminkin sovelluksen
+          konfigurointina.</p>
+        <p>Usealla projektiin osallistuneella taholla oli oma ständinsä tapahtumassa, joillakin
+          jopa aiheeseen liittyvä puheenvuoro.</p>
+        <p>Tapahtumaa varten oli toteutettu erikseen esite, jota jaeltiin tapahtuman
+          sisääntuloaulassa ja osallistujien ständeillä. Lisäksi jaossa oli FHIR-aiheisia
+          pinssejä ja tarroja.</p>
+        <p>Maanantaina ennen tapahtuman Get Together -tilaisuutta järjestettiin projektin
+          esittelytilaisuus. Tilaisuuteen osallistui nelisenkymmentä henkilöä.</p>
+        <figure>
+          <img src="" />
+          <figcaption></figcaption>
+        </figure>
+        <p>Tiistaina ja keskiviikkona järjestettiin ohjatut FHIR Walk With Me -kiertokävelyt, jotka
+          johdattivat projektiin osallistuneiden tahojen ständeille. Tarkoituksena oli antaa
+          yleiskuva kaikista eri toteutuksista. Tiistain kävelylle osallistui toistakymmentä,
+          keskiviikon kävelylle noin kaksikymmentä vierasta</p>
+        <p>Projektia esiteltiin fhir-fi-sivuston avulla, jossa oli yleiskuva kaikista
+          toteutetuista integraatioista, suurimmasta osasta myös tarkempi selonteko.</p>
+        <h3 id="himss">HIMSS Europe</h3>
+        <p>HIMSS Europe -tapahtumaan Helsingin Messukeskuksessa 14.-16.6.2022 osallistu
+          huomattavasti vähemmän hankkeessa mukana olleita toimijoita.</p>
+        <p>Projektista kerrottiin useammassa esityksessä niin Suomi-paviljongin lavalla kuin osana
+          virallista HIMSS-ohjelmaakin.</p>
+        <p>Tapahtuman yleisölle ei niinkään tarvinnut kertoa mitä FHIR- tai SMART-määrittelyt ovat.
+          Pääviestinä olikin kertoa FHIR-määrittelyiden käyttöönoton tilanteesta Suomessa ja myös
+          aktiivisesta paikallisesta yhteisöstä.</p>
+        <p>Ennen HIMSS Europen alkua projektia esittelevä fhir.fi-sivusto päivitettiin
+          englanninkieliseksi ja englanti asetettiin sivuston oletuskieleksi.</p>
+        <p>Tapahtumaan ei tehty erillistä esitettä eikä tapahtuman aikana järjestetty opastettuja
+          kiertokävelyitä. Tapahtumaan osallistuneet näytteilleasettajat jakoivat pinssejä ja
+          tarroja ständeillään.</p>
+      </section>
+      <section id="tulevaisuus">
+        <h2>Tästä eteenpäin</h2>
+        <p>Vuoden 2022 FHIR Demo voidaan nähdä jatkumona vuoden 2010 ATK-päivien IHE-demolle ja
+          vuoden 2016 ensimmäiselle FHIR-demolle. Kyseessä olisi näin ollen kuuden vuoden välein
+          järjestettävä tapahtuma, sessennaali. Vuoden 2028 ATK-päiviä odotellessa voidaan toki
+          tehdä jotain muutakin.</p>
+        <h3 id="ohituskaista">Ohituskaista sovellusten käyttöönotolle</h3>
+        <p>Hankkeen aikana ja sen kautta saatiin hyvää näyttöä siitä, että FHIR-sovelluste
+          toteuttaminen ja liittäminen perusjärjestelmiin sujuu standardin ansiosta vaivattomasti
+          ja ilman varsinaisia integraatioponnistuksia.</p>
+        <p>Tätä viestiä olisi hyvä levittää laajemminkin esimerkiksi hyvinvointialueiden
+          tietohallinnoille ja inhouse-yhtiöille.</p>
+        <p>HL7 Finlandin sisällä ainakin Personal Health SIG voisi edistää keskustelua
+          sovellustoimittajien kanssa.</p>
+        <h3 id="hankintakaytannot">Sovellusten hankintakäytännöt</h3>
+        <p>Jo hankkeen aikana on sen rinnalle käynnistetty toista aktiviteettia, joka tähtää
+          sovellusten hankkimisen selkeyttämiseen.</p>
+        <p>Koronapandemian aikana sosiaali- ja terveydenhuollossa otettiin jo merkittävä digiloikka
+          ja videovastaanotot, chatbotit ja sähköiset oirearviot yleistyivät vauhdilla. Tällaiset
+          palvelut ovat osa perusinfrastruktuuria ja niitä voidaan hankkia pitkälti samoin kuin
+          muitakin perusvälineitä, kuten puhelimet ja puhelinliittymät, tietokoneet ja niiden tuki
+          ja ylläpito, tai vaikkapa sähköposti.</p>
+        <p>Toinen sovellusten luokka ovat etäseurantapalvelut ja tuetun omahoidon ratkaisut. Nämä
+          sovellukset rinnastuvat hoitotarvikkeiden hankintaan. Ne on tyypillisesti hankittu
+          kuntien, kuntayhtymien tai sairaanhoitopiirien kilpailuttamina ja jaeltu esimerkiksi
+          kunnallisen tarvikejakelun kautta. Tuo malli sopii osin myös sovelluksille. Haasteena on,
+          että rajatumman käyttäjäkunnan sovellusten osalta kilpailutusprosessista aiheutuva vaiva
+          on yleiskäyttöisiä palveluita suurempi suhteessa sekä käyttäjäjoukkoon että kustannuksiin.
+          Sovellusten jakelulle (kenellä on oikeus käyttää sovellusta ja kuinka tämä käyttöoikeus
+          myönnetään) ei ole yleisiä käytäntöjä.</p>
+        <p>Kolmas ja haastavin luokka ovat todelliset digitaaliset terapiat. Esimerkiksi
+          mielenterveyden sovellus, joka opettaa ihmisen ajattelemaan uudella tavalla muutaman
+          kuukauden käyttöjakson aikana. Tällaiset sovellukset rinnastuvat lääkkeisiin, mutt
+          niille ei ole olemassa esimerkiksi Kela-korvattavuutta eikä hintalautakuntaa.</p>
+        <p>Euroopassa otetaan nyt käyttöön Saksan DiGA-malliin pohjautuvia käytäntöjä, joissa
+          lääkäri voi määrätä sovelluksen reseptillä ja vakuutusyhtiöt maksavat sovellusten 
+          kustannukset. Merkittävää mallissa on myös ensimmäisen vuoden jakso, jonka aikana voi
+          tuetusti hankkia tarvittavan tutkimusnäytön sovelluksen tuottamista hyödyistä.</p>
+        <p>Suuri osa viime aikoina esitellyistä malleista perustuu vakuutusyhtiöiden merkittävään
+          rooliin. Olisi äärimmäisen tärkeää saada vastaava malli sovitettua pohjoismaiseen,
+          verovaroin kustannettuun vahvaan julkiseen terveydenhuoltoon nojaavaan malliin.</p>
+        <p>Näistä aiheista on jo keskusteltu HL7 Finlandin aktiivien keskuudessa. Ajatukset eivät
+          vielä ole konkretisoituneet organisoiduksi tekemiseksi.</p>
+        <h3 id="sivusto">FHIR.fi-sivusto</h3>
+        <p>Sivusto rakennettiin GitHub-alustalle, ja sivusto tarjoillaan GitHub Pages 
+          -toiminnallisuuden avulla. Projektia varten rekisteröitiin domain fhir.fi, Clouden Oy:n
+          WebCat-palvelun kautta. Lisäksi projektille luotiin Slack-työtila. Kaikki rekisteröinnit
+          on hoidettu GMail-osoitteen fhir.finland@gmail.com kautta. Tällä hetkellä
+          sähköpostitunnuksen käyttöoikeudet ovat FHIR-lähettiläällä. Sivuston ylläpito voidaa
+          helposti ja siististi siirtää toiselle taholle.</p>
+        <p>Sivustoa voidaan hyvin käyttää jatkossa myös muusta kansallisesta FHIR-tekemisestä
+          tiedottamiseen ja työn koordinointiin.</p>
+      </section>
+      <section id="linkit">
+        <h2>Linkit ja lisämateriaalit</h2>
+        <ul>
+          <li><a href="demo2022/index.html">Projektin aikainen FHIR.fi-sivusto</a></li>
+          <li><a
+            href="https://docs.google.com/document/d/1jER6QeXjLlH802_NklMl9VxPqd8a2aNVXatkzLcERD4/edit?usp=sharing">Projektin
+            muistio</a></li>
+          <li>Tarrat, pinssit ja esitteet löytyvät <a
+            href="https://drive.google.com/drive/folders/1AT9nSwLH7s3qdUYYKFkUFOosJms59Dxh?usp=sharing">Google
+            Drivesta</a>.</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>Raportin työstivät:</p>
+      <ul>
+        <li><address>Mikael Rinnetmäki, <a href="mailto:mikael@sensotrend.com">mikael@sensotrend.com</a></address></li>
+        <li><address>Sonja Punnala, <a href="mailto:sonja@sensotrend.com">sonja@sensotrend.com</a></address></li>
+      </ul>
+    </footer>
+  </article>
+</body>
+
+</html>
