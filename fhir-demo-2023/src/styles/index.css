@@ -1,0 +1,22 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#gatsby-focus-wrapper {
+  max-width: 36rem;
+  margin: auto;
+}
+
+#fhir-demo {
+  text-align: center;
+  font-size: xx-large;
+}
+
+#fhir-demo img {
+  margin: 2em 0;
+}
+
+#fhir-demo h1 {
+  font-size: 200%;
+}
+
