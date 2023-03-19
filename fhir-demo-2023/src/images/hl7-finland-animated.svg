@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2.5 11 437.8 52">
+  <defs>
+    <style>
+      path {
+        stroke: black;
+        stroke-width: 3;
+        fill: none;
+        stroke-dasharray: 180;
+        stroke-dashoffset: 180;
+        animation: dash 0.5s linear forwards;
+      }
+      path:nth-child(1) {animation-delay: 0s; }
+      path:nth-child(2) {animation-delay: 0.25s; }
+      path:nth-child(3) {animation-delay: 0.3s; }
+      path:nth-child(4) {animation-delay: 0.5s; }
+      path:nth-child(5) {animation-delay: 0.65s; }
+      path:nth-child(6) {animation-delay: 0.7s; }
+      path:nth-child(7) {animation-delay: 1.1s; }
+      path:nth-child(8) {animation-delay: 1.25s; }
+      path:nth-child(9) {animation-delay: 1.5s; }
+      path:nth-child(10) {animation-delay: 1.9s; }
+      .fin {
+        stroke:#c51a1b;
+      }
+      @keyframes dash {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+      @media screen and (prefers-reduced-motion: reduce) {
+        path { animation: none !important; }
+      }
+      .ref {
+        stroke-width: 0;
+        fill: yellow;
+      }
+      @media (prefers-color-scheme: dark) {
+        path {
+          stroke: white;
+        }
+      }
+
+    </style>
+    <clipPath id="logo-clip">
+      <path class="ref" d="M34.66,33.25V12.81h3.07V61H34.66V36.12H5.41V61H2.35V12.81H5.41V33.25M58.81,58.09H71.07V61H55.74V12.81h3.07M83.53,15.68V12.81h34.94L84,61.48l-2.36-1.85,31.17-43.95Z"/>
+      <path class="ref" d="M151.24,15.68v17.5h15.9v2.87h-15.9V61h-3.07V12.81h19.42v2.87M187.26,61h-3.07V12.81h3.07M248.77,62.57l-40.43-43V61h-3.07V12.17L245.7,54.84v-42h3.07Z"/>
+      <path class="ref" d="M269.85,58.09h12.26V61H266.78V12.81h3.07M300.06,45.13,293.61,61h-3.13l20.18-49.76L330.78,61h-3.13L321.2,45.13ZM310.66,19l-9.45,23.25h18.84M387.44,62.57,347,19.58V61h-3.07V12.17l40.43,42.67v-42h3.07M405.45,12.81h8.69c7,0,12.58,1.15,17.88,6.07A24.42,24.42,0,0,1,439.69,37a24.24,24.24,0,0,1-7.41,17.63c-5.3,5.11-11,6.39-18.14,6.39h-8.69Zm8.62,45.29c6.32,0,11.56-1.28,16.16-5.81a21.77,21.77,0,0,0-.58-31.36c-4.6-4.15-9.58-5.24-15.58-5.24h-5.56V58.09Z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#logo-clip)">
+    <path d="M4,13v48m0,-26.28h32m0,-22v48"/>
+    <path d="M57.4,13v46.5h13.5"/>
+    <path d="M83.7,14.2h32.05l-32.7,46.3"/>
+    <path class="fin" d="M149.7,61v-46.7h17.65m-16.5,20.35h16.1"/>
+    <path class="fin" d="M185.7,13v48"/>
+    <path class="fin" d="M206.9,61v-45l40.4,42.7v-45.7"/>
+    <path d="M268.4,13v46.5h13.6"/>
+    <path d="M292,61.5l18.7,-46l18.7,46m-30,-17.9h22"/>
+    <path d="M345.5,61v-45l40.5,42.7v-45.7"/>
+    <path d="M407,61v-46.7h8.8a22.6 22.6 0 0 1 0 45.2h-8"/>
+  </g>
+</svg>
