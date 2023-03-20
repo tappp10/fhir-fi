@@ -34,7 +34,7 @@ export function FeatureFilter() {
       <h3>Filter demos by features:</h3>
       <ul className="features">
         {FeatureList.map(f => (
-          <><Feature feature={f} />{' '}</>
+          <React.Fragment key={f}><Feature feature={f} />{' '}</React.Fragment>
         ))}
       </ul>
       <hr />
