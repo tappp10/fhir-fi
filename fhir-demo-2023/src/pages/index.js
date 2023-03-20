@@ -254,11 +254,10 @@ const IndexPage = () => {
               <li>
                 22.-25.5.2023 <a href="https://en.vitalis.nu/">Vitalis</a>, Gothenburg, Sweden
               </li>
-              {/*
-              <!--
-              <li>FHIR DevDays</li>
-              -->
-              */}
+              <li>
+                6.-9.6.2023 <a href="https://www.devdays.com">FHIR DevDays</a>, Amsterdam, the
+                Netherlands
+              </li>
               <li>
                 12.-14.6.2023 <a href="https://radicalhealthfestival.messukeskus.com/">Radical
                 Health Festival</a>, Helsinki, Finland</li>
