@@ -1,9 +1,8 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 
 import Article from '../components/Article';
-import Features, { FeatureFilter, FeaturesContext } from '../components/Features';
-import * as AvailableFeatures from "../components/FeatureList";
+import Features, { /* FeatureFilter, */ FeaturesContext } from '../components/Features';
 import fhirLogo from '../images/fhir.svg';
 import mikaelx1 from '../images/MikaelRinnetmaki.jpg';
 import mikaelx2 from '../images/MikaelRinnetmaki2x.jpg';
