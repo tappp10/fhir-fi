@@ -10,12 +10,11 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build",
-    "prefix": "gatsby build --prefix-paths",
-    "clear": "rimraf ../en/demo2023/",
-    "copy": "copyfiles public ../en/demo2023",
-    "deploy": "npm run clear && npm run prefix && npm run copy",
-    "serve": "gatsby serve",
+    "build": "gatsby build --prefix-paths",
+    "clear": "rimraf public/* ../en/demo2023/*",
+    "copy": "copyfiles -E -V -u 1 './public/**/*' ../en/demo2023/",
+    "deploy": "npm run clear && npm run build && npm run copy",
+    "serve": "gatsby serve --prefix-paths",
     "clean": "gatsby clean"
   },
   "dependencies": {
