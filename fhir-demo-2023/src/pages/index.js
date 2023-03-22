@@ -23,6 +23,16 @@ const data = [
     ],
   },
   {
+    participant: 'BCB Medical',
+    demos: [
+    ],
+  },
+  {
+    participant: 'Buddy Healthcare',
+    demos: [
+    ],
+  },
+  {
     participant: 'CGI',
     demos: [
       /*
@@ -36,6 +46,11 @@ const data = [
     ],
   },
   {
+    participant: 'Digital Wells',
+    demos: [
+    ],
+  },
+  {
     participant: 'Fujitsu',
     demos: [
       /*
@@ -46,6 +61,11 @@ const data = [
         ),
       },
       */
+    ],
+  },
+  {
+    participant: 'Glucostratus',
+    demos: [
     ],
   },
   {
@@ -66,6 +86,16 @@ const data = [
     ],
   },
   {
+    participant: 'Kela',
+    demos: [
+    ],
+  },
+  {
+    participant: 'MealLogger',
+    demos: [
+    ],
+  },
+  {
     participant: 'Microsoft',
     demos: [
       /*
@@ -83,8 +113,20 @@ const data = [
     ],
   },
   {
+    participant: 'Mylab',
+    demos: [
+    ],
+  },
+  {
+    participant: 'ProWellness',
+    demos: [
+    ],
+  },
+  {
     participant: 'Sensotrend',
     demos: [
+    /*
+    {
       {
         features: [AvailableFeatures.MedicationAdministration, AvailableFeatures.Observation, AvailableFeatures.SMART],
         renderInfo: () => (
@@ -135,6 +177,7 @@ const data = [
           </>
         ),
       },
+    */
     ],
   },
   {
@@ -207,7 +250,9 @@ const IndexPage = () => {
         </section>
         <section id="participants">
           <h1>Participants</h1>
+          {/*
           <FeatureFilter />
+          */}
           <ul>
             {
               data.filter(
