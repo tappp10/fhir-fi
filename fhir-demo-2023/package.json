@@ -11,7 +11,10 @@
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths",
+    "prefix": "gatsby build --prefix-paths",
+    "clear": "rimraf ../en/demo2023/",
+    "copy": "copyfiles public ../en/demo2023",
+    "deploy": "npm run clear && npm run prefix && npm run copy",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
@@ -22,5 +25,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.58.3"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "rimraf": "^4.4.0"
   }
 }
