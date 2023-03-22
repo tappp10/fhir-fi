@@ -239,6 +239,7 @@ li h2 {
 }
 
 footer img {
+  height: 0.79em;
   height: 0.67lh;
   vertical-align: baseline;
   margin-bottom: -0.025lh;
