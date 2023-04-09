@@ -83,7 +83,7 @@ header, article > *, nav ul, footer p {
   margin: auto;
 }
 
-article > nav {
+article > nav:first-child {
   position: sticky;
   top: 0;
   margin: 0;
@@ -94,34 +94,34 @@ article > nav {
   color: var(--color-nav-link-invert);
 }
 
-article > nav ul {
+article > nav:first-child ul {
   text-align: right;
   padding-top: 0;
   padding-bottom: 0;
 }
 
-article > nav li {
+article > nav:first-child li {
   padding-top: 0.3em;
   padding-bottom: 0.3em;
   display: inline-block;
   margin-left: 1em;
 }
 
-article > nav li:first-of-type {
+article > nav:first-child li:first-of-type {
   margin-left: 0;
   float: left;
 }
 
-article > nav a, article > nav a:visited {
+article > nav:first-child a, article > nav:first-child a:visited {
   color: var(--color-nav-link-invert);
   text-decoration: none;
 }
 
-article > nav a:hover, article > nav a::selection {
+article > nav:first-child a:hover, article > nav:first-child a::selection {
   color: var(--color-nav-link-invert-hover);
 }
 
-article > nav a:active, article > nav a.active {
+article > nav:first-child a:active, article > nav:first-child a.active {
   color: var(--color-nav-link-invert-active);
 }
 
@@ -135,11 +135,11 @@ nav.prevNext a:hover img {
   opacity: 1;
 }
 
-nav.prevNext a:first-child {
+nav.prevNext div:first-child {
   float: left;
 }
 
-nav.prevNext a:last-child {
+nav.prevNext div:last-child {
   float: right;
 }
 
@@ -184,6 +184,10 @@ a.selected.feature {
   opacity: 1;
 }
 
+article > main {
+  min-height: calc(100vh - 1rem - 0.6rem - 3rem - 2rem);
+}
+
 section > ul {
   padding-inline-start: 0;
   list-style-type: none;
@@ -217,7 +221,7 @@ strong > ul > li {
 
 ul.hashtags {
   display: block;
-  margin-top: 1em;
+  margin: 2em 0;
   padding-inline-start: 0;
 }
 
@@ -233,9 +237,65 @@ img.decoration {
   max-height: 50vh;
 }
 
+div.media {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 3em 0 3em;
+}
+
+figure img,
+main > section > img,
+main > img,
+figure img {
+  width: 100%;
+  margin: 3em 0 3em;
+}
+
+figure {
+  margin: 1em 0 3em;
+}
+
+figure img {
+  margin: 2em 0 1em;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+img.logo {
+  width: auto;
+  max-height: 20em;
+  max-width: 100%;
+}
+
+main > img.logo,
+section > img.logo {
+  display: block;
+  text-align: center;
+  margin: 3em auto;
+}
+
+.demo h1 {
+  margin: 2em 0 5em;
+}
+
+.demo h2,
 li h2 {
   font-family: 'Big Shoulders Display', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: larger;
+}
+
+.demo h2 {
+  font-size: 2.8rem;
+}
+
+.demo section {
+  margin-top: 6em;
+}
+
+.demo .hashtags {
+  margin-bottom: 5em;
 }
 
 footer img {
@@ -256,48 +316,84 @@ footer a:first-of-type {
 
 /* @media (min-width: calc(var(--content-width) + 30rem)) { */
 @media (min-width: 67rem) {
-  nav.prevNext a {
+  article > nav.prevNext {
+    display: none;
+  }
+
+  nav.prevNext div {
     display: block;
     position: fixed;
     top: 0;
     min-width: 10rem;
     width: calc((100vw - 47rem) / 2);
-    height: 100vh;
+    height: calc(100vh + 1em);
     text-align: center;
-    line-height: calc(100vh + 1em);
   }
 
-  nav.prevNext a:hover, nav.prevNext a:active {
+  nav.prevNext a {
+    display: block;
+    position: absolute;
+    width: 9rem;
+    max-width: calc((100vw - 47rem - 18rem) / 4);
+    padding: 4em;
+    text-align: center;
+    margin: auto;
+    top: calc(50vh - 6em);
+    border-radius: 9px;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+  }
+
+  nav.prevNext div:hover a, nav.prevNext a:hover, nav.prevNext a:active {
     background-color: rgb(255, 225, 120, 0.05);
+    border-color: red;
   }
 
-  nav.prevNext a:first-child {
+  nav.prevNext div:first-child {
     left: 0;
   }
-  nav.prevNext a:last-child {
+  nav.prevNext div:last-child {
     right: 0;
   }
+  nav.prevNext div:first-child a {
+    right: calc((100vw - 47rem - 18rem) / 4);
+  }
+  nav.prevNext div:last-child a {
+    left: calc((100vw - 47rem - 18rem) / 4);
+  }
+
+
 }
 
 @media (max-width: 600px) {
 
-  article > nav {
+  article > nav:first-child {
     position: inherit;
   }
 
-  article > nav ul {
+  article > nav:first-child ul {
     text-align: left;
   }
 
-  article > nav li:first-of-type {
+  /*
+  article > nav:first-child li {
+    margin-left: 0;
+    margin-right: 1em;
+  }
+  
+  article > nav:first-child li:last-of-type {
+    margin-right: 0;
+  }
+  */
+  article > nav:first-child li {
+    margin: 0;
+    display: block;
+  }
+
+  article > nav:first-child li:first-of-type {
     float: none;
   }
 
-  /*
-  section {
-    padding-top: 9em;
-  }
-  */
 
   #about > img {
     margin: 3em auto;

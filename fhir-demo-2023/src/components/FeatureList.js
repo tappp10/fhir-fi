@@ -12,6 +12,7 @@ export const Medication = 'Medication';
 export const MedicationAdministration = 'MedicationAdministration';
 export const MedicationStatement = 'MedicationStatement';
 export const Observation = 'Observation';
+export const Opensource = 'OpenSource';
 export const Organization = 'Organization';
 export const Patient = 'Patient';
 export const Practitioner = 'Practitioner';
@@ -37,6 +38,7 @@ const allFeatures = [
   MedicationAdministration,
   MedicationStatement,
   Observation,
+  Opensource,
   Organization,
   Patient,
   Practitioner,

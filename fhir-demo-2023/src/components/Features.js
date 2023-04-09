@@ -47,7 +47,7 @@ export default function Features({ list }) {
     return null;
   }
   return (
-    <ul className="hashtags">
+    <ul className="hashtags" title="Hashtags">
       {list.map(f => (<React.Fragment key={f}><Feature feature={f} />{' '}</React.Fragment>))}
     </ul>
   );

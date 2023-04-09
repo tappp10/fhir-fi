@@ -2,22 +2,33 @@ import { Link } from "gatsby";
 import * as React from "react"
 
 import Article from "../components/Article";
-import Features from "../components/Features";
 import fhirLogo from "../images/fhir.svg";
 
-export default function Demo({ children, features }) {
+export default function Demo({ children }) {
   return (
     <Article>
       <header>
         <nav className="prevNext">
-          <Link to="">Previous <img src={fhirLogo} alt="" /></Link> 
-          <Link to=""><img src={fhirLogo} alt="" /> Next</Link> 
+          <div>
+            <Link to="">Previous <img src={fhirLogo} alt="" /></Link> 
+          </div>
+          <div>
+            <Link to=""><img src={fhirLogo} alt="" /> Next</Link> 
+          </div>
         </nav>
       </header>
-      <main>
+      <main className="demo">
         { children }
-        <Features list={features} />
       </main>
+      <nav className="prevNext">
+        <div>
+          <Link to="">Previous <img src={fhirLogo} alt="" /></Link> 
+        </div>
+        <div>
+          <Link to=""><img src={fhirLogo} alt="" /> Next</Link> 
+        </div>
+      </nav>
+      <img className="decoration" src={fhirLogo} alt="" />
     </Article>
   );
 }
