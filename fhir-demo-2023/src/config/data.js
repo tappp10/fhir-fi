@@ -8,7 +8,7 @@ export const demos = {
       FeatureList.SMART,
     ],
   },
-  ['bcb-medical']: {
+  'bcb-medical': {
     name: 'BCB Medical',
     features: [
       FeatureList.SMART,
@@ -29,7 +29,7 @@ export const demos = {
       FeatureList.SMART,
     ],
   },
-  ['digital-wells']: {
+  'digital-wells': {
     name: 'Digital Wells',
     features: [
       FeatureList.Observation,
@@ -37,6 +37,12 @@ export const demos = {
   },
   esko: {
     name: 'Esko Systems',
+    features: [
+      FeatureList.SMART,
+    ],
+  },
+  duodecim: {
+    name: 'Duodecim',
     features: [
       FeatureList.SMART,
     ],
@@ -53,7 +59,7 @@ export const demos = {
       FeatureList.SMART,
     ],
   },
-  ['health-village']: {
+  'health-village': {
     name: 'Health Village (Terveyskylä)',
     features: [
       FeatureList.SMART,
