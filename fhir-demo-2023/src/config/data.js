@@ -35,6 +35,12 @@ export const demos = {
       FeatureList.Observation,
     ],
   },
+  esko: {
+    name: 'Esko Systems',
+    features: [
+      FeatureList.SMART,
+    ],
+  },
   fujitsu: {
     name: 'Fujitsu',
     features: [
@@ -43,6 +49,12 @@ export const demos = {
   },
   glucostratus: {
     name: 'Glucostratus',
+    features: [
+      FeatureList.SMART,
+    ],
+  },
+  ['health-village']: {
+    name: 'Health Village (Terveyskylä)',
     features: [
       FeatureList.SMART,
     ],
@@ -61,7 +73,7 @@ export const demos = {
     ],
   },
   meallogger: {
-    name: 'MealLogger',
+    name: 'Meallogger',
     features: [
       FeatureList.SMART,
     ],
@@ -77,6 +89,15 @@ export const demos = {
   mylab: {
     name: 'Mylab',
     features: [
+    ],
+  },
+  omaolo: {
+    name: 'Omaolo',
+    features: [
+      FeatureList.Appointment,
+      FeatureList.FHIR,
+      FeatureList.Schedule,
+      FeatureList.Slot,
     ],
   },
   prowellness: {
@@ -95,8 +116,14 @@ export const demos = {
       FeatureList.SMART,
     ],
   },
+  una: {
+    name: 'Una',
+    features: [
+      FeatureList.SMART,
+    ],
+  },
   w2e: {
-    name: 'Wellness Warehouse Engine (W2E)',
+    name: 'W2E',
     features: [
       FeatureList.Observation,
     ],
