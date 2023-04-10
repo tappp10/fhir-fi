@@ -19,26 +19,35 @@ export default function Demo({ children, location }) {
 
   const myIndex = selectedDemos.indexOf(pathname.replaceAll('/', ''));
 
-
-  console.log({ pathname, selectedDemos, myIndex, next: selectedDemos[myIndex + 1] });
-
   const prevNextNav = (
     <nav className="prevNext">
       <div>
-        <Link
-          to={myIndex > 0 ? `/${selectedDemos[myIndex - 1]}${search}` : ''}
-          disabled={myIndex <= 0}
-        >
-          Previous <img src={fhirLogo} alt="" />
-        </Link>
+        {myIndex > 0
+        ? (
+          <Link to={`/${selectedDemos[myIndex - 1]}${search}`}>
+            Previous <img src={fhirLogo} alt="" />
+          </Link>
+        )
+        : (
+          <Link to={`/${selectedDemos[selectedDemos.length - 1]}${search}`}>
+            Last <img src={fhirLogo} alt="" />
+          </Link>
+        )
+        }
       </div>
       <div>
-        <Link
-          to={myIndex < (selectedDemos.length - 1) ? `/${selectedDemos[myIndex + 1]}${search}` : ''}
-          disabled={myIndex < (selectedDemos.length - 1)}
-        >
-          Next <img src={fhirLogo} alt="" />
-        </Link>
+        {myIndex < (selectedDemos.length - 1)
+        ? (
+          <Link to={`/${selectedDemos[myIndex + 1]}${search}`}>
+            Next <img src={fhirLogo} alt="" />
+          </Link>
+        )
+        : (
+          <Link to={`/${selectedDemos[0]}${search}`}>
+            First<img src={fhirLogo} alt="" />
+          </Link>
+        )
+        }
       </div>
     </nav>
   );

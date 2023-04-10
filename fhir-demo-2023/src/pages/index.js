@@ -14,7 +14,6 @@ export default function IndexPage({ location }) {
   const { search } = location;
   const { selectedFeatures = {} } = React.useContext(FeaturesContext);
   const features = Object.keys(selectedFeatures);
-  console.log({ features });
   return (
     <>
       <Article>

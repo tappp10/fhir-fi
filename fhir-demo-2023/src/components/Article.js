@@ -1,17 +1,12 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 
-import { FeaturesContext } from '../components/Features';
 import hl7finland from '../images/hl7-finland.svg';
 import "@fontsource/big-shoulders-display/900.css";
 import "@fontsource/big-shoulders-text";
 import '../styles/index.css';
 
 const Article = ({ children, ...rest }) => {
-  const { selectedFeatures = {} } = React.useContext(FeaturesContext);
-  const featureList = Object.keys(selectedFeatures);
-  console.log({ selectedFeatures, featureList });
-
   return (
     <>
       <article {...rest}>

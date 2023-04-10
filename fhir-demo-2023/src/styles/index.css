@@ -152,6 +152,17 @@ section h1 {
   font-size: 400%;
 }
 
+.demo > h1 > a > img {
+  max-width: 100%;
+  max-height: 20vh;
+  display: block;
+  margin: auto;
+}
+
+section h2 a {
+  font-size: 150%;
+}
+
 /*
 section h1:hover::after {
   content: ' #';
@@ -213,7 +224,6 @@ section ul ul li p {
 section ul ul .hashtags {
   margin-bottom: 0.5em;
 }
-
 
 strong > ul > li {
   margin-bottom: 0.5em;

@@ -8,7 +8,7 @@ export const demos = {
       FeatureList.SMART,
     ],
   },
-  bcbMedical: {
+  ['bcb-medical']: {
     name: 'BCB Medical',
     features: [
       FeatureList.SMART,
@@ -29,7 +29,7 @@ export const demos = {
       FeatureList.SMART,
     ],
   },
-  digitalWells: {
+  ['digital-wells']: {
     name: 'Digital Wells',
     features: [
       FeatureList.Observation,
