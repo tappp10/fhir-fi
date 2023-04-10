@@ -17,21 +17,26 @@ export function FeaturesContextProvider({
   location
 }) {
 
-  // Init features from the URL...
-  const { search } = location;
-  const featuresUrlParam = search.match(/[?&]features=([^&]+)/) || [];
-  const decoded = decodeURIComponent(featuresUrlParam[1] || '');
-  const urlState = (decoded.length ? decoded.split(',') : []).reduce((o, f) => {
-    o[f] = true;
-    return o;
-  }, {});
-
-  const [selectedFeatures, setSelectedFeatures] = React.useState(initialState || urlState);
+  const [selectedFeatures, setSelectedFeatures] = React.useState(initialState || {});
 
   const state = Object.freeze({
     selectedFeatures,
     setSelectedFeatures,
   });
+
+  // Init features from the URL...
+  React.useEffect(() => {
+    const { search } = location;
+    const featuresUrlParam = search.match(/[?&]features=([^&]+)/) || [];
+    const decoded = decodeURIComponent(featuresUrlParam[1] || '');
+    if (decoded.length) {
+      const urlState = decoded.split(',').reduce((o, f) => {
+        o[f] = true;
+        return o;
+      }, {});
+      setSelectedFeatures(urlState);
+    }
+  }, [location, setSelectedFeatures]);
 
   return (
     <FeaturesContext.Provider value={state}>

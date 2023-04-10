@@ -163,6 +163,15 @@ section h2 a {
   font-size: 150%;
 }
 
+article > header > .hashtags {
+  margin: 0;
+}
+
+article > header > h3 {
+  margin: 0.5em 0;
+}
+
+
 /*
 section h1:hover::after {
   content: ' #';

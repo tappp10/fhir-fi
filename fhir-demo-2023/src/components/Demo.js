@@ -1,25 +1,29 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
+import { Link, withPrefix } from 'gatsby';
 
 import Article from './Article';
 import { demos } from '../config/data';
 import { FeaturesContext } from './Features';
 import fhirLogo from '../images/fhir.svg';
+import Features from './Features';
+
+const prefix = withPrefix('/');
 
 export default function Demo({ children, location }) {
 
   const { search, pathname } = location;
 
   const { selectedFeatures = {} } = React.useContext(FeaturesContext);
+
   const features = Object.keys(selectedFeatures).sort();
 
   const selectedDemos = Object.keys(demos).filter(
     (k) => !features.length || demos[k].features?.some((f => features.some(s => s === f)))
   );
 
-  const myIndex = selectedDemos.indexOf(pathname.replaceAll('/', ''));
+  const myIndex = selectedDemos.indexOf(pathname.replace(prefix, '').replaceAll('/', ''));
 
-  const prevNextNav = (
+  const prevNextNav = selectedDemos.length > 1 ?(
     <nav className="prevNext">
       <div>
         {myIndex > 0
@@ -50,11 +54,22 @@ export default function Demo({ children, location }) {
         }
       </div>
     </nav>
-  );
+  ) : null;
 
   return (
     <Article>
       <header>
+        {features.length
+        ? (
+          <>
+            <hr />
+            <h3>{`Showing demos with feature${features.length > 1 ? 's' : ''}:`}</h3>
+            <Features list={features} />
+            <hr />
+          </>
+        )
+        : null
+        }
         {prevNextNav}
       </header>
       <main className="demo">
