@@ -2,16 +2,14 @@ import * as React from 'react';
 
 import Demo from '../components/Demo';
 import Features from '../components/Features';
-import * as FeatureList from '../components/FeatureList';
+import { demos } from '../config/data';
 import buddyLogo from '../images/buddy.png';
 
 export const Head = () => <title>FHIR Demo 2023: Buddy Healthcare</title>;
 
 export default function Buddy({ location }) {
-  const features = [
-    FeatureList.SMART,
-  ];
-  
+  const features = demos.buddy.features;
+    
   return (
     <Demo features={features} location={location}>
       <h1>

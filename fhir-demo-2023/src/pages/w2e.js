@@ -2,16 +2,13 @@ import * as React from 'react';
 
 import Demo from '../components/Demo';
 import Features from '../components/Features';
-import * as FeatureList from '../components/FeatureList';
+import { demos } from '../config/data';
 import w2eLogo from '../images/w2e.jpeg';
 
 export const Head = () => <title>FHIR Demo 2023: W2E</title>;
 
 export default function W2e({ location }) {
-  const features = [
-    FeatureList.Observation,
-    FeatureList.SMART,
-  ];
+  const features = demos.w2e.features;
   
   return (
     <Demo features={features} location={location}>

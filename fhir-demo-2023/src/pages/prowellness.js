@@ -2,15 +2,13 @@ import * as React from 'react';
 
 import Demo from '../components/Demo';
 import Features from '../components/Features';
-import * as FeatureList from '../components/FeatureList';
+import { demos } from '../config/data';
 import prowellnessLogo from '../images/prowellness.png';
 
 export const Head = () => <title>FHIR Demo 2023: ProWellness</title>;
 
 export default function ProWellness({ location }) {
-  const features = [
-    FeatureList.SMART,
-  ];
+  const features = demos.prowellness.features;
   
   return (
     <Demo features={features} location={location}>

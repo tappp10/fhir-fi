@@ -2,18 +2,13 @@ import * as React from 'react';
 
 import Demo from '../components/Demo';
 import Features from '../components/Features';
-import * as FeatureList from '../components/FeatureList';
+import { demos } from '../config/data';
 import cgiLogo from '../images/cgi.svg';
 
 export const Head = () => <title>FHIR Demo 2023: CGI</title>;
 
 export default function Cgi({ location }) {
-  const features = [
-    FeatureList.Appointment,
-    FeatureList.Schedule,
-    FeatureList.Slot,
-    FeatureList.SMART,
-  ];
+  const features = demos.cgi.features;
   
   return (
     <Demo features={features} location={location}>

@@ -2,15 +2,13 @@ import * as React from 'react';
 
 import Demo from '../components/Demo';
 import Features from '../components/Features';
-import * as FeatureList from '../components/FeatureList';
+import { demos } from '../config/data';
 import healthVillageLogo from '../images/health-village.png';
 
 export const Head = () => <title>FHIR Demo 2023: Health Village (Terveyskylä)</title>;
 
 export default function HealthVillage({ location }) {
-  const features = [
-    FeatureList.Observation,
-  ];
+  const features = demos['health-village'].features;
   
   return (
     <Demo features={features} location={location}>

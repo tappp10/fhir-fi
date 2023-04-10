@@ -4,7 +4,10 @@ export const demos = {
   apotti: {
     name: 'Apotti',
     features: [
+      FeatureList.Encounter,
       FeatureList.FHIR,
+      FeatureList.Patient,
+      FeatureList.Practitioner,
       FeatureList.SMART,
     ],
   },
@@ -24,6 +27,16 @@ export const demos = {
     name: 'CGI',
     features: [
       FeatureList.Appointment,
+      FeatureList.Condition,
+      FeatureList.Consent,
+      FeatureList.Encounter,
+      FeatureList.Immunization,
+      FeatureList.Location,
+      FeatureList.Observation,
+      FeatureList.Organization,
+      FeatureList.Patient,
+      FeatureList.Practitioner,
+      FeatureList.Procedure,
       FeatureList.Schedule,
       FeatureList.Slot,
       FeatureList.SMART,
@@ -76,11 +89,16 @@ export const demos = {
     name: 'Kela',
     features: [
       FeatureList.FHIR,
+      FeatureList.MedicationStatement,
+      FeatureList.Observation,
+      FeatureList.Patient,
     ],
   },
   meallogger: {
     name: 'Meallogger',
     features: [
+      FeatureList.Patient,
+      FeatureList.Practitioner,
       FeatureList.SMART,
     ],
   },
@@ -101,6 +119,7 @@ export const demos = {
     name: 'Omaolo',
     features: [
       FeatureList.Appointment,
+      FeatureList.Patient,
       FeatureList.FHIR,
       FeatureList.Schedule,
       FeatureList.Slot,
@@ -112,6 +131,15 @@ export const demos = {
       FeatureList.SMART,
     ],
   },
+  solita: {
+    name: 'Solita',
+    features: [
+      FeatureList.Appointment,
+      FeatureList.FHIR,
+      FeatureList.Schedule,
+      FeatureList.Slot,
+    ],
+  },
   sensotrend: {
     name: 'Sensotrend',
     features: [
@@ -119,6 +147,10 @@ export const demos = {
       FeatureList.MedicationAdministration,
       FeatureList.Opensource,
       FeatureList.Observation,
+      FeatureList.Patient,
+      FeatureList.Practitioner,
+      FeatureList.Encounter,
+      FeatureList.Organization,
       FeatureList.SMART,
     ],
   },

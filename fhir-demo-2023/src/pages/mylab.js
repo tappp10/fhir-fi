@@ -2,14 +2,13 @@ import * as React from 'react';
 
 import Demo from '../components/Demo';
 import Features from '../components/Features';
-import * as FeatureList from '../components/FeatureList';
+import { demos } from '../config/data';
 import mylabLogo from '../images/mylab.png';
 
 export const Head = () => <title>FHIR Demo 2023: Mylab</title>;
 
 export default function Mylab({ location }) {
-  const features = [
-  ];
+  const features = demos.mylab.features;
   
   return (
     <Demo features={features} location={location}>

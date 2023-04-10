@@ -2,15 +2,13 @@ import * as React from 'react';
 
 import Demo from '../components/Demo';
 import Features from '../components/Features';
-import * as FeatureList from '../components/FeatureList';
+import { demos } from '../config/data';
 import dwLogo from '../images/digital-wells.png';
 
 export const Head = () => <title>FHIR Demo 2023: Digital Wells</title>;
 
 export default function DigitalWells({ location }) {
-  const features = [
-    FeatureList.Observation,
-  ];
+  const features = demos['digital-wells'].features;
   
   return (
     <Demo features={features} location={location}>

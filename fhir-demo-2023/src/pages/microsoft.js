@@ -2,17 +2,13 @@ import * as React from 'react';
 
 import Demo from '../components/Demo';
 import Features from '../components/Features';
-import * as FeatureList from '../components/FeatureList';
+import { demos } from '../config/data';
 import microsoftLogo from '../images/microsoft.svg';
 
 export const Head = () => <title>FHIR Demo 2023: Microsoft</title>;
 
 export default function Microsoft({ location }) {
-  const features = [
-    FeatureList.FHIR,
-    FeatureList.Opensource,
-    FeatureList.SMART,
-  ];
+  const features = demos.microsoft.features;
   
   return (
     <Demo features={features} location={location}>

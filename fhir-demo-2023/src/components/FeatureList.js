@@ -7,6 +7,7 @@ export const Encounter = 'Encounter';
 export const EpisodeOfCare = 'EpisodeOfCare';
 export const FHIR = 'FHIRServer';
 export const HealthcareService = 'HealthcareService';
+export const Immunization = 'Immunization';
 export const Location = 'Location';
 export const Medication = 'Medication';
 export const MedicationAdministration = 'MedicationAdministration';
@@ -33,6 +34,7 @@ const allFeatures = [
   EpisodeOfCare,
   FHIR,
   HealthcareService,
+  Immunization,
   Location,
   Medication,
   MedicationAdministration,

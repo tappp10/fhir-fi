@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import Demo from '../components/Demo';
 import Features from '../components/Features';
-import * as FeatureList from '../components/FeatureList';
+import { demos } from '../config/data';
 import kantaPHRscreenshot from '../images/omatietovaranto-mittaustulokset.png';
 import mikaelx1 from '../images/MikaelRinnetmaki.jpg';
 import mikaelx2 from '../images/MikaelRinnetmaki2x.jpg';
@@ -14,16 +14,10 @@ import sensotrendConnectImage from '../images/sensotrend-connect.jpg';
 export const Head = () => <title>FHIR Demo 2023: Sensotrend</title>;
 
 export default function Sensotrend({ location }) {
-  const features = [
-    FeatureList.Consent,
-    FeatureList.MedicationAdministration,
-    FeatureList.Opensource,
-    FeatureList.Observation,
-    FeatureList.SMART,
-  ];
+  const features = demos.sensotrend.features;
 
   return (
-    <Demo features={features} location={location} >
+    <Demo location={location} >
       <h1>
         <a href="https://www.sensotrend.com/">
           <img src={sensotrendLogo} alt="Sensotrend" />

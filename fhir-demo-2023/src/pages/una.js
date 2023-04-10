@@ -2,15 +2,13 @@ import * as React from 'react';
 
 import Demo from '../components/Demo';
 import Features from '../components/Features';
-import * as FeatureList from '../components/FeatureList';
+import { demos } from '../config/data';
 import unaLogo from '../images/una.svg';
 
 export const Head = () => <title>FHIR Demo 2023: Una</title>;
 
 export default function Una({ location }) {
-  const features = [
-    FeatureList.SMART,
-  ];
+  const features = demos.una.features;
   
   return (
     <Demo features={features} location={location}>

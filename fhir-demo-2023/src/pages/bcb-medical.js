@@ -2,14 +2,13 @@ import * as React from 'react';
 
 import Demo from '../components/Demo';
 import Features from '../components/Features';
-import * as FeatureList from '../components/FeatureList';
+import { demos } from '../config/data';
 import bcbMedicalLogo from '../images/bcb-medical.svg';
 
 export const Head = () => <title>FHIR Demo 2023: BCB Medical</title>;
 
 export default function BcbMedical({ location }) {
-  const features = [
-  ];
+  const features = demos['bcb-medical'].features;
   
   return (
     <Demo features={features} location={location}>
