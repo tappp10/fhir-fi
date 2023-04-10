@@ -1,209 +1,17 @@
 import * as React from 'react';
-// import { Link } from 'gatsby';
+import { Link } from 'gatsby';
 
 import Article from '../components/Article';
-import Features, { /* FeatureFilter, */ FeaturesContext } from '../components/Features';
+import { FeatureFilter, FeaturesContext } from '../components/Features';
+import { demos } from '../config/data';
 import fhirLogo from '../images/fhir.svg';
 import mikaelx1 from '../images/MikaelRinnetmaki.jpg';
 import mikaelx2 from '../images/MikaelRinnetmaki2x.jpg';
 
-const data = [
-  {
-    participant: 'Apotti',
-    demos: [
-      /*
-      {
-        features: [AvailableFeatures.SMART],
-        renderInfo: () => (
-          <>Apotti presents the Online Sandbox where app vendors can implement and test their integration with Apotti and demonstrate how apps are embedded into clinical workflows.</>
-        ),
-      },
-      */
-    ],
-  },
-  {
-    participant: 'BCB Medical',
-    demos: [
-    ],
-  },
-  {
-    participant: 'Buddy Healthcare',
-    demos: [
-    ],
-  },
-  {
-    participant: 'CGI',
-    demos: [
-      /*
-      {
-        features: [AvailableFeatures.Appointment, AvailableFeatures.Schedule, AvailableFeatures.Slot, AvailableFeatures.SMART],
-        renderInfo: () => (
-          <>CGI OMNI 360 offers many FHIR interfaces natively, including SMART App Launch and scheduling.</>
-        ),
-      },
-      */
-    ],
-  },
-  {
-    participant: 'Digital Wells',
-    demos: [
-    ],
-  },
-  {
-    participant: 'Fujitsu',
-    demos: [
-      /*
-      {
-        features: [AvailableFeatures.SMART],
-        renderInfo: () => (
-          <><Link to="/fujitsu">Managed FHIR Server</Link></>
-        ),
-      },
-      */
-    ],
-  },
-  {
-    participant: 'Glucostratus',
-    demos: [
-    ],
-  },
-  {
-    participant: 'InterSystems',
-    demos: [
-      /*
-      {
-        renderInfo: () => (
-          <>HealthConnect</>
-        ),
-      },
-      {
-        renderInfo: () => (
-          <>SMART Adapter</>
-        ),
-      },
-      */
-    ],
-  },
-  {
-    participant: 'Kela',
-    demos: [
-    ],
-  },
-  {
-    participant: 'MealLogger',
-    demos: [
-    ],
-  },
-  {
-    participant: 'Microsoft',
-    demos: [
-      /*
-      {
-        renderInfo: () => (
-          <>Azure Health API</>
-        ),
-      },
-      {
-        renderInfo: () => (
-          <>Data Analytics</>
-        ),
-      },
-      */
-    ],
-  },
-  {
-    participant: 'Mylab',
-    demos: [
-    ],
-  },
-  {
-    participant: 'ProWellness',
-    demos: [
-    ],
-  },
-  {
-    participant: 'Sensotrend',
-    demos: [
-    /*
-    {
-      {
-        features: [AvailableFeatures.MedicationAdministration, AvailableFeatures.Observation, AvailableFeatures.SMART],
-        renderInfo: () => (
-          <>
-            <p>
-              <strong><Link to="/sensotrend-connect">Sensotrend Connect</Link></strong> is a suite
-              of software products for diabetes remote monitoring.
-            </p>
-            <p>
-              We demonstrate the interoperability of FHIR servers by integrating the solution with
-              many different FHIR implementations (Azure FHIR API, Google Healthcare API, HAPI
-              reference implementation, InterSystems, Kanta PHR, ) for data storage.
-            </p>
-            <p>
-              Sensotrend Connect is also integrated with Eleectronic Health Record systems with the
-              SMART App Launch functionality.
-            </p>
-            
-          </>
-        ),
-        renderFullDemo: () => (
-          <>
-            <h1>Sensotrend Connect Full Description.</h1>
-            <p>Sensotrend Connect is ...</p>
-          </>
-        ),
-      },
-      {
-        features: [AvailableFeatures.MedicationAdministration, AvailableFeatures.Observation, AvailableFeatures.SMART],
-        renderInfo: () => (
-          <>
-            <p>
-              <strong><Link to="/sensotrend-nightscout-connect">Nightscout
-              Connect</Link></strong> implements the <a
-              href="http://www.nightscout.info/">Nightscout</a> API on the Finnish national <a
-              href="https://kanta.fi/phr">Kanta PHR</a> platform.
-            </p>
-            <p>
-              Nightscout is an open-source development community developing innovative solutions
-              that make life with diabetes easier.
-            </p>
-          </>
-        ),
-        renderFullDemo: () => (
-          <>
-            <h1>Nightscout Connect Full Description.</h1>
-            <p>Nightscout Connect is ...</p>
-          </>
-        ),
-      },
-    */
-    ],
-  },
-  {
-    participant: 'Wellness Warehouse Engine (W2E)',
-    demos: [
-    ],
-  },
-  {
-    participant: 'Wellmo',
-    demos: [
-      /*
-      {
-        renderInfo: () => (
-          <>Wellmo APP as SMART Client</>
-        ),
-      },
-      {
-        renderInfo: () => (
-          <>Wellmo as SMART host</>
-        ),
-      },
-      */
-    ],
-  },
-];
+export const Head = () => <title>FHIR Demo 2023 by HL7 Finland</title>;
 
-const IndexPage = () => {
+export default function IndexPage({ location }) {
+  const { search } = location;
   const { selectedFeatures = {} } = React.useContext(FeaturesContext);
   const features = Object.keys(selectedFeatures);
   console.log({ features });
@@ -249,26 +57,15 @@ const IndexPage = () => {
         </section>
         <section id="participants">
           <h1>Participants</h1>
-          {/*
           <FeatureFilter />
-          */}
           <ul>
             {
-              data.filter(
-                (d) => !features.length || d.demos?.some(
-                  demo => demo.features?.some(f => features.some(s => s === f))
-                ))
-              .map(d => (
-                <li key={d.participant}>
-                  <h2>{d.participant}</h2>
-                  <ul>
-                    {d.demos.map((demo, i) => (
-                      <li key={`${d}-${i}`}>
-                        {demo.renderInfo()}
-                        <Features list={demo.features} />
-                      </li>                     
-                    ))}
-                  </ul>
+              Object.keys(demos).filter(
+                (k) => !features.length || demos[k].features?.some((f => features.some(s => s === f)))
+              )
+              .map(k => (
+                <li key={k}>
+                  <h2><Link to={`/${k}${search}`}>{demos[k].name}</Link></h2>
                 </li>
               ))
             }
@@ -347,7 +144,3 @@ const IndexPage = () => {
     </>
   )
 };
-
-export default IndexPage;
-
-export const Head = () => <title>FHIR Demo 2023 by HL7 Finland</title>;

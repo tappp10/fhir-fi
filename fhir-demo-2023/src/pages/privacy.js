@@ -1,5 +1,5 @@
-import * as React from "react";
-import Article from "../components/Article";
+import * as React from 'react';
+import Article from '../components/Article';
 
 export default function Privacy () {
   return (
@@ -25,4 +25,4 @@ export default function Privacy () {
       </main>
     </Article>
   );
-}
+};

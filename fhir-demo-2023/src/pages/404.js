@@ -1,49 +1,38 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from 'react';
+import { Link } from 'gatsby';
 
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
+import Article from '../components/Article';
+import fhirLogo from '../images/fhir.svg';
 
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+export const Head = () => <title>FHIR Demo 2023: Page not found</title>;
 
-const NotFoundPage = () => {
+export default function NotFoundPage({ location }) {
+  const { pathname } = location;
+
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
+    <Article>
+      <section id="error">
+        <h1>{`Page ${pathname.replaceAll('/', '')} does not exist!`}</h1>
+        <img className="decoration" src={fhirLogo} alt="" />
+        <p>
+          Sorry 😔, we couldn’t find what you were looking for.
+        </p>
+      </section>
+      <section id="instructions">
+        <p>
+          If you think this is an error, please let us know, by an email to <a
+          href="mailto:mikael@sensotrend.com">mikael@sensotrend.com</a> or as an issue or pull
+          request in the <a
+          href="https://github.com/fhir-fi/fhir-fi.github.io/tree/main/en/demo2023">GitHub
+          repo</a> of the project.
+        </p>
+      </section>
+      <section id="continue">
+        <p>
+          While we get that sorted out, please enjoy the rest of the site! Start from the <Link
+          to="/">main page</Link>.
+        </p>
+      </section>
+    </Article>
   )
-}
-
-export default NotFoundPage
-
-export const Head = () => <title>Not found</title>
+};

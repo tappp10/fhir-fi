@@ -2,24 +2,37 @@ import * as React from "react";
 
 import Feature from "./Feature";
 import FeatureList from "../components/FeatureList";
+import { demos } from '../config/data';
 
+
+const availableFeatures = FeatureList.filter(
+  f => Object.values(demos).some(d => d.features.some(s => s === f))
+);
 
 export const FeaturesContext = React.createContext({});
 
-export function FeaturesContextProvider({ children = <React.Fragment />, initialState = {} }) {
+export function FeaturesContextProvider({
+  children = <React.Fragment />,
+  initialState,
+  location
+}) {
 
-  // TODO: Init features from the URL...
+  // Init features from the URL...
+  const { search } = location;
+  const featuresUrlParam = search.match(/[?&]features=([^&]+)/) || [];
+  const decoded = decodeURIComponent(featuresUrlParam[1] || '');
+  const urlState = (decoded.length ? decoded.split(',') : []).reduce((o, f) => {
+    o[f] = true;
+    return o;
+  }, {});
 
-
-  const [selectedFeatures, setSelectedFeatures] = React.useState(initialState);
+  const [selectedFeatures, setSelectedFeatures] = React.useState(initialState || urlState);
 
   const state = Object.freeze({
     selectedFeatures,
     setSelectedFeatures,
   });
 
-  console.log('Features', selectedFeatures);
-  
   return (
     <FeaturesContext.Provider value={state}>
       {children}
@@ -33,7 +46,7 @@ export function FeatureFilter() {
       <hr />
       <h3>Filter demos by features:</h3>
       <ul className="features">
-        {FeatureList.map(f => (
+        {availableFeatures.map(f => (
           <React.Fragment key={f}><Feature feature={f} />{' '}</React.Fragment>
         ))}
       </ul>

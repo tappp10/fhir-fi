@@ -11,7 +11,9 @@ import sensotrendLogo from '../images/sensotrend.svg';
 import sensotrendAGPImage from '../images/sensotrend-agp.png';
 import sensotrendConnectImage from '../images/sensotrend-connect.jpg';
 
-export default function Sensotrend() {
+export const Head = () => <title>FHIR Demo 2023: Sensotrend</title>;
+
+export default function Sensotrend({ location }) {
   const features = [
     FeatureList.Consent,
     FeatureList.MedicationAdministration,
@@ -19,9 +21,9 @@ export default function Sensotrend() {
     FeatureList.Observation,
     FeatureList.SMART,
   ];
-  
+
   return (
-    <Demo features={features}>
+    <Demo features={features} location={location} >
       <h1>
         <a href="https://www.sensotrend.com/">
           <img src={sensotrendLogo} alt="Sensotrend" />
@@ -64,7 +66,7 @@ export default function Sensotrend() {
           >example launch flow</a> in the Finnish Implementation Guide for SMART App Launch.
         </p>
         <figure>
-          <img src={sensotrendAGPImage} />
+          <img src={sensotrendAGPImage} alt="" />
           <figcaption>
             The main view of Sensotrend Connect is based on the internationally harmonized <a
             href="http://www.agpreport.org/agp/about">Ambulatory Glucose Profile</a> specification.
@@ -76,18 +78,18 @@ export default function Sensotrend() {
           the presentation and the <a
           href="https://www.devdays.com/wp-content/uploads/2021/12/DD18-EU-Mikael-Rinnetmaki-Patient-generated-health-data-with-consent-2018-11-16-1.pdf"
           >slides</a> given in a past FHIR DevDays event.
-          <div className="media">
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/cYO1vYUwzvA"
-              title="Video recording of FHIR DevDays 2018 presentation: Patient-generated Health Data with Consent"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
-          </div>
         </p>
+        <div className="media">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/cYO1vYUwzvA"
+            title="Video recording of FHIR DevDays 2018 presentation: Patient-generated Health Data with Consent"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen>
+          </iframe>
+        </div>
         <p>
           In FHIR Demo 2023 we demostrate the SMART App Launch from Apotti and Epic systems and
           through the SMART adapter by InterSystems. We also present data storage into FHIR servers
@@ -96,18 +98,18 @@ export default function Sensotrend() {
         <p>
           See also the older version of Sensotrend Connect embedded in Cerner Millennium in a past
           video recording.
-          <div className="media">
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/iF1v25Bzo5A?start=5525"
-              title="Video recording of Cerner presenting Sensotrend Connect embedded in Cerner Millennium"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
-          </div>
         </p>
+        <div className="media">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/iF1v25Bzo5A?start=5525"
+            title="Video recording of Cerner presenting Sensotrend Connect embedded in Cerner Millennium"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen>
+          </iframe>
+        </div>
       </section>
       <section id="nightscout-connect">
         <h2>Nightscout Connect</h2>
@@ -134,7 +136,7 @@ export default function Sensotrend() {
           insulin doses.
         </p>
         <figure>
-          <img src={kantaPHRscreenshot} />
+          <img src={kantaPHRscreenshot} alt="" />
           <figcaption>
             Individual observations in the Kanta PHR platform, visible on the Kanta patient portal.
           </figcaption>
@@ -167,4 +169,4 @@ export default function Sensotrend() {
       </section>
     </Demo>
   );
-}
+};

@@ -10,7 +10,7 @@ import '../styles/index.css';
 const Article = ({ children, ...rest }) => {
   const { selectedFeatures = {} } = React.useContext(FeaturesContext);
   const featureList = Object.keys(selectedFeatures);
-  console.log(featureList);
+  console.log({ selectedFeatures, featureList });
 
   return (
     <>
