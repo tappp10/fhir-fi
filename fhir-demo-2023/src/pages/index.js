@@ -64,7 +64,10 @@ export default function IndexPage({ location }) {
               )
               .map(k => (
                 <li key={k}>
+                  {/*
                   <h2><Link to={`/${k}${search}`}>{demos[k].name}</Link></h2>
+                  */}
+                  <h2>{demos[k].name}</h2>
                 </li>
               ))
             }
