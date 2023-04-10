@@ -13,7 +13,7 @@
     "build": "gatsby build --prefix-paths",
     "clear": "rimraf public/* ../en/demo2023/*",
     "copy": "copyfiles -E -V -u 1 './public/**/*' ../en/demo2023/",
-    "deploy": "npm run clear && npm run build --prefix-paths && npm run copy",
+    "deploy": "npm run cean && npm run clear && npm run build --prefix-paths && npm run copy",
     "serve": "gatsby serve --prefix-paths",
     "clean": "gatsby clean"
   },
