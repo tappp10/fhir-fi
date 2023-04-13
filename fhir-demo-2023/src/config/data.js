@@ -78,6 +78,11 @@ export const demos = {
       FeatureList.SMART,
     ],
   },
+  'innokas-medical': {
+    name: 'Innokas Medical / Medicubex',
+    features: [
+    ],
+  },
   intersystems: {
     name: 'InterSystems',
     features: [

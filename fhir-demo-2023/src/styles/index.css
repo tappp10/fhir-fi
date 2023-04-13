@@ -159,6 +159,12 @@ section h1 {
   margin: auto;
 }
 
+.demo > h1 > a > img.half {
+  display: inline-block;
+  max-width: 40%;
+  margin: 0 5%;
+}
+
 section h2 a {
   font-size: 150%;
 }
