@@ -11,6 +11,11 @@ export const demos = {
       FeatureList.SMART,
     ],
   },
+  atostek: {
+    name: 'Atostek',
+    features: [
+    ],
+  },
   'bcb-medical': {
     name: 'BCB Medical',
     features: [
