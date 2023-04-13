@@ -49,13 +49,15 @@ export default function Sensotrend({ location }) {
         <img src={sensotrendConnectImage} alt="" />
         <p>
           Sensotrend Connect transforms data from third party apps and devices into HL7 FHIR format
-          (mainly Observation and MedicationAdministration resources, see the <a
+          (mainly <strong>Observation</strong> and <strong>MedicationAdministration</strong> resources,
+          see the <a
           href="https://github.com/Sensotrend/sensotrend-converter">open-source converter</a>) and
           stores it in any specified FHIR server.
         </p>
         <p>
           The solution also includes a dashboard view of the data that is integrated into
-          electronic health record systems with the SMART App Launch specification. See an <a
+          electronic health record systems with the <strong>SMART App Launch</strong> specification.
+          See an <a
           href="https://hl7.fi/fhir/finnish-smart/AuditEvent-apotti-ehr-launch-by-practitioner.html"
           >example launch flow</a> in the Finnish Implementation Guide for SMART App Launch.
         </p>
@@ -67,9 +69,9 @@ export default function Sensotrend({ location }) {
           </figcaption>
         </figure>
         <p>
-          Internally, Sensotrend Connect uses the Consent resource to manage permissions for
-          healthcare providers to access the patient generated and patient controlled data. See
-          the presentation and the <a
+          Internally, Sensotrend Connect uses the <strong>Consent</strong> resource to manage
+          permissions for healthcare providers to access the patient generated and patient
+          controlled data. See the presentation and the <a
           href="https://www.devdays.com/wp-content/uploads/2021/12/DD18-EU-Mikael-Rinnetmaki-Patient-generated-health-data-with-consent-2018-11-16-1.pdf"
           >slides</a> given in a past FHIR DevDays event.
         </p>
@@ -85,9 +87,10 @@ export default function Sensotrend({ location }) {
           </iframe>
         </div>
         <p>
-          In FHIR Demo 2023 we demostrate the SMART App Launch from Apotti and Epic systems and
-          through the SMART adapter by InterSystems. We also present data storage into FHIR servers
-          from Google, InterSystems, and Microsoft, and into the Finnish national Kanta PHR platform. 
+          In FHIR Demo 2023 we demostrate the <strong>SMART App Launch</strong> from Apotti and
+          Epic systems and through the SMART adapter by InterSystems. We also present data storage
+          into FHIR servers from Google, InterSystems, and Microsoft, and into the Finnish national
+          Kanta PHR platform. 
         </p>
         <p>
           See also the older version of Sensotrend Connect embedded in Cerner Millennium in a past
@@ -125,14 +128,14 @@ export default function Sensotrend({ location }) {
         </p>
         <p>
           Nightscout Connect transforms data between Nightscout's own content format and HL7 FHIR.
-          The most used resources are Observation for results from continuous glucose monitors and
-          glucometers and for carbohydrate intake estimations, and MedicationAdministration for
-          insulin doses.
+          The most used resources are <strong>Observation</strong> for results from continuous
+          glucose monitors and glucometers and for carbohydrate intake estimations,
+          and <strong>MedicationAdministration</strong> for insulin doses.
         </p>
         <figure>
           <img src={kantaPHRscreenshot} alt="" />
           <figcaption>
-            Individual observations in the Kanta PHR platform, visible on the Kanta patient portal.
+            Individual observations in the Kanta PHR platform, present on the Kanta patient portal.
           </figcaption>
         </figure>
         <p>
