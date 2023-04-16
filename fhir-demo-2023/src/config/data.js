@@ -164,6 +164,12 @@ export const demos = {
       FeatureList.SMART,
     ],
   },
+  tietoevry: {
+    name: 'TietoEVRY',
+    features: [
+      FeatureList.SMART,
+    ],
+  },
   una: {
     name: 'Una',
     features: [
