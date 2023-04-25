@@ -77,12 +77,6 @@ export const demos = {
       FeatureList.SMART,
     ],
   },
-  'health-village': {
-    name: 'Health Village (Terveyskylä)',
-    features: [
-      FeatureList.SMART,
-    ],
-  },
   'innokas-medical': {
     name: 'Innokas Medical / Medicubex',
     features: [
