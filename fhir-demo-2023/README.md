@@ -1,29 +1,33 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal Starter
-</h1>
+# FHIR Demo 2023 Gatsby Framework
+
+This is the source code of the FHIR Demo 2023.
+
+It is based on the [Gatsby](https://www.gatsbyjs.com/) framework for single-page apps.
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+Make sure you have Node installed in your computer.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+1.  **Fork this repo**
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+    [Fork a copy](https://github.com/fhir-fi/fhir-fi.github.io/fork) of this repo on your own
+    account.
+
+    Check out the code on your own computer.
 
 2.  **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
+    Make sure you're using the `fhir-demo-2023-gatsby` branch.
 
     ```shell
-    cd my-gatsby-site/
+    git checkout fhir-demo-2023-gatsby
+    ```
+
+
+    Navigate into this directory and start the development environment.
+
+    ```shell
+    cd fhir-demo-2023/
     npm run develop
     ```
 
@@ -31,19 +35,21 @@
 
     Your site is now running at http://localhost:8000!
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+    Edit `src/pages/index.js` to see the site update in real-time!
 
-4.  **Learn more**
+    Find the page for your demo and edit it. If the page does not exist, create it (perhaps copy an
+    existing page as a template)
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+4.  **Issue a pull request**
 
-## 🚀 Quick start (Netlify)
+    Once you're happy with the results, issue a pull request to the `fhir-demo-2023-gatsby`
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+5.  **Learn more about Gatsby**
+
+    - [Documentation](https://www.gatsbyjs.com/docs/)
+    - [Tutorials](https://www.gatsbyjs.com/tutorial/)
+    - [Guides](https://www.gatsbyjs.com/tutorial/)
+    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/)
+    - [Plugin Library](https://www.gatsbyjs.com/plugins)
+    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/)
