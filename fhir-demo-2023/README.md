@@ -42,7 +42,7 @@ Make sure you have Node installed in your computer.
 4.  **Issue a pull request**
 
     Once you're happy with the results, issue a pull request to the `fhir-demo-2023-gatsby` branch
-    of this repo (fhir-fi/fhir-fi.github.io)[https://github.com/fhir-fi/fhir-fi.github.io].
+    of this repo [fhir-fi/fhir-fi.github.io](https://github.com/fhir-fi/fhir-fi.github.io).
 
 5.  **Learn more about Gatsby**
 
