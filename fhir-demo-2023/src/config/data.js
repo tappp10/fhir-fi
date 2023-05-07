@@ -80,6 +80,14 @@ export const demos = {
   'innokas-medical': {
     name: 'Innokas Medical / Medicubex',
     features: [
+      FeatureList.Observation,
+      FeatureList.SMART,
+    ],
+  },
+  integritas: {
+    name: 'Integritas',
+    features: [
+      FeatureList.SMART,
     ],
   },
   intersystems: {
@@ -103,6 +111,13 @@ export const demos = {
     features: [
       FeatureList.Patient,
       FeatureList.Practitioner,
+      FeatureList.SMART,
+    ],
+  },
+  medixine: {
+    name: 'Medixine',
+    features: [
+      FeatureList.Observation,
       FeatureList.SMART,
     ],
   },
@@ -148,13 +163,13 @@ export const demos = {
     name: 'Sensotrend',
     features: [
       FeatureList.Consent,
+      FeatureList.Encounter,
       FeatureList.MedicationAdministration,
-      FeatureList.Opensource,
       FeatureList.Observation,
+      FeatureList.Opensource,
+      FeatureList.Organization,
       FeatureList.Patient,
       FeatureList.Practitioner,
-      FeatureList.Encounter,
-      FeatureList.Organization,
       FeatureList.SMART,
     ],
   },
