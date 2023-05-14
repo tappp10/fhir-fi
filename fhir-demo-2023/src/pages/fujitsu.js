@@ -18,12 +18,14 @@ export default function Fujitsu({ location }) {
         </a>
       </h1>
       <Features list={features} />
+      <p>Demo description will be added soon.</p>
       <section id="contact">
         <h3>Contact</h3>
         <div className="business-card">
-          <h3></h3>
-          <p></p>
+          <h3>Joni Hirviniemi</h3>
+          <p>Integration Lead</p>
           <address>
+            <a href="mailto:joni.hirviniemi@fujitsu.com">joni.hirviniemi@fujitsu.com</a>
           </address>
         </div>
       </section>

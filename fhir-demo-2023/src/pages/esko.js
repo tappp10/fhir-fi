@@ -18,12 +18,14 @@ export default function EskoSystems({ location }) {
         </a>
       </h1>
       <Features list={features} />
+      <p>Demo description will be added soon.</p>
       <section id="contact">
         <h3>Contact</h3>
         <div className="business-card">
-          <h3></h3>
-          <p></p>
+          <h3>Petteri Stoor</h3>
+          <p>Product Owner, Integrations</p>
           <address>
+            <a href="mailto:Petteri.Stoor@eskosystems.fi">Petteri.Stoor@eskosystems.fi</a>
           </address>
         </div>
       </section>

@@ -18,12 +18,14 @@ export default function Solita({ location }) {
         </a>
       </h1>
       <Features list={features} />
+      <p>Demo description will be added soon.</p>
       <section id="contact">
         <h3>Contact</h3>
         <div className="business-card">
-          <h3></h3>
-          <p></p>
+          <h3>Janne Kaartinen</h3>
+          <p>Senior Consultant</p>
           <address>
+            <a href="mailto:janne.kaartinen@solita.fi">janne.kaartinen@solita.fi</a>
           </address>
         </div>
       </section>

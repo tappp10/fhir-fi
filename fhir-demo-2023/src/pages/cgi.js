@@ -18,12 +18,40 @@ export default function Cgi({ location }) {
         </a>
       </h1>
       <Features list={features} />
+      <p>OMNI360 is a modular and modern solution for healthcare, socialcare and specialized
+      care.</p>
+      <p>CGI has a strong commitment to use HL7 FHIR within our product portfolio and therefore we
+      already have a wide range of different FHIR resources implemented. Future roadmap also
+      contains our next FHIR development targets.</p>
+      <p>FHIR resources already <strong>in production</strong> or <i>being implemented</i> are:</p>
+      <ul>
+        <li><i>Appointment</i></li>
+        <li><i>Careplan</i></li>
+        <li><strong>ClinicalDocument</strong></li>
+        <li><i>Composition</i></li>
+        <li><strong>Condition</strong></li>
+        <li><i>Consent</i></li>
+        <li><strong>Encounter</strong></li>
+        <li><strong>Immunization</strong></li>
+        <li><strong>Location</strong></li>
+        <li><strong>Observation</strong></li>
+        <li><strong>Organization</strong></li>
+        <li><strong>Patient</strong></li>
+        <li><strong>Practitioner</strong></li>
+        <li><i>Procedure</i></li>
+        <li><i>RelatedPerson</i></li>
+        <li><strong>Schedule</strong></li>
+        <li><strong>Task</strong></li>
+      </ul>
+      <p>In addition to OMNI360, CGI uses FHIR API's in <strong>AVPH</strong> scheduling
+      solution and in <strong>Hyvis</strong> patient portal.</p>
       <section id="contact">
         <h3>Contact</h3>
         <div className="business-card">
-          <h3></h3>
-          <p></p>
+          <h3>Markus Vehmanen</h3>
+          <p>Vice President, Healthcare & Social Care IT</p>
           <address>
+            <a href="mailto:markus.vehmanen@cgi.com">markus.vehmanen@cgi.com</a>
           </address>
         </div>
       </section>

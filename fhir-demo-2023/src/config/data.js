@@ -19,12 +19,17 @@ export const demos = {
   'bcb-medical': {
     name: 'BCB Medical',
     features: [
-      FeatureList.SMART,
+      FeatureList.Appointment,
+      FeatureList.Schedule,
+      FeatureList.Slot,
     ],
   },
   buddy: {
     name: 'Buddy Healthcare',
     features: [
+      FeatureList.Appointment,
+      FeatureList.Schedule,
+      FeatureList.Slot,
       FeatureList.SMART,
     ],
   },
@@ -43,7 +48,6 @@ export const demos = {
       FeatureList.Practitioner,
       FeatureList.Procedure,
       FeatureList.Schedule,
-      FeatureList.Slot,
       FeatureList.SMART,
     ],
   },

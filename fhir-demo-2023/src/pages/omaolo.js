@@ -18,12 +18,14 @@ export default function Omaolo({ location }) {
         </a>
       </h1>
       <Features list={features} />
+      <p>Demo description will be added soon.</p>
       <section id="contact">
         <h3>Contact</h3>
         <div className="business-card">
-          <h3></h3>
-          <p></p>
+          <h3>Juha Eerola</h3>
+          <p>Product Owner</p>
           <address>
+            <a href="mailto:juha.eerola@digifinland.fi">juha.eerola@digifinland.fi</a>
           </address>
         </div>
       </section>

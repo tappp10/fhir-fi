@@ -18,12 +18,15 @@ export default function BcbMedical({ location }) {
         </a>
       </h1>
       <Features list={features} />
+      <p>The FHIR solutions implemented by BCB Medical Ltd import patient personal and appointment
+      information from patient information systems.</p>
       <section id="contact">
         <h3>Contact</h3>
         <div className="business-card">
-          <h3></h3>
-          <p></p>
+          <h3>Janne Heikkinen</h3>
+          <p>Data Integration Architect</p>
           <address>
+            <a href="mailto:janne.heikkinen@bcbmedical.com">janne.heikkinen@bcbmedical.com</a>
           </address>
         </div>
       </section>
