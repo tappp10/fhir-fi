@@ -178,7 +178,7 @@ export const demos = {
     ],
   },
   tietoevry: {
-    name: 'TietoEVRY',
+    name: 'Tietoevry Care',
     features: [
       FeatureList.SMART,
     ],
