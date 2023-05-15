@@ -43,7 +43,7 @@ const Article = ({ children, ...rest }) => {
           <Link to="/privacy">Privacy</Link>
           <span>|</span>
           <a
-          href="https://github.com/fhir-fi/fhir-fi.github.io/tree/main/en/demo2023">Source&nbsp;Code</a>
+          href="https://github.com/fhir-fi/fhir-fi.github.io/tree/fhir-demo-2023-gatsby/fhir-demo-2023">Source&nbsp;Code</a>
           <span>|</span>
           <a href="mailto:mikael@sensotrend.com">Feedback</a>
         </p>
