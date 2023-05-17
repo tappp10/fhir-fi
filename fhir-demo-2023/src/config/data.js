@@ -20,6 +20,7 @@ export const demos = {
     name: 'BCB Medical',
     features: [
       FeatureList.Appointment,
+      FeatureList.Patient,
       FeatureList.Schedule,
       FeatureList.Slot,
     ],
@@ -28,6 +29,7 @@ export const demos = {
     name: 'Buddy Healthcare',
     features: [
       FeatureList.Appointment,
+      FeatureList.Patient,
       FeatureList.Schedule,
       FeatureList.Slot,
       FeatureList.SMART,
@@ -51,20 +53,22 @@ export const demos = {
       FeatureList.SMART,
     ],
   },
+  /*
   'digital-wells': {
     name: 'Digital Wells',
     features: [
       FeatureList.Observation,
     ],
   },
-  esko: {
-    name: 'Esko Systems',
+  */
+  duodecim: {
+    name: 'Duodecim',
     features: [
       FeatureList.SMART,
     ],
   },
-  duodecim: {
-    name: 'Duodecim',
+  esko: {
+    name: 'Esko Systems',
     features: [
       FeatureList.SMART,
     ],
@@ -122,6 +126,7 @@ export const demos = {
       FeatureList.SMART,
     ],
   },
+  /*
   medixine: {
     name: 'Medixine',
     features: [
@@ -129,6 +134,7 @@ export const demos = {
       FeatureList.SMART,
     ],
   },
+  */
   microsoft: {
     name: 'Microsoft',
     features: [
@@ -146,6 +152,7 @@ export const demos = {
       FeatureList.Patient,
     ],
   },
+  /*
   omaolo: {
     name: 'Omaolo',
     features: [
@@ -156,9 +163,11 @@ export const demos = {
       FeatureList.Slot,
     ],
   },
+  */
   prowellness: {
     name: 'ProWellness',
     features: [
+      FeatureList.Patient,
       FeatureList.SMART,
     ],
   },
@@ -197,12 +206,14 @@ export const demos = {
       FeatureList.SMART,
     ],
   },
+  /*
   w2e: {
     name: 'W2E',
     features: [
       FeatureList.Observation,
     ],
   },
+  */
   wellmo: {
     name: 'Wellmo',
     features: [
