@@ -307,6 +307,24 @@ li h2 {
   margin-bottom: 5em;
 }
 
+.demo aside.event {
+  background-color: #0E456E;
+  color: white;
+  border-radius: 10px;
+  padding: 1.5em;
+  margin: 2em 0 4em;
+}
+
+.demo aside.event h2 {
+  color: #EB5C18;
+}
+
+.demo aside.event a {
+  color: white;
+  font-weight: bold;
+}
+
+
 footer img {
   height: 0.79em;
   height: 0.67lh;

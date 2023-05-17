@@ -18,13 +18,22 @@ export default function InterSystems({ location }) {
         </a>
       </h1>
       <Features list={features} />
-      <h1>Wellcome to booth 101</h1>
-      <p>Wellcome to InterSystems booth 101 to see and discuss how we can FHIR-enable your
-      solution: provide it with a <a href="https://www.hl7.org/fhir/http.html">standards based FHIR
-      API</a> including <a href="https://www.hl7.org/fhir/search.html">rich search
-      capabilities</a>, map FHIR to other health care standards and non-standard data models and
-      transport protocols, do what ever needed to connect your solution to the outside world and
-      harmonise the data as it is optimal for your solution.</p>      
+      <aside className="event">
+        <h2>ATK-päivät: Ständi 101</h2>
+        <p>Tervetuloa ständillemme näkemään ja keskustelemaan kuinka voimme lisätä
+        FHIR-kyvykkyyksiä olemassa oleviin ratkaisuihin!</p>
+        <p>Esittelemme <strong>aikataulutetun FHIR-demon <time
+        dateTime="2023-05-23T12:15:00.000+03:00">Tiistaina klo 12.15</time></strong>.</p>
+        <p>Esittelemme demoja ja keskustelemme ständillämme koko tapahtuman ajan.</p>
+      </aside>
+      <section id="intro">
+        <p>InterSystems can FHIR-enable your solution: provide it with a <a
+        href="https://www.hl7.org/fhir/http.html">standards based FHIR API</a> including <a
+        href="https://www.hl7.org/fhir/search.html">rich search capabilities</a>, map FHIR to other
+        health care standards and non-standard data models and transport protocols, do what ever
+        needed to connect your solution to the outside world and harmonise the data as it is optimal
+        for your solution.</p>      
+      </section>
       <section id="fhir-enabler">
         <h2>Very rich FHIR API on top of a native API of a patient system</h2>
         <p>We can show you, in co-operation with <a href="https://www.vitec-acute.com">Vitec
@@ -53,8 +62,7 @@ export default function InterSystems({ location }) {
         be solved with powerful technology. Even though the data model were exactly the same FHIR
         resources, this use case can be implemented in many different ways - that are incompatible
         on the FHIR side. Implementing it as RESTful as possible requires rich set of components
-        for storing, mapping and implementing business processes with FHIR. Come, learn and discuss
-        - booth 101.</p>
+        for storing, mapping and implementing business processes with FHIR.</p>
       </section>
       <section id="ccow-to-smart">
         <h2>Mapping Finnish minimum context management to SMART App launch</h2>
@@ -65,11 +73,11 @@ export default function InterSystems({ location }) {
         <h2>Health Care Interoperability - what ever you need</h2>
         <p>Be it FHIR or what ever data model, be it just integration or more complex data
         collection, harmonisation, viewing and analysing, we have the technologies needed - proven
-        in the worlds biggest and most prominent settings. Come to booth 101 to discuss.</p>
+        in the worlds biggest and most prominent settings.</p>
       </section>
       <section id="intersystems">
         <h2>InterSystems</h2>
-        <p>An Innovative Data Technology Company, the Engine Behind the World’s Most Important
+        <p>An Innovative Data Technology Company, the Engine Behind the World's Most Important
         Applications.</p>
         <p><a href="https://www.intersystems.com/solutions/fhir/">InterSystems on FHIR</a></p>
       </section>

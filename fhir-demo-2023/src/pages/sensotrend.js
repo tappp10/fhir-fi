@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
 
 import Demo from '../components/Demo';
 import Features from '../components/Features';
@@ -24,18 +25,54 @@ export default function Sensotrend({ location }) {
         </a>
       </h1>
       <Features list={features} />
-      <p>Sensotrend Oy presents two solutions:</p>
-      <ul>
-        <li>
-          <a href="#sensotrend-connect">Sensotrend Connect</a>, a diabetes remote monitoring
-          solution.
-        </li>
-        <li>
-          <a href="#nightscout-connect">Nightscout Connect</a>, an implementation of the Nightscout
-          API for open-source apps and devices implemented on top of the Finnish national Kanta PHR
-          platform.
-        </li>
-      </ul>
+      <aside className="event">
+        <h2>ATK-päivät: Startup-alue, pöytä 10</h2>
+        <p>Esittelemme diabeteksen etäseurannan ratkaisua, joka on saumattomasti integroitu
+        potilastietojärjestelmiin.</p>
+        <p>Olemme toteuttaneet FHIR-integraatioita ainakin Apotin, Cernerin, Epicin,
+        InterSystemsin, Omaolon, Terveyskylän ja Wellmon palveluihin. Autamme mielellämme myös
+        muita yrityksiä FHIR-integraatioissa.</p>
+        <p>Olemme myös olleet mukana luomassa <a
+        href="https://fhir.fi/profiling.html">kansallisia FHIR-soveltamisoppaita.</a></p>
+        <p>Kokemusta ja kokemuksia löytyy, saa kysellä!</p>
+        <p>Esittelemme yhdessä Apotin kanssa Sensotrendin sovelluksen saumattomana osana Apotin
+          käyttöliittymää</p>
+        <strong>
+          <ul>
+            <li>
+              <time dateTime="2023-05-23T12:30:00.000+03:00">tiistaina klo 12.30</time>, Ständi 400
+            </li>
+            <li>
+              <time dateTime="2023-05-23T13:30:00.000+03:00">tiistaina klo 13.30</time>,
+              Startup-alue, pöytä 10
+            </li>
+            <li>
+              <time dateTime="2023-05-23T15:00:00.000+03:00">tiistaina klo 15.00</time>, Ständi 400
+            </li>
+            <li>
+              <time dateTime="2023-05-24T12:15:00.000+03:00">keskiviikkona klo 12.15</time>, Ständi
+              400
+            </li>
+          </ul>
+        </strong>
+        <p>Lisäksi sovelluksemme voi nähdä toiminnassa ainakin <Link
+        to="../intersystems">InterSystemsin</Link> ja <Link
+        to="../wellmo">Wellmon</Link> ständeillä.</p>
+      </aside>
+      <section id="intro">
+        <p>Sensotrend Oy presents two solutions:</p>
+        <ul>
+          <li>
+            <a href="#sensotrend-connect">Sensotrend Connect</a>, a diabetes remote monitoring
+            solution.
+          </li>
+          <li>
+            <a href="#nightscout-connect">Nightscout Connect</a>, an implementation of the
+            Nightscout API for open-source apps and devices implemented on top of the Finnish
+            national Kanta PHR platform.
+          </li>
+        </ul>
+      </section>
       <section id="sensotrend-connect">
         <h2>Sensotrend Connect</h2>
         <p>
