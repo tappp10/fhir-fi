@@ -18,6 +18,9 @@ export default function BcbMedical({ location }) {
         </a>
       </h1>
       <Features list={features} />
+      <aside className="event atk-paivat">
+        <h2>ATK-päivät: Ständi 221</h2>
+      </aside>
       <p>The FHIR solutions implemented by BCB Medical Ltd import patient personal and appointment
       information from patient information systems.</p>
       <section id="contact">

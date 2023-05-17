@@ -18,6 +18,9 @@ export default function Fujitsu({ location }) {
         </a>
       </h1>
       <Features list={features} />
+      <aside className="event atk-paivat">
+        <h2>ATK-päivät: Ständi 114</h2>
+      </aside>
       <p>Demo description will be added soon.</p>
       <section id="contact">
         <h3>Contact</h3>

@@ -18,6 +18,11 @@ export default function Duodecim({ location }) {
         </a>
       </h1>
       <Features list={features} />
+      <aside className="event atk-paivat">
+        <h2>ATK-päivät: Ständi 124</h2>
+        <p><strong>FHIR-demo <time
+        dateTime="2023-05-23T15:35:00.000+03:00">tiistaina klo 15.35</time></strong>.</p>
+      </aside>
       <p>Demo description will be added soon.</p>
       <section id="contact">
         <h3>Contact</h3>

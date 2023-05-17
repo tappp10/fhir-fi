@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
 
 import Demo from '../components/Demo';
 import Features from '../components/Features';
@@ -18,7 +19,11 @@ export default function Glucostratus({ location }) {
         </a>
       </h1>
       <Features list={features} />
-      <p>Demo description will be added soon.</p>
+      <aside className="event atk-paivat">
+        <h2>ATK-päivät: Startup-alue</h2>
+      </aside>
+      <p>The aim is to implement the <strong>SMART App Launch</strong> from <Link
+      to="../una">Una</Link>.</p>
       <section id="contact">
         <h3>Contact</h3>
         <div className="business-card">
