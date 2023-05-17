@@ -140,6 +140,10 @@ export const demos = {
   mylab: {
     name: 'Mylab',
     features: [
+      FeatureList.SMART,
+      FeatureList.Observation,
+      FeatureList.Organization,
+      FeatureList.Patient,
     ],
   },
   omaolo: {
