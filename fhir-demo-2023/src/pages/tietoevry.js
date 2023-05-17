@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
 
 import Demo from '../components/Demo';
 import Features from '../components/Features';
@@ -30,9 +31,9 @@ export default function TietoEVRY({ location }) {
         Omapolku software based on the <strong>FHIR Smart App Launch</strong>. This enables both
         the patient and the professional to have smooth access directly from the Omapolku
         application to another application used by the patient alongside Omapolku, for example to
-        the Meallogger application. In addition to the FHIR Smart App Launch, Tietoevry Care has
-        also implemented direct FHIR-based integrations between Health Village and the electronic
-        health record (EHR) system.</p>
+        the <Link to="../meallogger">Meallogger</Link> application. In addition to the FHIR Smart
+        App Launch, Tietoevry Care has also implemented direct FHIR-based integrations between
+        Health Village and the electronic health record (EHR) system.</p>
         <p>FHIR has also been identified as playing a key role in integrations related to
         IoMT/self- measurements and monitoring data. In connection with this, different ways of
         implementing data-based integrations of medical measuring devices to Omapolku have been

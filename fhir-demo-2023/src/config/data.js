@@ -97,7 +97,11 @@ export const demos = {
   intersystems: {
     name: 'InterSystems',
     features: [
+      FeatureList.Appointment,
       FeatureList.FHIR,
+      FeatureList.MedicationAdministration,
+      FeatureList.Observation,
+      FeatureList.Patient,
       FeatureList.SMART,
     ],
   },
