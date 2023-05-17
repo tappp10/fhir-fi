@@ -68,8 +68,7 @@ export default function Sensotrend({ location }) {
           </li>
           <li>
             <a href="#nightscout-connect">Nightscout Connect</a>, an implementation of the
-            Nightscout API for open-source apps and devices implemented on top of the Finnish
-            national Kanta PHR platform.
+            open-source Nightscout API on top of the Finnish national Kanta PHR platform.
           </li>
         </ul>
       </section>
