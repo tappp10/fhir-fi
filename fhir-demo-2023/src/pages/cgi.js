@@ -18,6 +18,10 @@ export default function Cgi({ location }) {
         </a>
       </h1>
       <Features list={features} />
+      <aside className="event">
+        <h2>ATK-päivät: Ständi 40-42</h2>
+        <p>Tervetuloa keskustelemaan FHIR-asioista! Sovi mielellään tapaaminen etukäteen.</p>
+      </aside>
       <section id="omni360">
         <h2>OMNI360</h2>
         <p>OMNI360 is a modular and modern solution for healthcare, socialcare and specialized

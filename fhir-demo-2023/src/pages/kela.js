@@ -18,6 +18,11 @@ export default function Kela({ location }) {
         </a>
       </h1>
       <Features list={features} />
+      <aside className="event">
+        <h2>ATK-päivät: Ständi 201-202</h2>
+        <p><strong>FHIR-demo <time
+        dateTime="2023-05-24T12:30:00.000+03:00">keskiviikkona klo 12.30</time></strong>.</p>
+      </aside>
       <section id="kanta-phr">
         <h2>Kanta Personal Health Record (Omatietovaranto)</h2>
         <p>Kanta Personal Health Record (Kanta PHR) is a national Kanta service in which users can

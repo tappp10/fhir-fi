@@ -322,6 +322,7 @@ li h2 {
 .demo aside.event a {
   color: white;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 
