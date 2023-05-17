@@ -18,7 +18,7 @@ export default function Cgi({ location }) {
         </a>
       </h1>
       <Features list={features} />
-      <aside className="event">
+      <aside className="event atk-paivat">
         <h2>ATK-päivät: Ständi 40-42</h2>
         <p>Tervetuloa keskustelemaan FHIR-asioista! Sovi mielellään tapaaminen etukäteen.</p>
       </aside>

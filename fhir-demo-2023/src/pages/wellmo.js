@@ -19,7 +19,7 @@ export default function Wellmo({ location }) {
         </a>
       </h1>
       <Features list={features} />
-      <aside className="event">
+      <aside className="event atk-paivat">
         <h2>ATK-päivät: Startup-alue</h2>
         <p><strong>FHIR-demo <time
         dateTime="2023-05-23T12:45:00.000+03:00">tiistaina klo 12.45</time></strong>.</p>

@@ -19,7 +19,7 @@ export default function Apotti({ location }) {
         </a>
       </h1>
       <Features list={features} />
-      <aside className="event">
+      <aside className="event atk-paivat">
         <h2>ATK-päivät: Ständi 400</h2>
         <p></p>
         <p>Aikataulutetut demot esittelevät Apotin ekosysteemin sekä <Link

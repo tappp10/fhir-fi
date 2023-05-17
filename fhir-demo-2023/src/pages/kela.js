@@ -18,7 +18,7 @@ export default function Kela({ location }) {
         </a>
       </h1>
       <Features list={features} />
-      <aside className="event">
+      <aside className="event atk-paivat">
         <h2>ATK-päivät: Ständi 201-202</h2>
         <p><strong>FHIR-demo <time
         dateTime="2023-05-24T12:30:00.000+03:00">keskiviikkona klo 12.30</time></strong>.</p>

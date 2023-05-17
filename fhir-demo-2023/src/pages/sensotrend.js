@@ -25,7 +25,7 @@ export default function Sensotrend({ location }) {
         </a>
       </h1>
       <Features list={features} />
-      <aside className="event">
+      <aside className="event atk-paivat">
         <h2>ATK-päivät: Startup-alue, pöytä 10</h2>
         <p>Esittelemme diabeteksen etäseurannan ratkaisua, joka on saumattomasti integroitu
         potilastietojärjestelmiin.</p>
