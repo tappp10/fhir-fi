@@ -8,7 +8,7 @@ import dwLogo from '../images/digital-wells.png';
 export const Head = () => <title>FHIR Demo 2023: Digital Wells</title>;
 
 export default function DigitalWells({ location }) {
-  const features = demos['digital-wells'].features;
+  const features = demos['digital-wells']?.features;
   
   return (
     <Demo features={features} location={location}>

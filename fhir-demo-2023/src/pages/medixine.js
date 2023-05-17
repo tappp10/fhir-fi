@@ -8,7 +8,7 @@ import medixineLogo from '../images/medixine.webp';
 export const Head = () => <title>FHIR Demo 2023: Medixine</title>;
 
 export default function Medixine({ location }) {
-  const features = demos.medixine.features;
+  const features = demos.medixine?.features;
   
   return (
     <Demo features={features} location={location}>

@@ -8,7 +8,7 @@ import omaoloLogo from '../images/omaolo.svg';
 export const Head = () => <title>FHIR Demo 2023: Omaolo (DigiFinland)</title>;
 
 export default function Omaolo({ location }) {
-  const features = demos.omaolo.features;
+  const features = demos.omaolo?.features;
   
   return (
     <Demo features={features} location={location}>
