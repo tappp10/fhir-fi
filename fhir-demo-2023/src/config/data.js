@@ -20,9 +20,10 @@ export const demos = {
     name: 'BCB Medical',
     features: [
       FeatureList.Appointment,
+      FeatureList.Location,
+      FeatureList.Medication,
+      FeatureList.Observation,
       FeatureList.Patient,
-      FeatureList.Schedule,
-      FeatureList.Slot,
     ],
   },
   buddy: {
