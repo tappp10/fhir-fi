@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
 
 import Demo from '../components/Demo';
 import Features from '../components/Features';
