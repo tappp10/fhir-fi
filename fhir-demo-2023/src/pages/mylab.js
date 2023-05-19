@@ -21,12 +21,6 @@ export default function Mylab({ location }) {
         </a>
       </h1>
       <Features list={features} />
-      <section id="mylab">
-        <p>Mylab is the leading Finnish supplier of health care laboratory and diagnostics
-        information systems. By implementing better and more reliable technological solutions for
-        health care use, we facilitate longer and healthier lifespans and improved quality of life.
-        Human life is at our core.</p>
-      </section>
       <aside className="event vitalis">
         <h2>Mylab at Vitalis</h2>
         <p>Welcome to visit Mylab's stand! We have a scheduled time for presenting our ideas using
@@ -47,6 +41,12 @@ export default function Mylab({ location }) {
         using laboratory data and we will contact you later. Mylab don't have stand and demo
         presentation in ATK-days.</p>
       </aside>
+      <section id="mylab">
+        <p>Mylab is the leading Finnish supplier of health care laboratory and diagnostics
+        information systems. By implementing better and more reliable technological solutions for
+        health care use, we facilitate longer and healthier lifespans and improved quality of life.
+        Human life is at our core.</p>
+      </section>
       <section id="mylab-demo">
         <h2>Boost Your integration with Laboratory Information System: My+ on FHIR® </h2>
         <p>Mylab presents a vision and ideas using FHIR for integration with laboratory information
