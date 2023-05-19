@@ -21,6 +21,12 @@ export default function Mylab({ location }) {
         </a>
       </h1>
       <Features list={features} />
+      <section id="mylab">
+        <p>Mylab is the leading Finnish supplier of health care laboratory and diagnostics
+        information systems. By implementing better and more reliable technological solutions for
+        health care use, we facilitate longer and healthier lifespans and improved quality of life.
+        Human life is at our core.</p>
+      </section>
       <aside className="event vitalis">
         <h2>Mylab at Vitalis</h2>
         <p>Welcome to visit Mylab's stand! We have a scheduled time for presenting our ideas using
@@ -41,12 +47,6 @@ export default function Mylab({ location }) {
         using laboratory data and we will contact you later. Mylab don't have stand and demo
         presentation in ATK-days.</p>
       </aside>
-      <section id="mylab">
-        <p>Mylab is the leading Finnish supplier of health care laboratory and diagnostics
-        information systems. By implementing better and more reliable technological solutions for
-        health care use, we facilitate longer and healthier lifespans and improved quality of life.
-        Human life is at our core.</p>
-      </section>
       <section id="mylab-demo">
         <h2>Boost Your integration with Laboratory Information System: My+ on FHIR® </h2>
         <p>Mylab presents a vision and ideas using FHIR for integration with laboratory information
@@ -66,10 +66,14 @@ export default function Mylab({ location }) {
         serving all the laboratory specialty areas within the same system, the specialty areas are
         promptly designed to meet the unique needs of each specialty area.</p>
         <h4>Benefits of FHIR for integration with My+ LIS</h4>
-        <p>EHR system users who need to see detailed information of patient laboratory analysis
-        results or order new tests could open the My+ Care application using SSO.</p>
-        <p>Session context information can be shared between the systems, such as patient,
-        organization, user data etc.</p>
+        <p>My+ LIS is the system used in the laboratories for processing and analysis. As an
+        outcome laboratory produces results. Different kind of health care systems need the
+        information produced by laboratory analysis and this data is important for patient
+        treatment.</p>
+        <p>FHIR helps sharing the laboratory results and data standardized way and gives
+        flexible technical means to build bidirectional API to laboratory processes. Compared with
+        the older HL7 standard versions, FHIR enables queries for the patient laboratory results
+        and bidirectional APIs.</p>
       </section>
       <section id="mypluscare">
         <h2><img src={myplusCareLogo} alt="My+ Care" /></h2>
