@@ -71,6 +71,15 @@ export const demos = {
   esko: {
     name: 'Esko Systems',
     features: [
+      FeatureList.Appointment,
+      FeatureList.Condition,
+      FeatureList.Encounter,
+      FeatureList.Location,
+      FeatureList.Observation,
+      FeatureList.Organization,
+      FeatureList.Patient,
+      FeatureList.Practitioner,
+      FeatureList.Procedure,
       FeatureList.SMART,
     ],
   },
