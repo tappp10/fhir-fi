@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
 
 import Demo from '../components/Demo';
 import Features from '../components/Features';
@@ -70,8 +71,8 @@ export default function EskoSystems({ location }) {
         <h3>Tulossa</h3>
         <ul>
           <li>
-            Duodecim mittarit (<strong>Smart App Launch</strong>, <strong>Questionnaire</strong>
-            , <strong>Observation</strong>).
+            <Link to="../duodecim">Duodecim</Link> mittarit (<strong>Smart App Launch</strong>
+            , <strong>Questionnaire</strong>, <strong>Observation</strong>).
           </li>
           <li>
             Leikkaushoidon kokonaisuuden integroituminen FHIR:llä itsenäinä osiona
