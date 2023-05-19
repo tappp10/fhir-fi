@@ -20,8 +20,12 @@ export default function Atostek({ location }) {
       <Features list={features} />
       <aside className="event atk-paivat">
         <h2>ATK-päivät: Ständi 94</h2>
+        <p><strong>FHIR-demo <time
+        dateTime="2023-05-24T12:45:00.000+03:00">keskiviikkona klo 12.45</time></strong>.</p>
       </aside>
-      <p>Demo description will be added soon.</p>
+      <p>Atostek's demo case is descibed on an <a
+      href="https://atostek.com/fhir-standardin-kayttoonotto-terveydenhuollossa-miksi-vaiheittainen-toteutus-on-avain-onnistumiseen/">external
+      site</a>.</p>
       <section id="contact">
         <h3>Contact</h3>
         <div className="business-card">
