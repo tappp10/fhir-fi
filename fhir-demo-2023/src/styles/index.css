@@ -8,6 +8,8 @@
   --color-nav-link-invert: #ff9966;
   --color-nav-link-invert-active: #ffddbb;
   --color-nav-link-invert-hover: #ffbb99;
+  --color-demo-background: #fefefe;
+  --color-demo-text: black;
   --color-offset-white: #f1f1f1;
   --color-business-card-shadow: lightgray;
   --content-width: 45rem;
@@ -26,6 +28,7 @@
     --color-nav-link-invert: #aa4433;
     --color-nav-link-invert-active: #ff6644;
     --color-nav-link-invert-hover: #cc5544;
+    --color-demo-background: #eee;
     --color-business-card-shadow: #222;
   }
 }
@@ -43,8 +46,8 @@ body {
 }
 
 main.demo {
-  background: #fefefe;
-  color: black;
+  background: var(--color-demo-background);
+  color: var(--color-demo-text);
   padding-bottom: 3em;
 }
 
@@ -81,6 +84,11 @@ h1 {
 #intro h1 {
   font-size: 333%;
   margin: 1.3em 0 1.5em;
+}
+
+h1.white {
+  background-color: white;
+  padding: 1em;
 }
 
 header, article > *, nav ul, footer p {

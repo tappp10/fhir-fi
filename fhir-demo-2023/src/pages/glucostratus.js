@@ -13,7 +13,7 @@ export default function Glucostratus({ location }) {
   
   return (
     <Demo features={features} location={location}>
-      <h1>
+      <h1 className="white">
         <a href="https://www.glucostratus.com/">
           <img src={glucostratusLogo} alt="Glucostratus" />
         </a>

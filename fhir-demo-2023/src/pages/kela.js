@@ -12,7 +12,7 @@ export default function Kela({ location }) {
   
   return (
     <Demo features={features} location={location}>
-      <h1>
+      <h1 className="white">
         <a href="https://www.kela.fi/">
           <img src={kelaLogo} alt="Kela" />
         </a>

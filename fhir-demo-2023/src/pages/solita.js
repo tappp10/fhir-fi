@@ -12,7 +12,7 @@ export default function Solita({ location }) {
   
   return (
     <Demo features={features} location={location}>
-      <h1>
+      <h1 className="white">
         <a href="https://www.solita.fi/">
           <img src={solitaLogo} alt="Solita" />
         </a>

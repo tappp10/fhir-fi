@@ -12,7 +12,7 @@ export default function ProWellness({ location }) {
   
   return (
     <Demo features={features} location={location}>
-      <h1>
+      <h1 className="white">
         <a href="https://www.prowellness.com/">
           <img src={prowellnessLogo} alt="ProWellness" />
         </a>

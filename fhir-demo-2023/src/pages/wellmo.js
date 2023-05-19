@@ -13,7 +13,7 @@ export default function Wellmo({ location }) {
   
   return (
     <Demo features={features} location={location}>
-      <h1>
+      <h1 className="white">
         <a href="https://www.wellmo.com/">
           <img src={wellmoLogo} alt="Wellmo" />
         </a>

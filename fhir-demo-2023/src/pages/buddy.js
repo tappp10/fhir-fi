@@ -12,7 +12,7 @@ export default function Buddy({ location }) {
     
   return (
     <Demo features={features} location={location}>
-      <h1>
+      <h1 className="white">
         <a href="https://www.buddyhealthcare.com/">
           <img src={buddyLogo} alt="Buddy Healthcare" />
         </a>

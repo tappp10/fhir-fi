@@ -14,7 +14,7 @@ export default function Meallogger({ location }) {
   
   return (
     <Demo features={features} location={location}>
-      <h1>
+      <h1 className="white">
         <a href="https://www.meallogger.com/">
           <img src={mealloggerLogo} alt="Meallogger" />
         </a>
