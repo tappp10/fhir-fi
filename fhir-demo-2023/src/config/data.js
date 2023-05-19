@@ -179,15 +179,6 @@ export const demos = {
       FeatureList.SMART,
     ],
   },
-  solita: {
-    name: 'Solita',
-    features: [
-      FeatureList.Appointment,
-      FeatureList.FHIR,
-      FeatureList.Schedule,
-      FeatureList.Slot,
-    ],
-  },
   sensotrend: {
     name: 'Sensotrend',
     features: [
@@ -200,6 +191,15 @@ export const demos = {
       FeatureList.Patient,
       FeatureList.Practitioner,
       FeatureList.SMART,
+    ],
+  },
+  solita: {
+    name: 'Solita',
+    features: [
+      FeatureList.Appointment,
+      FeatureList.FHIR,
+      FeatureList.Schedule,
+      FeatureList.Slot,
     ],
   },
   tietoevry: {
