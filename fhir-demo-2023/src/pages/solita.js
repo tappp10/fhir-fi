@@ -20,9 +20,9 @@ export default function Solita({ location }) {
       <Features list={features} />
       <aside className="event atk-paivat">
         <h2>ATK-päivät: Ständi 200</h2>
-        <p>Welcome to our stand to see and discuss how we create impactful healthcare solutions
-        with FHIR!</p>
-        <p>We will present demos and discuss at our stand throughout the event.</p>
+        <p>Tervetuloa osastollemme keskustelemaan siitä, kuinka rakennamme vaikuttavia
+        terveydenhuollon ratkaisuja FHIR standardin avulla!</p>
+        <p>Esittelemme demoja ja keskustelemme osastollamme koko tapahtuman ajan.</p>
       </aside>
       <section id="about">
         <h2>Solita - We harness human insight and intelligent technologies to impact many
