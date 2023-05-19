@@ -18,7 +18,7 @@ export default function Microsoft({ location }) {
         </a>
       </h1>
       <Features list={features} />
-      <p>Microsoft presents several solutions:</p>
+      <p>Microsoft presents two solutions:</p>
       <ul>
         <li>
           An open-source <a href="#fhir-server">FHIR server</a> that can be used as a self-hosted
@@ -52,6 +52,20 @@ export default function Microsoft({ location }) {
           production-ready FHIR API with a provisioned database backend (i.e., data can only be
           accessed through the FHIR API - not the database directly), developers should choose the
           FHIR service.</p>
+        <div className="media">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/5vS7Iq9vpXE"
+            title="Azure API for FHIR (Fast Healthcare Interoperability Resources) | Azure Friday"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen>
+          </iframe>
+        </div>
+        <p>See also the <a
+        href="https://www.youtube.com/playlist?list=PLLasX02E8BPAgZj2cNnKftIH8kxj57_44">Microsoft
+        Azure Health Data Services</a> playlist on Youtube.</p>
       </section>
       <section id="analytics">
         <h2>Data Pipelines and Analytics</h2>
