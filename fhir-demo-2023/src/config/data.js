@@ -85,6 +85,7 @@ export const demos = {
     name: 'Fujitsu',
     features: [
       FeatureList.FHIR,
+      FeatureList.SMART,
     ],
   },
   glucostratus: {

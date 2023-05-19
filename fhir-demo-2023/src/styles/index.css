@@ -269,9 +269,14 @@ div.media {
 figure img,
 main > section > img,
 main > img,
-figure img {
+figure img,
+.demo > section > a > img {
   width: 100%;
   margin: 3em 0 3em;
+}
+
+img.no-scale {
+  width: auto;
 }
 
 figure {
@@ -489,6 +494,11 @@ footer a:first-of-type {
   min-height: 10em;
   margin-left: 2em;
   box-shadow: 2px 5px 5px var(--color-business-card-shadow);
+}
+
+.business-card.white {
+  background-color: white;
+  border: 0.1px solid lightgray;
 }
 
 .business-card picture {
