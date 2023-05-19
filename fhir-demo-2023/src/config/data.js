@@ -54,14 +54,12 @@ export const demos = {
       FeatureList.SMART,
     ],
   },
-  /*
   'digital-wells': {
     name: 'Digital Wells',
     features: [
       FeatureList.Observation,
     ],
   },
-  */
   duodecim: {
     name: 'Duodecim',
     features: [
