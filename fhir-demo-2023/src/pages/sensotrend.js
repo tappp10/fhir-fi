@@ -189,7 +189,7 @@ export default function Sensotrend({ location }) {
           <picture>
             <source srcSet={mikaelx2} media="(min-resolution: 144dpi)" />
             <source srcSet={mikaelx1} />
-            <img src="MikaelRinnetmaki.jpg" alt="" />
+            <img src={mikaelx1} alt="" />
           </picture>
           <h3>Mikael Rinnetmäki</h3>
           <p>Founder, Sensotrend Oy</p>

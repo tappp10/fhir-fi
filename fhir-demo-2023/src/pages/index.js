@@ -113,7 +113,7 @@ export default function IndexPage({ location }) {
         </section>
         <section id="contact">
           <h1>Contact</h1>
-          <p>There's still time to get involved!</p>
+          <p>The showcase will keep evolving during the year, and we welcome new entries!</p>
           <p>
             If you have a product using the HL7 FHIR standard, we'd love to get it in the showcase.
             Just send us a description of the product. See the existing descriptions as examples.
@@ -127,7 +127,7 @@ export default function IndexPage({ location }) {
             <picture>
               <source srcSet={mikaelx2} media="(min-resolution: 144dpi)" />
               <source srcSet={mikaelx1} />
-              <img src="MikaelRinnetmaki.jpg" alt="" />
+              <img src={mikaelx1} alt="" />
             </picture>
             <h3>Mikael Rinnetmäki</h3>
             <p>FHIR Ambassador, HL7 Finland</p>
