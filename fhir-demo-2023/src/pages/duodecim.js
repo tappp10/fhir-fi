@@ -56,7 +56,7 @@ export default function Duodecim({ location }) {
         <h3>Contact</h3>
         <div className="business-card">
           <h3>Joonas Mäkinen</h3>
-          <p>Service Manager</p>
+          <p>Product Owner</p>
           <address>
             <a href="mailto:joonas.makinen@duodecim.fi">joonas.makinen@duodecim.fi</a>
           </address>
