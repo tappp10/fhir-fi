@@ -103,6 +103,13 @@ export default function IndexPage({ location }) {
                 Health Festival</a>, Helsinki, Finland</li>
             </ul>
           </strong>
+          <p>
+            We're also planning a tour at least to the Finnish Wellbeing Services Counties
+            (<i>hyvinvointialue</i>, known as Regions in other Nordic countries) in the autumn.
+            We're also happy to extend this demo to other audiences. If you're interested in having
+            the FHIR Demo presented to you or your people, please <a href="#contact">get in
+            touch!</a>
+          </p>
         </section>
         <section>
           <p>The showcase will also remain online on this website until the end of the year.</p>
