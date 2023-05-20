@@ -82,7 +82,9 @@ export default function Sensotrend({ location }) {
           wellness trackers and deriving actionable insights from the data. It also facilitates
           sharing the information with both healthcare professionals and peers.
         </p>
-        <img src={sensotrendConnectImage} alt="" />
+        <a href={sensotrendConnectImage}>
+          <img src={sensotrendConnectImage} alt="" />
+        </a>
         <p>
           Sensotrend Connect transforms data from third party apps and devices into HL7 FHIR format
           (mainly <strong>Observation</strong> and <strong>MedicationAdministration</strong> resources,
@@ -98,7 +100,9 @@ export default function Sensotrend({ location }) {
           >example launch flow</a> in the Finnish Implementation Guide for SMART App Launch.
         </p>
         <figure>
-          <img src={sensotrendAGPImage} alt="" />
+          <a href={sensotrendAGPImage}>
+            <img src={sensotrendAGPImage} alt="" />
+          </a>
           <figcaption>
             The main view of Sensotrend Connect is based on the internationally harmonized <a
             href="http://www.agpreport.org/agp/about">Ambulatory Glucose Profile</a> specification.
@@ -169,7 +173,9 @@ export default function Sensotrend({ location }) {
           and <strong>MedicationAdministration</strong> for insulin doses.
         </p>
         <figure>
-          <img src={kantaPHRscreenshot} alt="" />
+          <a href={kantaPHRscreenshot}>
+            <img src={kantaPHRscreenshot} alt="" />
+          </a>
           <figcaption>
             Individual observations in the Kanta PHR platform, present on the Kanta patient portal.
           </figcaption>
