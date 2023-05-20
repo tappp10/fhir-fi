@@ -129,7 +129,7 @@ export default function Sensotrend({ location }) {
           Kanta PHR platform. 
         </p>
         <p>
-          See also the older version of Sensotrend Connect embedded in Cerner Millennium in a past
+          See also an older version of Sensotrend Connect embedded in Cerner Millennium in a past
           video recording.
         </p>
         <div className="media">
