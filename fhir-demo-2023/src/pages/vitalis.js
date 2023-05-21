@@ -27,8 +27,8 @@ export default function Vitalis() {
           </li>
           <li>
             <p>
-              <Link to="../mylab">Mylab</Link> presents their ideas using FHIR on their
-              stand <strong>B09:34</strong> at
+              <Link to="../mylab">Mylab</Link> presents their ideas using FHIR
+              at <strong>B09:34</strong> on
             </p>
             <strong>
               <ul>
@@ -58,6 +58,21 @@ export default function Vitalis() {
               dateTime="2023-05-25T11:00:00.000+02:00">11:00 -
               11:30</time></strong> on <strong>stage F1</strong>.
             </p>
+          </li>
+        </ul>
+        <p>Other FHIR Demo participants include</p>
+        <ul>
+          <li>
+            <Link to="../cgi">CGI</Link>, place B07:03
+          </li>
+          <li>
+            <Link to="../intersystems">InterSystems</Link>, place B09:20
+          </li>
+          <li>
+            <Link to="../microsoft">Microsoft</Link>, place B08:32
+          </li>
+          <li>
+            <Link to="../tietoevry">Tietoevry</Link>, place B09:12
           </li>
         </ul>
       </aside>
