@@ -6,7 +6,7 @@ import fhirLogo from '../images/fhir.svg';
 
 export const Head = () => <title>FHIR Demo 2023 ATK-päivillä</title>;
 
-export default function NotFoundPage() {
+export default function AtkPaivat() {
 
   return (
     <Article>
