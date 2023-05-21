@@ -21,7 +21,6 @@ export default function Apotti({ location }) {
       <Features list={features} />
       <aside className="event atk-paivat">
         <h2>ATK-päivät: Ständi 400</h2>
-        <p></p>
         <p>Aikataulutetut demot esittelevät Apotin ekosysteemin sekä <Link
         to="../sensotrend">Sensotrendin</Link> FHIR-sovelluksen osana Apotin työnkulkua:</p>
         <strong>
