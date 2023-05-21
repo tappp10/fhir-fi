@@ -20,6 +20,16 @@ export default function IndexPage({ location }) {
         <section id="about">
           <h1>FHIR Demo 2023</h1>
           <img className="decoration" src={fhirLogo} alt="" />
+        </section>
+        <aside className="event atk-paivat">
+          <h2>Sosiaali- ja terveydenhuollon ATK-päivät</h2>
+          <Link to="atk-paivat">FHIR Demo 2023 ATK-päivillä</Link>
+        </aside>
+        <aside className="event vitalis">
+          <h2>Vitalis</h2>
+          <Link to="vitalis">Nordic FHIR Demo 2023 showcase in Vitalis</Link>
+        </aside>
+        <section id="description">
           <p>The FHIR Demo 2023 is a showcase of FHIR implementations.</p>
           <p>
             <a href="https://hl7.org/fhir/">HL7&reg; FHIR&reg;</a> is a next generation standards
@@ -87,12 +97,11 @@ export default function IndexPage({ location }) {
             <p>Project participants will be present in at least the following events:</p>
             <ul>
               <li>
-                22.-24.5.2023 <a
-                href="https://koulutus.fcg.fi/sosiaali-ja-terveydenhuollon-ATK-paivat">Sosiaali- ja
-                terveydenhuollon ATK-päivät</a>, Turku, Finland
+                22.-24.5.2023 <Link to="atk-paivat">Sosiaali- ja terveydenhuollon
+                ATK-päivät</Link>, Turku, Finland
               </li>
               <li>
-                22.-25.5.2023 <a href="https://en.vitalis.nu/">Vitalis</a>, Gothenburg, Sweden
+                22.-25.5.2023 <Link to="vitalis">Vitalis</Link>, Gothenburg, Sweden
               </li>
               <li>
                 6.-9.6.2023 <a href="https://www.devdays.com">FHIR DevDays</a>, Amsterdam, the

@@ -10,11 +10,13 @@ export default function AtkPaivat() {
 
   return (
     <Article>
-      <h1>FHIR Demo 2023</h1>
       <section id="atk-paivat">
+        <h1>FHIR Demo 2023 ATK-päivillä</h1>
         <p>
           HL7 Finlandin järjestämä FHIR Demo 2023 esittelee FHIR-standardin käytön nykytilan
-          Suomessa.
+          Suomessa <a
+          href="https://koulutus.fcg.fi/sosiaali-ja-terveydenhuollon-ATK-paivat">Sosiaali- ja
+          terveydenhuollon ATK-päivillä</a>
         </p>
         <p>
           Tule mukaan <strong>FHIR Walk With Me -kiertokävelylle</strong>, joka antaa hyvän

@@ -344,7 +344,11 @@ aside.event {
 }
 
 main.demo aside.event {
-  margin: 2em 0 4em;
+  margin: 2em 0;
+}
+
+aside.event + aside.event {
+  margin-top: 3em;
 }
 
 aside.event a {

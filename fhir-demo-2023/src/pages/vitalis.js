@@ -11,9 +11,9 @@ export default function Vitalis() {
   return (
     <Article>
       <section id="vitalis">
-        <h2>FHIR Demo 2023 in Vitalis</h2>
+        <h1>FHIR Demo 2023 in Vitalis</h1>
         <p>
-          Several FHIR Demo 2023 participants will be at Vitalis.
+          Several FHIR Demo 2023 participants will be at <a href="https://vitalis.nu/">Vitalis</a>.
         </p>
       </section>
       <aside className="event vitalis">
