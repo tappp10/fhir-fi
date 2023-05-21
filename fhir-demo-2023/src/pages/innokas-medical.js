@@ -32,10 +32,12 @@ export default function InnokasMedical({ location }) {
         <p>We'll be at the Matchmaking & Event Area <strong><time
         dateTime="2023-05-24T15:30:00.000+02:00">24.5.2023 at 15:30-17:00</time></strong></p>
       </aside>
+      {/*
       <aside className="event radical-health">
         <h2>Digious at the Radical Health Festival</h2>
         <p>Exhibition venue, C2</p>
       </aside>
+      */}
 
       <p>Our solution is an integration channel where data can be effortlessly transferred from a
       medical device to the national healthcare databases. This removes the need for manual input
