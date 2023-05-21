@@ -343,7 +343,7 @@ aside.event {
   max-width: calc(var(--content-width) - 1rem);
 }
 
-demo aside.event {
+main.demo aside.event {
   margin: 2em 0 4em;
 }
 
