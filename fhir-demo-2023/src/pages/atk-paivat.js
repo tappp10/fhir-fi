@@ -125,6 +125,7 @@ export default function NotFoundPage() {
           </tbody>
         </table>
       </section>
+      <img className="decoration" src={fhirLogo} alt="" />
     </Article>
   )
 };
