@@ -34,6 +34,7 @@ export default function Mylab({ location }) {
         <p>If this time is not suitable for you, you may visit any time Mylab's stand and contact
         our personnel to schedule presentation time and share your ideas.</p>
       </aside>
+      {/*
       <aside className="event atk-paivat">
         <h2>Mylab ATK-päivillä</h2>
         <p>If you are interested in the topic, please contact any Mylab's personnel in the event
@@ -41,6 +42,7 @@ export default function Mylab({ location }) {
         using laboratory data and we will contact you later. Mylab don't have stand and demo
         presentation in ATK-days.</p>
       </aside>
+      */}
       <section id="mylab">
         <p>Mylab is the leading Finnish supplier of health care laboratory and diagnostics
         information systems. By implementing better and more reliable technological solutions for
