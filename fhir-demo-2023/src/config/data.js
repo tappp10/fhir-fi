@@ -88,12 +88,14 @@ export const demos = {
       FeatureList.SMART,
     ],
   },
+  /*
   glucostratus: {
     name: 'Glucostratus',
     features: [
       FeatureList.SMART,
     ],
   },
+  */
   'innokas-medical': {
     name: 'Innokas Medical / Medicubex',
     features: [

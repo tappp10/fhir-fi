@@ -9,7 +9,7 @@ import glucostratusLogo from '../images/glucostratus.png';
 export const Head = () => <title>FHIR Demo 2023: Glucostratus</title>;
 
 export default function Glucostratus({ location }) {
-  const features = demos.glucostratus.features;
+  const features = demos.glucostratus?.features;
   
   return (
     <Demo features={features} location={location}>
