@@ -4,6 +4,7 @@ import Demo from '../components/Demo';
 import Features from '../components/Features';
 import { demos } from '../config/data';
 import integritasLogo from '../images/integritas.svg';
+import pirkko from '../images/pirkko.png';
 
 export const Head = () => <title>FHIR Demo 2023: Integritas</title>;
 
@@ -24,6 +25,7 @@ export default function Integritas({ location }) {
         medical care processes provided as a Software as a Service solution to customers. It
         includes elements from Enterprise Resource Planning to improve health care resource
         planning and outcomes.</p>
+        <a href={pirkko}><img src={pirkko} alt="Ruutukaappaus Pirkko-järjestelmästä" /></a>
         <p>Current patient health record systems are usually only intended to record notes from
         individual patient visits.</p>
         <p>Care plans are entered as plain text and even when they have a structured form, patient
