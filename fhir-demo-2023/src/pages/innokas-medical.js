@@ -87,6 +87,7 @@ export default function InnokasMedical({ location }) {
           doctors to see it when browsing patient's medical records
         </li>
       </ul>
+      {/*
       <div className="media">
         <iframe
             width="100%"
@@ -98,6 +99,7 @@ export default function InnokasMedical({ location }) {
             allowFullScreen>
           </iframe>
       </div>
+      */}
       <section id="flow">
         <h2>Measurement Transfer Flow</h2>
         <p>Demo inputs:</p>
