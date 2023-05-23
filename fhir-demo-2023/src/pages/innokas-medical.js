@@ -32,6 +32,10 @@ export default function InnokasMedical({ location }) {
         <p>We'll be at the Matchmaking & Event Area <strong><time
         dateTime="2023-05-24T15:30:00.000+02:00">24.5.2023 at 15:30-17:00</time></strong></p>
       </aside>
+      <aside className="event atk-paivat">
+        <h2>MedicubeX ATK-päivillä</h2>
+        <p>MedicubeX on tavattavissa Startup-alueella.</p>
+      </aside>
       {/*
       <aside className="event radical-health">
         <h2>Digious at the Radical Health Festival</h2>

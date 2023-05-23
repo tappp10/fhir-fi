@@ -120,8 +120,9 @@ export default function AtkPaivat() {
             <tr><td>221</td><td><Link to="../bcb-medical">BCB Medical</Link></td></tr>
             <tr><td>400</td><td><Link to="../apotti">Apotti</Link></td></tr>
             <tr><td>404</td><td><Link to="../prowellness">ProWellness</Link></td></tr>
-            <tr><td rowspan="4">Startup-alue</td><td><Link to="../glucostratus">Glucostratus</Link></td></tr>
+            <tr><td rowspan="5">Startup-alue</td><td><Link to="../glucostratus">Glucostratus</Link></td></tr>
             <tr><td><Link to="../meallogger">MealLogger</Link></td></tr>
+            <tr><td><Link to="../innokas-medical">MedicubeX</Link></td></tr>
             <tr><td><Link to="../sensotrend">Sensotrend</Link></td></tr>
             <tr><td><Link to="../wellmo">Wellmo</Link></td></tr>
           </tbody>
