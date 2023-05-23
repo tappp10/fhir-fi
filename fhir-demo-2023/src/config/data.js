@@ -100,6 +100,9 @@ export const demos = {
     name: 'Innokas Medical / Medicubex',
     features: [
       FeatureList.Observation,
+      FeatureList.Encounter,
+      FeatureList.Patient,
+      FeatureList.FHIR,
       FeatureList.SMART,
     ],
   },
