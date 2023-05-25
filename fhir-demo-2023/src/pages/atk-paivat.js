@@ -28,7 +28,7 @@ export default function AtkPaivat() {
           href="https://fhir.fi/profiling.html">kansalliset FHIR-soveltamisoppaat</a>!
         </p>
       </section>
-      <aside className="event atk-paivat">
+      <section className="event atk-paivat">
         <h2>Aikataulutetut demot ATK-päivillä</h2>
         <table className="schedule">
           <tbody>
@@ -101,7 +101,7 @@ export default function AtkPaivat() {
             </tr>
           </tbody>
         </table>
-      </aside>
+      </section>
       <section id="osallistujat">
         <h2>Demon osallistujien ständit ATK-päivillä</h2>
         <table className="participants">

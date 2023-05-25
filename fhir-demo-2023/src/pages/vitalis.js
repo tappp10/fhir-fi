@@ -16,7 +16,7 @@ export default function Vitalis() {
           Several FHIR Demo 2023 participants will be at <a href="https://vitalis.nu/">Vitalis</a>.
         </p>
       </section>
-      <aside className="event vitalis">
+      <section className="event vitalis">
         <h2>FHIR Demo particinpants at Vitalis</h2>
         <ul>
           <li>
@@ -75,7 +75,7 @@ export default function Vitalis() {
             <Link to="../tietoevry">Tietoevry</Link>, place B09:12
           </li>
         </ul>
-      </aside>
+      </section>
       <section id="other-events">
         <h2>Other events</h2>
         <p>

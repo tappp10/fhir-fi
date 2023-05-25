@@ -334,7 +334,8 @@ li h2 {
   margin-bottom: 5em;
 }
 
-aside.event {
+aside.event,
+section.event {
   box-sizing: border-box;
   background-color: black;
   color: white;
@@ -343,7 +344,8 @@ aside.event {
   max-width: calc(var(--content-width) - 1rem);
 }
 
-main.demo aside.event {
+main.demo aside.event,
+main.demo section.event {
   margin: 2em 0;
 }
 
@@ -351,29 +353,40 @@ aside.event + aside.event {
   margin-top: 3em;
 }
 
-aside.event a {
+aside.event a,
+section.event a {
   color: white;
   font-weight: bold;
   text-decoration: underline;
 }
 
-aside.event.atk-paivat h2 {
+aside.event.atk-paivat h2,
+section.event h2 {
   color: #EB5C18;
 }
 
-aside.event.atk-paivat {
+aside.event.atk-paivat,
+section.event.atk-paivat {
   background-color: #0E456E;
 }
 
-aside.event.vitalis {
+aside.event.vitalis,
+section.event.vitalis {
   background-color: #01508B;
 }
 
-aside.event.radical-health {
+aside.event.atk-paivat,
+aside.event.vitalis {
+  display: none;
+}
+
+aside.event.radical-health,
+section.event.radical-health {
   background-color: #f913a1;
 }
 
-aside li {
+aside li,
+section.event li {
   margin-bottom: 0.5em;
 }
 
