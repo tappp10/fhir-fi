@@ -10,6 +10,7 @@ import medicubexBoothOpen from '../images/medicubex_booth_open.png';
 import anttiKaltiainen from '../images/antti_kaltiainen.png';
 import heikkiMiinalainen from '../images/heikki_miinalainen.png';
 import digiousFlowChart from '../images/digious_flow_chart.png';
+import tapioPelkonen from '../images/tapio_pelkonen.png';
 
 export const Head = () => <title>FHIR Demo 2023: Innokas Medical / MedicubeX</title>;
 
@@ -86,6 +87,7 @@ export default function InnokasMedical({ location }) {
           doctors to see it when browsing patient's medical records
         </li>
       </ul>
+      {/*
       <div className="media">
         <iframe
             width="100%"
@@ -97,6 +99,7 @@ export default function InnokasMedical({ location }) {
             allowFullScreen>
           </iframe>
       </div>
+      */}
       <section id="flow">
         <h2>Measurement Transfer Flow</h2>
         <p>Demo inputs:</p>
@@ -214,6 +217,18 @@ export default function InnokasMedical({ location }) {
           <p>Software Engineer, Digious</p>
           <address>
             <a href="mailto:heikki.miinalainen@digious.fi">heikki.miinalainen@digious.fi</a>
+          </address>
+        </div>
+        <br />
+        <div className="business-card">
+          <picture>
+            <source srcSet={tapioPelkonen} />
+            <img src={tapioPelkonen} alt="Tapio Pelkonen" />
+          </picture>
+          <h3>Tapio Pelkonen</h3>
+          <p>Senior Software Engineer, Digious</p>
+          <address>
+            <a href="mailto:tapio.pelkonen@digious.fi">tapio.pelkonen@digious.fi</a>
           </address>
         </div>
       </section>
