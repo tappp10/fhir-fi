@@ -87,6 +87,18 @@ export default function InnokasMedical({ location }) {
           doctors to see it when browsing patient's medical records
         </li>
       </ul>
+
+      <div 
+          className="media" 
+          style="padding:56.25% 0 0 0;position:relative;">
+        <iframe 
+            src="https://player.vimeo.com/video/835519980?h=6407d3777e&loop=1" 
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+            frameBorder="0" 
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen>
+        </iframe>
+      </div>
       {/*
       <div className="media">
         <iframe
