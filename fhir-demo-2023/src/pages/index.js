@@ -29,6 +29,10 @@ export default function IndexPage({ location }) {
           <h2>Vitalis</h2>
           <Link to="vitalis">Nordic FHIR Demo 2023 showcase in Vitalis</Link>
         </aside>
+        <aside className="event radical-health">
+          <h2>Radical Health Festival</h2>
+          <Link to="radical-health">FHIR Demo 2023 at the Radical Health Festival</Link>
+        </aside>        
         <section id="description">
           <p>The FHIR Demo 2023 is a showcase of FHIR implementations.</p>
           <p>
@@ -108,7 +112,7 @@ export default function IndexPage({ location }) {
                 Netherlands
               </li>
               <li>
-                12.-14.6.2023 <a href="https://radicalhealthfestival.messukeskus.com/">Radical
+                12.-14.6.2023 <a href="radical-health">Radical
                 Health Festival</a>, Helsinki, Finland</li>
             </ul>
           </strong>

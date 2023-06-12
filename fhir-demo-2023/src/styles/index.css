@@ -365,6 +365,10 @@ section.event h2 {
   color: #EB5C18;
 }
 
+section.radical-health h2 {
+  color: white;
+}
+
 aside.event.atk-paivat,
 section.event.atk-paivat {
   background-color: #0E456E;
