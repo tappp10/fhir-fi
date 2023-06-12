@@ -37,12 +37,12 @@ export default function InnokasMedical({ location }) {
         <h2>MedicubeX ATK-päivillä</h2>
         <p>MedicubeX on tavattavissa Startup-alueella.</p>
       </aside>
-      {/*
       <aside className="event radical-health">
         <h2>Digious at the Radical Health Festival</h2>
         <p>Exhibition venue, C2</p>
+        <h2>MedicubeX at the Radical Health Festival</h2>
+        <p>Startup Area, SU10</p>
       </aside>
-      */}
 
       <p>Our solution is an integration channel where data can be effortlessly transferred from a
       medical device to the national healthcare databases. This removes the need for manual input

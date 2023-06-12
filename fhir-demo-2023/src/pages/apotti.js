@@ -42,6 +42,27 @@ export default function Apotti({ location }) {
           </ul>
         </strong>
       </aside>
+      <aside className="event radical-health">
+        <h2>Apotti at the Radical Health Festival</h2>
+        <p>Health Capital Helsinki stand A6</p>
+        <p>
+          The Apotti Ecosystem is presented in cooperation with the healthtech startup <Link
+          to="../sensotrend">Sensotrend</Link>.
+        </p>
+        <strong>
+          <ul>
+          <li>
+              <time dateTime="2023-06-13T12:40:00.000+03:00">Tuesday at 12.40</time>, Health
+              Capital Helsinki stand A6
+            </li>
+            <li>
+              <time dateTime="2023-06-14T13:10:00.000+03:00">Wednesday at 13.10</time>, Health
+              Capital Helsinki stand A6
+            </li>
+          </ul>
+        </strong>        
+      </aside>
+
       <section id="kyvykkyydet">
         <h2>Apotti-järjestelmän kyvykkyydet ja kehitys</h2>
         <p>Apotti-järjestelmä on kattavin ja edistyksellisin ratkaisu sosiaali- ja terveydenhuollon

@@ -59,6 +59,39 @@ export default function Sensotrend({ location }) {
         to="../intersystems">InterSystemsin</Link> ja <Link
         to="../wellmo">Wellmon</Link> ständeillä.</p>
       </aside>
+      <aside className="event vitalis">
+        <p>
+          <Link to="../sensotrend">Sensotrend</Link> will be present at the event on Thursday, May
+          25.
+        </p>
+        <p>
+          Sensotrend's founder Mikael Rinnetmäki, also the FHIR Ambassador of HL7 Finland, presents
+          the <a href="https://invitepeople.com/public/seminars/ae2cdf5033">Nordic FHIR Showcase
+          2023</a> at <strong><time dateTime="2023-05-25T11:00:00.000+02:00">11:00 -
+          11:30</time></strong> on <strong>stage F1</strong>.
+        </p>
+      </aside>
+      <aside className="event radical-health">
+        <h2>Sensotrend at the Radical Health Festival</h2>
+        <p>Startup Area, SU1</p>
+        <p>
+          We present our solution integrated into <Link to="../apotti">Apotti</Link>, an Epic
+          installation in Finland.
+        </p>
+        <strong>
+          <ul>
+          <li>
+              <time dateTime="2023-06-13T12:40:00.000+03:00">Tuesday at 12.40</time>, Health
+              Capital Helsinki stand A6
+            </li>
+            <li>
+              <time dateTime="2023-06-14T13:10:00.000+03:00">Wednesday at 13.10</time>, Health
+              Capital Helsinki stand A6
+            </li>
+          </ul>
+        </strong>        
+      </aside>
+
       <section id="intro">
         <p>Sensotrend Oy presents two solutions:</p>
         <ul>
