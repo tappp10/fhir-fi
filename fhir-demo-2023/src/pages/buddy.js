@@ -21,7 +21,18 @@ export default function Buddy({ location }) {
       <aside className="event atk-paivat">
         <h2>ATK-päivät: Ständi 104</h2>
       </aside>
-      <p>Demo description will be added soon.</p>
+      <p>The scope and the contents of the demo are described in the video below.</p>
+      <div className="media">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://player.vimeo.com/video/831174972?h=d63ed24fb5&title=0&byline=0"
+          title="Buddy HC-FHIR-demo"
+          frameBorder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowFullScreen>
+        </iframe>
+      </div>
       <section id="contact">
         <h3>Contact</h3>
         <div className="business-card">
