@@ -87,19 +87,16 @@ export default function InnokasMedical({ location }) {
           doctors to see it when browsing patient's medical records
         </li>
       </ul>
-      {/*
       <div className="media">
-        <iframe
-            width="100%"
+        <iframe 
+            src="https://player.vimeo.com/video/835519980?h=6407d3777e&loop=1" 
             height="100%"
-            src="https://www.youtube.com/embed/ScMzIvxBSi4"
-            title="Medicubex demo"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            width="100%"
+            frameBorder="0" 
+            allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen>
-          </iframe>
+        </iframe>
       </div>
-      */}
       <section id="flow">
         <h2>Measurement Transfer Flow</h2>
         <p>Demo inputs:</p>
