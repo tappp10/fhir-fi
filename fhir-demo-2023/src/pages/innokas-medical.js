@@ -89,9 +89,10 @@ export default function InnokasMedical({ location }) {
       </ul>
       <div className="media">
         <iframe 
-            src="https://player.vimeo.com/video/835519980?h=6407d3777e&loop=1" 
-            height="100%"
             width="100%"
+            height="100%"
+            src="https://player.vimeo.com/video/835519980?h=6407d3777e" 
+            title="Digious & MedicubeX on FHIR"
             frameBorder="0" 
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen>
