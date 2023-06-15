@@ -379,15 +379,20 @@ section.event.vitalis {
   background-color: #01508B;
 }
 
+aside.event.radical-health,
+section.event.radical-health {
+  background-color: #f913a1;
+}
+
 aside.event.atk-paivat,
 aside.event.vitalis {
   display: none;
 }
 
-aside.event.radical-health,
-section.event.radical-health {
-  background-color: #f913a1;
+aside.event.radical-health {
+  display: none;
 }
+
 
 aside li,
 section.event li {
