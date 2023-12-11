@@ -1,6 +1,6 @@
 {
   "name": "fhir-demo-2023",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Source for the FL7 Finland's FHIR Demo 2023 site",
   "author": "Mikael Rinnetmäki",
