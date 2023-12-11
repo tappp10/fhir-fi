@@ -108,12 +108,12 @@ export default function IndexPage({ location }) {
                 22.-25.5.2023 <Link to="vitalis">Vitalis</Link>, Gothenburg, Sweden
               </li>
               <li>
-                6.-9.6.2023 <a href="https://www.devdays.com">FHIR DevDays</a>, Amsterdam, the
+                6.-9.6.2023 <Link to="devdays">FHIR DevDays</Link>, Amsterdam, the
                 Netherlands
               </li>
               <li>
-                12.-14.6.2023 <a href="radical-health">Radical
-                Health Festival</a>, Helsinki, Finland</li>
+                12.-14.6.2023 <Link to="radical-health">Radical
+                Health Festival</Link>, Helsinki, Finland</li>
             </ul>
           </strong>
           <p>

@@ -79,12 +79,12 @@ export default function Vitalis() {
       <section id="other-events">
         <h2>Other events</h2>
         <p>
-          At the same time, many participants are also at the Finnish <Link
+          At the same time, many participants were also at the Finnish <Link
           to="../atk-paivat">Sosiaali- ja terveydenhuollon ATK-päivät</Link> event.
         </p>
         <p>
-          The demos will also be presented in the <a href="https://www.devdays.com/">FHIR
-          DevDays</a> developer event and at the <a
+          The demos were also be presented in the <Link to="../devdays">FHIR
+          DevDays</Link> developer event and at the <a
           href="https://radicalhealthfestival.messukeskus.com/">Radical Health Festival</a>.
         </p>
         <p>
