@@ -116,7 +116,7 @@ export default function Sensotrend({ location }) {
           sharing the information with both healthcare professionals and peers.
         </p>
         <a href={sensotrendConnectImage}>
-          <img src={sensotrendConnectImage} alt="" />
+          <img src={sensotrendConnectImage} alt="Illustration of Sensotrend Connect" />
         </a>
         <p>
           Sensotrend Connect transforms data from third party apps and devices into HL7 FHIR format
@@ -134,7 +134,7 @@ export default function Sensotrend({ location }) {
         </p>
         <figure>
           <a href={sensotrendAGPImage}>
-            <img src={sensotrendAGPImage} alt="" />
+            <img src={sensotrendAGPImage} alt="Screen capture of Sensotrend AGP Report" />
           </a>
           <figcaption>
             The main view of Sensotrend Connect is based on the internationally harmonized <a
@@ -188,7 +188,7 @@ export default function Sensotrend({ location }) {
           community creating apps and devices that make life with diabetes easier. The community
           has thousands of developers, and tens of thousands of people using the apps globally.
         </p>
-        <img className="logo" src={nightscoutLogo} alt="" />
+        <img className="logo" src={nightscoutLogo} alt="Nightscout logo" />
         <p>
           Nightscout Connect implements the API used by the Nightscout apps on top of the Finnish
           national Kanta PHR platform, bringing the data from these apps into the national
@@ -207,7 +207,10 @@ export default function Sensotrend({ location }) {
         </p>
         <figure>
           <a href={kantaPHRscreenshot}>
-            <img src={kantaPHRscreenshot} alt="" />
+            <img
+              src={kantaPHRscreenshot}
+              alt="Screen capture of data from Nightscout Connect in Kanta PHR"
+            />
           </a>
           <figcaption>
             Individual observations in the Kanta PHR platform, present on the Kanta patient portal.
