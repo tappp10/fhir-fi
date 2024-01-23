@@ -11,7 +11,7 @@ const Intro = () => {
         <Link to="/">
           <img src={hl7finland} alt="HL7 Finland" />
           <p>presents</p>
-          <h1>FHIR Demo 2023</h1>
+          <h1>FHIR Demo 2024</h1>
         </Link>
       </Article>
     </>
@@ -20,4 +20,4 @@ const Intro = () => {
 
 export default Intro;
 
-export const Head = () => <title>FHIR Demo 2023 by HL7 Finland - WELCOME!</title>;
+export const Head = () => <title>FHIR Demo 2024 by HL7 Finland - WELCOME!</title>;

@@ -14,7 +14,7 @@ const Article = ({ children, ...rest }) => {
           <ul>
             <li>
               <Link to="/">
-                FHIR Demo 2023
+                FHIR Demo 2024
               </Link>
             </li>
             {
@@ -42,7 +42,7 @@ const Article = ({ children, ...rest }) => {
       </article>
       <footer>
         <p>
-          &copy;2023 <a href="https://hl7.fi/"><img src={hl7finland} alt="HL7 Finland" /></a>
+          &copy;2024 <a href="https://hl7.fi/"><img src={hl7finland} alt="HL7 Finland" /></a>
           <span>&nbsp;</span>
           <Link to="/privacy">Privacy</Link>
           <span>|</span>
