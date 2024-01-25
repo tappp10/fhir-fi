@@ -17,6 +17,11 @@ const Article = ({ children, ...rest }) => {
                 FHIR Demo 2024
               </Link>
             </li>
+            <li>
+              <Link to="/#description">
+                Participate
+              </Link>
+            </li>
             {
             /*
             <li>
