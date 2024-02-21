@@ -1,0 +1,100 @@
+import * as React from 'react';
+
+const width = 500;
+const height = 1600;
+const lineLength = 300;
+const strokeWidth = 20;
+const lines = width * height / 650 / lineLength;
+console.log(lines);
+
+function getRandomCoord({ x, y, direction }) {
+  let distance;
+  let newDirection;
+  let x1 = -1;
+  let y1 = -1;
+  let counter = 0;
+  while (x1 <= strokeWidth || x1 >= (width - strokeWidth) || y1 <= strokeWidth || y1 > (height - strokeWidth)) {
+    if (counter++ > 10) {
+      // Too difficult, we're in a tough corner...
+      return { x, y, direction};
+    }
+    distance = (Math.floor(Math.random() * lineLength)) + 20;
+    distance -= distance % strokeWidth;
+    newDirection =  direction + Math.floor(Math.random() * 4) + 6;
+    newDirection %= 8;
+    switch (newDirection) {
+      case 0:
+        x1 = x;
+        y1 = y - distance;
+        break;
+      case 1:
+        x1 = x + distance;
+        y1 = y - distance;
+        break;
+      case 2:
+        x1 = x + distance;
+        y1 = y;
+        break;
+      case 3:
+        x1 = x + distance;
+        y1 = y + distance;
+        break;
+      case 4:
+        x1 = x;
+        y1 = y + distance;
+        break;
+      case 5:
+        x1 = x - distance;
+        y1 = y + distance;
+        break;
+      case 6:
+        x1 = x - distance;
+        y1 = y;
+        break;
+      case 7:
+        x1 = x - distance;
+        y1 = y - distance;
+        break;
+      default:
+    }
+  }
+  return { x: x1, y: y1, direction: newDirection };
+}
+
+const Background = (props) => {
+  const pattern = [];
+  for (let i=0; i < lines; i += 1) {
+    const coords = [];
+    let x0 = Math.random() * width;
+    x0 -= x0 % strokeWidth;
+    let y0 = Math.random() * height;
+    y0 -= y0 % strokeWidth;
+    let direction0 = Math.floor(Math.random() * 8);
+    for (let i=0; i < 8; i += 1) {
+      const { x, y, direction } = getRandomCoord({ x: x0, y: y0, direction: direction0 });
+      coords.push(`${x},${y}`);
+      x0 = x;
+      y0 = y;
+      direction0 = direction;
+    }
+    const path = `M${coords.join('L')}`;
+    pattern.push(path);
+  }
+  const d = pattern.join(' ');
+  const { location, pageContext, pageResources, params, path, serverData, uri, ...rest } = props;
+
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox={`0 0 ${width} ${height}`}
+      width={width}
+      height={height}
+      {...rest}
+    >
+      <path fill="none" stroke="#010259" strokeWidth="20px" vectorEffect="non-scaling-stroke" strokeLinecap="square" d={d} />
+      <path fill="none" stroke="white" strokeWidth="1.5px" vectorEffect="non-scaling-stroke" d={d} />
+    </svg>
+  )
+};
+
+export default Background;

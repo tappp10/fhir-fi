@@ -1,18 +1,19 @@
 :root {
-  --color-body-background: #fefefe;
+  --color-body-background: #f0f0f4;
   --color-body-text: black;
   --color-nav-background: #010259;
-  --color-nav-link: #2D1BA6;
+  --color-nav-link: #010259;
   --color-nav-link-active: #05C7F2;
-  --color-nav-link-hover: #0460D9;
+  --color-nav-link-hover: #2D1BA6;
   --color-nav-link-invert: #fefefe;
-  --color-nav-link-invert-active: #0460D9;
+  --color-nav-link-invert-active: #2D1BA6;
   --color-nav-link-invert-hover: #05C7F2;
-  --color-demo-background: #fefefe;
+  --color-heading-text: #010259;
+  --color-demo-background: white;
   --color-demo-text: black;
   --color-offset-white: #f1f1f1;
   --color-business-card-shadow: lightgray;
-  --content-width: 45rem;
+  --content-width: 60rem;
   --prev-next-nav-width: 10rem;
   --prev-next-nav-min-width: calc(var(--content-width) + var(--prev-next-nav-width) *2);
 }
@@ -40,19 +41,34 @@ html {
 body {
   color: var(--color-body-text);
   background-color: var(--color-body-background);
+  background-image: url();
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding: 0;
   margin: 0;
 }
 
-main.demo {
-  background: var(--color-demo-background);
-  color: var(--color-demo-text);
-  padding-bottom: 3em;
+/*
+.bgImage {
+  position: absolute;
+  top: 0;
 }
 
-a {
-  text-decoration: none;
+.bgImage:first-of-type {
+  left: 0;
+}
+
+.bgImage:last-of-type {
+  right: 0;
+}
+*/
+
+main.demo {
+  box-sizing: border-box;
+  background: var(--color-demo-background);
+  color: var(--color-demo-text);
+  padding: 5em 3em;
+  margin-top: 3em;
+  border: 1px dotted var(--color-nav-background);
 }
 
 a, a:visited {
@@ -69,6 +85,7 @@ a:active, nav a:active {
   padding: 2em;
   text-align: center;
   font-size: xx-large;
+  text-decoration: none;
 }
 
 #intro img {
@@ -77,18 +94,78 @@ a:active, nav a:active {
 }
 
 h1 {
-  font-family: 'Big Shoulders Display', sans-serif;
-  word-spacing: 0.15em;  
+  font-family: 'Tourney Variable', 'Tourney', sans-serif;
+  color: var(--color-heading-text);
+  font-weight: 400;
+}
+
+#mainPage h2 {
+  font-family: 'Tourney Variable', 'Tourney', sans-serif;
+  color: var(--color-heading-text);
+  font-size: 2em;
+}
+
+#about h1,
+#demo header h1 {
+  font-size: 550%;
+  font-weight: 650;
 }
 
 #about h1 {
   text-align: center;
 }
 
-#intro h1 {
-  font-size: 333%;
-  margin: 1.3em 0 1.5em;
+#demo header h1 {
+  margin: 0;
 }
+
+#intro {
+  min-height: 1200px;
+}
+
+#intro p {
+  animation: 3s linear 1 delay, 2s ease-in 3s 1 appear;
+}
+
+#intro h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 333%;
+  font-weight: 650;
+  animation: 4.1s linear 1 delay, 2s ease-in 4s 1 appear;
+  animation: 4s linear 1 delay, 3s cubic-bezier(0.3, 0.2, 0.2, 2) 3.9s 1 fatten;
+}
+
+@keyframes delay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fatten {
+  from {
+    font-weight: 100;
+    font-size: 0%;
+  }
+  to {
+    font-weight: 650;
+    font-size: 333%;
+  }
+}
+
 
 h1.white {
   background-color: white;
@@ -143,24 +220,6 @@ article > nav:first-child a:hover, article > nav:first-child a::selection {
 
 article > nav:first-child a:active, article > nav:first-child a.active {
   color: var(--color-nav-link-invert-active);
-}
-
-nav.prevNext img {
-  height: 1em;
-  opacity: 0.4;
-  transition: all 0.2s ease-in-out;
-}
-
-nav.prevNext a:hover img {
-  opacity: 1;
-}
-
-nav.prevNext div:first-child {
-  float: left;
-}
-
-nav.prevNext div:last-child {
-  float: right;
 }
 
 section {
@@ -223,11 +282,13 @@ ul.features {
 }
 
 a.feature {
-  opacity: 0.5;
+  font-family: 'Tourney Variable', 'Tourney', sans-serif;
+  font-weight: 100;
+  text-decoration: none;
 }
 
 a.selected.feature {
-  opacity: 1;
+  font-weight: 900;
 }
 
 article > main {
@@ -261,9 +322,18 @@ ul.hashtags li {
 
 img.decoration {
   display: block;
-  margin: 6em auto;
-  height: 16em;
+  margin: 6em auto 0;
+  height: 8em;
+  max-height: 25vh;
+  max-width: 50vw;
+}
+
+#about img.decoration {
+  display: block;
+  margin: 12em auto 0;
+  height: 36em;
   max-height: 50vh;
+  max-width: 80vw;
 }
 
 div.media {
@@ -317,11 +387,16 @@ section > img.logo {
 
 .demo h2,
 li h2 {
-  font-family: 'Big Shoulders Display', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /*
+  font-family: 'Tourney Variable', 'Tourney', sans-serif;
+  */
   font-size: larger;
 }
 
 .demo h2 {
+  /*
+  font-weight: 600;
+  */
   font-size: 2.8rem;
 }
 
@@ -555,8 +630,49 @@ footer a:first-of-type {
   max-height: 30vh;
 }
 
+nav.prevNext {
+  font-family: 'Tourney Variable', 'Tourney', sans-serif;
+  font-size: 200%;
+  font-weight: 100;
+}
+
+nav.prevNext, nav.prevNext div, nav.prevNext div a {
+  box-sizing: border-box;
+}
+
+nav.prevNext img {
+  height: 1em;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+nav.prevNext a {
+  text-decoration: none;
+}
+
+nav.prevNext a:hover img {
+  opacity: 1;
+}
+
+nav.prevNext a:hover {
+  font-weight: 700;
+}
+
+
+nav.prevNext div:first-child {
+  float: left;
+}
+
+nav.prevNext div:last-child {
+  float: right;
+}
+
 /* @media (min-width: calc(var(--content-width) + 30rem)) { */
-@media (min-width: 67rem) {
+@media (min-width: 100rem) {
+  main.demo {
+    margin-top: 0;
+  }
+
   article > nav.prevNext {
     display: none;
   }
@@ -566,7 +682,7 @@ footer a:first-of-type {
     position: fixed;
     top: 0;
     min-width: 10rem;
-    width: calc((100vw - 47rem) / 2);
+    width: calc((100vw - var(--content-width)) / 2);
     height: calc(100vh + 1em);
     text-align: center;
   }
@@ -590,16 +706,25 @@ footer a:first-of-type {
     transition: all 0.2s;
   }
 
+  /*
+  nav.prevNext div:first-child {
+    padding-right: 16em;
+  }
+  */
+
   nav.prevNext div:first-child a {
-    text-align: right;
+    text-align: center;
+    /*
     padding-right: calc(50vw - 23.5rem - 45px);
+    */
   }
 
   nav.prevNext div:last-child a {
-    text-align: left;
+    text-align: center;
   }
 
 
+  /*
   nav.prevNext div:first-child a:before {
     content: ' ';
     display: block;
@@ -621,6 +746,7 @@ footer a:first-of-type {
     border: 90px solid transparent;
     transition: all 0.2s;
   }
+  */
 
   nav.prevNext div:hover a, nav.prevNext a:hover, nav.prevNext a:active {
     border-color: var(--color-nav-background);

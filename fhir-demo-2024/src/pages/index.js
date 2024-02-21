@@ -8,6 +8,10 @@ import fhirLogo from '../images/fhir.svg';
 import mikaelx1 from '../images/MikaelRinnetmaki.jpg';
 import mikaelx2 from '../images/MikaelRinnetmaki2x.jpg';
 
+
+// import bg1 from '../images/bg01.svg';
+// import bg2 from '../images/bg02.svg';
+
 export const Head = () => <title>FHIR Demo 2024</title>;
 
 export default function IndexPage({ location }) {
@@ -16,7 +20,11 @@ export default function IndexPage({ location }) {
   const features = Object.keys(selectedFeatures);
   return (
     <>
-      <Article>
+      {/*
+      <img className="bgImage" src={bg1} />
+      <img className="bgImage" src={bg2} />
+      */}
+      <Article id="mainPage">
         <section id="about">
           <h1>FHIR Demo 2024</h1>
           <img className="decoration" src={fhirLogo} alt="" />
@@ -155,7 +163,8 @@ export default function IndexPage({ location }) {
           }
           <p>
             If you have a product using the HL7 FHIR standard, we'd love to get it in the showcase.
-            Just send us a description of the product. See last year's site for examples.
+            Just send us a description of the product. See <a
+            href="https://fhir.fi/en/demo2023/apotti/">last year's site</a> for examples.
           </p>
           <p>
             If you have an idea of an integration you'd like to implement with another partcipant,

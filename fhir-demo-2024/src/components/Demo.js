@@ -29,12 +29,12 @@ export default function Demo({ children, location }) {
         {myIndex > 0
         ? (
           <Link to={`/${selectedDemos[myIndex - 1]}${search}`}>
-            Previous <img src={fhirLogo} alt="" />
+            <span className="navSymbol">&lt;</span> <span className="navText">Previous</span> <img src={fhirLogo} alt="" />
           </Link>
         )
         : (
           <Link to={`/${selectedDemos[selectedDemos.length - 1]}${search}`}>
-            Last <img src={fhirLogo} alt="" />
+            <span className="navSymbol">&lt;</span> <span className="navText">Last</span> <img src={fhirLogo} alt="" />
           </Link>
         )
         }
@@ -43,12 +43,12 @@ export default function Demo({ children, location }) {
         {myIndex < (selectedDemos.length - 1)
         ? (
           <Link to={`/${selectedDemos[myIndex + 1]}${search}`}>
-            Next <img src={fhirLogo} alt="" />
+            <img src={fhirLogo} alt="" /> <span className="navText">Next</span> <span className="navSymbol">&gt;</span>
           </Link>
         )
         : (
           <Link to={`/${selectedDemos[0]}${search}`}>
-            First<img src={fhirLogo} alt="" />
+            <img src={fhirLogo} alt="" /> <span className="navText">First</span> <span className="navSymbol">&gt;</span>
           </Link>
         )
         }
@@ -57,8 +57,9 @@ export default function Demo({ children, location }) {
   ) : null;
 
   return (
-    <Article>
+    <Article id="demo">
       <header>
+        <h1>FHIR Demo 2024</h1>
         {features.length
         ? (
           <>

@@ -2,8 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 import hl7finland from '../images/hl7-finland.svg';
-import "@fontsource/big-shoulders-display/900.css";
-import "@fontsource/big-shoulders-text";
+import '@fontsource-variable/tourney';
 import '../styles/index.css';
 
 const Article = ({ children, ...rest }) => {

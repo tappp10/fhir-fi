@@ -6,15 +6,13 @@ import hl7finland from '../images/hl7-finland-animated.svg';
 
 const Intro = () => {
   return (
-    <>
-      <Article id="intro">
-        <Link to="/">
-          <img src={hl7finland} alt="HL7 Finland" />
-          <p>presents</p>
-          <h1>FHIR Demo 2024</h1>
-        </Link>
-      </Article>
-    </>
+    <Article id="intro">
+      <Link to="/">
+        <img src={hl7finland} alt="HL7 Finland" />
+        <p>presents</p>
+        <h1>FHIR Demo 2024</h1>
+      </Link>
+    </Article>
   )
 };
 

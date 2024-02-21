@@ -23,6 +23,10 @@
         stroke:#c51a1b;
       }
       @keyframes dash {
+        from {
+          stroke-dasharray: 180;
+          stroke-dashoffset: 180;
+        }
         to {
           stroke-dashoffset: 0;
         }
