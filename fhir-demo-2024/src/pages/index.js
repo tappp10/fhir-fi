@@ -168,9 +168,8 @@ export default function IndexPage({ location }) {
           </p>
           <p>
             If you have an idea of an integration you'd like to implement with another partcipant,
-            let us know, and we can help you get it done.</p>
-          </section>
-        <section>
+            let us know, and we can help you get it done.
+          </p>
           <div className="business-card">
             <picture>
               <source srcSet={mikaelx2} media="(min-resolution: 144dpi)" />

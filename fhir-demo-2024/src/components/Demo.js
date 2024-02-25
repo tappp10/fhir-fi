@@ -29,12 +29,20 @@ export default function Demo({ children, location }) {
         {myIndex > 0
         ? (
           <Link to={`/${selectedDemos[myIndex - 1]}${search}`}>
-            <span className="navSymbol">&lt;</span> <span className="navText">Previous</span> <img src={fhirLogo} alt="" />
+            <div>
+              <span className="navSymbol">&lt;</span> {' '}
+              <span className="navText">Previous</span> {' '}
+              <img src={fhirLogo} alt="" />
+            </div>
           </Link>
         )
         : (
           <Link to={`/${selectedDemos[selectedDemos.length - 1]}${search}`}>
-            <span className="navSymbol">&lt;</span> <span className="navText">Last</span> <img src={fhirLogo} alt="" />
+            <div>
+              <span className="navSymbol">&lt;</span> {' '}
+              <span className="navText">Last</span> {' '}
+              <img src={fhirLogo} alt="" />
+            </div>
           </Link>
         )
         }
@@ -43,12 +51,20 @@ export default function Demo({ children, location }) {
         {myIndex < (selectedDemos.length - 1)
         ? (
           <Link to={`/${selectedDemos[myIndex + 1]}${search}`}>
-            <img src={fhirLogo} alt="" /> <span className="navText">Next</span> <span className="navSymbol">&gt;</span>
+            <div>
+              <img src={fhirLogo} alt="" /> {' '}
+              <span className="navText">Next</span> {' '}
+              <span className="navSymbol">&gt;</span>
+            </div>
           </Link>
         )
         : (
           <Link to={`/${selectedDemos[0]}${search}`}>
-            <img src={fhirLogo} alt="" /> <span className="navText">First</span> <span className="navSymbol">&gt;</span>
+            <div>
+              <img src={fhirLogo} alt="" /> {' '}
+              <span className="navText">First</span> {' '}
+              <span className="navSymbol">&gt;</span>
+            </div>
           </Link>
         )
         }
@@ -71,8 +87,8 @@ export default function Demo({ children, location }) {
         )
         : null
         }
-        {prevNextNav}
       </header>
+      {prevNextNav}
       <main className="demo">
         { children }
       </main>

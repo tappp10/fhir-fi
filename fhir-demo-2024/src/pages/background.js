@@ -1,9 +1,10 @@
 import * as React from 'react';
 
-const width = 500;
-const height = 1600;
+const width = 5000;
+const height = 15000;
+
 const lineLength = 300;
-const strokeWidth = 20;
+const strokeWidth = 14;
 const lines = width * height / 650 / lineLength;
 console.log(lines);
 
@@ -81,7 +82,25 @@ const Background = (props) => {
     pattern.push(path);
   }
   const d = pattern.join(' ');
-  const { location, pageContext, pageResources, params, path, serverData, uri, ...rest } = props;
+  const { children, location, pageContext, pageResources, params, path, serverData, uri, ...rest } = props;
+  console.log({ props });
+
+  const rulerLines = [];
+  const adjust = strokeWidth / 2;
+  for (let i=0; i < width; i += strokeWidth) {
+    rulerLines.push(<line x1={i + adjust} x2={i + adjust} y2={height + adjust} />);
+  }
+  for (let i=0; i < height; i += strokeWidth) {
+    rulerLines.push(<line x2={width} y1={i + adjust} y2={i + adjust} />);
+  }
+
+  const style = `
+    line {
+      stroke-width: 0.5px;
+      stroke: var(--color-nav-background);
+      stroke-opacity: 0.2;
+    }
+  `;
 
   return (
     <svg
@@ -89,10 +108,16 @@ const Background = (props) => {
       viewBox={`0 0 ${width} ${height}`}
       width={width}
       height={height}
+      preserveAspectRatio="xMidYMid slice"
       {...rest}
     >
-      <path fill="none" stroke="#010259" strokeWidth="20px" vectorEffect="non-scaling-stroke" strokeLinecap="square" d={d} />
-      <path fill="none" stroke="white" strokeWidth="1.5px" vectorEffect="non-scaling-stroke" d={d} />
+      <style>{style}</style>
+      {rulerLines}
+      <path fill="none" stroke="#010259" strokeWidth={strokeWidth} vectorEffect="non-scaling-stroke" strokeLinecap="square" d={d} />
+      <path fill="none" stroke="white" strokeWidth="1px" vectorEffect="non-scaling-stroke" shapeRendering="auto" d={d} />
+      <circle fill="white" r="2">
+        <animateMotion dur={`${width * height / 50000}s`} repeatCount="indefinite" path={d} />
+      </circle>
     </svg>
   )
 };

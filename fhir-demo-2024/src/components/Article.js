@@ -4,44 +4,48 @@ import { Link } from 'gatsby';
 import hl7finland from '../images/hl7-finland.svg';
 import '@fontsource-variable/tourney';
 import '../styles/index.css';
+import Background from '../pages/background';
 
 const Article = ({ children, ...rest }) => {
   return (
     <>
+      <nav id="headerNav">
+        <ul>
+          <li>
+            <Link to="/">
+              FHIR Demo 2024
+            </Link>
+          </li>
+          <li>
+            <Link to="/#description">
+              Participate
+            </Link>
+          </li>
+          {
+          /*
+          <li>
+            <Link to="/#participants">
+              Participants
+            </Link>
+          </li>
+          <li>
+            <Link to="/#events">
+              Events
+            </Link>
+          </li>
+          */
+          }
+          <li>
+            <Link to="/#contact">
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </nav>
+      <div id="bgContainer">
+        <Background className="decorative background" />
+      </div>
       <article {...rest}>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">
-                FHIR Demo 2024
-              </Link>
-            </li>
-            <li>
-              <Link to="/#description">
-                Participate
-              </Link>
-            </li>
-            {
-            /*
-            <li>
-              <Link to="/#participants">
-                Participants
-              </Link>
-            </li>
-            <li>
-              <Link to="/#events">
-                Events
-              </Link>
-            </li>
-            */
-            }
-            <li>
-              <Link to="/#contact">
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </nav>
         {children}
       </article>
       <footer>
