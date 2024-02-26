@@ -3,10 +3,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: 'FHIR Demo 2023',
-    siteUrl: 'https://fhir.fi/en/demo2023',
+    title: 'FHIR Demo 2024',
+    siteUrl: 'https://fhir.fi/en/demo2024',
   },
-  pathPrefix: '/en/demo2023',
+  pathPrefix: '/en/demo2024',
   flags: {
     DEV_SSR: true,
   },
