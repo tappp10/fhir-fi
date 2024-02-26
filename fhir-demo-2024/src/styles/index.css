@@ -310,26 +310,6 @@ article > header > h3 {
   position: relative;
 }
 
-/*
-section h1:hover::after {
-  content: ' #';
-  display: inline-block;
-  height: 0.5em;
-}
-
-section a h1 {
-  color: var(--color-body-text);
-}
-
-section a:hover h1 {
-  color: var(--color-nav-link-hover);
-}
-
-section a:hover h1:after {
-  content: ' #';
-}
-
-*/
 ul.features {
   padding: 0;
 }
@@ -350,13 +330,16 @@ a.button {
   padding: 0.75em 1.5em;
 }
 
+a.button:hover {
+  border: 1px solid var(--color-nav-link-hover);
+}
+
+a.button:active {
+  border: 1px solid var(--color-nav-link-active);
+}
+
 .callout .button {
   margin-top: 2em;
-  /*
-  position: absolute;
-  left: 0;
-  right: 0;
-  */
 }
 
 .center {
@@ -391,16 +374,6 @@ ul.hashtags li {
   display: inline-block;
   margin: 0 1em 0 0;
 }
-
-/*
-img.decoration {
-  display: block;
-  margin: 6em auto 0;
-  height: 8em;
-  max-height: 25vh;
-  max-width: 50vw;
-}
-*/
 
 #about img.decoration {
   display: block;
@@ -470,16 +443,10 @@ section > img.logo {
 
 .demo h2,
 li h2 {
-  /*
-  font-family: 'Tourney Variable', 'Tourney', sans-serif;
-  */
   font-size: larger;
 }
 
 .demo h2 {
-  /*
-  font-weight: 600;
-  */
   font-size: 2.8rem;
 }
 
@@ -764,7 +731,6 @@ nav.prevNext > div:last-child {
   float: right;
 }
 
-/* @media (min-width: calc(var(--content-width) + 30rem)) { */
 @media (min-width: 100rem) {
   main.demo {
     margin-top: 0;
@@ -817,9 +783,6 @@ nav.prevNext > div:last-child {
     left: 0;
     right: 0;
     bottom: 0;
-    /*
-    max-width: calc((100vw - 47rem - 18rem) / 4);
-    */
     margin: auto;
     border-radius: 0;
     border: 2px solid transparent;
@@ -837,62 +800,13 @@ nav.prevNext > div:last-child {
     opacity: 1;
   }
 
-  /*
-  nav.prevNext div:first-child {
-    padding-right: 16em;
-  }
-  */
-
   nav.prevNext > div:first-child a {
     text-align: center;
-    /*
-    padding-right: calc(50vw - 23.5rem - 45px);
-    */
   }
 
   nav.prevNext > div:last-child a {
     text-align: center;
   }
-
-
-  /*
-  nav.prevNext div:first-child a:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0px;
-    top: calc(50vh - 86px);
-    width: 0rem;
-    border: 90px solid transparent;
-    transition: all 0.2s;
-  }
-
-  nav.prevNext div:last-child a:after {
-    content: ' ';
-    display: block;
-    position: absolute;
-    right: 0px;
-    top: calc(50vh - 90px);
-    width: 0rem;
-    border: 90px solid transparent;
-    transition: all 0.2s;
-  }
-  */
-
-  /*
-  nav.prevNext > div:hover a, nav.prevNext a:hover, nav.prevNext a:active {
-    border-color: var(--color-nav-background);
-  }
-
-  nav.prevNext > div:hover a:before, nav.prevNext a:hover:before, nav.prevNext a:active:before {
-    border-right-color: var(--color-nav-link-hover);
-  }
-
-  nav.prevNext > div:hover a:after, nav.prevNext a:hover:after, nav.prevNext a:active:after {
-    border-left-color: var(--color-nav-link-hover);
-  }
-  */
-
 
   nav.prevNext > div:first-child {
     left: 0;
