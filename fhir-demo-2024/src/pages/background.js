@@ -1,12 +1,11 @@
 import * as React from 'react';
 
-const width = 5000;
+const width = typeof window !== `undefined` ? window.innerWidth : 2000;
 const height = 15000;
 
 const lineLength = 300;
 const strokeWidth = 14;
-const lines = width * height / 650 / lineLength;
-console.log(lines);
+const lineCount = width * height / 1000 / lineLength;
 
 function getRandomCoord({ x, y, direction }) {
   let distance;
@@ -14,7 +13,7 @@ function getRandomCoord({ x, y, direction }) {
   let x1 = -1;
   let y1 = -1;
   let counter = 0;
-  while (x1 <= strokeWidth || x1 >= (width - strokeWidth) || y1 <= strokeWidth || y1 > (height - strokeWidth)) {
+  while (x1 <= strokeWidth || x1 >= (width - strokeWidth) || y1 <= strokeWidth || y1 >= (height - strokeWidth)) {
     if (counter++ > 10) {
       // Too difficult, we're in a tough corner...
       return { x, y, direction};
@@ -64,7 +63,7 @@ function getRandomCoord({ x, y, direction }) {
 
 const Background = (props) => {
   const pattern = [];
-  for (let i=0; i < lines; i += 1) {
+  for (let i=0; i < lineCount; i += 1) {
     const coords = [];
     let x0 = Math.random() * width;
     x0 -= x0 % strokeWidth;
@@ -83,15 +82,14 @@ const Background = (props) => {
   }
   const d = pattern.join(' ');
   const { children, location, pageContext, pageResources, params, path, serverData, uri, ...rest } = props;
-  console.log({ props });
 
   const rulerLines = [];
   const adjust = strokeWidth / 2;
   for (let i=0; i < width; i += strokeWidth) {
-    rulerLines.push(<line x1={i + adjust} x2={i + adjust} y2={height + adjust} />);
+    rulerLines.push(<line key={`v${i}`} x1={i + adjust} x2={i + adjust} y2={height + adjust} />);
   }
   for (let i=0; i < height; i += strokeWidth) {
-    rulerLines.push(<line x2={width} y1={i + adjust} y2={i + adjust} />);
+    rulerLines.push(<line key={`h${i}`} x2={width} y1={i + adjust} y2={i + adjust} />);
   }
 
   const style = `
@@ -112,12 +110,14 @@ const Background = (props) => {
       {...rest}
     >
       <style>{style}</style>
-      {rulerLines}
-      <path fill="none" stroke="#010259" strokeWidth={strokeWidth} vectorEffect="non-scaling-stroke" strokeLinecap="square" d={d} />
-      <path fill="none" stroke="white" strokeWidth="1px" vectorEffect="non-scaling-stroke" shapeRendering="auto" d={d} />
-      <circle fill="white" r="2">
-        <animateMotion dur={`${width * height / 50000}s`} repeatCount="indefinite" path={d} />
-      </circle>
+      <g transform="translate(0.5, 0.5)">
+        {rulerLines}
+        <path fill="none" stroke="#010259" strokeWidth={strokeWidth} vectorEffect="non-scaling-stroke" strokeLinecap="square" d={d} />
+        <path fill="none" stroke="white" strokeWidth="1px" vectorEffect="non-scaling-stroke" shapeRendering="auto" d={d} />
+        <circle fill="white" r="2">
+          <animateMotion dur={`${width * height / 50000}s`} repeatCount="indefinite" path={d} />
+       </circle>
+      </g>
     </svg>
   )
 };

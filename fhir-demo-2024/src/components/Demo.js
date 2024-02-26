@@ -5,6 +5,7 @@ import Article from './Article';
 import { demos } from '../config/data';
 import { FeaturesContext } from './Features';
 import fhirLogo from '../images/fhir.svg';
+import fhirLogo2 from '../images/fhir-deco.svg';
 import Features from './Features';
 
 const prefix = withPrefix('/');
@@ -75,7 +76,7 @@ export default function Demo({ children, location }) {
   return (
     <Article id="demo">
       <header>
-        <h1>FHIR Demo 2024</h1>
+        <h1>FHIR Demo 2024 <img className="inline" src={fhirLogo} alt="" /></h1>
         {features.length
         ? (
           <>
@@ -93,7 +94,7 @@ export default function Demo({ children, location }) {
         { children }
       </main>
       {prevNextNav}
-      <img className="decoration" src={fhirLogo} alt="" />
+      <img className="decoration" src={fhirLogo2} alt="" />
     </Article>
   );
 }

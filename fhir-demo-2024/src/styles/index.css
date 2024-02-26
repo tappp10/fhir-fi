@@ -37,6 +37,11 @@
     --color-section-border: #eee;
     --color-business-card-shadow: #222;
   }
+  footer {
+    .cls-1 {
+      fill: white;
+    }
+  }
 }
 
 html {
@@ -53,21 +58,6 @@ body {
   position: relative;
 }
 
-/*
-.bgImage {
-  position: absolute;
-  top: 0;
-}
-
-.bgImage:first-of-type {
-  left: 0;
-}
-
-.bgImage:last-of-type {
-  right: 0;
-}
-*/
-
 #bgContainer {
   display: block;
   position: absolute;
@@ -77,6 +67,10 @@ body {
   max-width: 100vw;
   max-height: calc(100% - 5em);
   overflow: hidden;
+}
+
+svg.background {
+  opacity: 0.15;
 }
 
 #headerNav {
@@ -90,7 +84,6 @@ main.demo {
   color: var(--color-demo-text);
   padding: 5em 1em;
   margin-top: 3em;
-  border: 1px dotted var(--color-section-border);
 }
 
 a, a:visited {
@@ -211,10 +204,14 @@ article {
 }
 
 article > * {
-  background-color: var(--color-body-background);
-  border: 1px dotted var(--color-section-border);
   margin-top: 4em;
   margin-bottom: 4em;
+}
+
+article > *,
+nav.prevNext > div a div {
+  background-color: var(--color-body-background);
+  border: 2px dotted var(--color-section-border);
   border-radius: 6px;
 }
 
@@ -306,6 +303,10 @@ article > header > h3 {
   margin: 0.5em 0;
 }
 
+.callout {
+  background-color: white;
+  position: relative;
+}
 
 /*
 section h1:hover::after {
@@ -339,6 +340,25 @@ a.feature {
 
 a.selected.feature {
   font-weight: 900;
+}
+
+a.button {
+  display: inline-block;
+  border: 1px solid var(--color-nav-link);
+  padding: 0.75em 1.5em;
+}
+
+.callout .button {
+  margin-top: 2em;
+  /*
+  position: absolute;
+  left: 0;
+  right: 0;
+  */
+}
+
+.center {
+  text-align: center;
 }
 
 article > main {
@@ -406,6 +426,15 @@ figure img,
 
 img.no-scale {
   width: auto;
+}
+
+img.inline {
+  height: 1em;
+}
+
+h1 img.inline {
+  height: 0.82em;
+  transform: translate(0, 0.07em);
 }
 
 figure {
@@ -710,10 +739,7 @@ nav.prevNext, nav.prevNext > div, nav.prevNext > div a {
 
 nav.prevNext > div a div {
   display: inline;
-  background-color: var(--color-body-background);
-  border-radius: 6px;
   padding: 5px;
-  border: 1px dotted var(--color-section-border);
 }
 
 nav.prevNext img {
@@ -747,7 +773,6 @@ nav.prevNext > div:last-child {
     padding: 4em 3em;
   }
   
-
   article > nav.prevNext:first-of-type {
     display: none;
   }
@@ -800,6 +825,7 @@ nav.prevNext > div:last-child {
   }
 
   nav.prevNext img {
+    display: inline;
     height: 1em;
     opacity: 0;
     transition: all 0.2s ease-in-out;

@@ -45,7 +45,7 @@ export default function IndexPage({ location }) {
         </aside>        
         */
         }
-        <section id="description">
+        <section id="description" className="callout">
           <h2>Take part in the <strong>Nordic FHIR Demo</strong> showcase!</h2>
           <p>
             The aim is to show what has been implemented with the HL7 FHIR standard in the Nordics.
@@ -67,7 +67,9 @@ export default function IndexPage({ location }) {
             ja terveydenhuollon ATK-päivät</a>. Hopefully in <a
             href="https://ehin.no/2024/">EHiN</a> too.
           </p>
-          <p></p>
+          <p className="center">
+            <a className="button" href="mailto:mikael@sensotrend.com">Participate!</a>
+          </p>
         {
         /*
 
