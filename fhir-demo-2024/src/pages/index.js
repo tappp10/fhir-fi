@@ -5,6 +5,7 @@ import Article from '../components/Article';
 import { FeatureFilter, FeaturesContext } from '../components/Features';
 import { demos } from '../config/data';
 import fhirLogo from '../images/fhir.svg';
+import fhirLogo2 from '../images/fhir-deco.svg';
 import mikaelx1 from '../images/MikaelRinnetmaki.jpg';
 import mikaelx2 from '../images/MikaelRinnetmaki2x.jpg';
 
@@ -57,7 +58,7 @@ export default function IndexPage({ location }) {
           <p>
             The event continues the tradition of the FHIR Demo showcases organized in <a
             href="http://www.hl7.fi/wp-content/uploads/HL7-Finland-%23U0432%23U0402%23U201c-FHIR-demon-loppuraportti-20160527.pdf">2016</a>,
-            <a href="https://fhir.fi/en/demo2022/index.html">2022</a>, and <a
+            {' '} <a href="https://fhir.fi/en/demo2022/index.html">2022</a>, and <a
             href="https://fhir.fi/en/demo2023/index.html">2023</a>.
           </p>
           <p>
@@ -187,7 +188,7 @@ export default function IndexPage({ location }) {
             </address>
           </div>
         </section>
-        <img className="decoration" src={fhirLogo} alt="" />
+        <img className="decoration" src={fhirLogo2} alt="" />
       </Article>
     </>
   )
