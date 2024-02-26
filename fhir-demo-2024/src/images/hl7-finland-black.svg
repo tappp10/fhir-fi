@@ -6,7 +6,6 @@
   <defs>
     <style>
       path {
-        stroke: black;
         stroke-width: 2.5;
         vectorEffect: non-scaling-stroke;
         shapeRendering: geometricPrecision;
@@ -18,12 +17,6 @@
       .cls-2 {
         fill: #c51a1b;
         stroke: #c51a1b;
-      }
-      @media (prefers-color-scheme: dark) {
-        .cls-1 {
-          fill: white;
-          stroke: white;
-        }
       }
     </style>
   </defs>
