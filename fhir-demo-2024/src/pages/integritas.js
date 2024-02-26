@@ -6,7 +6,7 @@ import { demos } from '../config/data';
 import integritasLogo from '../images/integritas.svg';
 import pirkko from '../images/pirkko.png';
 
-export const Head = () => <title>FHIR Demo 2023: Integritas</title>;
+export const Head = () => <title>FHIR Demo 2024: Integritas</title>;
 
 export default function Integritas({ location }) {
   const features = demos.integritas.features;

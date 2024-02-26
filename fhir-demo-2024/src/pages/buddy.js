@@ -5,7 +5,7 @@ import Features from '../components/Features';
 import { demos } from '../config/data';
 import buddyLogo from '../images/buddy.png';
 
-export const Head = () => <title>FHIR Demo 2023: Buddy Healthcare</title>;
+export const Head = () => <title>FHIR Demo 2024: Buddy Healthcare</title>;
 
 export default function Buddy({ location }) {
   const features = demos.buddy.features;

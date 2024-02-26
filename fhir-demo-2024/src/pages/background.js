@@ -1,67 +1,79 @@
 import * as React from 'react';
 
-const width = typeof window !== `undefined` ? window.innerWidth : 2000;
-const height = 15000;
-
-const lineLength = 300;
-const strokeWidth = 14;
-const lineCount = width * height / 1000 / lineLength;
-
-function getRandomCoord({ x, y, direction }) {
-  let distance;
-  let newDirection;
-  let x1 = -1;
-  let y1 = -1;
-  let counter = 0;
-  while (x1 <= strokeWidth || x1 >= (width - strokeWidth) || y1 <= strokeWidth || y1 >= (height - strokeWidth)) {
-    if (counter++ > 10) {
-      // Too difficult, we're in a tough corner...
-      return { x, y, direction};
-    }
-    distance = (Math.floor(Math.random() * lineLength)) + 20;
-    distance -= distance % strokeWidth;
-    newDirection =  direction + Math.floor(Math.random() * 4) + 6;
-    newDirection %= 8;
-    switch (newDirection) {
-      case 0:
-        x1 = x;
-        y1 = y - distance;
-        break;
-      case 1:
-        x1 = x + distance;
-        y1 = y - distance;
-        break;
-      case 2:
-        x1 = x + distance;
-        y1 = y;
-        break;
-      case 3:
-        x1 = x + distance;
-        y1 = y + distance;
-        break;
-      case 4:
-        x1 = x;
-        y1 = y + distance;
-        break;
-      case 5:
-        x1 = x - distance;
-        y1 = y + distance;
-        break;
-      case 6:
-        x1 = x - distance;
-        y1 = y;
-        break;
-      case 7:
-        x1 = x - distance;
-        y1 = y - distance;
-        break;
-      default:
-    }
-  }
-  return { x: x1, y: y1, direction: newDirection };
-}
-
 const Background = (props) => {
+  const [width, setWidth] = React.useState(undefined);
+
+  React.useEffect(() => {
+    setWidth(typeof window !== `undefined` ? window.innerWidth : 2500);
+  }, []);
+
+  if (width === undefined) {
+    return null;
+  }
+
+  const height = 15000;
+
+  const lineLength = 300;
+  const strokeWidth = 14;
+  const lineCount = width * height / 1000 / lineLength;
+  
+  function getRandomCoord({ x, y, direction }) {
+    let distance;
+    let newDirection;
+    let x1 = -1;
+    let y1 = -1;
+    let counter = 0;
+    while (x1 <= strokeWidth
+      || x1 >= (width - strokeWidth)
+      || y1 <= strokeWidth
+      || y1 >= (height - strokeWidth)) {
+      if (counter++ > 10) {
+        // Too difficult, we're in a tough corner...
+        return { x, y, direction};
+      }
+      distance = (Math.floor(Math.random() * lineLength)) + 20;
+      distance -= distance % strokeWidth;
+      newDirection =  direction + Math.floor(Math.random() * 4) + 6;
+      newDirection %= 8;
+      switch (newDirection) {
+        case 0:
+          x1 = x;
+          y1 = y - distance;
+          break;
+        case 1:
+          x1 = x + distance;
+          y1 = y - distance;
+          break;
+        case 2:
+          x1 = x + distance;
+          y1 = y;
+          break;
+        case 3:
+          x1 = x + distance;
+          y1 = y + distance;
+          break;
+        case 4:
+          x1 = x;
+          y1 = y + distance;
+          break;
+        case 5:
+          x1 = x - distance;
+          y1 = y + distance;
+          break;
+        case 6:
+          x1 = x - distance;
+          y1 = y;
+          break;
+        case 7:
+          x1 = x - distance;
+          y1 = y - distance;
+          break;
+        default:
+      }
+    }
+    return { x: x1, y: y1, direction: newDirection };
+  }
+  
   const pattern = [];
   for (let i=0; i < lineCount; i += 1) {
     const coords = [];
@@ -81,7 +93,17 @@ const Background = (props) => {
     pattern.push(path);
   }
   const d = pattern.join(' ');
-  const { children, location, pageContext, pageResources, params, path, serverData, uri, ...rest } = props;
+  const {
+    children,
+    location,
+    pageContext,
+    pageResources,
+    params,
+    path,
+    serverData,
+    uri,
+    ...rest
+  } = props;
 
   const rulerLines = [];
   const adjust = strokeWidth / 2;
@@ -96,7 +118,16 @@ const Background = (props) => {
     line {
       stroke-width: 0.5px;
       stroke: var(--color-nav-background);
-      stroke-opacity: 0.2;
+      stroke-opacity: 0.4;
+    }
+    path {
+      fill: none;
+    }
+    @media screen and (prefers-reduced-motion: reduce) {
+      circle {
+        animation: none !important;
+        display: none;
+      }
     }
   `;
 
@@ -112,8 +143,20 @@ const Background = (props) => {
       <style>{style}</style>
       <g transform="translate(0.5, 0.5)">
         {rulerLines}
-        <path fill="none" stroke="#010259" strokeWidth={strokeWidth} vectorEffect="non-scaling-stroke" strokeLinecap="square" d={d} />
-        <path fill="none" stroke="white" strokeWidth="1px" vectorEffect="non-scaling-stroke" shapeRendering="auto" d={d} />
+        <path
+          stroke="#010259"
+          strokeWidth={strokeWidth}
+          vectorEffect="non-scaling-stroke"
+          strokeLinecap="square"
+          d={d}
+        />
+        <path
+          stroke="white"
+          strokeWidth="1px"
+          vectorEffect="non-scaling-stroke"
+          shapeRendering="auto"
+          d={d}
+        />
         <circle fill="white" r="2">
           <animateMotion dur={`${width * height / 50000}s`} repeatCount="indefinite" path={d} />
        </circle>

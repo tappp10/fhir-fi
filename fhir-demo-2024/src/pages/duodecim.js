@@ -6,7 +6,7 @@ import Features from '../components/Features';
 import { demos } from '../config/data';
 import duodecimLogo from '../images/duodecim.svg';
 
-export const Head = () => <title>FHIR Demo 2023: Duodecim</title>;
+export const Head = () => <title>FHIR Demo 2024: Duodecim</title>;
 
 export default function Duodecim({ location }) {
   const features = demos.duodecim.features;

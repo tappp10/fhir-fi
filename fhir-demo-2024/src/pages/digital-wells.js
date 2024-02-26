@@ -6,7 +6,7 @@ import Features from '../components/Features';
 import { demos } from '../config/data';
 import dwLogo from '../images/digital-wells.png';
 
-export const Head = () => <title>FHIR Demo 2023: Digital Wells</title>;
+export const Head = () => <title>FHIR Demo 2024: Digital Wells</title>;
 
 export default function DigitalWells({ location }) {
   const features = demos['digital-wells']?.features;

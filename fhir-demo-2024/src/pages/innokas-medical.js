@@ -12,7 +12,7 @@ import heikkiMiinalainen from '../images/heikki_miinalainen.png';
 import digiousFlowChart from '../images/digious_flow_chart.png';
 import tapioPelkonen from '../images/tapio_pelkonen.png';
 
-export const Head = () => <title>FHIR Demo 2023: Innokas Medical / MedicubeX</title>;
+export const Head = () => <title>FHIR Demo 2024: Innokas Medical / MedicubeX</title>;
 
 export default function InnokasMedical({ location }) {
   const features = demos['innokas-medical'].features;

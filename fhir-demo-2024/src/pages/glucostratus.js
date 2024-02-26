@@ -6,7 +6,7 @@ import Features from '../components/Features';
 import { demos } from '../config/data';
 import glucostratusLogo from '../images/glucostratus.png';
 
-export const Head = () => <title>FHIR Demo 2023: Glucostratus</title>;
+export const Head = () => <title>FHIR Demo 2024: Glucostratus</title>;
 
 export default function Glucostratus({ location }) {
   const features = demos.glucostratus?.features;

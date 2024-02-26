@@ -7,7 +7,7 @@ import { demos } from '../config/data';
 import mealloggerLogo from '../images/meallogger.jpeg';
 import mealloggerSolution from '../images/meallogger.png';
 
-export const Head = () => <title>FHIR Demo 2023: Meallogger</title>;
+export const Head = () => <title>FHIR Demo 2024: Meallogger</title>;
 
 export default function Meallogger({ location }) {
   const features = demos.meallogger.features;

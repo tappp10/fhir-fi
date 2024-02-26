@@ -8,7 +8,7 @@ import fujitsuLogo from '../images/fujitsu.svg';
 import emom from '../images/emom.png';
 import joni from '../images/joni_hirviniemi.png';
 
-export const Head = () => <title>FHIR Demo 2023: Fujitsu</title>;
+export const Head = () => <title>FHIR Demo 2024: Fujitsu</title>;
 
 export default function Fujitsu({ location }) {
   const features = demos.fujitsu.features;

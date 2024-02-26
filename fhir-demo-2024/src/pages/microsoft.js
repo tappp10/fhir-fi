@@ -5,7 +5,7 @@ import Features from '../components/Features';
 import { demos } from '../config/data';
 import microsoftLogo from '../images/microsoft.svg';
 
-export const Head = () => <title>FHIR Demo 2023: Microsoft</title>;
+export const Head = () => <title>FHIR Demo 2024: Microsoft</title>;
 
 export default function Microsoft({ location }) {
   const features = demos.microsoft.features;

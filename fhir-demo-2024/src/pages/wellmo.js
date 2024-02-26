@@ -6,7 +6,7 @@ import { demos } from '../config/data';
 import wellmoLogo from '../images/wellmo.png';
 import wellmoSolution from '../images/wellmo.webp';
 
-export const Head = () => <title>FHIR Demo 2023: Wellmo</title>;
+export const Head = () => <title>FHIR Demo 2024: Wellmo</title>;
 
 export default function Wellmo({ location }) {
   const features = demos.wellmo.features;

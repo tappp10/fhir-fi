@@ -5,7 +5,7 @@ import Features from '../components/Features';
 import { demos } from '../config/data';
 import intersystemsLogo from '../images/intersystems.svg';
 
-export const Head = () => <title>FHIR Demo 2023: InterSystems</title>;
+export const Head = () => <title>FHIR Demo 2024: InterSystems</title>;
 
 export default function InterSystems({ location }) {
   const features = demos.intersystems.features;

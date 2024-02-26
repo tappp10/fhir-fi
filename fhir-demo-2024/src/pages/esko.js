@@ -6,7 +6,7 @@ import Features from '../components/Features';
 import { demos } from '../config/data';
 import eskoLogo from '../images/eskosystems.svg';
 
-export const Head = () => <title>FHIR Demo 2023: Esko Systems</title>;
+export const Head = () => <title>FHIR Demo 2024: Esko Systems</title>;
 
 export default function EskoSystems({ location }) {
   const features = demos.esko.features;

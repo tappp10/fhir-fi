@@ -8,7 +8,7 @@ import myplusLogo from '../images/mylab_plus_rgb.png';
 import myplusCareLogo from '../images/mylab_plus_care_rgb.png';
 import myplusHubLogo from '../images/mylab_plus_hub_rgb.png';
 
-export const Head = () => <title>FHIR Demo 2023: Mylab</title>;
+export const Head = () => <title>FHIR Demo 2024: Mylab</title>;
 
 export default function Mylab({ location }) {
   const features = demos.mylab.features;

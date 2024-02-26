@@ -6,7 +6,7 @@ import Features from '../components/Features';
 import { demos } from '../config/data';
 import tietoevryLogo from '../images/tietoevry.png';
 
-export const Head = () => <title>FHIR Demo 2023: TietoEVRY</title>;
+export const Head = () => <title>FHIR Demo 2024: TietoEVRY</title>;
 
 export default function TietoEVRY({ location }) {
   const features = demos.tietoevry.features;

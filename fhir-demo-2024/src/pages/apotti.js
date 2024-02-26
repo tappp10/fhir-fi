@@ -6,7 +6,7 @@ import Features from '../components/Features';
 import { demos } from '../config/data';
 import apottiLogo from '../images/apotti.png';
 
-export const Head = () => <title>FHIR Demo 2023: Apotti</title>;
+export const Head = () => <title>FHIR Demo 2024: Apotti</title>;
 
 export default function Apotti({ location }) {
   const features = demos.apotti.features;

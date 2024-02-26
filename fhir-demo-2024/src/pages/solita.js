@@ -5,7 +5,7 @@ import Features from '../components/Features';
 import { demos } from '../config/data';
 import solitaLogo from '../images/solita.jpg';
 
-export const Head = () => <title>FHIR Demo 2023: Solita</title>;
+export const Head = () => <title>FHIR Demo 2024: Solita</title>;
 
 export default function Solita({ location }) {
   const features = demos.solita.features;

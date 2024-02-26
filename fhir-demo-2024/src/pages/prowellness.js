@@ -6,7 +6,7 @@ import { demos } from '../config/data';
 import prowellnessLogo from '../images/prowellness.png';
 import balansioLogo from '../images/balansio.png';
 
-export const Head = () => <title>FHIR Demo 2023: ProWellness</title>;
+export const Head = () => <title>FHIR Demo 2024: ProWellness</title>;
 
 export default function ProWellness({ location }) {
   const features = demos.prowellness.features;

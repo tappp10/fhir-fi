@@ -5,7 +5,7 @@ import Features from '../components/Features';
 import { demos } from '../config/data';
 import kelaLogo from '../images/kela.png';
 
-export const Head = () => <title>FHIR Demo 2023: Kela</title>;
+export const Head = () => <title>FHIR Demo 2024: Kela</title>;
 
 export default function Kela({ location }) {
   const features = demos.kela.features;

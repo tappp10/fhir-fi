@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import Article from '../components/Article';
 import fhirLogo from '../images/fhir.svg';
 
-export const Head = () => <title>FHIR Demo 2023: Page not found</title>;
+export const Head = () => <title>FHIR Demo 2024: Page not found</title>;
 
 export default function NotFoundPage({ location }) {
   const { pathname } = location;

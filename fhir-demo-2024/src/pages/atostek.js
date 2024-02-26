@@ -5,7 +5,7 @@ import Features from '../components/Features';
 import { demos } from '../config/data';
 import atostekLogo from '../images/atostek.png';
 
-export const Head = () => <title>FHIR Demo 2023: Atostek</title>;
+export const Head = () => <title>FHIR Demo 2024: Atostek</title>;
 
 export default function Atostek({ location }) {
   const features = demos.atostek.features;

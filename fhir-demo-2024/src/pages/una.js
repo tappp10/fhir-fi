@@ -8,7 +8,7 @@ import unaLogo from '../images/una.svg';
 import unaYdin from '../images/una-ydin.png';
 import unaBCB from '../images/una-bcb.png';
 
-export const Head = () => <title>FHIR Demo 2023: Una</title>;
+export const Head = () => <title>FHIR Demo 2024: Una</title>;
 
 export default function Una({ location }) {
   const features = demos.una.features;

@@ -5,7 +5,7 @@ import Features from '../components/Features';
 import { demos } from '../config/data';
 import omaoloLogo from '../images/omaolo.svg';
 
-export const Head = () => <title>FHIR Demo 2023: Omaolo (DigiFinland)</title>;
+export const Head = () => <title>FHIR Demo 2024: Omaolo (DigiFinland)</title>;
 
 export default function Omaolo({ location }) {
   const features = demos.omaolo?.features;

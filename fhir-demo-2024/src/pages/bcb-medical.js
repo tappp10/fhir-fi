@@ -7,7 +7,7 @@ import bcbMedicalLogo from '../images/bcb-medical.svg';
 import bcbOmavointi from '../images/bcb-medical-omavointi.png';
 import bcbSuite from '../images/bcb-medical-suite.png';
 
-export const Head = () => <title>FHIR Demo 2023: BCB Medical</title>;
+export const Head = () => <title>FHIR Demo 2024: BCB Medical</title>;
 
 export default function BcbMedical({ location }) {
   const features = demos['bcb-medical'].features;

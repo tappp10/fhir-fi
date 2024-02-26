@@ -5,7 +5,7 @@ import Features from '../components/Features';
 import { demos } from '../config/data';
 import w2eLogo from '../images/w2e.jpeg';
 
-export const Head = () => <title>FHIR Demo 2023: W2E</title>;
+export const Head = () => <title>FHIR Demo 2024: W2E</title>;
 
 export default function W2e({ location }) {
   const features = demos.w2e?.features;

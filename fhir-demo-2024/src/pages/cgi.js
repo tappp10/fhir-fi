@@ -5,7 +5,7 @@ import Features from '../components/Features';
 import { demos } from '../config/data';
 import cgiLogo from '../images/cgi.svg';
 
-export const Head = () => <title>FHIR Demo 2023: CGI</title>;
+export const Head = () => <title>FHIR Demo 2024: CGI</title>;
 
 export default function Cgi({ location }) {
   const features = demos.cgi.features;
