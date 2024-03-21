@@ -2,23 +2,23 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 import Demo from '../components/Demo';
-import Features from '../components/Features';
+import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import apottiLogo from '../images/apotti.png';
 
 export const Head = () => <title>FHIR Demo 2024: Apotti</title>;
 
 export default function Apotti({ location }) {
-  const features = demos.apotti.features;
+  const roles = demos.apotti.roles;
   
   return (
-    <Demo features={features} location={location}>
+    <Demo roles={roles} location={location}>
       <h1>
         <a href="https://www.apotti.fi/">
           <img src={apottiLogo} alt="Apotti" />
         </a>
       </h1>
-      <Features list={features} />
+      <Roles list={roles} />
       <aside className="event atk-paivat">
         <h2>ATK-päivät: Ständi 400</h2>
         <p>Aikataulutetut demot esittelevät Apotin ekosysteemin sekä <Link

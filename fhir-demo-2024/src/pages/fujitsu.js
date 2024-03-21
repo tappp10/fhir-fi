@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 import Demo from '../components/Demo';
-import Features from '../components/Features';
+import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import fujitsuLogo from '../images/fujitsu.svg';
 import emom from '../images/emom.png';
@@ -11,16 +11,16 @@ import joni from '../images/joni_hirviniemi.png';
 export const Head = () => <title>FHIR Demo 2024: Fujitsu</title>;
 
 export default function Fujitsu({ location }) {
-  const features = demos.fujitsu.features;
+  const roles = demos.fujitsu.roles;
   
   return (
-    <Demo features={features} location={location}>
+    <Demo roles={roles} location={location}>
       <h1>
         <a href="https://www.fujitsu.com/fi/">
           <img src={fujitsuLogo} alt="Fujitsu" />
         </a>
       </h1>
-      <Features list={features} />
+      <Roles list={roles} />
       <aside className="event atk-paivat">
         <h2>ATK-päivät: Ständi 114</h2>
         <p>Tervetuloa ständillemme keskustelemaan terveydenhuollon järjestelmä- ja

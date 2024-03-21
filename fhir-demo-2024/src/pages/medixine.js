@@ -1,23 +1,23 @@
 import * as React from 'react';
 
 import Demo from '../components/Demo';
-import Features from '../components/Features';
+import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import medixineLogo from '../images/medixine.webp';
 
 export const Head = () => <title>FHIR Demo 2024: Medixine</title>;
 
 export default function Medixine({ location }) {
-  const features = demos.medixine?.features;
+  const roles = demos.medixine?.roles;
   
   return (
-    <Demo features={features} location={location}>
+    <Demo roles={roles} location={location}>
       <h1>
         <a href="https://www.medixine.com/">
           <img src={medixineLogo} alt="Medixine" />
         </a>
       </h1>
-      <Features list={features} />
+      <Roles list={roles} />
       <aside className="event atk-paivat">
         <h2>ATK-päivät: Ständi 413</h2>
       </aside>

@@ -2,23 +2,23 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 import Demo from '../components/Demo';
-import Features from '../components/Features';
+import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import glucostratusLogo from '../images/glucostratus.png';
 
 export const Head = () => <title>FHIR Demo 2024: Glucostratus</title>;
 
 export default function Glucostratus({ location }) {
-  const features = demos.glucostratus?.features;
+  const roles = demos.glucostratus?.roles;
   
   return (
-    <Demo features={features} location={location}>
+    <Demo roles={roles} location={location}>
       <h1 className="white">
         <a href="https://www.glucostratus.com/">
           <img src={glucostratusLogo} alt="Glucostratus" />
         </a>
       </h1>
-      <Features list={features} />
+      <Roles list={roles} />
       <aside className="event atk-paivat">
         <h2>ATK-päivät: Startup-alue</h2>
       </aside>

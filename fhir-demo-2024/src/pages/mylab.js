@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import Demo from '../components/Demo';
-import Features from '../components/Features';
+import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import mylabLogo from '../images/mylab_logo_slogan_black_rgb.png';
 import myplusLogo from '../images/mylab_plus_rgb.png';
@@ -11,16 +11,16 @@ import myplusHubLogo from '../images/mylab_plus_hub_rgb.png';
 export const Head = () => <title>FHIR Demo 2024: Mylab</title>;
 
 export default function Mylab({ location }) {
-  const features = demos.mylab.features;
+  const roles = demos.mylab.roles;
   
   return (
-    <Demo features={features} location={location}>
+    <Demo roles={roles} location={location}>
       <h1>
         <a href="https://www.mylab.fi/en/">
           <img src={mylabLogo} alt="Mylab" />
         </a>
       </h1>
-      <Features list={features} />
+      <Roles list={roles} />
       <aside className="event vitalis">
         <h2>Mylab at Vitalis</h2>
         <p>Welcome to visit Mylab's stand! We have a scheduled time for presenting our ideas using

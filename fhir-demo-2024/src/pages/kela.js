@@ -1,23 +1,23 @@
 import * as React from 'react';
 
 import Demo from '../components/Demo';
-import Features from '../components/Features';
+import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import kelaLogo from '../images/kela.png';
 
 export const Head = () => <title>FHIR Demo 2024: Kela</title>;
 
 export default function Kela({ location }) {
-  const features = demos.kela.features;
+  const roles = demos.kela.roles;
   
   return (
-    <Demo features={features} location={location}>
+    <Demo roles={roles} location={location}>
       <h1 className="white">
         <a href="https://www.kela.fi/">
           <img src={kelaLogo} alt="Kela" />
         </a>
       </h1>
-      <Features list={features} />
+      <Roles list={roles} />
       <aside className="event atk-paivat">
         <h2>ATK-päivät: Ständi 201-202</h2>
         <p><strong>FHIR-demo <time

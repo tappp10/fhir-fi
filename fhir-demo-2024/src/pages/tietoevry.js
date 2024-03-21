@@ -2,23 +2,23 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 import Demo from '../components/Demo';
-import Features from '../components/Features';
+import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import tietoevryLogo from '../images/tietoevry.png';
 
 export const Head = () => <title>FHIR Demo 2024: TietoEVRY</title>;
 
 export default function TietoEVRY({ location }) {
-  const features = demos.tietoevry.features;
+  const roles = demos.tietoevry.roles;
   
   return (
-    <Demo features={features} location={location}>
+    <Demo roles={roles} location={location}>
       <h1>
         <a href="https://unaoy.fi/">
           <img src={tietoevryLogo} alt="TietoEVRY" />
         </a>
       </h1>
-      <Features list={features} />
+      <Roles list={roles} />
       <aside className="event atk-paivat">
         <h2>ATK-päivät: Ständi 110</h2>
       </aside>

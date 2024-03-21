@@ -17,15 +17,15 @@ const Article = ({ children, ...rest }) => {
             </Link>
           </li>
           <li>
-            <Link to="/#description">
-              Participate
+            <Link to="/#participants">
+              Participants
             </Link>
           </li>
           {
           /*
           <li>
-            <Link to="/#participants">
-              Participants
+            <Link to="/#description">
+              Participate
             </Link>
           </li>
           <li>

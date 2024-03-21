@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 import Article from '../components/Article';
-import { FeatureFilter, FeaturesContext } from '../components/Features';
+import { RoleFilter, RolesContext } from '../components/Roles';
 import { demos } from '../config/data';
 import fhirLogo from '../images/fhir.svg';
 import fhirLogo2 from '../images/fhir-deco.svg';
@@ -17,8 +17,8 @@ export const Head = () => <title>FHIR Demo 2024</title>;
 
 export default function IndexPage({ location }) {
   const { search } = location;
-  const { selectedFeatures = {} } = React.useContext(FeaturesContext);
-  const features = Object.keys(selectedFeatures);
+  const { selectedRoles = {} } = React.useContext(RolesContext);
+  const roles = Object.keys(selectedRoles);
   return (
     <>
       {/*
@@ -77,7 +77,7 @@ export default function IndexPage({ location }) {
           <p>The FHIR Demo 2024 is a showcase of FHIR implementations in the Nordics.</p>
           <p>
             <a href="https://hl7.org/fhir/">HL7&reg; FHIR&reg;</a> is a next generation standards
-            framework created by HL7. FHIR combines the best features of HL7's earlier v2, v3, and
+            framework created by HL7. FHIR combines the best roles of HL7's earlier v2, v3, and
             CDA product lines.
           </p>
           <p>
@@ -91,15 +91,17 @@ export default function IndexPage({ location }) {
           <p>
             The FHIR Demo 2024 showcase is organized by <a href="https://hl7.fi">HL7 Finland</a>.
           </p>
-
         </section>
+
+        */
+
         <section id="participants">
           <h1>Participants</h1>
-          <FeatureFilter />
+          <RoleFilter />
           <ul>
             {
               Object.keys(demos).filter(
-                (k) => !features.length || demos[k].features?.some((f => features.some(s => s === f)))
+                (k) => !roles.length || demos[k].roles?.some((f => roles.some(s => s === f)))
               )
               .map(k => (
                 <li key={k}>
@@ -109,6 +111,9 @@ export default function IndexPage({ location }) {
             }
           </ul>
         </section>
+
+        /*
+
         <section id="events">
           <h1>Events</h1>
           <p>

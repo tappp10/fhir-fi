@@ -1,23 +1,23 @@
 import * as React from 'react';
 
 import Demo from '../components/Demo';
-import Features from '../components/Features';
+import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import omaoloLogo from '../images/omaolo.svg';
 
 export const Head = () => <title>FHIR Demo 2024: Omaolo (DigiFinland)</title>;
 
 export default function Omaolo({ location }) {
-  const features = demos.omaolo?.features;
+  const roles = demos.omaolo?.roles;
   
   return (
-    <Demo features={features} location={location}>
+    <Demo roles={roles} location={location}>
       <h1>
         <a href="https://www.omaolo.fi/">
           <img src={omaoloLogo} alt="Omaolo" />
         </a>
       </h1>
-      <Features list={features} />
+      <Roles list={roles} />
       <p>Demo description will be added soon.</p>
       <section id="contact">
         <h3>Contact</h3>

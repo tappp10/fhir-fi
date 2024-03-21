@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import Demo from '../components/Demo';
-import Features from '../components/Features';
+import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import bcbMedicalLogo from '../images/bcb-medical.svg';
 import bcbOmavointi from '../images/bcb-medical-omavointi.png';
@@ -10,16 +10,16 @@ import bcbSuite from '../images/bcb-medical-suite.png';
 export const Head = () => <title>FHIR Demo 2024: BCB Medical</title>;
 
 export default function BcbMedical({ location }) {
-  const features = demos['bcb-medical'].features;
+  const roles = demos['bcb-medical'].roles;
   
   return (
-    <Demo features={features} location={location}>
+    <Demo roles={roles} location={location}>
       <h1>
         <a href="https://www.microsoft.com/">
           <img src={bcbMedicalLogo} alt="BCB Medical" />
         </a>
       </h1>
-      <Features list={features} />
+      <Roles list={roles} />
       <aside className="event atk-paivat">
         <h2>ATK-päivät: Ständi 221</h2>
         <p>ATK-päivillä 2023 BCB Medicalin osastolla järjestetään demo Omavointi-tuoteperheen

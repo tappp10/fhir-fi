@@ -2,23 +2,23 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 import Demo from '../components/Demo';
-import Features from '../components/Features';
+import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import eskoLogo from '../images/eskosystems.svg';
 
 export const Head = () => <title>FHIR Demo 2024: Esko Systems</title>;
 
 export default function EskoSystems({ location }) {
-  const features = demos.esko.features;
+  const roles = demos.esko.roles;
   
   return (
-    <Demo features={features} location={location}>
+    <Demo roles={roles} location={location}>
       <h1>
         <a href="https://eskosystems.fi/">
           <img src={eskoLogo} alt="Esko Systems" />
         </a>
       </h1>
-      <Features list={features} />
+      <Roles list={roles} />
       <aside className="event atk-paivat">
         <h2>ATK-päivät: Ständi 126</h2>
       </aside>

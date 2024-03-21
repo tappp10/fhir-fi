@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 import Demo from '../components/Demo';
-import Features from '../components/Features';
+import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import kantaPHRscreenshot from '../images/omatietovaranto-mittaustulokset.png';
 import mikaelx1 from '../images/MikaelRinnetmaki.jpg';
@@ -15,7 +15,7 @@ import sensotrendConnectImage from '../images/sensotrend-connect.jpg';
 export const Head = () => <title>FHIR Demo 2024: Sensotrend</title>;
 
 export default function Sensotrend({ location }) {
-  const features = demos.sensotrend.features;
+  const roles = demos.sensotrend.roles;
 
   return (
     <Demo location={location} >
@@ -24,7 +24,7 @@ export default function Sensotrend({ location }) {
           <img src={sensotrendLogo} alt="Sensotrend" />
         </a>
       </h1>
-      <Features list={features} />
+      <Roles list={roles} targetPage="." targetFragment="" />
       <aside className="event atk-paivat">
         <h2>ATK-päivät: Startup-alue, pöytä 10</h2>
         <p>Esittelemme diabeteksen etäseurannan ratkaisua, joka on saumattomasti integroitu

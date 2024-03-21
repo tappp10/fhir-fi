@@ -1,237 +1,167 @@
-import * as FeatureList from '../components/FeatureList';
+import * as RoleList from '../components/RoleList';
 
 export const demos = {
   apotti: {
     name: 'Apotti',
-    features: [
-      FeatureList.Encounter,
-      FeatureList.FHIR,
-      FeatureList.Patient,
-      FeatureList.Practitioner,
-      FeatureList.SMART,
+    roles: [
+      RoleList.System,
     ],
   },
   atostek: {
     name: 'Atostek',
-    features: [
+    roles: [
+      RoleList.Consultancy,
     ],
   },
   'bcb-medical': {
     name: 'BCB Medical',
-    features: [
-      FeatureList.Appointment,
-      FeatureList.Location,
-      FeatureList.Medication,
-      FeatureList.Observation,
-      FeatureList.Patient,
+    roles: [
+      RoleList.App,
     ],
   },
   buddy: {
     name: 'Buddy Healthcare',
-    features: [
-      FeatureList.Appointment,
-      FeatureList.Patient,
-      FeatureList.Schedule,
-      FeatureList.Slot,
-      FeatureList.SMART,
+    roles: [
+      RoleList.App,
     ],
   },
   cgi: {
     name: 'CGI',
-    features: [
-      FeatureList.Appointment,
-      FeatureList.Condition,
-      FeatureList.Consent,
-      FeatureList.Encounter,
-      FeatureList.Immunization,
-      FeatureList.Location,
-      FeatureList.Observation,
-      FeatureList.Organization,
-      FeatureList.Patient,
-      FeatureList.Practitioner,
-      FeatureList.Procedure,
-      FeatureList.Schedule,
-      FeatureList.SMART,
+    roles: [
+      RoleList.System,
     ],
   },
   'digital-wells': {
     name: 'Digital Wells',
-    features: [
-      FeatureList.Observation,
+    roles: [
+      RoleList.App,
     ],
   },
   duodecim: {
     name: 'Duodecim',
-    features: [
-      FeatureList.SMART,
+    roles: [
+      RoleList.App,
     ],
   },
   esko: {
     name: 'Esko Systems',
-    features: [
-      FeatureList.Appointment,
-      FeatureList.Condition,
-      FeatureList.Encounter,
-      FeatureList.Location,
-      FeatureList.Observation,
-      FeatureList.Organization,
-      FeatureList.Patient,
-      FeatureList.Practitioner,
-      FeatureList.Procedure,
-      FeatureList.SMART,
+    roles: [
+      RoleList.System,
     ],
   },
   fujitsu: {
     name: 'Fujitsu',
-    features: [
-      FeatureList.FHIR,
-      FeatureList.SMART,
+    roles: [
+      RoleList.App,
+      RoleList.Consultancy,
     ],
   },
   /*
   glucostratus: {
     name: 'Glucostratus',
-    features: [
-      FeatureList.SMART,
+    roles: [
+      RoleList.SMART,
     ],
   },
   */
   'innokas-medical': {
     name: 'Innokas Medical / Medicubex',
-    features: [
-      FeatureList.Observation,
-      FeatureList.Encounter,
-      FeatureList.Patient,
-      FeatureList.FHIR,
-      FeatureList.SMART,
+    roles: [
+      RoleList.App,
+      RoleList.Consultancy,
     ],
   },
   integritas: {
     name: 'Integritas',
-    features: [
-      FeatureList.SMART,
+    roles: [
+      RoleList.App,
     ],
   },
   intersystems: {
     name: 'InterSystems',
-    features: [
-      FeatureList.Appointment,
-      FeatureList.FHIR,
-      FeatureList.MedicationAdministration,
-      FeatureList.Observation,
-      FeatureList.Patient,
-      FeatureList.SMART,
+    roles: [
+      RoleList.System,
     ],
   },
   kela: {
     name: 'Kela',
-    features: [
-      FeatureList.FHIR,
-      FeatureList.MedicationStatement,
-      FeatureList.Observation,
-      FeatureList.Patient,
+    roles: [
+      RoleList.Institution,
+      RoleList.System,
     ],
   },
   meallogger: {
     name: 'Meallogger',
-    features: [
-      FeatureList.Patient,
-      FeatureList.Practitioner,
-      FeatureList.SMART,
+    roles: [
+      RoleList.App,
     ],
   },
   /*
   medixine: {
     name: 'Medixine',
-    features: [
-      FeatureList.Observation,
-      FeatureList.SMART,
+    roles: [
+      RoleList.Observation,
+      RoleList.SMART,
     ],
   },
   */
   microsoft: {
     name: 'Microsoft',
-    features: [
-      FeatureList.FHIR,
-      FeatureList.Opensource,
-      FeatureList.SMART,
+    roles: [
+      RoleList.System,
     ],
   },
   mylab: {
     name: 'Mylab',
-    features: [
-      FeatureList.SMART,
-      FeatureList.Observation,
-      FeatureList.Organization,
-      FeatureList.Patient,
+    roles: [
+      RoleList.App,
     ],
   },
-  /*
   omaolo: {
     name: 'Omaolo',
-    features: [
-      FeatureList.Appointment,
-      FeatureList.Patient,
-      FeatureList.FHIR,
-      FeatureList.Schedule,
-      FeatureList.Slot,
+    roles: [
+      RoleList.App,
+      RoleList.System,
     ],
   },
-  */
   prowellness: {
     name: 'ProWellness',
-    features: [
-      FeatureList.Patient,
-      FeatureList.SMART,
+    roles: [
+      RoleList.App,
     ],
   },
   sensotrend: {
     name: 'Sensotrend',
-    features: [
-      FeatureList.Consent,
-      FeatureList.Encounter,
-      FeatureList.MedicationAdministration,
-      FeatureList.Observation,
-      FeatureList.Opensource,
-      FeatureList.Organization,
-      FeatureList.Patient,
-      FeatureList.Practitioner,
-      FeatureList.SMART,
+    roles: [
+      RoleList.App,
+      RoleList.Consultancy,
     ],
   },
   solita: {
     name: 'Solita',
-    features: [
-      FeatureList.Appointment,
-      FeatureList.FHIR,
-      FeatureList.Schedule,
-      FeatureList.Slot,
+    roles: [
+      RoleList.App,
+      RoleList.Consultancy,
+      RoleList.System,
     ],
   },
   tietoevry: {
     name: 'Tietoevry Care',
-    features: [
-      FeatureList.SMART,
+    roles: [
+      RoleList.System,
     ],
   },
   una: {
     name: 'Una',
-    features: [
-      FeatureList.SMART,
+    roles: [
+      RoleList.App,
+      RoleList.System,
     ],
   },
-  /*
-  w2e: {
-    name: 'W2E',
-    features: [
-      FeatureList.Observation,
-    ],
-  },
-  */
   wellmo: {
     name: 'Wellmo',
-    features: [
-      FeatureList.SMART,
+    roles: [
+      RoleList.App,
     ],
   },
 };

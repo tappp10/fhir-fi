@@ -1,23 +1,23 @@
 import * as React from 'react';
 
 import Demo from '../components/Demo';
-import Features from '../components/Features';
+import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import buddyLogo from '../images/buddy.png';
 
 export const Head = () => <title>FHIR Demo 2024: Buddy Healthcare</title>;
 
 export default function Buddy({ location }) {
-  const features = demos.buddy.features;
+  const roles = demos.buddy.roles;
     
   return (
-    <Demo features={features} location={location}>
+    <Demo roles={roles} location={location}>
       <h1 className="white">
         <a href="https://www.buddyhealthcare.com/">
           <img src={buddyLogo} alt="Buddy Healthcare" />
         </a>
       </h1>
-      <Features list={features} />
+      <Roles list={roles} />
       <aside className="event atk-paivat">
         <h2>ATK-päivät: Ständi 104</h2>
       </aside>

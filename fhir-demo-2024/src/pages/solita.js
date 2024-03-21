@@ -1,23 +1,23 @@
 import * as React from 'react';
 
 import Demo from '../components/Demo';
-import Features from '../components/Features';
+import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import solitaLogo from '../images/solita.jpg';
 
 export const Head = () => <title>FHIR Demo 2024: Solita</title>;
 
 export default function Solita({ location }) {
-  const features = demos.solita.features;
+  const roles = demos.solita.roles;
   
   return (
-    <Demo features={features} location={location}>
+    <Demo roles={roles} location={location}>
       <h1 className="white">
         <a href="https://www.solita.fi/">
           <img src={solitaLogo} alt="Solita" />
         </a>
       </h1>
-      <Features list={features} />
+      <Roles list={roles} />
       <aside className="event atk-paivat">
         <h2>ATK-päivät: Ständi 200</h2>
         <p>Tervetuloa osastollemme keskustelemaan siitä, kuinka rakennamme vaikuttavia

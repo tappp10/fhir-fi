@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 import Demo from '../components/Demo';
-import Features from '../components/Features';
+import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import unaLogo from '../images/una.svg';
 import unaYdin from '../images/una-ydin.png';
@@ -11,16 +11,16 @@ import unaBCB from '../images/una-bcb.png';
 export const Head = () => <title>FHIR Demo 2024: Una</title>;
 
 export default function Una({ location }) {
-  const features = demos.una.features;
+  const roles = demos.una.roles;
   
   return (
-    <Demo features={features} location={location}>
+    <Demo roles={roles} location={location}>
       <h1>
         <a href="https://unaoy.fi/">
           <img src={unaLogo} alt="Una Oy" />
         </a>
       </h1>
-      <Features list={features} />
+      <Roles list={roles} />
       <aside className="event atk-paivat">
         <h2>ATK-päivät: Ständi 210</h2>
         <p>UNA on mukana sosiaali- ja terveydenhuollon ATK-päivillä järjestettävässä FHIR Demossa.

@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { FeaturesContextProvider } from './src/components/Features';
+import { RolesContextProvider } from './src/components/Roles';
 
 // Wraps every page in a component
 export const wrapPageElement = ({ element, props }) => {
   return (
-    <FeaturesContextProvider {...props}>
+    <RolesContextProvider {...props}>
       {element}
-    </FeaturesContextProvider>
+    </RolesContextProvider>
   );
 };

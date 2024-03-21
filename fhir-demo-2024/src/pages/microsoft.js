@@ -1,23 +1,23 @@
 import * as React from 'react';
 
 import Demo from '../components/Demo';
-import Features from '../components/Features';
+import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import microsoftLogo from '../images/microsoft.svg';
 
 export const Head = () => <title>FHIR Demo 2024: Microsoft</title>;
 
 export default function Microsoft({ location }) {
-  const features = demos.microsoft.features;
+  const roles = demos.microsoft.roles;
   
   return (
-    <Demo features={features} location={location}>
+    <Demo roles={roles} location={location}>
       <h1>
         <a href="https://www.microsoft.com/">
           <img src={microsoftLogo} alt="Microsoft" />
         </a>
       </h1>
-      <Features list={features} />
+      <Roles list={roles} />
       <p>Microsoft presents two solutions:</p>
       <ul>
         <li>
@@ -41,7 +41,7 @@ export default function Microsoft({ location }) {
           administered within an Azure Health Data Services workspace.</li>
           <li>Azure API for FHIR is a managed FHIR server offered as a PaaS in Azure - easily
           provisioned in the Azure portal. Azure API for FHIR is not part of Azure Health Data
-          Services and lacks some of the features of the FHIR service.</li>
+          Services and lacks some of the roles of the FHIR service.</li>
           <li>FHIR Server for Azure, an open-source FHIR server that can be deployed into your
           Azure subscription, is available on GitHub at <a
           href="https://github.com/Microsoft/fhir-server">https://github.com/Microsoft/fhir-server</a>.</li>

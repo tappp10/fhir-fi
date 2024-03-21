@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import Demo from '../components/Demo';
-import Features from '../components/Features';
+import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import wellmoLogo from '../images/wellmo.png';
 import wellmoSolution from '../images/wellmo.webp';
@@ -9,16 +9,16 @@ import wellmoSolution from '../images/wellmo.webp';
 export const Head = () => <title>FHIR Demo 2024: Wellmo</title>;
 
 export default function Wellmo({ location }) {
-  const features = demos.wellmo.features;
+  const roles = demos.wellmo.roles;
   
   return (
-    <Demo features={features} location={location}>
+    <Demo roles={roles} location={location}>
       <h1 className="white">
         <a href="https://www.wellmo.com/">
           <img src={wellmoLogo} alt="Wellmo" />
         </a>
       </h1>
-      <Features list={features} />
+      <Roles list={roles} />
       <aside className="event atk-paivat">
         <h2>ATK-päivät: Startup-alue</h2>
         <p><strong>FHIR-demo <time

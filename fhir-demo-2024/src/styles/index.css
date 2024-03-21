@@ -311,17 +311,17 @@ article > header > h3 {
   position: relative;
 }
 
-ul.features {
+ul.roles {
   padding: 0;
 }
 
-a.feature {
+a.role {
   font-family: 'Tourney Variable', 'Tourney', sans-serif;
   font-weight: 100;
   text-decoration: none;
 }
 
-a.selected.feature {
+a.selected.role {
   font-weight: 900;
 }
 

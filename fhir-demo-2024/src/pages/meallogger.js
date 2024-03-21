@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 import Demo from '../components/Demo';
-import Features from '../components/Features';
+import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import mealloggerLogo from '../images/meallogger.jpeg';
 import mealloggerSolution from '../images/meallogger.png';
@@ -10,16 +10,16 @@ import mealloggerSolution from '../images/meallogger.png';
 export const Head = () => <title>FHIR Demo 2024: Meallogger</title>;
 
 export default function Meallogger({ location }) {
-  const features = demos.meallogger.features;
+  const roles = demos.meallogger.roles;
   
   return (
-    <Demo features={features} location={location}>
+    <Demo roles={roles} location={location}>
       <h1 className="white">
         <a href="https://www.meallogger.com/">
           <img src={mealloggerLogo} alt="Meallogger" />
         </a>
       </h1>
-      <Features list={features} />
+      <Roles list={roles} />
       <aside className="event atk-paivat">
         <h2>ATK-päivät: Startup-alue</h2>
         <p>Demomme voi nähdä <Link to="../wellmo">Wellmon</Link> ständillä.</p>
@@ -30,7 +30,7 @@ export default function Meallogger({ location }) {
         nutrition interventions.</p>
         <img src={mealloggerSolution} alt="" />
         <p>MealLogger enables population-level nutrition coaching with  automated programs, peer
-        support, AI-assisted features, and advanced analytics as well as private and small group
+        support, AI-assisted roles, and advanced analytics as well as private and small group
         coaching.</p>
       </section>
       <section id="ai">

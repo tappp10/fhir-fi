@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import Demo from '../components/Demo';
-import Features from '../components/Features';
+import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import innokasLogo from '../images/innokas-medical.png';
 import medicubexLogo from '../images/medicubex.png';
@@ -15,10 +15,10 @@ import tapioPelkonen from '../images/tapio_pelkonen.png';
 export const Head = () => <title>FHIR Demo 2024: Innokas Medical / MedicubeX</title>;
 
 export default function InnokasMedical({ location }) {
-  const features = demos['innokas-medical'].features;
+  const roles = demos['innokas-medical'].roles;
   
   return (
-    <Demo features={features} location={location}>
+    <Demo roles={roles} location={location}>
       <h1>
         <a href="https://www.innokasmedical.fi/">
           <img className="half" src={innokasLogo} alt="Innokas Medical" />
@@ -27,7 +27,7 @@ export default function InnokasMedical({ location }) {
           <img className="half" src={medicubexLogo} alt="MedicubeX" />
         </a>
       </h1>
-      <Features list={features} />
+      <Roles list={roles} />
       <aside className="event vitalis">
         <h2>Digious at Vitalis</h2>
         <p>We'll be at the Matchmaking & Event Area <strong><time

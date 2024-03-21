@@ -2,23 +2,23 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 import Demo from '../components/Demo';
-import Features from '../components/Features';
+import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import dwLogo from '../images/digital-wells.png';
 
 export const Head = () => <title>FHIR Demo 2024: Digital Wells</title>;
 
 export default function DigitalWells({ location }) {
-  const features = demos['digital-wells']?.features;
+  const roles = demos['digital-wells']?.roles;
   
   return (
-    <Demo features={features} location={location}>
+    <Demo roles={roles} location={location}>
       <h1>
         <a href="https://www.digitalwells.fi/">
           <img src={dwLogo} alt="Digital Wells" />
         </a>
       </h1>
-      <Features list={features} />
+      <Roles list={roles} />
       <section>
         <p>
           Whilst life expectancy at older ages is improving, insufficient physical activity

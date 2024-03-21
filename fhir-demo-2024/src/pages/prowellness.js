@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import Demo from '../components/Demo';
-import Features from '../components/Features';
+import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import prowellnessLogo from '../images/prowellness.png';
 import balansioLogo from '../images/balansio.png';
@@ -9,16 +9,16 @@ import balansioLogo from '../images/balansio.png';
 export const Head = () => <title>FHIR Demo 2024: ProWellness</title>;
 
 export default function ProWellness({ location }) {
-  const features = demos.prowellness.features;
+  const roles = demos.prowellness.roles;
   
   return (
-    <Demo features={features} location={location}>
+    <Demo roles={roles} location={location}>
       <h1 className="white">
         <a href="https://www.prowellness.com/">
           <img src={prowellnessLogo} alt="ProWellness" />
         </a>
       </h1>
-      <Features list={features} />
+      <Roles list={roles} />
       <aside className="event atk-paivat">
         <h2>ATK-päivät: Ständi 404</h2>
         <p>Olemme tavattavissa BusinessOulun ständillä.</p>

@@ -2,23 +2,23 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 import Demo from '../components/Demo';
-import Features from '../components/Features';
+import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import duodecimLogo from '../images/duodecim.svg';
 
 export const Head = () => <title>FHIR Demo 2024: Duodecim</title>;
 
 export default function Duodecim({ location }) {
-  const features = demos.duodecim.features;
+  const roles = demos.duodecim.roles;
   
   return (
-    <Demo features={features} location={location}>
+    <Demo roles={roles} location={location}>
       <h1>
         <a href="https://duodecim.fi/">
           <img src={duodecimLogo} alt="Duodecim" />
         </a>
       </h1>
-      <Features list={features} />
+      <Roles list={roles} />
       <aside className="event atk-paivat">
         <h2>ATK-päivät: Ständi 124</h2>
         <p><strong>FHIR-demo <time

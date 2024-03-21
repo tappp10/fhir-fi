@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import Demo from '../components/Demo';
-import Features from '../components/Features';
+import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import integritasLogo from '../images/integritas.svg';
 import pirkko from '../images/pirkko.png';
@@ -9,16 +9,16 @@ import pirkko from '../images/pirkko.png';
 export const Head = () => <title>FHIR Demo 2024: Integritas</title>;
 
 export default function Integritas({ location }) {
-  const features = demos.integritas.features;
+  const roles = demos.integritas.roles;
   
   return (
-    <Demo features={features} location={location}>
+    <Demo roles={roles} location={location}>
       <h1>
         <a href="https://www.integritas.fi/">
           <img src={integritasLogo} alt="Integritas" />
         </a>
       </h1>
-      <Features list={features} />
+      <Roles list={roles} />
       <section id="pirkko-care-optimizer">
         <h2>PIRKKO<sup>&reg;</sup> Care Optimizer</h2>
         <p>PIRKKO<sup>&reg;</sup> is a secure medical web application for managing care plans for

@@ -3,10 +3,10 @@ import { Link, withPrefix } from 'gatsby';
 
 import Article from './Article';
 import { demos } from '../config/data';
-import { FeaturesContext } from './Features';
+import { RolesContext, availableRoles } from './Roles';
 import fhirLogo from '../images/fhir.svg';
 import fhirLogo2 from '../images/fhir-deco.svg';
-import Features from './Features';
+import Roles from './Roles';
 
 const prefix = withPrefix('/');
 
@@ -14,12 +14,12 @@ export default function Demo({ children, location }) {
 
   const { search, pathname } = location;
 
-  const { selectedFeatures = {} } = React.useContext(FeaturesContext);
+  const { selectedRoles = {} } = React.useContext(RolesContext);
 
-  const features = Object.keys(selectedFeatures).sort();
+  const roles = Object.keys(selectedRoles).sort();
 
   const selectedDemos = Object.keys(demos).filter(
-    (k) => !features.length || demos[k].features?.some((f => features.some(s => s === f)))
+    (k) => !roles.length || demos[k].roles?.some((f => roles.some(s => s === f)))
   );
 
   const myIndex = selectedDemos.indexOf(pathname.replace(prefix, '').replaceAll('/', ''));
@@ -77,16 +77,30 @@ export default function Demo({ children, location }) {
     <Article id="demo">
       <header>
         <h1>FHIR Demo 2024 <img className="inline" src={fhirLogo} alt="" /></h1>
-        {features.length
+        {roles.length
         ? (
           <>
             <hr />
-            <h3>{`Showing demos with feature${features.length > 1 ? 's' : ''}:`}</h3>
-            <Features list={features} />
+            <h3>
+              
+              {myIndex >= 0
+              ? <>{`Participant #${
+                  myIndex + 1
+                } of ${
+                  selectedDemos.length
+                } with role${
+                  roles.length > 1 ? 's' : ''
+                }`}
+                <span className="ariaHelp"> {roles.join(' or ')}</span>
+                </>
+              : null
+              }
+              <Roles list={availableRoles} />
+            </h3>
             <hr />
           </>
         )
-        : null
+        : <p>{`Participant #${myIndex + 1} / ${selectedDemos.length}`}</p>
         }
       </header>
       {prevNextNav}
