@@ -69,7 +69,7 @@ export default function IndexPage({ location }) {
             href="https://ehin.no/2024/">EHiN</a> too.
           </p>
           <p className="center">
-            <a className="button" href="mailto:mikael@sensotrend.com">Participate!</a>
+            <Link className="button" to="/participate">Participate!</Link>
           </p>
         {
         /*
@@ -93,7 +93,7 @@ export default function IndexPage({ location }) {
           </p>
         </section>
 
-        */
+        *
 
         <section id="participants">
           <h1>Participants</h1>
