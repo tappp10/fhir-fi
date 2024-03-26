@@ -125,6 +125,12 @@ article#intro p {
   animation: 3s linear 1 delay, 2s ease-in 3s 1 appear;
 }
 
+h1 {
+  font-family: 'Tourney Variable', 'Tourney', sans-serif;
+  color: var(--color-heading-text);
+  font-weight: 400;
+}
+
 article#intro h1 {
   position: absolute;
   width: 100%;
@@ -133,12 +139,6 @@ article#intro h1 {
   font-weight: 650;
   animation: 5.1s linear 1 delay, 2s ease-in 5s 1 appear;
   animation: 5s linear 1 delay, 3s cubic-bezier(0.3, 0.2, 0.2, 2) 4.9s 1 fatten;
-}
-
-h1 {
-  font-family: 'Tourney Variable', 'Tourney', sans-serif;
-  color: var(--color-heading-text);
-  font-weight: 400;
 }
 
 #mainPage h2 {
@@ -359,6 +359,26 @@ section h2 {
   margin-bottom: 0.5em;
 }
 
+#participate h2 {
+  font-family: 'Tourney Variable', 'Tourney', sans-serif;
+  font-weight: 900;
+  font-size: 125%;
+}
+
+
+#participate #faq h2 {
+  margin-top: 2.5em;
+  margin-bottom: 0.25em;
+}
+
+#participate #faq > p {
+  margin-top: 0em;
+}
+
+#participate section.callout h2 {
+  font-size: 200%;
+}
+
 section#participants > ul {
   padding-inline-start: 0;
   list-style-type: none;
@@ -382,6 +402,11 @@ ul.hashtags li {
   height: 36em;
   max-height: 50vh;
   max-width: 80vw;
+}
+
+#participate #about img.decoration {
+  margin-top: 4em;
+  height: 20em;
 }
 
 div.media {
@@ -683,12 +708,27 @@ footer a:first-of-type {
   margin-top: 6em;
 }
 
+#participate #contact .business-card {
+  margin-top: 2em;
+  margin-bottom: 5em;
+}
+
 #contact > img {
   display: block;
   text-align: center;
   margin: 12em auto 2em;
   max-height: 30vh;
 }
+
+#contact img.inline.decoration {
+  /*
+  float: left;
+  */
+  vertical-align: middle;
+  margin-right: 1em;
+  height: 3em;
+}
+
 
 nav.prevNext {
   font-family: 'Tourney Variable', 'Tourney', sans-serif;
@@ -817,6 +857,15 @@ nav.prevNext > div:last-child {
 
 }
 
+@media (max-width: 1200px) {
+  #contact img.inline.decoration {
+    float: left;
+  }
+  #contact p:last-child {
+    padding-bottom: 2em;
+  }
+}
+
 @media (max-width: 600px) {
 
   article > nav:first-child {
@@ -836,6 +885,13 @@ nav.prevNext > div:last-child {
     float: none;
   }
 
+  section h1 {
+    font-size: 250%;
+  }
+
+  #about h1 small {
+    font-size: 50%;
+  }
 
   #about > img {
     margin: 3em auto;
@@ -855,6 +911,7 @@ nav.prevNext > div:last-child {
     margin: 0.4em 0;
     display: block;
   }
+
   footer span {
     display: none;
   }
