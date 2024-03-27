@@ -276,6 +276,10 @@ section {
   padding-top: 2em;
 }
 
+section > section:first-child {
+  padding-top: 0;
+}
+
 section h1 {
   font-size: x-large;
   font-size: 400%;
@@ -363,16 +367,6 @@ section h2 {
   font-family: 'Tourney Variable', 'Tourney', sans-serif;
   font-weight: 900;
   font-size: 125%;
-}
-
-
-#participate #faq h2 {
-  margin-top: 2.5em;
-  margin-bottom: 0.25em;
-}
-
-#participate #faq > p {
-  margin-top: 0em;
 }
 
 #participate section.callout h2 {
