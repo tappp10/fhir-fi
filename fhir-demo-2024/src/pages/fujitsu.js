@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 
+import { getHead } from '../components/Article';
 import Demo from '../components/Demo';
 import Roles from '../components/Roles';
 import { demos } from '../config/data';
@@ -8,7 +9,10 @@ import fujitsuLogo from '../images/fujitsu.svg';
 import emom from '../images/emom.png';
 import joni from '../images/joni_hirviniemi.png';
 
-export const Head = () => <title>FHIR Demo 2024: Fujitsu</title>;
+export function Head() {
+  const title = <title>FHIR Demo 2024: Fujitsu</title>;
+  return getHead({ title });
+};
 
 export default function Fujitsu({ location }) {
   const roles = demos.fujitsu.roles;

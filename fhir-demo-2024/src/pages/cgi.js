@@ -1,11 +1,15 @@
 import * as React from 'react';
 
+import { getHead } from '../components/Article';
 import Demo from '../components/Demo';
 import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import cgiLogo from '../images/cgi.svg';
 
-export const Head = () => <title>FHIR Demo 2024: CGI</title>;
+export function Head() {
+  const title = <title>FHIR Demo 2024: CGI</title>;
+  return getHead({ title });
+};
 
 export default function Cgi({ location }) {
   const roles = demos.cgi.roles;

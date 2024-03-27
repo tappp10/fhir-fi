@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import { getHead } from '../components/Article';
 import Demo from '../components/Demo';
 import Roles from '../components/Roles';
 import { demos } from '../config/data';
@@ -8,7 +9,10 @@ import myplusLogo from '../images/mylab_plus_rgb.png';
 import myplusCareLogo from '../images/mylab_plus_care_rgb.png';
 import myplusHubLogo from '../images/mylab_plus_hub_rgb.png';
 
-export const Head = () => <title>FHIR Demo 2024: Mylab</title>;
+export function Head() {
+  const title = <title>FHIR Demo 2024: Mylab</title>;
+  return getHead({ title });
+};
 
 export default function Mylab({ location }) {
   const roles = demos.mylab.roles;

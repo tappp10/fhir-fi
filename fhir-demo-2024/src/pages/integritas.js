@@ -1,12 +1,16 @@
 import * as React from 'react';
 
+import { getHead } from '../components/Article';
 import Demo from '../components/Demo';
 import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import integritasLogo from '../images/integritas.svg';
 import pirkko from '../images/pirkko.png';
 
-export const Head = () => <title>FHIR Demo 2024: Integritas</title>;
+export function Head() {
+  const title = <title>FHIR Demo 2024: Integritas</title>;
+  return getHead({ title });
+};
 
 export default function Integritas({ location }) {
   const roles = demos.integritas.roles;

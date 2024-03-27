@@ -1,12 +1,16 @@
 import * as React from 'react';
 
+import { getHead } from '../components/Article';
 import Demo from '../components/Demo';
 import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import wellmoLogo from '../images/wellmo.png';
 import wellmoSolution from '../images/wellmo.webp';
 
-export const Head = () => <title>FHIR Demo 2024: Wellmo</title>;
+export function Head() {
+  const title = <title>FHIR Demo 2024: Wellmo</title>;
+  return getHead({ title });
+};
 
 export default function Wellmo({ location }) {
   const roles = demos.wellmo.roles;

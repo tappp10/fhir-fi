@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import { getHead } from '../components/Article';
 import Demo from '../components/Demo';
 import Roles from '../components/Roles';
 import { demos } from '../config/data';
@@ -12,7 +13,10 @@ import heikkiMiinalainen from '../images/heikki_miinalainen.png';
 import digiousFlowChart from '../images/digious_flow_chart.png';
 import tapioPelkonen from '../images/tapio_pelkonen.png';
 
-export const Head = () => <title>FHIR Demo 2024: Innokas Medical / MedicubeX</title>;
+export function Head() {
+  const title = <title>FHIR Demo 2024: Innokas Medical / MedicubeX</title>;
+  return getHead({ title });
+};
 
 export default function InnokasMedical({ location }) {
   const roles = demos['innokas-medical'].roles;

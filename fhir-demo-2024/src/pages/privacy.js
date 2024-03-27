@@ -1,5 +1,10 @@
 import * as React from 'react';
-import Article from '../components/Article';
+import Article, { getHead } from '../components/Article';
+
+export function Head() {
+  const title = <title>FHIR Demo 2024: Privacy policy</title>;
+  return getHead({ title });
+};
 
 export default function Privacy () {
   return (

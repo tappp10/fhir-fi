@@ -1,10 +1,13 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 
-import Article from '../components/Article';
+import Article, { getHead } from '../components/Article';
 import fhirLogo from '../images/fhir.svg';
 
-export const Head = () => <title>FHIR Demo 2023 ATK-päivillä</title>;
+export function Head() {
+  const title = <title>FHIR Demo 2023 ATK-päivillä</title>;
+  return getHead({ title });
+};
 
 export default function AtkPaivat() {
 

@@ -1,11 +1,15 @@
 import * as React from 'react';
 
+import { getHead } from '../components/Article';
 import Demo from '../components/Demo';
 import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import solitaLogo from '../images/solita.jpg';
 
-export const Head = () => <title>FHIR Demo 2024: Solita</title>;
+export function Head() {
+  const title = <title>FHIR Demo 2024: Solita</title>;
+  return getHead({ title });
+};
 
 export default function Solita({ location }) {
   const roles = demos.solita.roles;

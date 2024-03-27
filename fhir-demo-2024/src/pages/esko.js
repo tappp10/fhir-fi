@@ -1,12 +1,16 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 
+import { getHead } from '../components/Article';
 import Demo from '../components/Demo';
 import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import eskoLogo from '../images/eskosystems.svg';
 
-export const Head = () => <title>FHIR Demo 2024: Esko Systems</title>;
+export function Head() {
+  const title = <title>FHIR Demo 2024: Esko Systems</title>;
+  return getHead({ title });
+};
 
 export default function EskoSystems({ location }) {
   const roles = demos.esko.roles;

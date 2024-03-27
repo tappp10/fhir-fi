@@ -6,6 +6,14 @@ import '@fontsource-variable/tourney';
 import '../styles/index.css';
 import Background from '../pages/background';
 
+export function getHead({ title }) {
+  return (
+    <>
+      { title }
+    </>
+  )
+}
+
 const Article = ({ children, ...rest }) => {
   return (
     <>

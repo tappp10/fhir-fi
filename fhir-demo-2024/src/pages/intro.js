@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link, withPrefix } from 'gatsby';
 
-import Article from '../components/Article';
+import Article, { getHead } from '../components/Article';
 
 const Intro = () => {
   return (
@@ -17,4 +17,7 @@ const Intro = () => {
 
 export default Intro;
 
-export const Head = () => <title>FHIR Demo 2024 by HL7 Finland - WELCOME!</title>;
+export function Head() {
+  const title = <title>FHIR Demo 2024 by HL7 Finland - WELCOME!</title>;
+  return getHead({ title });
+};

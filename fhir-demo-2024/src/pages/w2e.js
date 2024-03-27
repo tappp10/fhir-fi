@@ -1,11 +1,15 @@
 import * as React from 'react';
 
+import { getHead } from '../components/Article';
 import Demo from '../components/Demo';
 import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import w2eLogo from '../images/w2e.jpeg';
 
-export const Head = () => <title>FHIR Demo 2024: W2E</title>;
+export function Head() {
+  const title = <title>FHIR Demo 2024: W2E</title>;
+  return getHead({ title });
+};
 
 export default function W2e({ location }) {
   const roles = demos.w2e?.roles;

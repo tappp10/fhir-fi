@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 
-import Article from '../components/Article';
+import Article, { getHead } from '../components/Article';
 import { RoleFilter, RolesContext } from '../components/Roles';
 import { demos } from '../config/data';
 import fhirLogo from '../images/fhir.svg';
@@ -10,10 +10,10 @@ import mikaelx1 from '../images/MikaelRinnetmaki.jpg';
 import mikaelx2 from '../images/MikaelRinnetmaki2x.jpg';
 
 
-// import bg1 from '../images/bg01.svg';
-// import bg2 from '../images/bg02.svg';
-
-export const Head = () => <title>FHIR Demo 2024</title>;
+export function Head() {
+  const title = <title>FHIR Demo 2024</title>;
+  return getHead({ title });
+};
 
 export default function IndexPage({ location }) {
   const { search } = location;
@@ -21,10 +21,6 @@ export default function IndexPage({ location }) {
   const roles = Object.keys(selectedRoles);
   return (
     <>
-      {/*
-      <img className="bgImage" src={bg1} />
-      <img className="bgImage" src={bg2} />
-      */}
       <Article id="mainPage">
         <section id="about">
           <h1>FHIR Demo 2024</h1>

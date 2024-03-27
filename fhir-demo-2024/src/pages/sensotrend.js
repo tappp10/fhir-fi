@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 
+import { getHead } from '../components/Article';
 import Demo from '../components/Demo';
 import Roles from '../components/Roles';
 import { demos } from '../config/data';
@@ -12,7 +13,10 @@ import sensotrendLogo from '../images/sensotrend.svg';
 import sensotrendAGPImage from '../images/sensotrend-agp.png';
 import sensotrendConnectImage from '../images/sensotrend-connect.jpg';
 
-export const Head = () => <title>FHIR Demo 2024: Sensotrend</title>;
+export function Head() {
+  const title = <title>FHIR Demo 2024: Sensotrend</title>;
+  return getHead({ title });
+};
 
 export default function Sensotrend({ location }) {
   const roles = demos.sensotrend.roles;

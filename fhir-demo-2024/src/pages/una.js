@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 
+import { getHead } from '../components/Article';
 import Demo from '../components/Demo';
 import Roles from '../components/Roles';
 import { demos } from '../config/data';
@@ -8,7 +9,10 @@ import unaLogo from '../images/una.svg';
 import unaYdin from '../images/una-ydin.png';
 import unaBCB from '../images/una-bcb.png';
 
-export const Head = () => <title>FHIR Demo 2024: Una</title>;
+export function Head() {
+  const title = <title>FHIR Demo 2024: Una</title>;
+  return getHead({ title });
+};
 
 export default function Una({ location }) {
   const roles = demos.una.roles;

@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import { getHead } from '../components/Article';
 import Demo from '../components/Demo';
 import Roles from '../components/Roles';
 import { demos } from '../config/data';
@@ -7,7 +8,10 @@ import bcbMedicalLogo from '../images/bcb-medical.svg';
 import bcbOmavointi from '../images/bcb-medical-omavointi.png';
 import bcbSuite from '../images/bcb-medical-suite.png';
 
-export const Head = () => <title>FHIR Demo 2024: BCB Medical</title>;
+export function Head() {
+  const title = <title>FHIR Demo 2024: BCB Medical</title>;
+  return getHead({ title });
+};
 
 export default function BcbMedical({ location }) {
   const roles = demos['bcb-medical'].roles;

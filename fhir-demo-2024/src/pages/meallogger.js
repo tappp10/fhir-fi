@@ -1,13 +1,17 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 
+import { getHead } from '../components/Article';
 import Demo from '../components/Demo';
 import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import mealloggerLogo from '../images/meallogger.jpeg';
 import mealloggerSolution from '../images/meallogger.png';
 
-export const Head = () => <title>FHIR Demo 2024: Meallogger</title>;
+export function Head() {
+  const title = <title>FHIR Demo 2024: Meallogger</title>;
+  return getHead({ title });
+};
 
 export default function Meallogger({ location }) {
   const roles = demos.meallogger.roles;

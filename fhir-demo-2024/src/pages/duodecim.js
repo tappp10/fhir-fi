@@ -1,12 +1,16 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 
+import { getHead } from '../components/Article';
 import Demo from '../components/Demo';
 import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import duodecimLogo from '../images/duodecim.svg';
 
-export const Head = () => <title>FHIR Demo 2024: Duodecim</title>;
+export function Head() {
+  const title = <title>FHIR Demo 2024: Duodecim</title>;
+  return getHead({ title });
+};
 
 export default function Duodecim({ location }) {
   const roles = demos.duodecim.roles;

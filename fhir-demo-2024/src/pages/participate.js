@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 
-import Article from '../components/Article';
+import Article, { getHead } from '../components/Article';
 import { RoleFilter, RolesContext } from '../components/Roles';
 import { demos } from '../config/data';
 import fhirLogo from '../images/fhir.svg';
@@ -11,7 +11,10 @@ import mikaelx2 from '../images/MikaelRinnetmaki2x.jpg';
 import slackLogo from '../images/Slack_icon_2019.svg';
 
 
-export const Head = () => <title>Take part in FHIR Demo 2024</title>;
+export function Head() {
+  const title = <title>Take part in FHIR Demo 2024</title>;
+  return getHead({ title });
+};
 
 export default function Participate() {
   return (
