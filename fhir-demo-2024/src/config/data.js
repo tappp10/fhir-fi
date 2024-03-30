@@ -1,6 +1,7 @@
 import * as RoleList from '../components/RoleList';
 
 export const demos = {
+  /*
   apotti: {
     name: 'Apotti',
     roles: [
@@ -56,7 +57,6 @@ export const demos = {
       RoleList.Consultancy,
     ],
   },
-  /*
   glucostratus: {
     name: 'Glucostratus',
     roles: [
@@ -64,6 +64,31 @@ export const demos = {
     ],
   },
   */
+  'hl7-denmark': {
+    name: 'HL7 Denmark',
+    roles: [
+      RoleList.Institution,
+    ],
+  },
+  'hl7-finland': {
+    name: 'HL7 Finland',
+    roles: [
+      RoleList.Institution,
+    ],
+  },
+  'hl7-norway': {
+    name: 'HL7 Norway',
+    roles: [
+      RoleList.Institution,
+    ],
+  },
+  'hl7-sweden': {
+    name: 'HL7 Sweden',
+    roles: [
+      RoleList.Institution,
+    ],
+  },
+  /*
   'innokas-medical': {
     name: 'Innokas Medical / Medicubex',
     roles: [
@@ -104,7 +129,6 @@ export const demos = {
       RoleList.SMART,
     ],
   },
-  */
   microsoft: {
     name: 'Microsoft',
     roles: [
@@ -130,6 +154,7 @@ export const demos = {
       RoleList.App,
     ],
   },
+  */
   sensotrend: {
     name: 'Sensotrend',
     roles: [
@@ -137,6 +162,7 @@ export const demos = {
       RoleList.Consultancy,
     ],
   },
+  /*
   solita: {
     name: 'Solita',
     roles: [
@@ -164,5 +190,7 @@ export const demos = {
       RoleList.App,
     ],
   },
+  */
+
 };
 
