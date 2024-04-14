@@ -147,6 +147,11 @@ article#intro h1 {
   font-size: 2em;
 }
 
+#mainPage h2 a {
+  font-weight: 650;
+}
+
+
 #about h1,
 #demo header h1 {
   font-size: 550%;
@@ -396,6 +401,10 @@ ul.hashtags li {
   height: 36em;
   max-height: 50vh;
   max-width: 80vw;
+}
+
+#mainPage #about img.decoration {
+  margin: 2em auto 4em;
 }
 
 #participate #about img.decoration {

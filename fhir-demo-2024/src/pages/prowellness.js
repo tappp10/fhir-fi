@@ -23,10 +23,26 @@ export default function ProWellness({ location }) {
         </a>
       </h1>
       <Roles list={roles} />
-      <aside className="event atk-paivat">
-        <h2>ATK-päivät: Ständi 404</h2>
-        <p>Olemme tavattavissa BusinessOulun ständillä.</p>
-      </aside>
+      <section className="work-in-progress">
+        <p>Participation confirmed, showcase content to be added.</p>
+        {/*
+          From: Mika Sipila <mika.sipila@prowellness.com>
+          Date: Thursday, 11. April 2024 at 8.54
+          To: 'Mikael Rinnetmäki' <mikael@sensotrend.com>
+          Subject: RE: FHIR Demo 2024
+ 
+          Apps on oikea alue, ja tässä meillä on:
+          •	ProWellness CDMS (Chronic Diseases Management System),  jossa Smart App Launch (EHR -> CDMS)
+          •	Balansio, jossa Smart App Launch (EHR -> Balansio), sekä järjestelmän sisäisesti Balansion omissa REST-kutsuissa käytössä FHIR-resurssit
+            o	/fhir/observation
+            o	/fhir/MedicalAdministration
+ 
+          Kuvia + tekstiä on ja saadaan toki muokattua/tehtyä paremmiksi..
+ 
+        */}
+      </section>
+
+      {/*
       <section id="balansio">
         <h2><img src={balansioLogo} alt="Balansio" /></h2>
         <p>Balansio is a CE marked medical device for diabetes clinics and hospitals to extend
@@ -35,6 +51,7 @@ export default function ProWellness({ location }) {
         <p>Balansio has been integrated with Epic through the <strong>SMART App
         Launch</strong> mechanism.</p>
       </section>
+      */}
       <section id="contact">
         <h3>Contact</h3>
         <div className="business-card">

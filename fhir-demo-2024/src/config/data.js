@@ -1,7 +1,6 @@
 import * as RoleList from '../components/RoleList';
 
 export const demos = {
-  /*
   apotti: {
     name: 'Apotti',
     roles: [
@@ -14,12 +13,18 @@ export const demos = {
       RoleList.Consultancy,
     ],
   },
+  /*
+
+  Minäpä laitan tietoa meidän sovellus / integraatio porukalle ja palataan tähän
+  Yt Marko
+
   'bcb-medical': {
     name: 'BCB Medical',
     roles: [
       RoleList.App,
     ],
   },
+  */
   buddy: {
     name: 'Buddy Healthcare',
     roles: [
@@ -32,18 +37,13 @@ export const demos = {
       RoleList.System,
     ],
   },
-  'digital-wells': {
-    name: 'Digital Wells',
-    roles: [
-      RoleList.App,
-    ],
-  },
   duodecim: {
     name: 'Duodecim',
     roles: [
       RoleList.App,
     ],
   },
+  /*
   esko: {
     name: 'Esko Systems',
     roles: [
@@ -76,21 +76,20 @@ export const demos = {
       RoleList.Institution,
     ],
   },
-  'hl7-norway': {
-    name: 'HL7 Norway',
+  'hl7-norge': {
+    name: 'HL7 Norge',
     roles: [
       RoleList.Institution,
     ],
   },
-  'hl7-sweden': {
-    name: 'HL7 Sweden',
+  'hl7-sverige': {
+    name: 'HL7 Sverige',
     roles: [
       RoleList.Institution,
     ],
   },
-  /*
-  'innokas-medical': {
-    name: 'Innokas Medical / Medicubex',
+  'innokas': {
+    name: 'Innokas',
     roles: [
       RoleList.App,
       RoleList.Consultancy,
@@ -148,13 +147,13 @@ export const demos = {
       RoleList.System,
     ],
   },
+  */
   prowellness: {
     name: 'ProWellness',
     roles: [
       RoleList.App,
     ],
   },
-  */
   sensotrend: {
     name: 'Sensotrend',
     roles: [
@@ -177,6 +176,14 @@ export const demos = {
       RoleList.System,
     ],
   },
+  */
+  trifork: {
+    name: 'Trifork',
+    roles: [
+      RoleList.Consultancy,
+    ],
+  },
+  /*
   una: {
     name: 'Una',
     roles: [

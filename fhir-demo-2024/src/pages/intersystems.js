@@ -22,14 +22,6 @@ export default function InterSystems({ location }) {
         </a>
       </h1>
       <Roles list={roles} />
-      <aside className="event atk-paivat">
-        <h2>ATK-päivät: Ständi 101</h2>
-        <p>Tervetuloa ständillemme näkemään ja keskustelemaan kuinka voimme lisätä
-        FHIR-kyvykkyyksiä olemassa oleviin ratkaisuihin!</p>
-        <p>Esittelemme <strong>aikataulutetun FHIR-demon <time
-        dateTime="2023-05-23T12:15:00.000+03:00">Tiistaina klo 12.15</time></strong>.</p>
-        <p>Esittelemme demoja ja keskustelemme ständillämme koko tapahtuman ajan.</p>
-      </aside>
       <section id="intro">
         <p>InterSystems can FHIR-enable your solution: provide it with a <a
         href="https://www.hl7.org/fhir/http.html">standards based FHIR API</a> including <a
@@ -69,9 +61,9 @@ export default function InterSystems({ location }) {
         for storing, mapping and implementing business processes with FHIR.</p>
       </section>
       <section id="ccow-to-smart">
-        <h2>Mapping Finnish minimum context management to SMART App launch</h2>
-        <p>We demonstrated this last year together with TietoEvry and can show you also this year
-        how it worked.</p>
+        <h2>Mapping Finnish minimum context management to SMART App Launch</h2>
+        <p>We demonstrated this in 2022 and 2023 together with TietoEvry and can show you also this
+          year how it works.</p>
       </section>
       <section id="whatever-you-need">
         <h2>Health Care Interoperability - what ever you need</h2>

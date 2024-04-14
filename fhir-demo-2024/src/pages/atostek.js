@@ -22,14 +22,16 @@ export default function Atostek({ location }) {
         </a>
       </h1>
       <Roles list={roles} />
-      <aside className="event atk-paivat">
-        <h2>ATK-päivät: Ständi 94</h2>
-        <p><strong>FHIR-demo <time
-        dateTime="2023-05-24T12:45:00.000+03:00">keskiviikkona klo 12.45</time></strong>.</p>
-      </aside>
-      <p>Atostek's demo case is descibed on an <a
-      href="https://atostek.com/fhir-standardin-kayttoonotto-terveydenhuollossa-miksi-vaiheittainen-toteutus-on-avain-onnistumiseen/">external
-      site</a>.</p>
+      <section className="work-in-progress">
+        <p>Participation confirmed, showcase content to be added.</p>
+        {/*
+          From: Riikka Ala-Hulkko
+          Date: Thursday, 11. April 2024 at 10.26
+          To: Mikael Rinnetmäki <mikael@sensotrend.com>
+          Subject: Re: FHIR Demo 2024
+          Kiva juttu, kiitos. Kokoan ne sinulle heti, kun saadaan ankat riviin täällä päässä!
+        */}
+      </section>
       <section id="contact">
         <h3>Contact</h3>
         <div className="business-card">

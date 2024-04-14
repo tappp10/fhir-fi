@@ -22,9 +22,6 @@ export default function Buddy({ location }) {
         </a>
       </h1>
       <Roles list={roles} />
-      <aside className="event atk-paivat">
-        <h2>ATK-päivät: Ständi 104</h2>
-      </aside>
       <p>The scope and the contents of the demo are described in the video below.</p>
       <div className="media">
         <iframe
