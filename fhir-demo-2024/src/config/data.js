@@ -181,6 +181,7 @@ export const demos = {
     name: 'Trifork',
     roles: [
       RoleList.Consultancy,
+      RoleList.System,
     ],
   },
   /*

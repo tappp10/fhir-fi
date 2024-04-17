@@ -28,6 +28,13 @@ export default function Trifork({ location }) {
       <section id="contact">
         <h3>Contact</h3>
         <div className="business-card">
+          <h3>Jens Kristian Villadsen</h3>
+          <p>Healthcare CTO, Trifork</p>
+          <address>
+            <a href="mailto:jvi@trifork.com">jvi@trifork.com</a>
+            <br />
+            <a href="tel:+4523373806">+45 23 37 38 06</a>
+          </address>
         </div>
       </section>
     </Demo>

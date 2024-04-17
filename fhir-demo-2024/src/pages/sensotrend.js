@@ -9,6 +9,7 @@ import mikaelx1 from '../images/MikaelRinnetmaki.jpg';
 import mikaelx2 from '../images/MikaelRinnetmaki2x.jpg';
 import sensotrendLogo from '../images/sensotrend.svg';
 import sensotrendAGPImage from '../images/sensotrend-agp.png';
+import sensotrendCareplanImage from '../images/sensotrend-careplan.png';
 import sensotrendConnectImage from '../images/sensotrend-connect.jpg';
 
 export function Head() {
@@ -38,19 +39,14 @@ export default function Sensotrend({ location }) {
       - work groups
       */}
       <section id="intro">
-        <p>Sensotrend offers both apps and consultancy.</p>
-        <h2>Apps</h2>
-        <ul>
-          <li><Link to="#sensotrend-connect">Diabetes Remote Monitoring</Link></li>
-          <li><Link to="#careplan">Care Plan for Diabetes</Link></li>
-          <li><Link to="#carepath">Digital Care Path</Link></li>
-        </ul>
-        <h2>Consultancy</h2>
-        <ul>
-          <li><Link to="#ehr-integrations">EHR Integrations</Link></li>
-          <li><Link to="#fhir-imlpementations">FHIR Implementations</Link></li>
-          <li><Link to="#regulatory">Regulatory Affairs</Link></li>
-        </ul>
+        <p>
+          Sensotrend offers two apps, the <a href="#sensotrend-connect">Sensotrend Connect</a> for
+          remote monitoring and the <a href="#careplan">Care Plan for Diabetes</a> for digitalized
+          care paths.
+        </p>
+        <p>
+          Sensotrend also offers <a href="consultancy">consultancy</a> on EHR integrations, FHIR
+          implementations, and regulatory affairs.</p>
         <p>
           See also our demos in <a href="https://fhir.fi/en/demo2023/sensotrend/">last year&apos;s
           showcase</a>. They contain plenty of additional information.
@@ -92,6 +88,19 @@ export default function Sensotrend({ location }) {
             href="http://www.agpreport.org/agp/about">Ambulatory Glucose Profile</a> specification.
           </figcaption>
         </figure>
+        <blockquote>
+          <p>
+            The data provided by remote monitoring solutions in a standardized format is a key
+            enabler for digital care paths.
+          </p>
+        </blockquote>
+        <p>
+          The data provided by remote monitoring solutions in a standardized format is a key
+          enabler for digital care paths. People with chronic conditions can live independently and
+          without support from healthcare personnel for long periods of times. But things change,
+          and sometimes these people need more support. Remote monitoring solutions are essential
+          in ensuring that nobody is left out of care they need.
+        </p>
       </section>
       <section id="careplan">
         <h2>Care Plan for Diabetes</h2>
@@ -99,22 +108,30 @@ export default function Sensotrend({ location }) {
           The Care Plan for Diabetes formalizes established treatment protocols and best practices
           for diabetes treatment into an app.
         </p>
+        <figure>
+          <a href={sensotrendCareplanImage}>
+            <img
+              src={sensotrendCareplanImage}
+              alt="Screen captures of Sensotrend Careplan for Diabetes"
+            />
+          </a>
+          <figcaption>
+            The careplan keeps track and notifies the patient of appointments, lab tests, and other
+            actions relevant to care.
+          </figcaption>
+        </figure>
         <p>
-          It keeps track and notifies the patient of appointments, lab tests, and other actions
-          relevant to care. The app also helps healthcare organizations identify treatment gaps.
+          The data produced by the app also helps healthcare organizations identify treatment gaps.
         </p>
       </section>
-      <section id="carepath">
-        <h2>Digital Care Path</h2>
-      </section>
-      <section id="ehr-integrations">
-        <h2>EHR Integrations</h2>
-      </section>
-      <section id="fhir-implementations">
-        <h2>FHIR Implementations</h2>
-      </section>
-      <section id="regulatory">
-        <h2>Regulatory Affairs</h2>
+      <section id="consultancy">
+        <h2>Consultancy</h2>
+        <p>
+          We have a lot of expertise in <strong>EHR integrations</strong>, different <strong>FHIR
+          implementations</strong>, and in <strong>Regulatory affairs</strong>. We're happy to help
+          others too, and have already helped many startups with integrations and consulted public
+          organizations. Please don't hesitate to get in touch!
+        </p>
       </section>
       <section id="contact">
         <h3>Contact</h3>

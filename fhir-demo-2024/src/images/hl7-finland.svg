@@ -8,8 +8,7 @@
       path {
         stroke: black;
         stroke-width: 2.5;
-        vectorEffect: non-scaling-stroke;
-        shapeRendering: geometricPrecision;
+        shape-rendering: auto;
       }
       .cls-1 {
         fill: black;

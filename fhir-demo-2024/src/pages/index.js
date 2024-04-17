@@ -25,6 +25,32 @@ export default function IndexPage({ location }) {
         <h1>FHIR Demo 2024</h1>
         <img className="decoration" src={fhirLogo} alt="" />
       </section>
+      <section id="description" className="callout">
+        <h2>Take part in the <strong>Nordic FHIR Demo</strong> showcase!</h2>
+        <p>
+          If you are an organization utilizing the HL7 FHIR standard or advocating for it, or if
+          you have a product using the HL7 FHIR standard, we&apos;d love to get you included in the
+          showcase. Just send us a description of the product. See this year&apos;s showcase
+          and <a href="https://fhir.fi/en/demo2023/">last year&apos;s site</a> for examples.
+        </p>
+        <p>
+          The focus is in showing what has been implemented with the HL7 FHIR standard in the
+          Nordics, and in what the FHIR community is currently working on.
+        </p>
+        <p>
+          Participation costs you nothing, and gives you increased visibility in trade events and
+          the internet.
+        </p>
+        <p>
+          The event continues the tradition of the FHIR Demo showcases organized in <a
+          href="http://www.hl7.fi/wp-content/uploads/HL7-Finland-%23U0432%23U0402%23U201c-FHIR-demon-loppuraportti-20160527.pdf">2016</a>,
+          {' '} <a href="https://fhir.fi/en/demo2022/index.html">2022</a>, and <a
+          href="https://fhir.fi/en/demo2023/index.html">2023</a>.
+        </p>
+        <p className="center">
+          <Link className="button" to="/participate">Participate!</Link>
+        </p>
+      </section>
       <section id="participants">
         <h1>Participants</h1>
         <RoleFilter />
@@ -35,7 +61,7 @@ export default function IndexPage({ location }) {
             )
             .map(k => (
               <li key={k}>
-                <h2><Link to={`/${k}${search}`}>{demos[k].name}</Link></h2>
+                <Link to={`/${k}${search}`}>{demos[k].name}</Link>
               </li>
             ))
           }
@@ -70,36 +96,12 @@ export default function IndexPage({ location }) {
         </strong>
         <p>
           We're also planning a tour at least to the Finnish Wellbeing Services Counties
-          (<i>hyvinvointialue</i>, known as Regions in other Nordic countries) in the autumn.
-          We're happy to extend this demo to other audiences. If you're interested in having the
-          FHIR Demo presented to you or your people, please <a href="#contact">get in touch!</a>
+          (<i lang="fi">hyvinvointialue</i>, known as Regions in other Nordic countries) in the
+          autumn. We're happy to extend this demo to other audiences. If you're interested in
+          having the FHIR Demo presented to you or your people, please <a href="#contact">get in
+          touch!</a>
         </p>
         <p>The showcase will also remain online on this website until the end of the year.</p>
-      </section>
-      <section id="description" className="callout">
-        <h2>Take part in the <strong>Nordic FHIR Demo</strong> showcase!</h2>
-        <p>
-          If you have a product using the HL7 FHIR standard, we&apos;d love to get it in the
-          showcase. Just send us a description of the product. See this year&apos;s showcase
-          and <a href="https://fhir.fi/en/demo2023/apotti/">last year&apos;s site</a> for examples.
-        </p>
-        <p>
-          The focus is in showing what has been implemented with the HL7 FHIR standard in the
-          Nordics.
-        </p>
-        <p>
-          Participation costs you nothing, and gives you increased visibility in trade events and
-          the internet.
-        </p>
-        <p>
-          The event continues the tradition of the FHIR Demo showcases organized in <a
-          href="http://www.hl7.fi/wp-content/uploads/HL7-Finland-%23U0432%23U0402%23U201c-FHIR-demon-loppuraportti-20160527.pdf">2016</a>,
-          {' '} <a href="https://fhir.fi/en/demo2022/index.html">2022</a>, and <a
-          href="https://fhir.fi/en/demo2023/index.html">2023</a>.
-        </p>
-        <p className="center">
-          <Link className="button" to="/participate">Participate!</Link>
-        </p>
       </section>
       <section id="contact">
         <h1>Contact</h1>

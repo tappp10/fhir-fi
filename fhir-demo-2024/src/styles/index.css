@@ -125,6 +125,52 @@ article#intro p {
   animation: 3s linear 1 delay, 2s ease-in 3s 1 appear;
 }
 
+#demo blockquote {
+  font-size: 200%;
+  font-style: italic;
+  position: relative;
+  width: 70%;
+  max-width: 95%;
+  padding: 0.5em 0.75em;
+  margin: 2em auto;
+  background: 
+  linear-gradient(var(--color-nav-border) 0 0) top left / 5% 1px,
+  linear-gradient(var(--color-nav-border) 0 0) top left / 1px 25%,
+  linear-gradient(var(--color-nav-border) 0 0) bottom right / 5% 1px,
+  linear-gradient(var(--color-nav-border) 0 0) bottom right / 1px 25%;
+  /*
+  linear-gradient(var(--color-nav-border) 0 0) top right / 5% 1px,
+  linear-gradient(var(--color-nav-border) 0 0) top right / 1px 25%,
+  linear-gradient(var(--color-nav-border) 0 0) bottom left / 5% 1px,
+  linear-gradient(var(--color-nav-border) 0 0) bottom left / 1px 25%;
+  */
+  background-repeat:no-repeat;
+}
+
+blockquote::before, blockquote::after {
+  content: '"';
+  font-size: 200%;
+  position: absolute;
+}
+
+blockquote::before {
+  top: -0.25em;
+  left: -0.75em;
+}
+
+blockquote::after {
+  right: -0.5em;
+  bottom: -0.75em;
+}
+
+blockquote p:first-child {
+  margin-top: 0;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
 h1 {
   font-family: 'Tourney Variable', 'Tourney', sans-serif;
   color: var(--color-heading-text);
@@ -147,7 +193,9 @@ article#intro h1 {
   font-size: 2em;
 }
 
-#mainPage h2 a {
+#participants li a {
+  font-family: 'Tourney Variable', 'Tourney', sans-serif;
+  font-size: 2em;
   font-weight: 650;
 }
 
@@ -283,6 +331,14 @@ section {
 
 section > section:first-child {
   padding-top: 0;
+}
+
+.demo section {
+  margin-top: 6em;
+}
+
+#demo section section {
+  margin-top: 2em;
 }
 
 section h1 {
@@ -482,10 +538,6 @@ li h2 {
 .demo h2 > img {
   display: inline-block;
   max-width: 100%;
-}
-
-.demo section {
-  margin-top: 6em;
 }
 
 .demo .hashtags {
@@ -708,7 +760,7 @@ footer a:first-of-type {
 }
 
 #contact .business-card {
-  margin-top: 6em;
+  margin-top: 3em;
 }
 
 #participate #contact .business-card {
