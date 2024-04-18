@@ -45,6 +45,13 @@ export default function RadicalHealth() {
       */}
       <section id="participants" className="event radical-health">
         <h2>FHIR Demo 2024 participants at the Radical Health Festival</h2>
+        {/* Let's present these as a list, until we get the stand numbers. */}
+        <ul>
+          <li><Link to="../apotti">Apotti</Link></li>
+          <li><Link to="../innokas">Innokas</Link></li>
+          <li><Link to="../sensotrend">Sensotrend</Link></li>
+        </ul>
+        {/*
         <table className="participants">
           <tbody>
             <tr><td></td><td><Link to="../apotti">Apotti</Link></td></tr>
@@ -52,9 +59,9 @@ export default function RadicalHealth() {
             <tr><td></td><td><Link to="../sensotrend">Sensotrend</Link></td></tr>
             {/*
             <tr><td></td><td><Link to="../medicubex">MedicubeX</Link></td></tr>
-            */}
           </tbody>
         </table>
+        */}
       </section>
       <img className="decoration" src={fhirLogo} alt="" />
     </Article>
