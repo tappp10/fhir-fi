@@ -17,14 +17,14 @@ export const demos = {
 
   Minäpä laitan tietoa meidän sovellus / integraatio porukalle ja palataan tähän
   Yt Marko
-
+  */
   'bcb-medical': {
+    hidden: true,
     name: 'BCB Medical',
     roles: [
       RoleList.App,
     ],
   },
-  */
   buddy: {
     name: 'Buddy Healthcare',
     roles: [
@@ -43,27 +43,21 @@ export const demos = {
       RoleList.App,
     ],
   },
-  /*
   esko: {
+    hidden: true,
     name: 'Esko Systems',
     roles: [
       RoleList.System,
     ],
   },
   fujitsu: {
+    hidden: true,
     name: 'Fujitsu',
     roles: [
       RoleList.App,
       RoleList.Consultancy,
     ],
   },
-  glucostratus: {
-    name: 'Glucostratus',
-    roles: [
-      RoleList.SMART,
-    ],
-  },
-  */
   'hl7-denmark': {
     name: 'HL7 Denmark',
     roles: [
@@ -120,8 +114,8 @@ export const demos = {
       RoleList.App,
     ],
   },
-  /*
   medixine: {
+    hidden: true,
     name: 'Medixine',
     roles: [
       RoleList.Observation,
@@ -129,25 +123,27 @@ export const demos = {
     ],
   },
   microsoft: {
+    hidden: true,
     name: 'Microsoft',
     roles: [
       RoleList.System,
     ],
   },
   mylab: {
+    hidden: true,
     name: 'Mylab',
     roles: [
       RoleList.App,
     ],
   },
   omaolo: {
+    hidden: true,
     name: 'Omaolo',
     roles: [
       RoleList.App,
       RoleList.System,
     ],
   },
-  */
   prowellness: {
     name: 'ProWellness',
     roles: [
@@ -161,8 +157,8 @@ export const demos = {
       RoleList.Consultancy,
     ],
   },
-  /*
   solita: {
+    hidden: true,
     name: 'Solita',
     roles: [
       RoleList.App,
@@ -171,12 +167,12 @@ export const demos = {
     ],
   },
   tietoevry: {
+    hidden: true,
     name: 'Tietoevry Care',
     roles: [
       RoleList.System,
     ],
   },
-  */
   trifork: {
     name: 'Trifork',
     roles: [
@@ -184,8 +180,8 @@ export const demos = {
       RoleList.System,
     ],
   },
-  /*
   una: {
+    hidden: true,
     name: 'Una',
     roles: [
       RoleList.App,
@@ -198,7 +194,5 @@ export const demos = {
       RoleList.App,
     ],
   },
-  */
-
 };
 

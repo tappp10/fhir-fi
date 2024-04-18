@@ -18,9 +18,8 @@ export default function Demo({ children, location }) {
 
   const roles = Object.keys(selectedRoles).sort();
 
-  const selectedDemos = Object.keys(demos).filter(
-    (k) => !roles.length || demos[k].roles?.some((f => roles.some(s => s === f)))
-  );
+  const selectedDemos = Object.keys(demos).filter((k) => (!demos[k].hidden) &&
+    (!roles.length || demos[k].roles?.some((f => roles.some(s => s === f)))));
 
   const myIndex = selectedDemos.indexOf(pathname.replace(prefix, '').replaceAll('/', ''));
 

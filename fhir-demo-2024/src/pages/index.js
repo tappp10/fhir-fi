@@ -56,8 +56,8 @@ export default function IndexPage({ location }) {
         <RoleFilter />
         <ul>
           {
-            Object.keys(demos).filter(
-              (k) => !roles.length || demos[k].roles?.some((f => roles.some(s => s === f)))
+            Object.keys(demos).filter((k) => (!demos[k].hidden) &&
+              (!roles.length || demos[k].roles?.some((f => roles.some(s => s === f))))
             )
             .map(k => (
               <li key={k}>
