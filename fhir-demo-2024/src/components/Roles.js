@@ -47,7 +47,7 @@ export function RolesContextProvider({
       }, {});
       setRoles(urlState);
     } else {
-      setRoles(initialState);
+      setRoles({});
     }
   }, [location, setRoles]);
 

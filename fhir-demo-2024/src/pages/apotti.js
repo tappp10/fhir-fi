@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
 
 import { getHead } from '../components/Article';
 import Demo from '../components/Demo';

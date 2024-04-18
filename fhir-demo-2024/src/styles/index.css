@@ -187,8 +187,9 @@ article#intro h1 {
   animation: 5s linear 1 delay, 3s cubic-bezier(0.3, 0.2, 0.2, 2) 4.9s 1 fatten;
 }
 
-#mainPage h2 {
-  font-family: 'Tourney Variable', 'Tourney', sans-serif;
+#mainPage h2,
+article.event h2 {
+    font-family: 'Tourney Variable', 'Tourney', sans-serif;
   color: var(--color-heading-text);
   font-size: 2em;
 }
@@ -201,7 +202,8 @@ article#intro h1 {
 
 
 #about h1,
-#demo header h1 {
+#demo header h1,
+article.event h1 {
   font-size: 550%;
   font-weight: 650;
 }
@@ -549,9 +551,7 @@ section.event {
   box-sizing: border-box;
   background-color: black;
   color: white;
-  border-radius: 10px;
   padding: 1.5em;
-  max-width: calc(var(--content-width) - 1rem);
 }
 
 main.demo aside.event,
@@ -570,28 +570,28 @@ section.event a {
   text-decoration: underline;
 }
 
-aside.event.atk-paivat h2,
 section.event h2 {
-  color: #EB5C18;
-}
-
-section.radical-health h2 {
   color: white;
 }
 
+section.event.atk-paivat h2 {
+  color: #EB5B19;
+}
+
+
 aside.event.atk-paivat,
 section.event.atk-paivat {
-  background-color: #0E456E;
+  background-color: #0C456E;
 }
 
 aside.event.vitalis,
 section.event.vitalis {
-  background-color: #01508B;
+  background-color: #134060;
 }
 
 aside.event.radical-health,
 section.event.radical-health {
-  background-color: #f913a1;
+  background-color: #E900B0;
 }
 
 aside.event.atk-paivat,

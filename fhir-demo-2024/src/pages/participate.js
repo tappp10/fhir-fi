@@ -1,9 +1,6 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
 
 import Article, { getHead } from '../components/Article';
-import { RoleFilter, RolesContext } from '../components/Roles';
-import { demos } from '../config/data';
 import fhirLogo from '../images/fhir.svg';
 import fhirLogo2 from '../images/fhir-deco.svg';
 import mikaelx1 from '../images/MikaelRinnetmaki.jpg';

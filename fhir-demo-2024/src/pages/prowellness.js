@@ -5,7 +5,6 @@ import Demo from '../components/Demo';
 import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import prowellnessLogo from '../images/prowellness.png';
-import balansioLogo from '../images/balansio.png';
 
 export function Head() {
   const title = <title>FHIR Demo 2024: ProWellness</title>;
