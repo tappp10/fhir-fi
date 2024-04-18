@@ -18,7 +18,7 @@ export default function Innokas({ location }) {
     <Demo roles={roles} location={location}>
       <h1>
         <a href="https://www.innokasmedical.fi/">
-          <img className="half" src={innokasLogo} alt="Innokas" />
+          <img src={innokasLogo} alt="Innokas" />
         </a>
       </h1>
       <Roles list={roles} />
