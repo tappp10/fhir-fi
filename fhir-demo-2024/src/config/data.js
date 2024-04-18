@@ -114,14 +114,6 @@ export const demos = {
       RoleList.App,
     ],
   },
-  medixine: {
-    hidden: true,
-    name: 'Medixine',
-    roles: [
-      RoleList.Observation,
-      RoleList.SMART,
-    ],
-  },
   microsoft: {
     hidden: true,
     name: 'Microsoft',
