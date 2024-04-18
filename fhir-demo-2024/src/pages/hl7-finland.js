@@ -4,7 +4,7 @@ import { getHead } from '../components/Article';
 import Demo from '../components/Demo';
 import Roles from '../components/Roles';
 import { demos } from '../config/data';
-import logo from '../images/hl7-finland.svg';
+import logo from '../images/hl7-finland-black.svg';
 import mikaelx1 from '../images/MikaelRinnetmaki.jpg';
 import mikaelx2 from '../images/MikaelRinnetmaki2x.jpg';
 import vitalisCapture from '../images/Vitalis2023-Nordic_harmonization_of_health_data.png'
