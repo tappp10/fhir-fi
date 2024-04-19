@@ -6,7 +6,7 @@ import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import mikaelx1 from '../images/MikaelRinnetmaki.jpg';
 import mikaelx2 from '../images/MikaelRinnetmaki2x.jpg';
-import sensotrendLogo from '../images/sensotrend.svg';
+import logo from '../images/sensotrend.svg';
 import sensotrendAGPImage from '../images/sensotrend-agp.png';
 import sensotrendCareplanImage from '../images/sensotrend-careplan.png';
 import sensotrendConnectImage from '../images/sensotrend-connect.jpg';
@@ -21,22 +21,9 @@ export default function Sensotrend({ location }) {
 
   return (
     <Demo location={location} >
-      <h1>
-        <a href="https://www.sensotrend.com/">
-          <img src={sensotrendLogo} alt="Sensotrend" />
-        </a>
-      </h1>
+      <h1><a href="https://www.sensotrend.com/"><img src={logo} alt="Sensotrend" /></a></h1>
       <Roles list={roles} targetPage="." targetFragment="" />
 
-      {/*
-      - Apps and Consultancy
-
-      
-
-      - business models?
-      - ecosystems?
-      - work groups
-      */}
       <section id="intro">
         <p>
           Sensotrend offers two apps, the <a href="#sensotrend-connect">Sensotrend Connect</a> for
@@ -127,9 +114,28 @@ export default function Sensotrend({ location }) {
         <h2>Consultancy</h2>
         <p>
           We have a lot of expertise in <strong>EHR integrations</strong>, different <strong>FHIR
-          implementations</strong>, and in <strong>Regulatory affairs</strong>. We're happy to help
-          others too, and have already helped many startups with integrations and consulted public
-          organizations. Please don't hesitate to get in touch!
+          implementations</strong>, and in <strong>Regulatory affairs</strong>.
+        </p>
+        <p>
+          We participate actively in the development of the FHIR standard. We are part of the core
+          group working on the <a href="https://hl7.org/fhir/uv/ipa/">International Patient Access
+          (IPA)</a> specification.
+        </p>
+        <p>
+          We coordinate several working groups for HL7 Finland (the <a
+          href="https://www.hl7.fi/sig-toiminta/ihe-sig/">IHE Finland</a>, <a
+          href="https://www.hl7.fi/sig-toiminta/personal-health-sig/">Personal Health SIG</a>,
+          and <a
+          href="https://www.hl7.fi/sig-toiminta/personal-health-sig/omatietovarannon-tukiprojekti/">Kanta
+          PH (Personal Health)</a> groups). We had a big role in creation of the <a
+          href="https://hl7.fi/fhir/finnish-base-profiles/">Finnish FHIR Base profiles</a> and
+          the <a
+          href="https://hl7.fi/fhir/finnish-smart/">Finnish Implementation Guide for SMART App
+          Launch</a>. And, we coordinate this showcase too!
+        </p>
+        <p>
+          We're happy to help others too, and have already helped many startups with integrations
+          and consulted public organizations. Please don't hesitate to get in touch!
         </p>
       </section>
       <section id="contact">
