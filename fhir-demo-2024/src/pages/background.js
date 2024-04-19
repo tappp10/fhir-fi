@@ -1,17 +1,50 @@
 import * as React from 'react';
 
 const Background = (props) => {
-  const [width, setWidth] = React.useState(undefined);
+  const {
+    animated: animatedParam = true,
+    children,
+    dimmed,
+    height: heightParam = 15000,
+    location = {},
+    pageContext,
+    pageResources,
+    params,
+    path,
+    serverData,
+    uri,
+    width: widthParam,
+    ...rest // This is what we really want...
+  } = props;
+  const { search } = location;
+
+  const [width, setWidth] = React.useState(widthParam);
+  const [height, setHeight] = React.useState(heightParam);
+  const [animated, setAnimated] = React.useState(animatedParam);
 
   React.useEffect(() => {
-    setWidth(typeof window !== `undefined` ? window.innerWidth : 2500);
-  }, []);
+    if (width) {
+      // already set through a parameter
+      return;
+    }
+    const searchParams = new URLSearchParams(search);
+    if (searchParams.has('width')) {
+      setWidth(+searchParams.get('width'));
+      if (searchParams.has('height')) {
+        setHeight(+searchParams.get('height'));
+      }
+    } else {
+      setWidth(typeof window !== `undefined` ? window.innerWidth : 2500);
+    }
+    if (searchParams.has('animated')) {
+      const animatedParam = searchParams.get('animated').toLowerCase();
+      setAnimated(!['false', 'no', 'not'].some(v => v === animatedParam));
+    }
+  }, [search, width]);
 
   if (width === undefined) {
     return null;
   }
-
-  const height = 15000;
 
   const lineLength = 300;
   const strokeWidth = 14;
@@ -93,17 +126,6 @@ const Background = (props) => {
     pattern.push(path);
   }
   const d = pattern.join(' ');
-  const {
-    children,
-    location,
-    pageContext,
-    pageResources,
-    params,
-    path,
-    serverData,
-    uri,
-    ...rest
-  } = props;
 
   const rulerLines = [];
   const adjust = strokeWidth / 2;
@@ -117,15 +139,28 @@ const Background = (props) => {
   const style = `
     line {
       stroke-width: 0.5px;
-      stroke: var(--color-nav-background);
+      stroke: #010259;
       stroke-opacity: 0.4;
     }
     path {
       fill: none;
     }
+    ${ dimmed
+      ? `
+      g {
+        opacity: 0.15;
+      }
+      `
+      : ''
+    }
     @media screen and (prefers-reduced-motion: reduce) {
       circle {
         animation: none !important;
+        display: none;
+      }
+    }
+    @media print {
+      circle {
         display: none;
       }
     }
@@ -134,13 +169,15 @@ const Background = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
+      width={`${width}px`}
+      height={`${height}px`}
       viewBox={`0 0 ${width} ${height}`}
-      width={width}
-      height={height}
       preserveAspectRatio="xMidYMid slice"
       {...rest}
     >
-      <style>{style}</style>
+      <defs>
+        <style>{style}</style>
+      </defs>
       <g transform="translate(0.5, 0.5)">
         {rulerLines}
         <path
@@ -157,9 +194,14 @@ const Background = (props) => {
           shapeRendering="auto"
           d={d}
         />
-        <circle fill="white" r="2">
-          <animateMotion dur={`${width * height / 50000}s`} repeatCount="indefinite" path={d} />
-       </circle>
+        { animated
+        ? (
+          <circle fill="white" r="2">
+            <animateMotion dur={`${width * height / 50000}s`} repeatCount="indefinite" path={d} />
+          </circle>
+        )
+        : null
+        }
       </g>
     </svg>
   )

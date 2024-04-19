@@ -125,6 +125,33 @@ article#intro p {
   animation: 3s linear 1 delay, 2s ease-in 3s 1 appear;
 }
 
+article#playground {
+  margin: 0;
+  padding: 2em;
+  min-height: 100vh;
+}
+
+article#playground > * {
+  margin: 1em auto;
+  padding: 1em;
+}
+
+article#playground svg {
+  display: block;
+  max-width: none;
+}
+
+
+article#playground label {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+article#playground button:last-child {
+  float: right;
+}
+
+
 #demo blockquote {
   font-size: 200%;
   font-style: italic;
