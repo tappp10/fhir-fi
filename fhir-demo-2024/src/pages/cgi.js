@@ -24,12 +24,18 @@ export default function Cgi({ location }) {
       <Roles list={roles} />
       <section id="omni360">
         <h2>OMNI360</h2>
-        <p>OMNI360 is a modular and modern solution for healthcare, socialcare and specialized
-        care.</p>
-        <p>CGI has a strong commitment to use HL7 FHIR within our product portfolio and therefore
-        we already have a wide range of different FHIR resources implemented. Future roadmap also
-        contains our next FHIR development targets.</p>
-        <p>FHIR resources already <strong>in production</strong> or <i>being implemented</i> are:</p>
+        <p>
+          <a href="https://www.cgi.com/fi/fi/tuoteratkaisut/omni360">OMNI360</a> is a modular and
+          modern solution for healthcare, socialcare and specialized care.
+        </p>
+        <p>
+          CGI has a strong commitment to use HL7 FHIR within our product portfolio and therefore
+          we already have a wide range of different FHIR resources implemented. Future roadmap also
+          contains our next FHIR development targets.
+        </p>
+        <p>
+          FHIR resources already <strong>in production</strong> or <i>being implemented</i> are:
+        </p>
         <ul>
           <li><strong>Appointment</strong></li>
           <li><strong>Binary</strong></li>
@@ -55,8 +61,10 @@ export default function Cgi({ location }) {
       </section>
       <section id="other-products">
         <h2>Other Products</h2>
-        <p>In addition to OMNI360, CGI uses FHIR API's in <strong>AVPH</strong> scheduling
-        solution and in <strong>Hyvis</strong> patient portal.</p>
+        <p>
+          In addition to OMNI360, CGI uses FHIR API's in <strong>AVPH</strong> scheduling solution
+          and in <strong>Hyvis</strong> patient portal.
+        </p>
       </section>
       <section id="contact">
         <h3>Contact</h3>
