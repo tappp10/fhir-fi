@@ -4,6 +4,7 @@ import { getHead } from '../components/Article';
 import Demo from '../components/Demo';
 import Roles from '../components/Roles';
 import { demos } from '../config/data';
+import logo from '../images/logo_hl7_dk.png'
 
 export function Head() {
   const title = <title>FHIR Demo 2024: HL7 Denmark</title>;
@@ -16,7 +17,7 @@ export default function Hl7Denmark({ location }) {
   return (
     <Demo roles={roles} location={location}>
       <h1>
-        <a href="https://hl7.dk/">HL7 Denmark</a>
+        <a href="https://hl7.dk/"><img src={logo} alt="HL7 Denmark"></img></a>
       </h1>
       {/*
       We sure would like to deliver a showcase of the MedCom modernization, with transformation
