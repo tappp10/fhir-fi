@@ -1,5 +1,11 @@
 import * as React from 'react';
+import { saveAs } from 'file-saver';
+
 import Background from './background';
+import '@fontsource-variable/tourney';
+import '../styles/index.css';
+
+const type = 'image/svg+xml;charset=utf-8'
 
 const CreateBackground = () => {
 
@@ -8,6 +14,9 @@ const CreateBackground = () => {
   const [animated, setAnimated] = React.useState(true);
   const [dimmed, setDimmed] = React.useState(false);
   const [, refresh] = React.useState(undefined);
+
+  const svgRef = React.useRef(null);
+  const filename = `fhir-demo-background-${Date.now()}.svg`;
 
   return (
     <article id="playground">
@@ -25,10 +34,31 @@ const CreateBackground = () => {
         <label>
           Dimmed: <input type="checkbox" name="dimmed" checked={dimmed} onChange={(e) => setDimmed(e.target.checked)} />
         </label>
-        <button type="button" onClick={() => refresh({})}>Redraw!</button>
-        <button type="button" onClick={() => {}}>Save!</button>
+        <button type="button" onClick={() => { console.log(svgRef.current); refresh({}); }}>Redraw!</button>
+        <a
+          href={svgRef.current
+            ? `${type},${encodeURIComponent(svgRef.current.outerHTML)}`
+            : undefined
+          }
+          download={filename}
+          type={type}
+          onClick={(event) => {
+            event.preventDefault();
+            const blob = new Blob([svgRef.current?.outerHTML], { type });
+            saveAs(blob, filename);
+          }}
+        >
+          <button>Save!</button>
+        </a>
       </form>
-      <Background key={`${width}x${height}-${animated}`} width={width} height={height} animated={animated} dimmed={dimmed} />
+      <Background
+        key={`${width}x${height}-${animated}`}
+        ref={svgRef}
+        width={width}
+        height={height}
+        animated={animated}
+        dimmed={dimmed}
+      />
     </article>
   )
 };

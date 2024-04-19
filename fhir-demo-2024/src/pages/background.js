@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const Background = (props) => {
+const Background = React.forwardRef((props, ref) => {
   const {
     animated: animatedParam = true,
     children,
@@ -168,6 +168,7 @@ const Background = (props) => {
 
   return (
     <svg
+      ref={ref}
       xmlns="http://www.w3.org/2000/svg"
       width={`${width}px`}
       height={`${height}px`}
@@ -205,6 +206,6 @@ const Background = (props) => {
       </g>
     </svg>
   )
-};
+});
 
 export default Background;
