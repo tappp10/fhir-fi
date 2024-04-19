@@ -29,9 +29,9 @@ export default function IndexPage({ location }) {
         <h2>Take part in the <strong>Nordic FHIR Demo</strong> showcase!</h2>
         <p>
           If you are an organization utilizing the HL7 FHIR standard or advocating for it, or if
-          you have a product using the HL7 FHIR standard, we&apos;d love to get you included in the
-          showcase. Just send us a description of the product. See this year&apos;s showcase
-          and <a href="https://fhir.fi/en/demo2023/">last year&apos;s site</a> for examples.
+          you have a product using the HL7 FHIR standard, we'd love to get you included in the
+          showcase. Just send us a description of the product. See this year's showcase and <a
+          href="https://fhir.fi/en/demo2023/">last year's site</a> for examples.
         </p>
         <p>
           The focus is in showing what has been implemented with the HL7 FHIR standard in the

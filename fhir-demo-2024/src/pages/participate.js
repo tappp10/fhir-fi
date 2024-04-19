@@ -30,9 +30,9 @@ export default function Participate() {
           bigger, and more international.
         </p>
         <p>
-          We&apos;re inviting everyone working on FHIR on some level, and for everyone supporting
-          FHIR, to join the showcase. Share what you&apos;ve done or are planning, and help others
-          find you and learn from your experience and goals!
+          We're inviting everyone working on FHIR on some level, and for everyone supporting FHIR,
+          to join the showcase. Share what you've done or are planning, and help others find you
+          and learn from your experience and goals!
         </p>
         <p>
           Participation costs you nothing, and gives you increased visibility within the FHIR
@@ -95,7 +95,7 @@ export default function Participate() {
           <h2>Does the implementation need to be in production?</h2>
           <p>
             No, it does not. The aim is to show the full range of FHIR activities. We want to show
-            what already works, but also what people are currently working on. We&apos;re happy to
+            what already works, but also what people are currently working on. We're happy to
             include you into the showcase even if you just have an idea on how you would use FHIR.
             Even that may give someone else an idea for their own implementation, or trigger someone
             to contact you about cooperation.
@@ -107,15 +107,15 @@ export default function Participate() {
             There are no strict limits. FHIR is used in many ways. An app vendor may present how
             their app works seamlessly with a system, thanks to FHIR. HL7 country affiliates may
             advertise their work plan for this year. These are different kind of showcases, and
-            there are many more. If you don&apos;t yet have a clear idea, you may draw inspiration
-            from <a href="https://fhir.fi/en/demo2023/#participants">last year&apos;s entries</a>.
+            there are many more. If you don't yet have a clear idea, you may draw inspiration
+            from <a href="https://fhir.fi/en/demo2023/#participants">last year's entries</a>.
           </p>
         </section>
         <section id="how-to-submit">
           <h2>How do I submit my information?</h2>
           <p>
             Ideally, compile your demo page yourself and issue a pull request to the source code of
-            the website. We&apos;re using the Gatsby framework, see <a
+            the website. We're using the Gatsby framework, see <a
             href="https://github.com/fhir-fi/fhir-fi.github.io/tree/fhir-demo-2024-gatsby/fhir-demo-2024">the
             instructions</a>.
           </p>
@@ -158,19 +158,19 @@ export default function Participate() {
         <section id="showcase-schedule">
          <h2>When does it start? When do I need to be ready?</h2>
           <p>
-            This initial website is already public. We plan to publish the first list of
-            participants in mid-April. We keep on adding participants throughout the year. However,
-            you most likely get the biggest benefit if you get your case published before the trade
-            shows in May. That&apos;s when we&apos;ll be advertising the showcase the most.
+            This initial website is already public, and some of the showcases have been published.
+            We keep on adding participants throughout the year. However, you most likely get the
+            biggest benefit if you get your case published before the trade shows in May. That's
+            when we'll be advertising the showcase the most.
           </p>
         </section>
         <section id="what-to-do-next">
           <h2>What should I do next?</h2>
           <p>
-            Let the coordinator of the showcase you&apos;re interested in participating. Write an
-            email to mikael@sensotrend.com. You don&apos;t need to have the showcase ready, just
-            indicate your interest. But do start thinking of what you would like to share, and in
-            which format you&apos;d be able to share it.
+            Let the coordinator of the showcase you're interested in participating. Write an email
+            to <a href="mikael@sensotrend.com">mikael@sensotrend.com</a>. You don't need to have
+            the showcase ready, just indicate your interest. But do start thinking of what you
+            would like to share, and in which format you'd be able to share it.
           </p>
         </section>
       </section>

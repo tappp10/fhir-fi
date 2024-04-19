@@ -34,7 +34,7 @@ export default function Sensotrend({ location }) {
           Sensotrend also offers <a href="consultancy">consultancy</a> on EHR integrations, FHIR
           implementations, and regulatory affairs.</p>
         <p>
-          See also our demos in <a href="https://fhir.fi/en/demo2023/sensotrend/">last year&apos;s
+          See also our demos in <a href="https://fhir.fi/en/demo2023/sensotrend/">last year's
           showcase</a>. They contain plenty of additional information.
         </p>
       </section>
