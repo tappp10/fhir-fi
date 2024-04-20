@@ -999,8 +999,7 @@ nav.prevNext > div:last-child {
 
   section h1,
   #about h1,
-  #demo,
-  header h1,
+  #demo header h1,
   article.event h1 {
     font-size: 250%;
   }
