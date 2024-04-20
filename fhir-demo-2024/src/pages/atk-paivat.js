@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 import Article, { getHead } from '../components/Article';
-import fhirLogo from '../images/fhir.svg';
+import fhirLogo from '../images/fhir-deco.svg';
 
 export function Head() {
   const title = <title>FHIR Demo 2024 ATK-päivillä</title>;
@@ -18,7 +18,7 @@ export default function AtkPaivat() {
         <p>
           FHIR Demo 2024 esittelee FHIR-standardin käytön nykytilan Suomessa <a
           href="https://koulutus.fcg.fi/sosiaali-ja-terveydenhuollon-ATK-paivat">Sosiaali- ja
-          terveydenhuollon ATK-päivillä</a> Tampereella.
+          terveydenhuollon ATK-päivillä</a> Tampereella toukokuussa.
         </p>
       </section>
       {/*

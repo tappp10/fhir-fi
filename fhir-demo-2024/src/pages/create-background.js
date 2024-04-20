@@ -2,6 +2,7 @@ import * as React from 'react';
 import { saveAs } from 'file-saver';
 
 import Background from './background';
+import '@fontsource-variable/commissioner';
 import '@fontsource-variable/tourney';
 import '../styles/index.css';
 

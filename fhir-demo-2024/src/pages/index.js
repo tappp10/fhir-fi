@@ -78,19 +78,18 @@ export default function IndexPage({ location }) {
           <p>Project participants will be present in at least the following events:</p>
           <ul>
             <li>
-              13.-16.5.2024 <a href="https://vitalis.nu/">Vitalis</a>, Gothenburg, Sweden. See the
+              May 13-16, 2024 <Link to="/vitalis">Vitalis</Link>, Gothenburg, Sweden. See the
               session <a
               href="https://invitepeople.com/public/events/ae499c7a48/seminars/ae2dc6387c">Nordic
               FHIR Showcase 2024</a> on the program.
             </li>
             <li>
-              21.-23.5.2024 <a href="https://radicalhealthfestival.messukeskus.com/">Radical Health
-              Festival</a>, Helsinki, Finland
+              May 21-23, 2024 <Link to="/radical-health">Radical Health Festival</Link>, Helsinki,
+              Finland.
             </li>
             <li>
-              27.-29.2.2024 <a
-              href="https://koulutus.fcg.fi/sosiaali-ja-terveydenhuollon-ATK-paivat">Sosiaali ja
-              terveydenhuollon ATK-päivät</a>, Tampere, Finland.
+              May 27-29, 2024 <Link to="atk-paivat">Sosiaali ja terveydenhuollon ATK-päivät</Link>,
+              Tampere, Finland.
             </li>
           </ul>
         </strong>
@@ -105,20 +104,10 @@ export default function IndexPage({ location }) {
       </section>
       <section id="contact">
         <h1>Contact</h1>
-        {
-        /*
-        <p>The showcase will keep evolving during the year, and we welcome new entries!</p>
         <p>
-          If you have a product using the HL7 FHIR standard, we'd love to get it in the showcase.
-          Just send us a description of the product. See <a
-          href="https://fhir.fi/en/demo2023/apotti/">last year's site</a> for examples.
+          The FHIR Demo 2024 is coordinated by <Link to="/sensotrend">Sensotrend</Link>, <i>pro
+          bono</i>, with the aim to serve the Nordic FHIR community.
         </p>
-        <p>
-          If you have an idea of an integration you'd like to implement with another partcipant,
-          let us know, and we can help you get it done.
-        </p>
-        */
-        }
         <div className="business-card">
           <picture>
             <source srcSet={mikaelx2} media="(min-resolution: 144dpi)" />

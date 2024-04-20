@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 import Article, { getHead } from '../components/Article';
-import fhirLogo from '../images/fhir.svg';
+import fhirLogo from '../images/fhir-deco.svg';
 
 export function Head() {
   const title = <title>FHIR Demo 2024 at Vitalis</title>;
@@ -16,7 +16,8 @@ export default function Vitalis() {
       <section id="intro">
         <h1>FHIR Demo 2024 in Vitalis</h1>
         <p>
-          Several FHIR Demo 2024 participants will be at <a href="https://vitalis.nu/">Vitalis</a>.
+          Several FHIR Demo 2024 participants will be at <a
+          href="https://vitalis.nu/">Vitalis</a> in Gothenburg, May 13-16.
         </p>
       </section>
       <section className="event vitalis">

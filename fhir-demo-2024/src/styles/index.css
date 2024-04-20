@@ -54,7 +54,7 @@ body {
   color: var(--color-body-text);
   background-color: var(--color-body-background);
   background-image: url();
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: Commissioner, Geneva, Verdana, sans-serif;
   padding: 0;
   margin: 0;
   position: relative;
@@ -198,8 +198,26 @@ blockquote p:last-child {
   margin-bottom: 0;
 }
 
+blockquote footer {
+  font-size: smaller;
+  border: none;
+  text-align: right;
+  font-style: normal;
+}
+
+blockquote footer::before {
+  content: '-';
+  margin-right: 0.5em;
+}
+
+#assets blockquote {
+  font-style: italic;
+  margin: 2em 5em 3em;
+}
+
+
 h1 {
-  font-family: 'Tourney Variable', 'Tourney', sans-serif;
+  font-family: 'Tourney Variable', Tourney, sans-serif;
   color: var(--color-heading-text);
   font-weight: 400;
 }
@@ -215,14 +233,20 @@ article#intro h1 {
 }
 
 #mainPage h2,
+article#assets h2,
 article.event h2 {
-    font-family: 'Tourney Variable', 'Tourney', sans-serif;
+  font-family: 'Tourney Variable', Tourney, sans-serif;
   color: var(--color-heading-text);
   font-size: 2em;
 }
 
+#assets h2 {
+  font-weight: 100;
+}
+
+
 #participants li a {
-  font-family: 'Tourney Variable', 'Tourney', sans-serif;
+  font-family: 'Tourney Variable', Tourney, sans-serif;
   font-size: 2em;
   font-weight: 650;
 }
@@ -289,8 +313,8 @@ article {
 }
 
 article > * {
-  margin-top: 4em;
-  margin-bottom: 4em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 article > *,
@@ -403,6 +427,7 @@ article > header > h3 {
 .callout {
   background-color: var(--color-callout-background);
   position: relative;
+  padding-bottom: 2em;
 }
 
 ul.roles {
@@ -410,7 +435,7 @@ ul.roles {
 }
 
 a.role {
-  font-family: 'Tourney Variable', 'Tourney', sans-serif;
+  font-family: 'Tourney Variable', Tourney, sans-serif;
   font-weight: 100;
   text-decoration: none;
 }
@@ -454,7 +479,7 @@ section h2 {
 }
 
 #participate h2 {
-  font-family: 'Tourney Variable', 'Tourney', sans-serif;
+  font-family: 'Tourney Variable', Tourney, sans-serif;
   font-weight: 900;
   font-size: 125%;
 }
@@ -766,6 +791,7 @@ footer a:first-of-type {
   z-index: 3;
 }
 
+.business-card h2,
 .business-card h3 {
   position: absolute;
   left: 1.2rem;
@@ -779,6 +805,7 @@ footer a:first-of-type {
 }
 
 .business-card address {
+  display: block;
   font-size: small;
   line-height: 1.6em;
   position: absolute;
@@ -813,7 +840,7 @@ footer a:first-of-type {
 
 
 nav.prevNext {
-  font-family: 'Tourney Variable', 'Tourney', sans-serif;
+  font-family: 'Tourney Variable', Tourney, sans-serif;
   font-size: 200%;
   font-weight: 100;
   background-color: transparent;
@@ -842,7 +869,7 @@ nav.prevNext a {
 }
 
 nav.prevNext a:hover {
-  font-weight: 700;
+  font-weight: 900;
 }
 
 nav.prevNext > div:first-child {
@@ -860,7 +887,7 @@ nav.prevNext > div:last-child {
   }
 
   article > * {
-    padding: 4em 3em;
+    padding: 1em 3em 4em;
   }
   
   article > nav.prevNext:first-of-type {
@@ -939,7 +966,10 @@ nav.prevNext > div:last-child {
 
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 820px) {
+  #contact p.channel {
+    min-height: 3em;
+  }
   #contact img.inline.decoration {
     float: left;
   }
@@ -967,7 +997,11 @@ nav.prevNext > div:last-child {
     float: none;
   }
 
-  section h1 {
+  section h1,
+  #about h1,
+  #demo,
+  header h1,
+  article.event h1 {
     font-size: 250%;
   }
 
@@ -1014,7 +1048,10 @@ nav.prevNext > div:last-child {
   .business-card picture {
     display: none;
   }
-  .business-card h3, .business-card p, .business-card address {
+  .business-card h2,
+  .business-card h3,
+  .business-card p,
+  .business-card address {
     position: inherit;
     top: auto;
     left: auto;

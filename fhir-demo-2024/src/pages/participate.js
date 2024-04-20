@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
 
 import Article, { getHead } from '../components/Article';
 import fhirLogo from '../images/fhir.svg';
@@ -6,6 +7,7 @@ import fhirLogo2 from '../images/fhir-deco.svg';
 import mikaelx1 from '../images/MikaelRinnetmaki.jpg';
 import mikaelx2 from '../images/MikaelRinnetmaki2x.jpg';
 import slackLogo from '../images/Slack_icon_2019.svg';
+import zulipLogo from '../images/zulip.svg';
 
 
 export function Head() {
@@ -51,7 +53,7 @@ export default function Participate() {
       </section>
       <section id="info">
         <h1>Apps and Systems, Consultancies and Institutions</h1>
-        <p>This year, we plan to tag entries into four categories.</p>
+        <p>This year, we tag entries into four categories.</p>
         <p>
           <strong>Apps</strong> are FHIR clients utilizing data in FHIR format or integrated into
           an electronic health record system or patient portal through the SMART App Launch
@@ -114,15 +116,17 @@ export default function Participate() {
         <section id="how-to-submit">
           <h2>How do I submit my information?</h2>
           <p>
-            Ideally, compile your demo page yourself and issue a pull request to the source code of
-            the website. We're using the Gatsby framework, see <a
+            If you want to show off your technical competence to the showcase coordinators, please
+            compile your demo page yourself and issue a pull request to the source code of the
+            website. We're using the Gatsby framework, see <a
             href="https://github.com/fhir-fi/fhir-fi.github.io/tree/fhir-demo-2024-gatsby/fhir-demo-2024">the
             instructions</a>.
           </p>
           <p>
-            We do realize not everyone is up for that, so yu can also send the information you want
-            to be presented in an email, or as a Word document or a slideshow. We'll compile the
-            page for you!
+            We of course do realize not everyone is up for that, so you can also send the
+            information you want to be presented in an email, or as a Word document or a slideshow,
+            or by pointing to another website where the information can be copied from. We'll
+            compile the page for you!
           </p>
         </section>
         <section id="where-does-the-showcase-take-place">
@@ -154,6 +158,14 @@ export default function Participate() {
             href="https://invitepeople.com/public/events/ae499c7a48/seminars/ae2dc6387c">specific
             session</a> on the program to present the showcase.
           </p>
+          <p>
+            You can also inform us about any other events you're planning to attend, and we can
+            list them on this site.
+          </p>
+          <p>
+            You are very welcome to get your information listed on the website even if you're not
+            planning to attend any of the events.
+          </p>
         </section>
         <section id="showcase-schedule">
          <h2>When does it start? When do I need to be ready?</h2>
@@ -162,6 +174,18 @@ export default function Participate() {
             We keep on adding participants throughout the year. However, you most likely get the
             biggest benefit if you get your case published before the trade shows in May. That's
             when we'll be advertising the showcase the most.
+          </p>
+        </section>
+        <section id="assets">
+          <h2>Can I advertise the showcase on my own?</h2>
+          <p>
+            Sure, by all means. Please do! Also feel free to use the <Link to="/assets">graphical
+            assets</Link> used in the demo.
+          </p>
+          <p>
+            There's even a cool tool to generate background images. Did you notice the background
+            on this page changes with each page load? It is always randomly generated. There's
+            also an animated easter egg. Can you spot it? 
           </p>
         </section>
         <section id="what-to-do-next">
@@ -191,10 +215,17 @@ export default function Participate() {
             <a href="tel:+358503855511">+358 50 385 5511</a>
           </address>
         </div>
-        <p><img className="inline decoration" src={slackLogo} alt="" /> You can also <a
-          href="https://join.slack.com/t/fhirfinland/shared_invite/zt-1j143ocuu-Ax4SfnlQt~iDKt5Xrb6Uwg">join
-          the <strong>FHIR Finland</strong> Slack</a> and discuss on the
-          <strong>#fhir-demo-2024</strong> channel.
+        <p className="channel">
+          <img className="inline decoration" src={slackLogo} alt="" /> You can also <a
+          href="https://join.slack.com/t/fhirfinland/shared_invite/zt-1j143ocuu-Ax4SfnlQt~iDKt5Xrb6Uwg"
+          >join the <strong>FHIR Finland Slack</strong></a> workspace and discuss on
+          the <strong>#fhir-demo-2024</strong> channel.
+        </p>
+        <p className="channel">
+          <img className="inline decoration" src={zulipLogo} alt="" /> Or reach out to participants
+          in the <strong>chat.fhir.org</strong> Zulip at the <a
+          href="https://chat.fhir.org/#narrow/stream/194447-nordics/topic/Nordic.20FHIR.20Demo.20Showcase.202024"
+          >#Nordics stream</a>.
         </p>
       </section>
       <img className="decoration" src={fhirLogo2} alt="" />

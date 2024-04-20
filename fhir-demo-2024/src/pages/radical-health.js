@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 import Article, { getHead } from '../components/Article';
-import fhirLogo from '../images/fhir.svg';
+import fhirLogo from '../images/fhir-deco.svg';
 
 export function Head() {
   const title = <title>FHIR Demo 2024 at the Radical Health Festival</title>;
@@ -18,7 +18,7 @@ export default function RadicalHealth() {
         <p>
           Several demo participants will be at the <a
           href="https://radicalhealthfestival.messukeskus.com/">Radical Health Festival</a> in
-          Helsinki.
+          Helsinki, May 21-13.
         </p>
       </section>
       {/*
@@ -45,9 +45,12 @@ export default function RadicalHealth() {
       */}
       <section id="participants" className="event radical-health">
         <h2>FHIR Demo 2024 participants at the Radical Health Festival</h2>
+        <p>We'll keep updating the list of participants until the start of the event.</p>
         {/* Let's present these as a list, until we get the stand numbers. */}
         <ul>
+          {/*
           <li><Link to="../apotti">Apotti</Link></li>
+           */}
           <li><Link to="../innokas">Innokas</Link></li>
           <li><Link to="../sensotrend">Sensotrend</Link></li>
         </ul>
