@@ -2,13 +2,19 @@ import * as React from 'react';
 import { saveAs } from 'file-saver';
 
 import Background from './background';
+import { getHead } from '../components/Article';
 import '@fontsource-variable/commissioner';
 import '@fontsource-variable/tourney';
 import '../styles/index.css';
 
 const type = 'image/svg+xml;charset=utf-8'
 
-const CreateBackground = () => {
+export function Head() {
+  const title = <title>Create dynamic FHIR Demo 2024 Backgrounds</title>;
+  return getHead({ title });
+};
+
+export default function CreateBackground() {
 
   const [width, setWidth] = React.useState(1920);
   const [height, setHeight] = React.useState(1080);
@@ -63,5 +69,3 @@ const CreateBackground = () => {
     </article>
   )
 };
-
-export default CreateBackground;
