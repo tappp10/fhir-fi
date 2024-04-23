@@ -32,6 +32,11 @@ export default function Participate() {
           bigger, and more international.
         </p>
         <p>
+          This year the main presence of the demo will be this website. There are some activities
+          at some events, but we're really aiming to build a resource that is available online,
+          throughout the year.
+        </p>
+        <p>
           We're inviting everyone working on FHIR on some level, and for everyone supporting FHIR,
           to join the showcase. Share what you've done or are planning, and help others find you
           and learn from your experience and goals!
@@ -130,7 +135,7 @@ export default function Participate() {
           </p>
         </section>
         <section id="where-does-the-showcase-take-place">
-          <h2>Where does the showcase take place?</h2>
+          <h2>Do I need to participate to the listed events?</h2>
           <p>
             The main area for the showcase is <strong>this website.</strong> The showcase will be
             updated throughout the year. We hope it will become a go-to resource for everyone in
@@ -163,8 +168,11 @@ export default function Participate() {
             list them on this site.
           </p>
           <p>
-            You are very welcome to get your information listed on the website even if you're not
-            planning to attend any of the events.
+            <strong>
+              There is no requirement to participate to any event. You are very welcome to get your
+              information listed on the website even if you're not planning to attend any of the
+              events.
+            </strong>
           </p>
         </section>
         <section id="showcase-schedule">
@@ -191,10 +199,10 @@ export default function Participate() {
         <section id="what-to-do-next">
           <h2>What should I do next?</h2>
           <p>
-            Let the coordinator of the showcase you're interested in participating. Write an email
-            to <a href="mikael@sensotrend.com">mikael@sensotrend.com</a>. You don't need to have
-            the showcase ready, just indicate your interest. But do start thinking of what you
-            would like to share, and in which format you'd be able to share it.
+            Let the coordinator of the showcase konw that you're interested in participating. Write
+            an email to <a href="mikael@sensotrend.com">mikael@sensotrend.com</a>. You don't need
+            to have the showcase ready, just indicate your interest. But do start thinking of what
+            you would like to share, and in which format you'd be able to share it.
           </p>
         </section>
       </section>
