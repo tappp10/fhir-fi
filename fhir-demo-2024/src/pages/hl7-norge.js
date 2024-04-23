@@ -4,6 +4,7 @@ import { getHead } from '../components/Article';
 import Demo from '../components/Demo';
 import Roles from '../components/Roles';
 import { demos } from '../config/data';
+import logo from '../images/hl7-norge.png';
 
 export function Head() {
   const title = <title>FHIR Demo 2024: HL7 Norway</title>;
@@ -15,9 +16,7 @@ export default function Hl7Norway({ location }) {
   
   return (
     <Demo roles={roles} location={location}>
-      <h1>
-        <a href="https://hl7.no/">HL7 Norge</a>
-      </h1>
+      <h1><a href="https://hl7.no/"><img src={logo} alt="HL7 Norge" /></a></h1>
       <Roles list={roles} />
       <section className="work-in-progress">
         <p>Showcase content to be added.</p>

@@ -4,9 +4,10 @@ import { getHead } from '../components/Article';
 import Demo from '../components/Demo';
 import Roles from '../components/Roles';
 import { demos } from '../config/data';
-import logo from '../images/hl7-finland.svg';
+import logo from '../images/hl7-finland-black.svg';
 import mikaelx1 from '../images/MikaelRinnetmaki.jpg';
 import mikaelx2 from '../images/MikaelRinnetmaki2x.jpg';
+import vitalisCapture from '../images/Vitalis2023-Nordic_harmonization_of_health_data.png'
 
 export function Head() {
   const title = <title>FHIR Demo 2024: HL7 Finland</title>;
@@ -34,6 +35,29 @@ export default function Hl7Finland({ location }) {
           Launch</a> that specifies guidelines for and examples of using the SMART App Launch
           mechanism in Finland.
         </p>
+        <p>
+          HL7 Finland has also done some early mapping of Nordic FHIR Base Profiles. See the <a
+          href="Vitalis2023-Nordic_harmonization_of_health_data.pdf">presentation slides</a> of the
+          session <a
+          href="https://invitepeople.com/public/events/edd1776c4a/seminars/ca0805fa9c">Nordic
+          harmonization of health data</a>, given in
+          the <a href="https://vitalis.nu/">Vitalis</a> conference in May, 2023. They include an
+          initial comparison of the Danish, Finnish, Norwegian, and Swedish base profile
+          specifications.
+        </p>
+        <figure>
+          <a href={vitalisCapture}>
+            <img
+              src={vitalisCapture}
+              alt="Capture of slide 14 of the Vitalis presentation mentioned above"
+            />
+          </a>
+          <figcaption>
+            In 2023, Denmark had profiled 5 resource types, Finland and Norway both 20, and Sweden
+            4 resource types. Only three resource types (Organization, Patient, and Practitioner)
+            were profiled by all countries.
+          </figcaption>
+        </figure>
         <p>
           This year one of the main activities is to consolidate the previously published
           scheduling related implementation guides into one guide, also including the recent input
