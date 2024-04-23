@@ -11,6 +11,7 @@ export const demos = {
     name: 'Atostek',
     roles: [
       RoleList.Consultancy,
+      RoleList.System,
     ],
   },
   /*
