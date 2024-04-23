@@ -2,9 +2,10 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 import hl7finland from '../images/hl7-finland.svg';
+import Background from '../pages/background';
+import '@fontsource-variable/commissioner';
 import '@fontsource-variable/tourney';
 import '../styles/index.css';
-import Background from '../pages/background';
 
 export function getHead({ title }) {
   return (
@@ -26,14 +27,12 @@ const Article = ({ children, ...rest }) => {
           </li>
           <li>
             <Link to="/#description">
-              Participate!
+              Get listed!
             </Link>
           </li>
-          {
-          /*
           <li>
-            <Link to="/#description">
-              Participate
+            <Link to="/#participants">
+              Showcases
             </Link>
           </li>
           <li>
@@ -41,8 +40,6 @@ const Article = ({ children, ...rest }) => {
               Events
             </Link>
           </li>
-          */
-          }
           <li>
             <Link to="/#contact">
               Contact

@@ -2,25 +2,29 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 import Article, { getHead } from '../components/Article';
-import fhirLogo from '../images/fhir.svg';
+import fhirLogo from '../images/fhir-deco.svg';
 
 export function Head() {
-  const title = <title>FHIR Demo 2023 at the Radical Health Festival</title>;
+  const title = <title>FHIR Demo 2024 at the Radical Health Festival</title>;
   return getHead({ title });
 };
 
 export default function RadicalHealth() {
 
   return (
-    <Article>
-      <section id="radical-health">
-        <h1>
-          FHIR Demo 2023 at the <a href="https://radicalhealthfestival.messukeskus.com/">Radical
-          Health Festival</a>
-        </h1>
+    <Article id="radical-health" className="event">
+      <section id="intro">
+        <h1>FHIR Demo 2024 <br /><small>at the</small><br/> Radical Health Festival</h1>
+        <p>
+          Several demo participants will be at the <a
+          href="https://radicalhealthfestival.messukeskus.com/">Radical Health Festival</a> in
+          Helsinki, May 21-13.
+        </p>
       </section>
+      {/*
       <section className="event radical-health">
         <h2>Scheduled demos</h2>
+        <p>No demos have been scheduled yet, but some most likely will be!</p>
         <table className="schedule">
           <tbody>
             <tr><th colspan="3"><time dateTime="2023-06-13">Tuesday 13.6.2023</time></th></tr>
@@ -38,16 +42,29 @@ export default function RadicalHealth() {
           </tbody>
         </table>
       </section>
-      <section id="participants">
-        <h2>FHIR Demo 2023 participants at the Radical Health Festival</h2>
+      */}
+      <section id="participants" className="event radical-health">
+        <h2>FHIR Demo 2024 participants at the Radical Health Festival</h2>
+        <p>We'll keep updating the list of participants until the start of the event.</p>
+        {/* Let's present these as a list, until we get the stand numbers. */}
+        <ul>
+          {/*
+          <li><Link to="../apotti">Apotti</Link></li>
+           */}
+          <li><Link to="../innokas">Innokas</Link></li>
+          <li><Link to="../sensotrend">Sensotrend</Link></li>
+        </ul>
+        {/*
         <table className="participants">
           <tbody>
-            <tr><td>A6</td><td><Link to="../apotti">Apotti</Link></td></tr>
-            <tr><td>C2</td><td><Link to="../innokas-medical">Digious / Innokas Medical</Link></td></tr>
-            <tr><td>SU1</td><td><Link to="../sensotrend">Sensotrend</Link></td></tr>
-            <tr><td>SU10</td><td><Link to="../innokas-medical">MedicubeX</Link></td></tr>
+            <tr><td></td><td><Link to="../apotti">Apotti</Link></td></tr>
+            <tr><td></td><td><Link to="../innokas">Innokas</Link></td></tr>
+            <tr><td></td><td><Link to="../sensotrend">Sensotrend</Link></td></tr>
+            {/*
+            <tr><td></td><td><Link to="../medicubex">MedicubeX</Link></td></tr>
           </tbody>
         </table>
+        */}
       </section>
       <img className="decoration" src={fhirLogo} alt="" />
     </Article>

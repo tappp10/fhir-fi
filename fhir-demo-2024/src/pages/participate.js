@@ -2,13 +2,12 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 import Article, { getHead } from '../components/Article';
-import { RoleFilter, RolesContext } from '../components/Roles';
-import { demos } from '../config/data';
 import fhirLogo from '../images/fhir.svg';
 import fhirLogo2 from '../images/fhir-deco.svg';
 import mikaelx1 from '../images/MikaelRinnetmaki.jpg';
 import mikaelx2 from '../images/MikaelRinnetmaki2x.jpg';
 import slackLogo from '../images/Slack_icon_2019.svg';
+import zulipLogo from '../images/zulip.svg';
 
 
 export function Head() {
@@ -33,9 +32,14 @@ export default function Participate() {
           bigger, and more international.
         </p>
         <p>
-          We&apos;re inviting everyone working on FHIR on some level, and for everyone supporting
-          FHIR, to join the showcase. Share what you&apos;ve done or are planning, and help others
-          find you and learn from your experience and goals!
+          This year the main presence of the demo will be this website. There are some activities
+          at some events, but we're really aiming to build a resource that is available online,
+          throughout the year.
+        </p>
+        <p>
+          We're inviting everyone working on FHIR on some level, and for everyone supporting FHIR,
+          to join the showcase. Share what you've done or are planning, and help others find you
+          and learn from your experience and goals!
         </p>
         <p>
           Participation costs you nothing, and gives you increased visibility within the FHIR
@@ -54,7 +58,7 @@ export default function Participate() {
       </section>
       <section id="info">
         <h1>Apps and Systems, Consultancies and Institutions</h1>
-        <p>This year, we plan to tag entries into four categories.</p>
+        <p>This year, we tag entries into four categories.</p>
         <p>
           <strong>Apps</strong> are FHIR clients utilizing data in FHIR format or integrated into
           an electronic health record system or patient portal through the SMART App Launch
@@ -98,7 +102,7 @@ export default function Participate() {
           <h2>Does the implementation need to be in production?</h2>
           <p>
             No, it does not. The aim is to show the full range of FHIR activities. We want to show
-            what already works, but also what people are currently working on. We&apos;re happy to
+            what already works, but also what people are currently working on. We're happy to
             include you into the showcase even if you just have an idea on how you would use FHIR.
             Even that may give someone else an idea for their own implementation, or trigger someone
             to contact you about cooperation.
@@ -110,26 +114,28 @@ export default function Participate() {
             There are no strict limits. FHIR is used in many ways. An app vendor may present how
             their app works seamlessly with a system, thanks to FHIR. HL7 country affiliates may
             advertise their work plan for this year. These are different kind of showcases, and
-            there are many more. If you don&apos;t yet have a clear idea, you may draw inspiration
-            from <a href="https://fhir.fi/en/demo2023/#participants">last year&apos;s entries</a>.
+            there are many more. If you don't yet have a clear idea, you may draw inspiration
+            from <a href="https://fhir.fi/en/demo2023/#participants">last year's entries</a>.
           </p>
         </section>
         <section id="how-to-submit">
           <h2>How do I submit my information?</h2>
           <p>
-            Ideally, compile your demo page yourself and issue a pull request to the source code of
-            the website. We&apos;re using the Gatsby framework, see <a
+            If you want to show off your technical competence to the showcase coordinators, please
+            compile your demo page yourself and issue a pull request to the source code of the
+            website. We're using the Gatsby framework, see <a
             href="https://github.com/fhir-fi/fhir-fi.github.io/tree/fhir-demo-2024-gatsby/fhir-demo-2024">the
             instructions</a>.
           </p>
           <p>
-            We do realize not everyone is up for that, so yu can also send the information you want
-            to be presented in an email, or as a Word document or a slideshow. We'll compile the
-            page for you!
+            We of course do realize not everyone is up for that, so you can also send the
+            information you want to be presented in an email, or as a Word document or a slideshow,
+            or by pointing to another website where the information can be copied from. We'll
+            compile the page for you!
           </p>
         </section>
         <section id="where-does-the-showcase-take-place">
-          <h2>Where does the showcase take place?</h2>
+          <h2>Do I need to participate to the listed events?</h2>
           <p>
             The main area for the showcase is <strong>this website.</strong> The showcase will be
             updated throughout the year. We hope it will become a go-to resource for everyone in
@@ -157,23 +163,46 @@ export default function Participate() {
             href="https://invitepeople.com/public/events/ae499c7a48/seminars/ae2dc6387c">specific
             session</a> on the program to present the showcase.
           </p>
+          <p>
+            You can also inform us about any other events you're planning to attend, and we can
+            list them on this site.
+          </p>
+          <p>
+            <strong>
+              There is no requirement to participate to any event. You are very welcome to get your
+              information listed on the website even if you're not planning to attend any of the
+              events.
+            </strong>
+          </p>
         </section>
         <section id="showcase-schedule">
          <h2>When does it start? When do I need to be ready?</h2>
           <p>
-            This initial website is already public. We plan to publish the first list of
-            participants in mid-April. We keep on adding participants throughout the year. However,
-            you most likely get the biggest benefit if you get your case published before the trade
-            shows in May. That&apos;s when we&apos;ll be advertising the showcase the most.
+            This initial website is already public, and some of the showcases have been published.
+            We keep on adding participants throughout the year. However, you most likely get the
+            biggest benefit if you get your case published before the trade shows in May. That's
+            when we'll be advertising the showcase the most.
+          </p>
+        </section>
+        <section id="assets">
+          <h2>Can I advertise the showcase on my own?</h2>
+          <p>
+            Sure, by all means. Please do! Also feel free to use the <Link to="/assets">graphical
+            assets</Link> used in the demo.
+          </p>
+          <p>
+            There's even a cool tool to generate background images. Did you notice the background
+            on this page changes with each page load? It is always randomly generated. There's
+            also an animated easter egg. Can you spot it? 
           </p>
         </section>
         <section id="what-to-do-next">
           <h2>What should I do next?</h2>
           <p>
-            Let the coordinator of the showcase you&apos;re interested in participating. Write an
-            email to mikael@sensotrend.com. You don&apos;t need to have the showcase ready, just
-            indicate your interest. But do start thinking of what you would like to share, and in
-            which format you&apos;d be able to share it.
+            Let the coordinator of the showcase konw that you're interested in participating. Write
+            an email to <a href="mikael@sensotrend.com">mikael@sensotrend.com</a>. You don't need
+            to have the showcase ready, just indicate your interest. But do start thinking of what
+            you would like to share, and in which format you'd be able to share it.
           </p>
         </section>
       </section>
@@ -194,10 +223,17 @@ export default function Participate() {
             <a href="tel:+358503855511">+358 50 385 5511</a>
           </address>
         </div>
-        <p><img className="inline decoration" src={slackLogo} alt="" /> You can also <a
-          href="https://join.slack.com/t/fhirfinland/shared_invite/zt-1j143ocuu-Ax4SfnlQt~iDKt5Xrb6Uwg">join
-          the <strong>FHIR Finland</strong> Slack</a> and discuss on the
-          <strong>#fhir-demo-2024</strong> channel.
+        <p className="channel">
+          <img className="inline decoration" src={slackLogo} alt="" /> You can also <a
+          href="https://join.slack.com/t/fhirfinland/shared_invite/zt-1j143ocuu-Ax4SfnlQt~iDKt5Xrb6Uwg"
+          >join the <strong>FHIR Finland Slack</strong></a> workspace and discuss on
+          the <strong>#fhir-demo-2024</strong> channel.
+        </p>
+        <p className="channel">
+          <img className="inline decoration" src={zulipLogo} alt="" /> Or reach out to participants
+          in the <strong>chat.fhir.org</strong> Zulip at the <a
+          href="https://chat.fhir.org/#narrow/stream/194447-nordics/topic/Nordic.20FHIR.20Demo.20Showcase.202024"
+          >#Nordics stream</a>.
         </p>
       </section>
       <img className="decoration" src={fhirLogo2} alt="" />

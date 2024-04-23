@@ -8,186 +8,22 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#da532c">
-  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="../../page.css" />
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FHIR Demo 2023</title>
+  <meta http-equiv="Refresh" content="0; URL='../../en/demo2023/index.html'" />
 </head>
-
 <body>
-  <article id="main">
-    <header>
-      <nav id="top">
-        <ul>
-          <li><a href="#intro">Esittely</a></li>
-          <li><a href="#demos">Demot</a></li>
-          <li><a href="#who">Osallistujat</a></li>
-          <li><a href="#contacts">Yhteystiedot</a></li>
-          <li><a href="../../en/index.html">In English</a></li>
-        </ul>
-      </nav>
-      <h1>FHIR Demo 2023</h1>
-      <section id="intro">
-        <div>
-          <div>
-            <h2>Mistä on kyse?</h2>
-            <p class="ingress">HL7 Finland järjestää keväällä 2023 FHIR-sovellusten
-              integraatio&shy;projektin. Hankkeessa toteutetaan suuri määrä integraatioita
-              sovellusten, asiakas- ja potilas&shy;tieto&shy;järjestelmien sekä muiden alustojen
-              välille.</p>
-            <p class="ingress">Tavoitteena on edistää ennen kaikkea tietojen liikkumista
-              tieto&shy;järjestelmien välillä sekä asiakas- ja potilas&shy;tieto&shy;järjestelmien
-              toiminnallisuutta laajentavien SMART-sovellusten käyttöön&shy;ottoa.</p>
-          </div>
-        </div>
-        <img src="../../fhir.svg" />
-      </section>
-    </header>
-    <main>
-      <nav id="first-part" class="side-nav">
-        <ul>
-          <li><a href="#why">Miksi</a></li>
-          <li><a href="#what">Mitä</a></li>
-          <li><a href="#how">Miten</a></li>
-        </ul>
-      </nav>
-      <nav id="second-part" class="side-nav">
-        <ul>
-          <li><a href="#demos">Demot</a></li>
-          <li><a href="#who">Osallistujat</a></li>
-          <li><a href="#misc">Muuta</a></li>
-        </ul>
-      </nav>
-      <section id="why">
-        <div class="container">
-          <h2>Miksi</h2>
-          <p>Sana integraatio herättää usein huolta. Integraatiot vaativat tyypillisesti paljon
-            aikaa ja resursseja, eikä lopputuloksesta ole edes varmuutta. Tämän vuoksi monet varsin
-            hyödyllisetkin integraatiot jäävät toteuttamatta.</p>
-          <p>FHIR-integraatioprojektin tavoitteena on poistaa tämä epävarmuus toteuttamalla ja
-            testaamalla integraatiot jo etukäteen. Tämän toivotaan helpottavan myös sovellusten
-            hankintaa ja käyttöönottoa.</p>
-        </div>
-      </section>
-      <section id="what">
-        <div class="container">
-          <h2>Mitä</h2>
-          <p>Hankkeessa pyritään toteuttamaan monenlaisia integraatioita, mutta pääpaino on <a
-            href="http://www.hl7.org/fhir/smart-app-launch/">HL7 SMART App Launch</a>
-            -sovellus&shy;käynnistyksellä. Sen avulla ulkopuoliset sovellukset voidaan käynnistää
-            asiakas- tai potilas&shy;tieto&shy;järjestelmästä napin painalluksella. Lisäksi
-            käynnistymisen yhteydessä käynnistettävälle sovellukselle välitetään tieto siitä, kuka
-            ammattilainen tahtoo katsoa kenen asiakkaan tai potilaan tietoja. Ja kaikki tämä
-            ehdottoman tietoturvallisesti.</p>
-          <p>Ammattilaiselle SMART-käynnistys tarkoittaa sitä, että hänen ei tarvitse kirjautua
-            erikseen johonkin toiseen järjestelmään tai etsiä sieltä henkilöä erillisestä listasta.
-            Kaikki tapahtuu nimenomaan napin painalluksella varsinaisesta pääjärjestelmästä.</p>
-          <p>Myös muut ja monimutkaisemmat integraatiot ovat tämän integraa&shy;tiohankkeen
-            piirissä ja ehdottomasti kiinnostavia. Mutta tietojen lukeminen ja kirjoittaminen
-            edellyttävät yleensä jossakin määrin enemmän sopimista ja ovat myös
-            tapaus&shy;kohtaisempia. Tästä syystä pääpaino on sovellusten käynnistyksessä, jonka
-            pitäisi jo itsessään tuoda reilusti lisäarvoa.</p>
-          <p>Sovellustoimittajille SMART-käynnistyksen toteuttaminen sovelluksiin tarjoaa myös
-            hyvät mahdollisuudet kansain&shy;väliseen liiketoimintaan suurten
-            järjestelmä&shy;toimittajien kanssa.</p>
-        </div>
-      </section>
-      <section id="how">
-        <div class="container">
-          <h2>Miten</h2>
-          <p>Integraatiot toteutetaan yhdessä suuressa hankkeessa. Tällöin esimerkiksi
-            alusta&shy;toimittaja voi konfiguroida järjestelmään useamman sovelluksen kerralla ja
-            myös opastaa useaa sovellus&shy;toimittajaa kerralla, siis saada aikaan monta
-            integraatiota yhden integraation kustannuksella.</p>
-          <p>Tavoite on myös, että sovellus&shy;toimittajat tukevat toisiaan integraatioiden
-            toteuttamisessa, jakaen kokemuksia, parhaita käytäntöjä ja lähde&shy;koodiakin.</p>
-          <p>Ajatus on, että projektissa ei tarvitse liikuttaa rahaa, vaan kaikki osapuolet
-            vastaavat omista kustannuksistaan. Myös sopimukset pyritään pitämään minimissä, mutta
-            joitain sopimuksia saatetaan tarvita esimerkiksi yhteyksien avaamiseen tai jotta
-            sovelluksille voidaan sallia pääsy kehitys&shy;ympäristöihin.</p>
-          <p>Integraatiot pyritään ensisijaisesti rakentamaan kunkin alustan osalta
-            demo&shy;ympäristöön, jossa niiden esittely on mahdollista ulkopuolisillekin. Mikäli
-            tällaista ympäristöä ei ole saatavilla, voidaan myös toteuttaa integraatio suljetumpaan
-            ympäristöön ja tallentaa sieltä video, joka esittelee integraation toteutumisen ja
-            sovelluksen liittymisen ammattilaisen työnkulkuun.</p>
-        </div>
-      </section>
-      <section id="demos">
-        <div class="container">
-          <h2>Demot</h2>
-          <p>Demot esitellään ainakin:</p>
-          <ul>
-            <li><a href="https://koulutus.fcg.fi/sosiaali-ja-terveydenhuollon-ATK-paivat">Sosiaali- ja terveydenhuollon ATK-paivillä</a> 22.-24. toukokuuta Turussa</li>
-            <li><a href="https://radicalhealthfestival.messukeskus.com/">Radical Health Festival</a> -tapahtumassa 12.-15. kesäkuuta Helsingissä</li>
-            <li>Tällä sivustolla.</li>
-          </ul>
-        </div>
-      </section>
-      <section id="who">
-        <div class="container">
-          <h2>Osallistujat</h2>
-          <p>Integraatioita on toteuttamassa lukuisa joukko asiakas- ja
-            potilas&shy;tieto&shy;järjestelmien edustajia, sovellustoimittajia ja muita
-            toimijoita.</p>
-          <p>Keräämme parhaillamme tämän vuoden demon osallistujajoukkoa. Ole yhteydessä!</p>
-        </div>
-      </section>
-      <section id="misc">
-        <div class="container">
-          <p>Keräämme tähän uutisia ja tiedotteita hankkeen edetessä.</p>
-          <p>Katso myös viime vuoden FHIR Demo 2022 -hankkeen <a
-            href="../demo2022/index.html">verkkosivut</a> ja <a
-            href="../demo2022/raportti.html">loppuraportti</a>.</p>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <section id="contacts">
-        <h2>Yhteystiedot</h2>
-        <address>
-          <strong>Sonja Punnala</strong>
-          <p>Hanketta koordinoi HL7 Finlandin puolesta Sensotrend Oy:n Sonja Punnala.</p>
-          <a href="mailto:sonja@sensotrend.com">sonja@sensotrend.com</a>
-        </address>
-        <address>
-          <strong>Mikael Rinnetmäki</strong>
-          <p>Mukana on myös HL7 Finlandin FHIR-lähettiläs Mikael Rinnetmäki.</p>
-          <a href="mailto:mikael@sensotrend.com">mikael@sensotrend.com</a>
-        </address>
-        <address>
-          <strong>Slack</strong>
-          <p>Keskustelua käydään viikottaisissa tapaamisissa sekä hankkeen Slack-työtilassa.</p>
-          <a href="https://fhirfinland.slack.com/">fhirfinland.slack.com</a>
-        </address>
-      </section>
-      <section id="source">
-        <p><small>Lisättävää tai korjattavaa sisällön suhteen? Sivun <a
-            href="http://github.com/fhir-fi/fhir-fi.github.io">lähdekoodi</a> löytyy
-            GitHubista. Lähetä pull request!</small></p>
-      </section>
-    </footer>
+  <article>
+    <h1>FHIR Demo 2023</h1>
+    <p>Vuonna 2023 FHIR Demo 2023 järjestettiin pääosin englanniksi.</p>
+    <p>Tutustu vuoden 2023 <a href="../../en/demo2023/index.html">FHIR Demo 2023</a>
+      -sivustoon!</p>
+    <p>Katso demon suomenkielinen <a
+      href="https://www.hl7.fi/fhir-demo-2023-webinaari/">webinaaritallenne</a>!</p>
   </article>
-  <script>
-    let busy = false;
-    const navLinks = {};
-    document.querySelectorAll('.side-nav a').forEach((l) => {
-      navLinks[l.hash.replace('#', '')] = l;
-    });
-    const observer = new IntersectionObserver(function setActiveNavLink(sections) {
-      if (busy) {
-        return;
-      }
-      busy = true;
-      sections.forEach((s) => {
-        navLinks[s.target.id].classList[s.isIntersecting ? 'add' : 'remove']('active');
-      });
-      busy = false;
-    }, { threshold: 0.3 });
-    document.querySelectorAll('main section').forEach((section) => {
-      observer.observe(section);
-    });
-  </script>
 </body>
 
 </html>
