@@ -141,16 +141,22 @@ article#playground svg {
   max-width: none;
 }
 
-
 article#playground label {
   display: inline-block;
   margin-right: 1em;
+}
+
+article#playground input[type=number] {
+  width: 4em;
 }
 
 article#playground button:last-child {
   float: right;
 }
 
+article#playground form a {
+  text-decoration: none;
+}
 
 #demo blockquote {
   font-size: 200%;
@@ -976,6 +982,16 @@ nav.prevNext > div:last-child {
   #contact p:last-child {
     padding-bottom: 2em;
   }
+  article#playground label,
+  article#playground button {
+    display: block;
+    margin-bottom: 0.2em;
+  }
+  article#playground button:last-child {
+    float: none;
+  }
+  
+
 }
 
 @media (max-width: 600px) {
