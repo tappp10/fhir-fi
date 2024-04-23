@@ -512,7 +512,7 @@ ul.hashtags li {
 }
 
 #about img.decoration,
-#demo img.decoration {
+main.demo img.decoration {
   display: block;
   margin: 12em auto 0;
   height: 36em;
@@ -520,7 +520,7 @@ ul.hashtags li {
   max-width: 80vw;
 }
 
-#demo img.decoration {
+main.demo img.decoration {
   margin-top: 0;
 }
 
