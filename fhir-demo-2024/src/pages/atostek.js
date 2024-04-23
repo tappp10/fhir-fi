@@ -6,6 +6,7 @@ import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import atostekLogo from '../images/atostek.png';
 import atostekFHIR from '../images/atostek-fhir-2024.jpg';
+import fhirLogo from '../images/fhir.svg';
 
 export function Head() {
   const title = <title>FHIR Demo 2024: Atostek</title>;
@@ -50,6 +51,11 @@ export default function Atostek({ location }) {
           citizens' data has been handled with the ERA system.
         </p>
       </section>
+      <figure>
+        <a href={atostekFHIR}>
+          <img src={atostekFHIR} alt={solutionAltText} />
+        </a>
+      </figure>
       <section className="fhir-resources">
         <p>
           Atostek is developing FHIR interfaces to Clinibus and Recibus with support for following
@@ -69,7 +75,7 @@ export default function Atostek({ location }) {
           <li>RelatedPerson</li>
         </ul>
       </section>
-      <img src={atostekFHIR} alt={solutionAltText} />
+      <img className="decoration" src={fhirLogo} alt="" />
       <section className="company">
         <p>
           <a href="https://atostek.com">ATOSTEK</a> is an innovative software company from Finland.
