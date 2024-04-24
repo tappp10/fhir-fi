@@ -37,13 +37,15 @@ export default function Hl7Finland({ location }) {
         </p>
         <p>
           HL7 Finland has also done some early mapping of Nordic FHIR Base Profiles. See the <a
-          href="Vitalis2023-Nordic_harmonization_of_health_data.pdf">presentation slides</a> of the
-          session <a
+          href="https://hl7.fi/fhir/finnish-base-profiles/Vitalis2023-Nordic_harmonization_of_health_data.pdf"
+          >presentation slides</a> of the session <a
           href="https://invitepeople.com/public/events/edd1776c4a/seminars/ca0805fa9c">Nordic
           harmonization of health data</a>, given in
           the <a href="https://vitalis.nu/">Vitalis</a> conference in May, 2023. They include an
           initial comparison of the Danish, Finnish, Norwegian, and Swedish base profile
-          specifications.
+          specifications. There will be a <a
+          href="https://invitepeople.com/public/events/ae499c7a48/seminars/da00c15a72"
+          >session on the topic</a> this year too, with other Nordic HL7 affiliates.
         </p>
         <figure>
           <a href={vitalisCapture}>
