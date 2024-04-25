@@ -62,8 +62,9 @@ export default function Trifork({ location }) {
             the FHIR specifiction aims to be.
           </li>
           <li>
-            <strong>Ease of Use:</strong> The Trifork Health Platform aims to take the complexity 
-            of the shoulders of the developers though services and components for common use in healthcare.
+            <strong>Ease of Use:</strong> The Trifork Health Platform aims to take the complexity
+            of the shoulders of the developers though services and components for common use in
+            healthcare.
           </li>
         </ul>
       </section>
