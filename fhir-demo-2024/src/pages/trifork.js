@@ -123,7 +123,6 @@ export default function Trifork({ location }) {
             <a href="tel:+4523373806">+45 23 37 38 06</a>
           </address>
         </div>
-        <h3>Contact</h3>
         <div className="business-card">
           <h3>Torben Hagensen</h3>
           <p>Principal Architect, Digital Health, Trifork</p>
