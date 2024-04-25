@@ -34,7 +34,6 @@ export default function Trifork({ location }) {
           <li><Link to="#fut">Fælles Udbredelse af Telemedicin (FUT)</Link></li>
           <li><Link to="#gravitate">Gravitate Health</Link></li>
           <li><Link to="#rkkp">Regionernes Kliniske Kvalitetsudviklingsprogram (RKKP)</Link></li>
-          <li><Link to="#regulatory">Regulatory Affairs</Link></li>
         </ul>
       </section>
       <section id="thp">
@@ -61,6 +60,10 @@ export default function Trifork({ location }) {
           <li>
             <strong>Openness:</strong> The Trifork Health Platform is as open about its API's as
             the FHIR specifiction aims to be.
+          </li>
+          <li>
+            <strong>Ease of Use:</strong> The Trifork Health Platform aims to take the complexity 
+            of the shoulders of the developers though services and components for common use in healthcare.
           </li>
         </ul>
       </section>
@@ -112,13 +115,22 @@ export default function Trifork({ location }) {
       <section id="contact">
         <h3>Contact</h3>
         <div className="business-card">
-
           <h3>Jens Kristian Villadsen</h3>
-          <p>Healthcare CTO, Trifork</p>
+          <p>CTO, Digital Health, Trifork</p>
           <address>
             <a href="mailto:jvi@trifork.com">jvi@trifork.com</a>
             <br />
             <a href="tel:+4523373806">+45 23 37 38 06</a>
+          </address>
+        </div>
+        <h3>Contact</h3>
+        <div className="business-card">
+          <h3>Torben Hagensen</h3>
+          <p>Principal Architect, Digital Health, Trifork</p>
+          <address>
+            <a href="mailto:tmha@trifork.com">tmha@trifork.com</a>
+            <br />
+            <a href="tel:+4520781122">+45 20 78 11 22</a>
           </address>
         </div>
       </section>
