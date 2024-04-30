@@ -51,6 +51,12 @@ export const demos = {
       RoleList.System,
     ],
   },
+  felleskatalogen: {
+    name: 'Felleskatalogen',
+    roles: [
+      RoleList.System
+    ],
+  },
   fujitsu: {
     hidden: true,
     name: 'Fujitsu',

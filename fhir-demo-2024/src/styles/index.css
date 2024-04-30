@@ -891,6 +891,15 @@ nav.prevNext > div:last-child {
   float: right;
 }
 
+.business-card picture img.roundProfilePicture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  padding: 5px;
+  background: var(--color-offset-white);
+  }
+
 @media (min-width: 100rem) {
   main.demo {
     margin-top: 0;
