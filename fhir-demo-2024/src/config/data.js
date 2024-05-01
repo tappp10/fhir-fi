@@ -32,6 +32,13 @@ export const demos = {
       RoleList.App,
     ],
   },
+  cerner: {
+    hidden: true,
+    name: 'Oracle Cerner',
+    roles: [
+      RoleList.System,
+    ],
+  },
   cgi: {
     name: 'CGI',
     roles: [
@@ -77,8 +84,8 @@ export const demos = {
       RoleList.Institution,
     ],
   },
-  'hl7-sverige': {
-    name: 'HL7 Sverige',
+  'hl7-sweden': {
+    name: 'HL7 Sweden',
     roles: [
       RoleList.Institution,
     ],
