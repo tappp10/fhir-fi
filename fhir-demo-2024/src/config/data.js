@@ -15,7 +15,6 @@ export const demos = {
     ],
   },
   /*
-
   Minäpä laitan tietoa meidän sovellus / integraatio porukalle ja palataan tähän
   Yt Marko
   */
@@ -32,6 +31,7 @@ export const demos = {
       RoleList.App,
     ],
   },
+  /* Karri Ackalin, Lassi Lindblom, 23.4.2023 */
   cerner: {
     hidden: true,
     name: 'Oracle Cerner',
@@ -45,10 +45,17 @@ export const demos = {
       RoleList.System,
     ],
   },
+  /* Joonas Mäkinen, April 12 */
   duodecim: {
     name: 'Duodecim',
     roles: [
       RoleList.App,
+    ],
+  },
+  epic: {
+    name: 'Epic',
+    roles: [
+      RoleList.System,
     ],
   },
   esko: {
@@ -58,6 +65,7 @@ export const demos = {
       RoleList.System,
     ],
   },
+  /* */
   fujitsu: {
     hidden: true,
     name: 'Fujitsu',
@@ -90,7 +98,16 @@ export const demos = {
       RoleList.Institution,
     ],
   },
-  'innokas': {
+  /* Juha Muinonen, 26.4.2024 */
+  hus: {
+    hidden: true,
+    name: 'HUS',
+    roles: [
+      RoleList.Institution,
+    ],
+  },
+
+  innokas: {
     name: 'Innokas',
     roles: [
       RoleList.App,
@@ -144,6 +161,7 @@ export const demos = {
       RoleList.System,
     ],
   },
+  /* Mika Sipilä,  */
   prowellness: {
     name: 'ProWellness',
     roles: [
