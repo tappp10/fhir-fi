@@ -33,6 +33,14 @@ export default function EskoSystems({ location }) {
           RESTful APIs that are defined by FHIR.
         </p>
       </section>
+      <section id="nordics">
+        <h2>Epic in the Nordics</h2>
+        <p>
+          Sites live on Epic in Denmark, Finland, and Norway make use of Epic's integration
+          capabilities - FHIR and beyond - every day. You can find out more at <a
+          href="https://open.epic.com/CountrySpecific/">https://open.epic.com/CountrySpecific/</a>.
+        </p>
+      </section>
       <section id="SMART">
         <h2>SMART on FHIR</h2>
         <p>
