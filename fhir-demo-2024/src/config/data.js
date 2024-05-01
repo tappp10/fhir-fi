@@ -86,8 +86,8 @@ export const demos = {
       RoleList.Institution,
     ],
   },
-  'hl7-norge': {
-    name: 'HL7 Norge',
+  'hl7-norway': {
+    name: 'HL7 Norway',
     roles: [
       RoleList.Institution,
     ],
