@@ -38,17 +38,9 @@ export default function Felleskatalogen({ location }) {
           for all pharmaceutical products on the Norwegian market. We are currently participating
           in an information campaign to facilitate the transition to electronic package leaflets.
         </p>
-        <p>
-          <picture>
-            <source srcSet={fkEpil} />
-            <a href="https://www.felleskatalogen.no/medisin/digitale-pakningsvedlegg">
-              <img
-                className="decoration"
-                src={fkEpil} alt="Electronic package leaflet information campaign"
-              />
-            </a>
-          </picture>
-        </p>
+        <a href="https://www.felleskatalogen.no/medisin/digitale-pakningsvedlegg">
+          <img src={fkEpil} alt="Electronic package leaflet information campaign" />
+        </a>
       </section>
       <section id="epi">
         <h2>Gravitate Health and Nordic FHIR ePI</h2>
