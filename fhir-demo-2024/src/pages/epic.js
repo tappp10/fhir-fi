@@ -4,7 +4,8 @@ import { getHead } from '../components/Article';
 import Demo from '../components/Demo';
 import Roles from '../components/Roles';
 import { demos } from '../config/data';
-import epicLogo from '../images/EpicOnFHIR.png';
+import epicLogo from '../images/epic.png';
+import epicOnFhir from '../images/EpicOnFHIR.png';
 
 export function Head() {
   const title = <title>FHIR Demo 2024: Epic</title>;
@@ -80,7 +81,10 @@ export default function EskoSystems({ location }) {
       <section id="contact">
         <h3>Contact</h3>
         <div className="business-card">
+          <img src={epicOnFhir} alt="Epic On FHIR" />
           <address>
+            <a href="mailto:open@epic.com ">open@epic.com </a>
+            <br />
             <a href="https://fhir.epic.com">fhir.epic.com</a>
           </address>
         </div>

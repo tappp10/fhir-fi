@@ -802,6 +802,18 @@ footer a:first-of-type {
   z-index: 3;
 }
 
+.business-card > img {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0.5cm auto 0;
+  width: 7.5cm;
+  max-width: 100%;
+  max-height: 3.5cm;
+}
+
 .business-card h2,
 .business-card h3 {
   position: absolute;
@@ -1004,8 +1016,6 @@ nav.prevNext > div:last-child {
   article#playground button:last-child {
     float: none;
   }
-  
-
 }
 
 @media (max-width: 600px) {
@@ -1080,10 +1090,15 @@ nav.prevNext > div:last-child {
   .business-card h2,
   .business-card h3,
   .business-card p,
+  .business-card > img,
   .business-card address {
     position: inherit;
     top: auto;
     left: auto;
     bottom: auto;
+  }
+  .business-card > img {
+    margin-top: 0;
+    margin-bottom: 0.25cm;
   }
 }
