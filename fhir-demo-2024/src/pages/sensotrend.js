@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
 
 import { getHead } from '../components/Article';
 import Demo from '../components/Demo';
@@ -26,13 +27,13 @@ export default function Sensotrend({ location }) {
 
       <section id="intro">
         <p>
-          Sensotrend offers two apps, the <a href="#sensotrend-connect">Sensotrend Connect</a> for
-          remote monitoring and the <a href="#careplan">Care Plan for Diabetes</a> for digitalized
-          care paths.
+          Sensotrend offers two apps, the <Link to="#sensotrend-connect">Sensotrend
+          Connect</Link> for remote monitoring and the <Link to="#careplan">Care Plan for
+          Diabetes</Link> for digitalized care paths.
         </p>
         <p>
-          Sensotrend also offers <a href="consultancy">consultancy</a> on EHR integrations, FHIR
-          implementations, and regulatory affairs.</p>
+          Sensotrend also offers <Link to="#consultancy">consultancy</Link> on EHR integrations,
+          FHIR implementations, and regulatory affairs.</p>
         <p>
           See also our demos in <a href="https://fhir.fi/en/demo2023/sensotrend/">last year's
           showcase</a>. They contain plenty of additional information.

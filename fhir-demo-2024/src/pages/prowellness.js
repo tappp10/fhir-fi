@@ -32,10 +32,10 @@ export default function ProWellness({ location }) {
           respiratory diseases, and endocrine disorders.
         </p>
         <p>
-          We offer a clinical specialist system (<a href="#cdms">CDMS</a>) to public and private
-          health services providers, health districts, hospitals and care communities, and a smart
-          mobile digital self-management solution with supervised AI for patients (<a
-          href="#balansio">Balansio</a>).
+          We offer a clinical specialist system (<Link to="#cdms">CDMS</Link>) to public and
+          private health services providers, health districts, hospitals and care communities, and
+          a smart mobile digital self-management solution with supervised AI for patients (<Link
+          to="#balansio">Balansio</Link>).
         </p>
       </section>
       <section id="balansio">

@@ -97,8 +97,8 @@ export default function IndexPage({ location }) {
           We're also planning a tour at least to the Finnish Wellbeing Services Counties
           (<i lang="fi">hyvinvointialue</i>, known as Regions in other Nordic countries) in the
           autumn. We're happy to extend this demo to other audiences. If you're interested in
-          having the FHIR Demo presented to you or your people, please <a href="#contact">get in
-          touch!</a>
+          having the FHIR Demo presented to you or your people, please <Link to="#contact">get in
+          touch!</Link>
         </p>
         <p>The showcase will also remain online on this website until the end of the year.</p>
       </section>
