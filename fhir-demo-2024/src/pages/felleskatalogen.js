@@ -50,7 +50,7 @@ export default function Felleskatalogen({ location }) {
           </picture>
         </p>
       </section>
-      <section>
+      <section id="epi">
         <h2>Gravitate Health and Nordic FHIR ePI</h2>
         <p>
           Building on our experience with content structuring and our role as the document
@@ -66,7 +66,7 @@ export default function Felleskatalogen({ location }) {
           Information (ePI) FHIR Implementation Guide</a>.
         </p>
       </section>
-      <section>
+      <section id="fhir">
         <h2>Data exchange using HL7 FHIR</h2>
         <p>To be able to fulfill our mission to provide healthcare personnel with pharmaceutical
           product information, we are dependent on being an active hub of electronic data exchange,
