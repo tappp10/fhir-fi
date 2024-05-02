@@ -36,9 +36,11 @@ export default function Felleskatalogen({ location }) {
         </p>
         <p>Felleskatalogen has for many years also provided structured electronic package leaflets
           for all pharmaceutical products on the Norwegian market. We are currently participating
-          in an information campaign to facilitate the transition to electronic package leaflets.
+          in an <a
+          href="https://www.felleskatalogen.no/medisin/digitale-pakningsvedlegg">information
+          campaign</a> to facilitate the transition to electronic package leaflets.
         </p>
-        <a href="https://www.felleskatalogen.no/medisin/digitale-pakningsvedlegg">
+        <a href={fkEpil}>
           <img src={fkEpil} alt="Electronic package leaflet information campaign" />
         </a>
       </section>
