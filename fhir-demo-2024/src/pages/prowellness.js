@@ -1,9 +1,12 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
 
 import { getHead } from '../components/Article';
 import Demo from '../components/Demo';
 import Roles from '../components/Roles';
 import { demos } from '../config/data';
+import balansioIllustration from '../images/ProWellness_Balansio.png';
+import cdmsIllustration from '../images/ProWellness_CDMS.png';
 import prowellnessLogo from '../images/prowellness.png';
 
 export function Head() {
@@ -22,35 +25,65 @@ export default function ProWellness({ location }) {
         </a>
       </h1>
       <Roles list={roles} />
-      <section className="work-in-progress">
-        <p>Participation confirmed, showcase content to be added.</p>
-        {/*
-          From: Mika Sipila <mika.sipila@prowellness.com>
-          Date: Thursday, 11. April 2024 at 8.54
-          To: 'Mikael Rinnetmäki' <mikael@sensotrend.com>
-          Subject: RE: FHIR Demo 2024
- 
-          Apps on oikea alue, ja tässä meillä on:
-          •	ProWellness CDMS (Chronic Diseases Management System),  jossa Smart App Launch (EHR -> CDMS)
-          •	Balansio, jossa Smart App Launch (EHR -> Balansio), sekä järjestelmän sisäisesti Balansion omissa REST-kutsuissa käytössä FHIR-resurssit
-            o	/fhir/observation
-            o	/fhir/MedicalAdministration
- 
-          Kuvia + tekstiä on ja saadaan toki muokattua/tehtyä paremmiksi..
- 
-        */}
+      <section id="about">
+        <p>
+          ProWellness offers innovative digital health ICT solutions for the prevention and care of
+          chronic diseases, e.g., diabetes, cardiovascular and heart diseases, COPD and chronic
+          respiratory diseases, and endocrine disorders.
+        </p>
+        <p>
+          We offer a clinical specialist system (<a href="#cdms">CDMS</a>) to public and private
+          health services providers, health districts, hospitals and care communities, and a smart
+          mobile digital self-management solution with supervised AI for patients (<a
+          href="#balansio">Balansio</a>).
+        </p>
       </section>
-
-      {/*
       <section id="balansio">
-        <h2><img src={balansioLogo} alt="Balansio" /></h2>
-        <p>Balansio is a CE marked medical device for diabetes clinics and hospitals to extend
-        their clinical services beyond scheduled appointments. Balansio contains other individual
-        CE marked medical devices (e.g. bolus insulin calculator). </p>
-        <p>Balansio has been integrated with Epic through the <strong>SMART App
-        Launch</strong> mechanism.</p>
+        <h2>Balansio</h2>
+        <p>
+          Balansio, a smart, mobile, 24/7 <strong>automated</strong> self-care system used by
+          individuals with chronic diseases, transforms chronic care from clinic-based solutions to
+          a next generation, digitalised and automated remote care solution for all stakeholders.
+        </p>
+        <a href={balansioIllustration}>
+          <img src={balansioIllustration} alt="Illustration: Smart 24/7 Chronic Care Automation" />
+        </a>
+        <p>
+          Balansio has been integrated with <Link to="/epic">Epic</Link> through the <strong>SMART
+          App Launch</strong> mechanism. Balansio also useds the <strong>Observations</strong> and
+          {' '}<strong>MedicalAdministration</strong> FHIR resources.
+        </p>
       </section>
-      */}
+      <section id="cdms">
+        <h2>CDMS</h2>
+        <p>
+          CDMS is a clinical specialist system used by healthcare professionals in day-to-day
+          patient care. CDMS enables identifying trends in patients and performing early
+          interventions to prevent complications from developing.
+        </p>
+        <a href={cdmsIllustration}>
+          <img src={cdmsIllustration} alt="Illustration: Holistic integrated chronic care" />
+        </a>
+        <p>
+          CDMS can be launched from an EHR using the <strong>SMART App Launch</strong> mechanism.
+        </p>
+      </section>
+      <section id="references">
+        <h2>Benefits & References</h2>
+        <p>
+          ProWellness solutions are used in health districts in Finland, in the United Kingdom and
+          Ireland.
+        </p>
+        <p>
+          Operations launched in 2022/2023 in United Arab Emirates with a Dubai-based business
+          partner. Agreements signed for covering 10 other countries in addition to UAE
+          (step-by-step rollout).
+        </p>
+        <p>
+          British ThorasicSociety's (BTS) award to NHS hospital for improving COPD care, supported
+          by ProWellness CDMS.
+        </p>
+      </section>
       <section id="contact">
         <h3>Contact</h3>
         <div className="business-card">
@@ -58,6 +91,8 @@ export default function ProWellness({ location }) {
           <p>CEO</p>
           <address>
             <a href="mailto:mika.sipila@prowellness.com">mika.sipila@prowellness.com</a>
+            <br />
+            <a href="tel:+358405725249">+358 40 572 5249</a>            
           </address>
         </div>
       </section>
