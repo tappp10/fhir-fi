@@ -5,7 +5,7 @@ import Demo from '../components/Demo';
 import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import integritasLogo from '../images/integritas.svg';
-import pirkko from '../images/pirkko.png';
+import pirkko from '../images/Pirkko2_FHIR.png';
 
 export function Head() {
   const title = <title>FHIR Demo 2024: Integritas</title>;
@@ -57,9 +57,16 @@ export default function Integritas({ location }) {
       </section>
       <section id="pirkko-integration">
         <h2>PIRKKO<sup>&reg;</sup> Integration</h2>
-        <p>PIRKKO<sup>&reg;</sup> integration provides seamless data exchange and minimum context
-        management between the patient health record system and PIRKKO.</p>
-        <p>HL7 FHIR based integration option was developed in collaboration with Cerner.</p>
+        <ul>
+          <li>
+            PIRKKO<sup>&reg;</sup> integration provides seamless data exchange and minimum
+            context management between the patient health record system and PIRKKO®.
+          </li>
+          <li>PIRKKO<sup>&reg;</sup> can now also export enriched data to data pool.</li>
+          <li>
+            HL7 FHIR based integration option was developed in collaboration with Cerner.
+          </li>
+        </ul>
       </section>
       <section id="contact">
         <h3>Contact</h3>
