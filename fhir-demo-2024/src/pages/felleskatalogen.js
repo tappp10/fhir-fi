@@ -77,7 +77,7 @@ export default function Felleskatalogen({ location }) {
             <img
               className="roundProfilePicture"
               src={fkContactBj}
-              alt="Bente Jansen, Felleskatalogen"
+              alt=""
             />
           </picture>
           <h3>Bente Jansen</h3>
@@ -92,7 +92,7 @@ export default function Felleskatalogen({ location }) {
             <img
               className="roundProfilePicture"
               src={fkContactAk}
-              alt="Ádám Z. Kövér, Felleskatalogen"
+              alt=""
             />
           </picture>
           <h3>Ádám Z. Kövér</h3>
