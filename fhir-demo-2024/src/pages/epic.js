@@ -17,7 +17,7 @@ export default function EskoSystems({ location }) {
   
   return (
     <Demo roles={roles} location={location}>
-      <h1>
+      <h1 className="white">
         <a href="https://www.epic.com">
           <img src={epicLogo} alt="Epic on FHIR" />
         </a>
