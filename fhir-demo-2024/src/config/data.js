@@ -112,7 +112,6 @@ export const demos = {
       RoleList.Institution,
     ],
   },
-
   innokas: {
     name: 'Innokas',
     roles: [
@@ -143,6 +142,12 @@ export const demos = {
     name: 'Meallogger',
     roles: [
       RoleList.App,
+    ],
+  },
+  'medicin-dk': {
+    name: 'Medicin.dk',
+    roles: [
+      RoleList.Institution,
     ],
   },
   microsoft: {
