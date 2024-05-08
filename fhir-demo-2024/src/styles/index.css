@@ -233,7 +233,7 @@ main.demo > h1 {
   color: var(--color-demo-text);
   font-weight: bold;
   text-align: center;
-  margin: 2em 0;
+  margin: 1em 0;
 }
 
 article#intro h1 {
@@ -313,7 +313,7 @@ article.event h1 {
 main.demo > h1.white {
   background-color: white;
   padding: 1em;
-  margin: 1em 0;
+  margin: 0;
 }
 
 header, article > *, nav ul, footer p {
@@ -594,10 +594,6 @@ section > img.logo {
   display: block;
   text-align: center;
   margin: 3em auto;
-}
-
-.demo h1 {
-  margin: 2em 0 5em;
 }
 
 .demo h2,
