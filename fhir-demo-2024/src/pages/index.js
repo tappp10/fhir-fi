@@ -15,8 +15,8 @@ export function Head() {
   return getHead({ title });
 };
 
-export default function IndexPage({ location }) {
-  const { search } = location;
+export default function IndexPage({ location = {} }) {
+  const { hash, search } = location;
   const { selectedRoles = {} } = React.useContext(RolesContext);
   const roles = Object.keys(selectedRoles);
   return (
@@ -25,21 +25,37 @@ export default function IndexPage({ location }) {
         <h1>FHIR Demo 2024</h1>
         <img className="decoration" src={fhirLogo} alt="" />
       </section>
-      <section id="description" className="callout">
-        <h2>Take part in the <strong>Nordic FHIR Demo</strong> showcase!</h2>
+      <section id="description" className={hash === '#description' ? 'callout' : undefined}>
         <p>
-          If you are an organization utilizing the HL7 FHIR standard or advocating for it, or if
-          you have a product using the HL7 FHIR standard, we'd love to get you included in the
-          showcase. Just send us a description of the product. See this year's showcase and <a
-          href="https://fhir.fi/en/demo2023/">last year's site</a> for examples.
+          The Nordic <strong>FHIR Demo 2024</strong> showcase highlights what has been implemented
+          with the HL7 FHIR standard in the Nordics.
         </p>
         <p>
-          The focus is in showing what has been implemented with the HL7 FHIR standard in the
-          Nordics, and in what the FHIR community is currently working on.
+          This year, the demos are split into four categories.
         </p>
+        <ul>
+          <li>
+            <strong>Apps</strong> are FHIR clients utilizing data in FHIR format or integrated into
+            an electronic health record system or patient portal, typically through the SMART App
+            Launch mechanism.
+          </li>
+          <li>
+            <strong>Systems</strong> are platforms and servers receiving and hosting data and
+            making it available to other parties.
+          </li>
+          <li>
+            <strong>Consultancies</strong> are companies and organizations helping others to adopt
+            and implement the FHIR standard, apps, and systems.
+          </li>
+          <li>
+            <strong>Institutions</strong> are hospitals, government institutions, national HL7
+            affiliates and other organizations that may not build FHIR implementations themselves
+            but may be utilizing them or just be proponents for FHIR. Of course, they can also
+            build FHIR apps and systems.
+          </li>
+        </ul>
         <p>
-          Participation costs you nothing, and gives you increased visibility in trade events and
-          the internet.
+          The aim is to help you find the right partner for your next FHIR project!
         </p>
         <p>
           The event continues the tradition of the FHIR Demo showcases organized in <a
@@ -47,11 +63,11 @@ export default function IndexPage({ location }) {
           {' '} <a href="https://fhir.fi/en/demo2022/index.html">2022</a>, and <a
           href="https://fhir.fi/en/demo2023/index.html">2023</a>.
         </p>
-        <p className="center">
-          <Link className="button" to="/participate">Participate!</Link>
-        </p>
       </section>
-      <section id="participants">
+      <section
+        id="participants"
+        className={(!hash || hash === '#participants') ? 'callout' : undefined}
+      >
         <h1>Participants</h1>
         <RoleFilter />
         <ul>
@@ -67,15 +83,15 @@ export default function IndexPage({ location }) {
           }
         </ul>
       </section>
-      <section id="events">
+      <section id="events" className={hash === '#events' ? 'callout' : undefined}>
         <h1>Events</h1>
         <p>
           The FHIR Demo 2024 showcase is presented in several industry events and conferences.
           Showcase participants demonstrate their demos on their own stands. In some events the
-          showcase will be included in conference program.
+          showcase is included in conference program.
         </p>
         <strong>
-          <p>Project participants will be present in at least the following events:</p>
+          <p>Some of the participants will be present in at least the following events:</p>
           <ul>
             <li>
               May 13-16, 2024 <Link to="/vitalis">Vitalis</Link>, Gothenburg, Sweden. See the
@@ -97,12 +113,32 @@ export default function IndexPage({ location }) {
           We're also planning a tour at least to the Finnish Wellbeing Services Counties
           (<i lang="fi">hyvinvointialue</i>, known as Regions in other Nordic countries) in the
           autumn. We're happy to extend this demo to other audiences. If you're interested in
-          having the FHIR Demo presented to you or your people, please <Link to="#contact">get in
-          touch!</Link>
+          having the FHIR Demo presented to you or your people, either virtually or in person,
+          please <Link to="#contact">get in touch!</Link>
         </p>
         <p>The showcase will also remain online on this website until the end of the year.</p>
       </section>
-      <section id="contact">
+      <section id="participate" className={hash === '#participate' ? 'callout' : undefined}>
+        <h1>Get Listed!</h1>
+        <p>
+          If you are an organization utilizing the HL7 FHIR standard or advocating for it, or if
+          you have a product using the HL7 FHIR standard, we'd love to get you included in the
+          showcase. Just send us a description of the product. See this year's showcase and <a
+          href="https://fhir.fi/en/demo2023/">last year's site</a> for examples.
+        </p>
+        <p>
+          The focus is in showing what has been implemented with the HL7 FHIR standard in the
+          Nordics, and in what the FHIR community is currently working on.
+        </p>
+        <p>
+          Participation costs you nothing, and gives you increased visibility in trade events and
+          the internet.
+        </p>
+        <p className="center">
+          <Link className="button" to="/participate">Participate!</Link>
+        </p>
+      </section>
+      <section id="contact" className={hash === '#contact' ? 'callout' : undefined}>
         <h1>Contact</h1>
         <p>
           The FHIR Demo 2024 is coordinated by <Link to="/sensotrend">Sensotrend</Link>, <i>pro

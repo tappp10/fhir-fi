@@ -15,19 +15,24 @@ export function Head() {
   return getHead({ title });
 };
 
-export default function Participate() {
+export default function Participate({ location = {} }) {
+  const { hash } = location;
   return (
     <Article id="participate">
       <section id="about">
         <h1><small>Take part in</small><br />FHIR Demo 2024</h1>
         <img className="decoration" src={fhirLogo} alt="" />
       </section>
-      <section id="description" className="callout">
+      <section
+        id="description"
+        className={(!hash || hash === '#description') ? 'callout' : undefined}
+      >
         <h2>Be part of the <strong>Nordic FHIR Demo</strong> showcase!</h2>
         <p>
-          The <strong>FHIR Demo 2024</strong> showcase builds on the success of previous installations in <a
-          href="http://www.hl7.fi/wp-content/uploads/HL7-Finland-%23U0432%23U0402%23U201c-FHIR-demon-loppuraportti-20160527.pdf">2016</a>,
-          {' '}<a href="https://fhir.fi/en/demo2022/index.html">2022</a>, and <a
+          The <strong>FHIR Demo 2024</strong> showcase builds on the success of previous
+          installations in <a
+          href="http://www.hl7.fi/wp-content/uploads/HL7-Finland-%23U0432%23U0402%23U201c-FHIR-demon-loppuraportti-20160527.pdf"
+          >2016</a>, <a href="https://fhir.fi/en/demo2022/index.html">2022</a>, and <a
           href="https://fhir.fi/en/demo2023/index.html">2023</a>. This year it will be even
           bigger, and more international.
         </p>
@@ -56,7 +61,7 @@ export default function Participate() {
           <a className="button" href="mailto:mikael@sensotrend.com">Announce your interest!</a>
         </p>
       </section>
-      <section id="info">
+      <section id="info" className={hash === '#info' ? 'callout' : undefined}>
         <h1>Apps and Systems, Consultancies and Institutions</h1>
         <p>This year, we tag entries into four categories.</p>
         <p>
@@ -90,7 +95,7 @@ export default function Participate() {
           help them with their implementation. The showcase aims to serve all these interests.
         </p>
       </section>
-      <section id="faq">
+      <section id="faq" className={hash === '#faq' ? 'callout' : undefined}>
         <section id="what-does-it-cost">
           <h1>Frequently asked questions</h1>
           <h2>What does it cost?</h2>
@@ -206,7 +211,7 @@ export default function Participate() {
           </p>
         </section>
       </section>
-      <section id="contact">
+      <section id="contact" className={hash === '#contact' ? 'callout' : undefined}>
         <h1>Contact</h1>
         <p>Please do get in touch! Email reaches me best.</p>
         <div className="business-card">
