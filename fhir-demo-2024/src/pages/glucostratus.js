@@ -23,9 +23,6 @@ export default function Glucostratus({ location }) {
         </a>
       </h1>
       <Roles list={roles} />
-      <aside className="event atk-paivat">
-        <h2>ATK-päivät: Startup-alue</h2>
-      </aside>
       <p>The aim is to implement the <strong>SMART App Launch</strong> from <Link
       to="../una">Una</Link>.</p>
       <section id="contact">

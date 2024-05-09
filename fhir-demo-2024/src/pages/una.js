@@ -25,12 +25,6 @@ export default function Una({ location }) {
         </a>
       </h1>
       <Roles list={roles} />
-      <aside className="event atk-paivat">
-        <h2>ATK-päivät: Ständi 210</h2>
-        <p>UNA on mukana sosiaali- ja terveydenhuollon ATK-päivillä järjestettävässä FHIR Demossa.
-        Tervetuloa ständillemme C.210 keskustelemaan FHIRistä ja muista mahdollisuuksistamme auttaa
-        saamaan sote-data hyödynnettäväksi.</p>
-      </aside>
       <p>UNA is a publicly owned in-house company and we are helping our owners in ICT development.
       In the nationwide UNA cooperation, social and healthcare information management and
       interoperability have been implemented in many ways. UNA solutions already have some

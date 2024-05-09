@@ -24,10 +24,6 @@ export default function Meallogger({ location }) {
         </a>
       </h1>
       <Roles list={roles} />
-      <aside className="event atk-paivat">
-        <h2>ATK-päivät: Startup-alue</h2>
-        <p>Demomme voi nähdä <Link to="../wellmo">Wellmon</Link> ständillä.</p>
-      </aside>
       <section>
         <h2>Smart Photo Food Journal</h2>
         <p>MealLogger is a digital platform for hospitals and health care providers to scale

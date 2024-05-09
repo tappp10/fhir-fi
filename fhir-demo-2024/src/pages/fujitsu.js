@@ -25,21 +25,6 @@ export default function Fujitsu({ location }) {
         </a>
       </h1>
       <Roles list={roles} />
-      <aside className="event atk-paivat">
-        <h2>ATK-päivät: Ständi 114</h2>
-        <p>Tervetuloa ständillemme keskustelemaan terveydenhuollon järjestelmä- ja
-        integraatiotarpeista!</p>
-        <p>Esittelemme raskausdiabeteksen kattavaa eMOM-etäseurantaratkaisua, jolla saadaan aidosti
-        vaikuttavaa, ennakoivaa ja osallistavaa hoitoa raskaana oleville äideille.</p>
-        <p>Aikataulutettu demo esittelee eMOM-etäseurantaratkaisun SMART on FHIR App Launchin
-        Apotti-järjestelmästä sekä tietojen hakua Apotin FHIR-rajapintoja hyödyntäen.</p>
-        <ul>
-          <li>
-            <time dateTime="2023-05-23T15:45:00.000+03:00">tiistaina klo 15.45</time>, Ständi 114
-          </li>
-        </ul>
-        <p>Kerromme myös kattavasta integraatiopalvelustamme.</p>
-      </aside>
       <p>With over 40 years of experience, Fujitsu Finland develops intelligent, human-centered
       services in cooperation with customers, research institutes and universities.</p>
       <section id="emom">

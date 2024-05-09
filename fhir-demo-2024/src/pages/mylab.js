@@ -25,28 +25,6 @@ export default function Mylab({ location }) {
         </a>
       </h1>
       <Roles list={roles} />
-      <aside className="event vitalis">
-        <h2>Mylab at Vitalis</h2>
-        <p>Welcome to visit Mylab's stand! We have a scheduled time for presenting our ideas using
-        FHIR on</p>
-        <strong>
-          <ul>
-            <li><time dateTime="2023-05-23T15:10:00.000+02:00">23th May at 15:10</time></li>
-            <li><time dateTime="2023-05-24T10:10:00.000+02:00">24th May at 10:10</time></li>
-          </ul>
-        </strong>
-        <p>If this time is not suitable for you, you may visit any time Mylab's stand and contact
-        our personnel to schedule presentation time and share your ideas.</p>
-      </aside>
-      {/*
-      <aside className="event atk-paivat">
-        <h2>Mylab ATK-päivillä</h2>
-        <p>If you are interested in the topic, please contact any Mylab's personnel in the event
-        and share your contact information, ideas and possible needs to integrate your application
-        using laboratory data and we will contact you later. Mylab don't have stand and demo
-        presentation in ATK-days.</p>
-      </aside>
-      */}
       <section id="mylab">
         <p>Mylab is the leading Finnish supplier of health care laboratory and diagnostics
         information systems. By implementing better and more reliable technological solutions for

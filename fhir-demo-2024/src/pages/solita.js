@@ -22,12 +22,6 @@ export default function Solita({ location }) {
         </a>
       </h1>
       <Roles list={roles} />
-      <aside className="event atk-paivat">
-        <h2>ATK-päivät: Ständi 200</h2>
-        <p>Tervetuloa osastollemme keskustelemaan siitä, kuinka rakennamme vaikuttavia
-        terveydenhuollon ratkaisuja FHIR standardin avulla!</p>
-        <p>Esittelemme demoja ja keskustelemme osastollamme koko tapahtuman ajan.</p>
-      </aside>
       <section id="about">
         <h2>Solita - We harness human insight and intelligent technologies to impact many
         lives</h2>

@@ -23,11 +23,6 @@ export default function Wellmo({ location }) {
         </a>
       </h1>
       <Roles list={roles} />
-      <aside className="event atk-paivat">
-        <h2>ATK-päivät: Startup-alue</h2>
-        <p><strong>FHIR-demo <time
-        dateTime="2023-05-23T12:45:00.000+03:00">tiistaina klo 12.45</time></strong>.</p>
-      </aside>
       <section id="about">
         <h2>Platform for digital health services</h2>
         <p>Wellmo is an ultimate platform for personalised digital health services. Wellmo provides

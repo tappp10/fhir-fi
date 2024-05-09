@@ -24,11 +24,6 @@ export default function BcbMedical({ location }) {
         </a>
       </h1>
       <Roles list={roles} />
-      <aside className="event atk-paivat">
-        <h2>ATK-päivät: Ständi 221</h2>
-        <p>ATK-päivillä 2023 BCB Medicalin osastolla järjestetään demo Omavointi-tuoteperheen
-        kyvykkyydestä integroitua FHIR-rajapintoja tarjoaviin järjestelmiin (esim. UNA).</p>
-      </aside>
       <section id="about">
         <p>BCB Medical Oy on terveydenhuollon tietojärjestelmätoimittaja, joka on vuodesta 2003
         kehittänyt hoidon laadun ja vaikuttavuuden seurantajärjestelmiä terveydenhuollon

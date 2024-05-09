@@ -23,9 +23,6 @@ export default function EskoSystems({ location }) {
         </a>
       </h1>
       <Roles list={roles} />
-      <aside className="event atk-paivat">
-        <h2>ATK-päivät: Ständi 126</h2>
-      </aside>
       <section id="about">
         <p>Esko Systems Oy on rakentanut standardin, avoimiin rajapintaluvauksiin pohjautuvan
         integraatioratkaisun, jonka kautta koko Esko potilastietojärjestelmän liikenne muihin

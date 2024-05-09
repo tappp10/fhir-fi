@@ -23,9 +23,6 @@ export default function TietoEVRY({ location }) {
         </a>
       </h1>
       <Roles list={roles} />
-      <aside className="event atk-paivat">
-        <h2>ATK-päivät: Ständi 110</h2>
-      </aside>
       <section id="intro">
         <h1>Tietoevry Care - Examples of Practical FHIR Implementations</h1>
       </section>
