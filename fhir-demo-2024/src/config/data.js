@@ -31,10 +31,9 @@ export const demos = {
       RoleList.App,
     ],
   },
-  /* Karri Ackalin, Lassi Lindblom, 23.4.2023 */
-  cerner: {
+  cambio: {
     hidden: true,
-    name: 'Oracle Cerner',
+    name: 'Cambio',
     roles: [
       RoleList.System,
     ],
@@ -172,7 +171,14 @@ export const demos = {
       RoleList.System,
     ],
   },
-  /* Mika Sipilä,  */
+  /* Karri Ackalin, Lassi Lindblom, 23.4.2023 */
+  oracle: {
+    hidden: true,
+    name: 'Oracle Health (Cerner)',
+    roles: [
+      RoleList.System,
+    ],
+  },
   prowellness: {
     name: 'ProWellness',
     roles: [
@@ -214,6 +220,13 @@ export const demos = {
     name: 'Una',
     roles: [
       RoleList.App,
+      RoleList.System,
+    ],
+  },
+  vitec: {
+    hidden: true,
+    name: 'Vitec Acute',
+    roles: [
       RoleList.System,
     ],
   },
