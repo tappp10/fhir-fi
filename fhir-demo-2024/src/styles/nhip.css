@@ -2,11 +2,6 @@ main.demo > h1.nhip {
     font-size: 300%;
 }
 
-.business-card.nhip-company-card {
-    height: 2.25cm;
-    min-height: 5em;
-}
-
 p.nhip-company-logos {
     margin-top: 2em;
     text-align: center;

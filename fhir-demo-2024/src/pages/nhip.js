@@ -6,12 +6,9 @@ import Roles from '../components/Roles';
 import { demos } from '../config/data';
 import { Link } from 'gatsby';
 import medicinDkLogo from '../images/Medicin.dk_Logo_RGB.svg';
-import tina from '../images/TinaHouMarer.png';
 import fassLogo from '../images/fass.jpg';
 import pharmacaLogo from '../images/pharmaca.jpg';
 import fkLogo from '../images/felleskatalogen.png';
-import fkContactAk from '../images/felleskatalogen-ak.png';
-import fkContactBj from '../images/felleskatalogen-bj.png';
 import '../styles/nhip.css';
 
 export function Head() {
@@ -99,36 +96,6 @@ export default function NHIP({ location }) {
       <section id="contact">
         <h3>Contact</h3>
         <div className="business-card">
-          <picture>
-            <source srcSet={fkContactBj} />
-            <img
-              className="roundProfilePicture"
-              src={fkContactBj}
-              alt=""
-            />
-          </picture>
-          <h3>Bente Jansen</h3>
-          <p><b>Management Contact</b></p>
-          <address>
-            <a href="mailto:bente.jansen@felleskatalogen.no">bente.jansen@felleskatalogen.no</a>
-          </address>
-        </div>
-        <div className="business-card">
-          <h3>Essi Kariaho</h3>
-          <p><b>Management Contact</b></p>
-          <address>
-            <a href="mailto:essi.kariaho@pharmaca.fi">essi.kariaho@pharmaca.fi</a>
-          </address>
-        </div>
-        <div className="business-card">
-          <picture>
-            <source srcSet={fkContactAk} />
-            <img
-              className="roundProfilePicture"
-              src={fkContactAk}
-              alt=""
-            />
-          </picture>
           <h3>Ádám Z. Kövér</h3>
           <p><b>Technical Contact</b></p>
           <address>
@@ -136,18 +103,30 @@ export default function NHIP({ location }) {
           </address>
         </div>
         <div className="business-card">
-          <picture>
-            <source srcSet={tina} />
-            <img
-              className="roundProfilePicture"
-              src={tina}
-              alt=""
-            />
-          </picture>
+          <h3>Bente Jansen</h3>
+          <p><b>Management Contact</b></p>
+          <address>
+            <a href="mailto:bente.jansen@felleskatalogen.no">bente.jansen@felleskatalogen.no</a>
+            <br/>
+            <a href="mailto:post@felleskatalogen.no">post@felleskatalogen.no</a>
+          </address>
+        </div>
+        <div className="business-card">
+          <h3>Essi Kariaho</h3>
+          <p><b>Management Contact</b></p>
+          <address>
+            <a href="mailto:essi.kariaho@pharmaca.fi">essi.kariaho@pharmaca.fi</a>
+            <br/>
+            <a href="mailto:info@pharmaca.fi">info@pharmaca.fi</a>
+          </address>
+        </div>
+        <div className="business-card">
           <h3>Tina Hou Marer</h3>
           <p><b>Management Contact</b></p>
           <address>
             <a href="mailto:thm@medicin.dk">thm@medicin.dk</a>
+            <br/>
+            <a href="mailto:kontakt@medicin.dk">kontakt@medicin.dk</a>
           </address>
         </div>
         <div className="business-card">
@@ -155,29 +134,7 @@ export default function NHIP({ location }) {
           <p><b>Management Contact</b></p>
           <address>
             <a href="mailto:anna.wessling@fass.se">anna.wessling@fass.se</a>
-          </address>
-        </div>
-        <div className="business-card nhip-company-card">
-          <h3>Medicin.dk</h3>
-          <address>
-            <a href="mailto:kontakt@medicin.dk">kontakt@medicin.dk</a>
-          </address>
-        </div>
-        <div className="business-card nhip-company-card">
-          <h3>Pharmaca</h3>
-          <address>
-            <a href="mailto:info@pharmaca.fi">info@pharmaca.fi</a>
-          </address>
-        </div>
-        <div className="business-card nhip-company-card">
-          <h3>Felleskatalogen</h3>
-          <address>
-            <a href="mailto:post@felleskatalogen.no">post@felleskatalogen.no</a>
-          </address>
-        </div>
-        <div className="business-card nhip-company-card">
-          <h3>FASS</h3>
-          <address>
+            <br/>
             <a href="mailto:info@fass.se">info@fass.se</a>
           </address>
         </div>
