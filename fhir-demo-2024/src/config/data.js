@@ -170,6 +170,12 @@ export const demos = {
       RoleList.App,
     ],
   },
+  nhip: {
+    name: 'Nordic Health Information Partnership',
+    roles: [
+      RoleList.System,
+    ],
+  },
   omaolo: {
     hidden: true,
     name: 'Omaolo',
