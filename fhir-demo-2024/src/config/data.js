@@ -104,9 +104,7 @@ export const demos = {
       RoleList.Institution,
     ],
   },
-  /* Juha Muinonen, 26.4.2024 */
   hus: {
-    hidden: true,
     name: 'HUS',
     roles: [
       RoleList.Institution,
