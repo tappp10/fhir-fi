@@ -64,6 +64,13 @@ export const demos = {
       RoleList.System,
     ],
   },
+  fass: {
+    name: 'Fass.se',
+    roles: [
+      RoleList.Institution,
+      RoleList.System
+    ],
+  },
   felleskatalogen: {
     name: 'Felleskatalogen',
     roles: [
