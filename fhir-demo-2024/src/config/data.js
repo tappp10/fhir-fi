@@ -67,6 +67,7 @@ export const demos = {
   felleskatalogen: {
     name: 'Felleskatalogen',
     roles: [
+      RoleList.Institution,
       RoleList.System
     ],
   },
@@ -147,6 +148,7 @@ export const demos = {
     name: 'Medicin.dk',
     roles: [
       RoleList.Institution,
+      RoleList.System
     ],
   },
   microsoft: {
