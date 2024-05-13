@@ -49,6 +49,16 @@ export default function Vitec({ location }) {
           to external apps.
         </p>
       </section>
+      <section id="contact">
+        <h3>Contact</h3>
+        <div className="business-card">
+          <h3>Juho Kunnari</h3>
+          <p>Tietohallinto- ja teknologiajohtaja</p>
+          <address>
+            <a href="mailto:juho.kunnari@vitecsoftware.com">juho.kunnari@vitecsoftware.com</a>
+          </address>
+        </div>
+      </section>
     </Demo>
   );
 };
