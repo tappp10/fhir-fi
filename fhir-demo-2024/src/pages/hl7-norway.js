@@ -19,7 +19,9 @@ export default function Hl7Norway({ location }) {
       <h1><a href="https://hl7.no/"><img src={logo} alt="HL7 Norway" /></a></h1>
       <Roles list={roles} />
       <section className="work-in-progress">
-        <p>Showcase content to be added.</p>
+        <p>
+          See the current activities on the <a href="https://www.hl7.no/">HL7 Norway home page</a>.
+        </p>
       </section>
     </Demo>
   );
