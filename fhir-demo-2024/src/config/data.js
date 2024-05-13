@@ -178,9 +178,7 @@ export const demos = {
       RoleList.System,
     ],
   },
-  /* Karri Ackalin, Lassi Lindblom, 23.4.2023 */
   oracle: {
-    hidden: true,
     name: 'Oracle Health (Cerner)',
     roles: [
       RoleList.System,
