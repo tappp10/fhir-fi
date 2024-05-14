@@ -171,7 +171,7 @@ export const demos = {
   nhip: {
     name: 'Nordic Health Information Partnership',
     roles: [
-      RoleList.System,
+      RoleList.Institution,
     ],
   },
   omaolo: {

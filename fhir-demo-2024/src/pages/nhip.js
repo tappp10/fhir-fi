@@ -47,7 +47,7 @@ export default function NHIP({ location }) {
         <p>
           The four compendia have launched a joint project to supply electronic package
           leaflets (ePIL) in the Nordic languages for the testing scenarios of <a
-            href="https://www.gravitatehealth.eu/">Gravitate Health</a>. The structured, electronic
+          href="https://www.gravitatehealth.eu/">Gravitate Health</a>. The structured, electronic
           package leaflets are taken from the compendia's internal repositories, converted from
           their proprietary formats to a common standard based on HL7 FHIR, and delivered through
           a shared repository to Gravitate Health. The use of HL7 FHIR, an established
