@@ -32,7 +32,6 @@ export const demos = {
     ],
   },
   cambio: {
-    hidden: true,
     name: 'Cambio',
     roles: [
       RoleList.System,
@@ -44,7 +43,6 @@ export const demos = {
       RoleList.System,
     ],
   },
-  /* Joonas Mäkinen, April 12 */
   duodecim: {
     name: 'Duodecim',
     roles: [

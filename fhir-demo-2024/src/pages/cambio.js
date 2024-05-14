@@ -68,7 +68,10 @@ export default function Cambio({ location }) {
       </section>
       <section className="fhir">
         <h2>HL7 FHIR</h2>
-        <p>Cambio has been active in developing FHIR base profiles for Sweden.</p>
+        <p>
+          Cambio has been active in the collaborative effort to create the FHIR base profiles for
+          Sweden.
+        </p>
         <p>
           We have several integrations using FHIR, and it is Cambio's default standard for
           integrations and partners. Some examples are integration with ambulance EHRs (<a
