@@ -233,7 +233,6 @@ export const demos = {
     ],
   },
   vitec: {
-    hidden: true,
     name: 'Vitec Acute',
     roles: [
       RoleList.System,
