@@ -73,16 +73,13 @@ export default function Fass({ location }) {
       <section id="contact">
         <h3>Contact</h3>
         <div className="business-card">
-          {/*
           <picture>
             <source srcSet={anna} />
             <img
-              className="roundProfilePicture"
               src={anna}
               alt=""
             />
           </picture>
-          */}
           <h3>Anna Wessling</h3>
           <p>Managing Director</p>
           <address>
@@ -90,16 +87,13 @@ export default function Fass({ location }) {
           </address>
         </div>
         <div className="business-card">
-          {/*
           <picture>
             <source srcSet={gunilla} />
             <img
-              className="roundProfilePicture"
               src={gunilla}
               alt=""
             />
           </picture>
-          */}
           <h3>Gunilla Englund</h3>
           <p>Head of Business Development</p>
           <address>
